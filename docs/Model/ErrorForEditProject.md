@@ -1,0 +1,12 @@
+# # ErrorForEditProject
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**is_error** | **bool** | isError &#x3D; false means success and isError &#x3D; true means error | [optional]
+**status** | **int** | Error Code &#x3D; 0 means &#39;Assignment Project updated successfully.&#39;&lt;br/&gt;&lt;br /&gt;Error Code &#x3D; 0 means &#39;The Project code you have entered matches an existing Project code.&#39;&lt;br /&gt;Error Code &#x3D; 2 means &#39;Invalid API Key.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;API key does not exists.&#39; &lt;br /&gt;Error Code &#x3D; 4 means &#39;Action cannot be empty.&#39; &lt;br /&gt;Error Code &#x3D; 4 means &#39;Invalid Action.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;Project Name contains invalid data.&#39;&lt;br /&gt;Error code &#x3D; 5 means &#39;Project Name contains more than 100 characters.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;Project Name cannot be empty.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;The Project Name you have entered not matches an existing Project code.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;Project Name is Empty.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;Project Name is missing.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;New Project Name contains invalid data.&#39;&lt;br /&gt;Error code &#x3D; 5 means &#39;New Project Name contains more than 100 characters.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;New Project Name cannot be empty.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;New Project Name is Empty.&#39; &lt;br /&gt;Error Code &#x3D; 5 means &#39;In Use Can only Contain Yes Or No.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;In Use cannot be empty.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;Mention atleast one field to Update.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;Oops! Something went wrong.&#39;&lt;br /&gt;Error Code &#x3D; 5 means &#39;No access on Timesheet schema.&#39;&lt;br /&gt;Error Code &#x3D; 7 means &#39;No json data found.&#39; &lt;br /&gt;Error Code &#x3D; 8 means &#39;Either empty or no Form Data.&#39;&lt;br /&gt;Error Code &#x3D; 9 means &#39;Invalid json data.&#39;&lt;br /&gt;Error Code &#x3D; 10 means &#39;No records found&#39; | [optional]
+**message** | **string** | Message show as per error code | [optional]
+**result** | **object** | Can be ignored | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

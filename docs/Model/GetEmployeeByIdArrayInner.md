@@ -1,0 +1,16 @@
+# # GetEmployeeByIdArrayInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**appraisal_id** | **float** | appraisal id value | [optional]
+**appraisal_review_date** | **\DateTime** | appraisal review date value | [optional]
+**reviewer** | **string** | Reviewer value | [optional]
+**note** | **string** | Note value | [optional]
+**action_plan** | **string** | Action plan value | [optional]
+**objectives** | **string** | Objectives value | [optional]
+**customfields** | [**\OpenAPI\Client\Model\ArrayForGetByAppraisalIdArrayInner[]**](ArrayForGetByAppraisalIdArrayInner.md) | Custom fields value | [optional]
+**files** | [**\OpenAPI\Client\Model\ArrayForGetAppraisalByIdFileInner[]**](ArrayForGetAppraisalByIdFileInner.md) | Files | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
