@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeAppraisalApi
+# PeopleHR\EmployeeAppraisalApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeAppraisalAddNewAppraisalPost()`
 
 ```php
-employeeAppraisalAddNewAppraisalPost($body): \OpenAPI\Client\Model\ErrorForAddNewAppraisal
+employeeAppraisalAddNewAppraisalPost($body): \PeopleHR\Model\ErrorForAddNewAppraisal
 ```
 
 Add New Appraisal
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAppraisalApi(
+$apiInstance = new PeopleHR\Api\EmployeeAppraisalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewAppraisalParameter(); // \OpenAPI\Client\Model\AddNewAppraisalParameter
+$body = new \PeopleHR\Model\AddNewAppraisalParameter(); // \PeopleHR\Model\AddNewAppraisalParameter
 
 try {
     $result = $apiInstance->employeeAppraisalAddNewAppraisalPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewAppraisalParameter**](../Model/AddNewAppraisalParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewAppraisalParameter**](../Model/AddNewAppraisalParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewAppraisal**](../Model/ErrorForAddNewAppraisal.md)
+[**\PeopleHR\Model\ErrorForAddNewAppraisal**](../Model/ErrorForAddNewAppraisal.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeAppraisalDeleteAppraisalPost()`
 
 ```php
-employeeAppraisalDeleteAppraisalPost($body): \OpenAPI\Client\Model\ErrorForDeleteAppraisal
+employeeAppraisalDeleteAppraisalPost($body): \PeopleHR\Model\ErrorForDeleteAppraisal
 ```
 
 Delete Appraisal
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAppraisalApi(
+$apiInstance = new PeopleHR\Api\EmployeeAppraisalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteAppraisalParameter(); // \OpenAPI\Client\Model\DeleteAppraisalParameter
+$body = new \PeopleHR\Model\DeleteAppraisalParameter(); // \PeopleHR\Model\DeleteAppraisalParameter
 
 try {
     $result = $apiInstance->employeeAppraisalDeleteAppraisalPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteAppraisalParameter**](../Model/DeleteAppraisalParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteAppraisalParameter**](../Model/DeleteAppraisalParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteAppraisal**](../Model/ErrorForDeleteAppraisal.md)
+[**\PeopleHR\Model\ErrorForDeleteAppraisal**](../Model/ErrorForDeleteAppraisal.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeAppraisalGetByAppraisalIdPost()`
 
 ```php
-employeeAppraisalGetByAppraisalIdPost($body): \OpenAPI\Client\Model\ErrorForGetByAppraisalId
+employeeAppraisalGetByAppraisalIdPost($body): \PeopleHR\Model\ErrorForGetByAppraisalId
 ```
 
 Get By Appraisal Id
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAppraisalApi(
+$apiInstance = new PeopleHR\Api\EmployeeAppraisalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal(); // \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal
+$body = new \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal(); // \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal
 
 try {
     $result = $apiInstance->employeeAppraisalGetByAppraisalIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal**](../Model/GetByAppraisalIdForEmployeeAppraisal.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal**](../Model/GetByAppraisalIdForEmployeeAppraisal.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByAppraisalId**](../Model/ErrorForGetByAppraisalId.md)
+[**\PeopleHR\Model\ErrorForGetByAppraisalId**](../Model/ErrorForGetByAppraisalId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeAppraisalGetByEmployeeIdPost()`
 
 ```php
-employeeAppraisalGetByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById
+employeeAppraisalGetByEmployeeIdPost($body): \PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById
 ```
 
 Get By Employee Id
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAppraisalApi(
+$apiInstance = new PeopleHR\Api\EmployeeAppraisalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal(); // \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal
+$body = new \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal(); // \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal
 
 try {
     $result = $apiInstance->employeeAppraisalGetByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal**](../Model/GetByEmployeeIdForEmployeeAppraisal.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal**](../Model/GetByEmployeeIdForEmployeeAppraisal.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById**](../Model/ErrorForEmployeeAppraisalGetEmployeeById.md)
+[**\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById**](../Model/ErrorForEmployeeAppraisalGetEmployeeById.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeAppraisalUpdateAppraisalPost()`
 
 ```php
-employeeAppraisalUpdateAppraisalPost($body): \OpenAPI\Client\Model\ErrorForUpdateAppraisal
+employeeAppraisalUpdateAppraisalPost($body): \PeopleHR\Model\ErrorForUpdateAppraisal
 ```
 
 Update Appraisal
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAppraisalApi(
+$apiInstance = new PeopleHR\Api\EmployeeAppraisalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateAppraisalParameter(); // \OpenAPI\Client\Model\UpdateAppraisalParameter
+$body = new \PeopleHR\Model\UpdateAppraisalParameter(); // \PeopleHR\Model\UpdateAppraisalParameter
 
 try {
     $result = $apiInstance->employeeAppraisalUpdateAppraisalPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateAppraisalParameter**](../Model/UpdateAppraisalParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateAppraisalParameter**](../Model/UpdateAppraisalParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateAppraisal**](../Model/ErrorForUpdateAppraisal.md)
+[**\PeopleHR\Model\ErrorForUpdateAppraisal**](../Model/ErrorForUpdateAppraisal.md)
 
 ### Authorization
 

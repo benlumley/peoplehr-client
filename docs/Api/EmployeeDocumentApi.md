@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeDocumentApi
+# PeopleHR\EmployeeDocumentApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeDocumentGetAllDocumentPost()`
 
 ```php
-employeeDocumentGetAllDocumentPost($body): \OpenAPI\Client\Model\ErrorForGetAllDocument
+employeeDocumentGetAllDocumentPost($body): \PeopleHR\Model\ErrorForGetAllDocument
 ```
 
 Get All Document
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDocumentApi(
+$apiInstance = new PeopleHR\Api\EmployeeDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllDocumentParameter(); // \OpenAPI\Client\Model\GetAllDocumentParameter
+$body = new \PeopleHR\Model\GetAllDocumentParameter(); // \PeopleHR\Model\GetAllDocumentParameter
 
 try {
     $result = $apiInstance->employeeDocumentGetAllDocumentPost($body);
@@ -46,11 +46,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllDocumentParameter**](../Model/GetAllDocumentParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllDocumentParameter**](../Model/GetAllDocumentParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllDocument**](../Model/ErrorForGetAllDocument.md)
+[**\PeopleHR\Model\ErrorForGetAllDocument**](../Model/ErrorForGetAllDocument.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `employeeDocumentGetDocumentByIdPost()`
 
 ```php
-employeeDocumentGetDocumentByIdPost($body): \OpenAPI\Client\Model\ErrorForGetDocumentById
+employeeDocumentGetDocumentByIdPost($body): \PeopleHR\Model\ErrorForGetDocumentById
 ```
 
 Get Document By Id
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDocumentApi(
+$apiInstance = new PeopleHR\Api\EmployeeDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetDocumentByIDParameter(); // \OpenAPI\Client\Model\GetDocumentByIDParameter
+$body = new \PeopleHR\Model\GetDocumentByIDParameter(); // \PeopleHR\Model\GetDocumentByIDParameter
 
 try {
     $result = $apiInstance->employeeDocumentGetDocumentByIdPost($body);
@@ -102,11 +102,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetDocumentByIDParameter**](../Model/GetDocumentByIDParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetDocumentByIDParameter**](../Model/GetDocumentByIDParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetDocumentById**](../Model/ErrorForGetDocumentById.md)
+[**\PeopleHR\Model\ErrorForGetDocumentById**](../Model/ErrorForGetDocumentById.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `employeeDocumentUploadEmployeeDocumentPost()`
 
 ```php
-employeeDocumentUploadEmployeeDocumentPost($body): \OpenAPI\Client\Model\ErrorForUploadEmployeeDocument
+employeeDocumentUploadEmployeeDocumentPost($body): \PeopleHR\Model\ErrorForUploadEmployeeDocument
 ```
 
 Upload Employee Document
@@ -139,12 +139,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDocumentApi(
+$apiInstance = new PeopleHR\Api\EmployeeDocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UploadEmployeeDocumentParameter(); // \OpenAPI\Client\Model\UploadEmployeeDocumentParameter
+$body = new \PeopleHR\Model\UploadEmployeeDocumentParameter(); // \PeopleHR\Model\UploadEmployeeDocumentParameter
 
 try {
     $result = $apiInstance->employeeDocumentUploadEmployeeDocumentPost($body);
@@ -158,11 +158,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UploadEmployeeDocumentParameter**](../Model/UploadEmployeeDocumentParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UploadEmployeeDocumentParameter**](../Model/UploadEmployeeDocumentParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument**](../Model/ErrorForUploadEmployeeDocument.md)
+[**\PeopleHR\Model\ErrorForUploadEmployeeDocument**](../Model/ErrorForUploadEmployeeDocument.md)
 
 ### Authorization
 

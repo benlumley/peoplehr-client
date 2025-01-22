@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultForGetQualificationByQualificationIdObject Class Doc Comment
  *
  * @category Class
  * @description The Result For Get Qualification By QualificationId Result Array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class ResultForGetQualificationByQualificationIdObject implements ModelInterface
         'date_passed' => '\DateTime',
         'expiry_date' => '\DateTime',
         'comments' => 'string',
-        'customfields' => '\OpenAPI\Client\Model\CustomColumnsForGetEmployeeQualificationInner[]',
-        'files' => '\OpenAPI\Client\Model\AddFilesForGetEmployeeQualificationInner[]'
+        'customfields' => '\PeopleHR\Model\CustomColumnsForGetEmployeeQualificationInner[]',
+        'files' => '\PeopleHR\Model\AddFilesForGetEmployeeQualificationInner[]'
     ];
 
     /**
@@ -505,7 +505,7 @@ class ResultForGetQualificationByQualificationIdObject implements ModelInterface
     /**
      * Gets customfields
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForGetEmployeeQualificationInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForGetEmployeeQualificationInner[]|null
      */
     public function getCustomfields()
     {
@@ -515,7 +515,7 @@ class ResultForGetQualificationByQualificationIdObject implements ModelInterface
     /**
      * Sets customfields
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForGetEmployeeQualificationInner[]|null $customfields Custom fields array
+     * @param \PeopleHR\Model\CustomColumnsForGetEmployeeQualificationInner[]|null $customfields Custom fields array
      *
      * @return self
      */
@@ -532,7 +532,7 @@ class ResultForGetQualificationByQualificationIdObject implements ModelInterface
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForGetEmployeeQualificationInner[]|null
+     * @return \PeopleHR\Model\AddFilesForGetEmployeeQualificationInner[]|null
      */
     public function getFiles()
     {
@@ -542,7 +542,7 @@ class ResultForGetQualificationByQualificationIdObject implements ModelInterface
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForGetEmployeeQualificationInner[]|null $files Files array
+     * @param \PeopleHR\Model\AddFilesForGetEmployeeQualificationInner[]|null $files Files array
      *
      * @return self
      */

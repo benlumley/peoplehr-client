@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * Result1GetList5ArrayInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,43 +58,43 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'employee_id' => '\OpenAPI\Client\Model\EmployeeIdArrayObject',
-        'title' => '\OpenAPI\Client\Model\TitleObject',
-        'first_name' => '\OpenAPI\Client\Model\FirstNameObject',
-        'last_name' => '\OpenAPI\Client\Model\LastNameObject',
-        'other_name' => '\OpenAPI\Client\Model\OtherNameObject',
-        'known_as' => '\OpenAPI\Client\Model\KnownAsObject',
-        'email_id' => '\OpenAPI\Client\Model\EmailIdObject',
-        'start_date' => '\OpenAPI\Client\Model\StartDateObject',
-        'date_of_birth' => '\OpenAPI\Client\Model\DateOfBirthObject',
-        'job_role' => '\OpenAPI\Client\Model\JobRoleObject',
-        'company' => '\OpenAPI\Client\Model\CompanyObject',
-        'company_effective_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerCompanyEffectiveDate',
-        'location' => '\OpenAPI\Client\Model\LocationObject',
-        'location_effective_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerLocationEffectiveDate',
-        'department' => '\OpenAPI\Client\Model\DepartmentObject',
-        'department_effective_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate',
-        'job_role_change_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerJobRoleChangeDate',
-        'reports_to' => '\OpenAPI\Client\Model\ReportsToObject',
-        'reports_to_effective_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEffectiveDate',
-        'reports_to_employee_id' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmployeeId',
-        'reports_to_email_address' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmailAddress',
-        'nis_number' => '\OpenAPI\Client\Model\NISNumberObject',
-        'nationality' => '\OpenAPI\Client\Model\NationalityObject',
-        'employment_type' => '\OpenAPI\Client\Model\EmploymentTypeObject',
-        'employment_type_effective_date' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate',
-        'employee_status' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerEmployeeStatus',
-        'holiday_allowance_days' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceDays',
-        'holiday_allowance_mins' => '\OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceMins',
-        'notice_period' => '\OpenAPI\Client\Model\NoticePeriodObject',
-        'probation_end_date' => '\OpenAPI\Client\Model\ProbationEndDateObject',
-        'gender' => '\OpenAPI\Client\Model\GenderObject',
-        'contact_detail' => '\OpenAPI\Client\Model\ContactDetailObject',
-        'other_contact' => '\OpenAPI\Client\Model\OtherContactObject',
-        'right_to_work' => '\OpenAPI\Client\Model\RightToWorkObject',
-        'background_detail' => '\OpenAPI\Client\Model\BackgroundDetailObject',
-        'bank_detail' => '\OpenAPI\Client\Model\BankDetailObject',
-        'employment_detail' => '\OpenAPI\Client\Model\EmploymentDetailObject',
+        'employee_id' => '\PeopleHR\Model\EmployeeIdArrayObject',
+        'title' => '\PeopleHR\Model\TitleObject',
+        'first_name' => '\PeopleHR\Model\FirstNameObject',
+        'last_name' => '\PeopleHR\Model\LastNameObject',
+        'other_name' => '\PeopleHR\Model\OtherNameObject',
+        'known_as' => '\PeopleHR\Model\KnownAsObject',
+        'email_id' => '\PeopleHR\Model\EmailIdObject',
+        'start_date' => '\PeopleHR\Model\StartDateObject',
+        'date_of_birth' => '\PeopleHR\Model\DateOfBirthObject',
+        'job_role' => '\PeopleHR\Model\JobRoleObject',
+        'company' => '\PeopleHR\Model\CompanyObject',
+        'company_effective_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerCompanyEffectiveDate',
+        'location' => '\PeopleHR\Model\LocationObject',
+        'location_effective_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerLocationEffectiveDate',
+        'department' => '\PeopleHR\Model\DepartmentObject',
+        'department_effective_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate',
+        'job_role_change_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerJobRoleChangeDate',
+        'reports_to' => '\PeopleHR\Model\ReportsToObject',
+        'reports_to_effective_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerReportsToEffectiveDate',
+        'reports_to_employee_id' => '\PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmployeeId',
+        'reports_to_email_address' => '\PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmailAddress',
+        'nis_number' => '\PeopleHR\Model\NISNumberObject',
+        'nationality' => '\PeopleHR\Model\NationalityObject',
+        'employment_type' => '\PeopleHR\Model\EmploymentTypeObject',
+        'employment_type_effective_date' => '\PeopleHR\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate',
+        'employee_status' => '\PeopleHR\Model\Result1GetList5ArrayInnerEmployeeStatus',
+        'holiday_allowance_days' => '\PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceDays',
+        'holiday_allowance_mins' => '\PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceMins',
+        'notice_period' => '\PeopleHR\Model\NoticePeriodObject',
+        'probation_end_date' => '\PeopleHR\Model\ProbationEndDateObject',
+        'gender' => '\PeopleHR\Model\GenderObject',
+        'contact_detail' => '\PeopleHR\Model\ContactDetailObject',
+        'other_contact' => '\PeopleHR\Model\OtherContactObject',
+        'right_to_work' => '\PeopleHR\Model\RightToWorkObject',
+        'background_detail' => '\PeopleHR\Model\BackgroundDetailObject',
+        'bank_detail' => '\PeopleHR\Model\BankDetailObject',
+        'employment_detail' => '\PeopleHR\Model\EmploymentDetailObject',
         'leaving_date' => 'string',
         'reason_for_leaving' => 'string',
         'employee_image' => 'string',
@@ -103,7 +103,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
         'api_column3' => 'string',
         'api_column4' => 'string',
         'api_column5' => 'string',
-        'lst_field_history_jobrole' => '\OpenAPI\Client\Model\LstFieldHistoryJobrole'
+        'lst_field_history_jobrole' => '\PeopleHR\Model\LstFieldHistoryJobrole'
     ];
 
     /**
@@ -608,7 +608,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets employee_id
      *
-     * @return \OpenAPI\Client\Model\EmployeeIdArrayObject|null
+     * @return \PeopleHR\Model\EmployeeIdArrayObject|null
      */
     public function getEmployeeId()
     {
@@ -618,7 +618,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets employee_id
      *
-     * @param \OpenAPI\Client\Model\EmployeeIdArrayObject|null $employee_id EmployeeId contain displayValue and FieldHistory array
+     * @param \PeopleHR\Model\EmployeeIdArrayObject|null $employee_id EmployeeId contain displayValue and FieldHistory array
      *
      * @return self
      */
@@ -635,7 +635,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets title
      *
-     * @return \OpenAPI\Client\Model\TitleObject|null
+     * @return \PeopleHR\Model\TitleObject|null
      */
     public function getTitle()
     {
@@ -645,7 +645,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets title
      *
-     * @param \OpenAPI\Client\Model\TitleObject|null $title Title
+     * @param \PeopleHR\Model\TitleObject|null $title Title
      *
      * @return self
      */
@@ -662,7 +662,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets first_name
      *
-     * @return \OpenAPI\Client\Model\FirstNameObject|null
+     * @return \PeopleHR\Model\FirstNameObject|null
      */
     public function getFirstName()
     {
@@ -672,7 +672,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets first_name
      *
-     * @param \OpenAPI\Client\Model\FirstNameObject|null $first_name FirstName of employee
+     * @param \PeopleHR\Model\FirstNameObject|null $first_name FirstName of employee
      *
      * @return self
      */
@@ -689,7 +689,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets last_name
      *
-     * @return \OpenAPI\Client\Model\LastNameObject|null
+     * @return \PeopleHR\Model\LastNameObject|null
      */
     public function getLastName()
     {
@@ -699,7 +699,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets last_name
      *
-     * @param \OpenAPI\Client\Model\LastNameObject|null $last_name LastName of employee
+     * @param \PeopleHR\Model\LastNameObject|null $last_name LastName of employee
      *
      * @return self
      */
@@ -716,7 +716,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets other_name
      *
-     * @return \OpenAPI\Client\Model\OtherNameObject|null
+     * @return \PeopleHR\Model\OtherNameObject|null
      */
     public function getOtherName()
     {
@@ -726,7 +726,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets other_name
      *
-     * @param \OpenAPI\Client\Model\OtherNameObject|null $other_name OtherName of employee
+     * @param \PeopleHR\Model\OtherNameObject|null $other_name OtherName of employee
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets known_as
      *
-     * @return \OpenAPI\Client\Model\KnownAsObject|null
+     * @return \PeopleHR\Model\KnownAsObject|null
      */
     public function getKnownAs()
     {
@@ -753,7 +753,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets known_as
      *
-     * @param \OpenAPI\Client\Model\KnownAsObject|null $known_as KnownAs
+     * @param \PeopleHR\Model\KnownAsObject|null $known_as KnownAs
      *
      * @return self
      */
@@ -770,7 +770,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets email_id
      *
-     * @return \OpenAPI\Client\Model\EmailIdObject|null
+     * @return \PeopleHR\Model\EmailIdObject|null
      */
     public function getEmailId()
     {
@@ -780,7 +780,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets email_id
      *
-     * @param \OpenAPI\Client\Model\EmailIdObject|null $email_id EmailId of employee
+     * @param \PeopleHR\Model\EmailIdObject|null $email_id EmailId of employee
      *
      * @return self
      */
@@ -797,7 +797,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets start_date
      *
-     * @return \OpenAPI\Client\Model\StartDateObject|null
+     * @return \PeopleHR\Model\StartDateObject|null
      */
     public function getStartDate()
     {
@@ -807,7 +807,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets start_date
      *
-     * @param \OpenAPI\Client\Model\StartDateObject|null $start_date StartDate of employee
+     * @param \PeopleHR\Model\StartDateObject|null $start_date StartDate of employee
      *
      * @return self
      */
@@ -824,7 +824,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets date_of_birth
      *
-     * @return \OpenAPI\Client\Model\DateOfBirthObject|null
+     * @return \PeopleHR\Model\DateOfBirthObject|null
      */
     public function getDateOfBirth()
     {
@@ -834,7 +834,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets date_of_birth
      *
-     * @param \OpenAPI\Client\Model\DateOfBirthObject|null $date_of_birth DateOfBirth of employee
+     * @param \PeopleHR\Model\DateOfBirthObject|null $date_of_birth DateOfBirth of employee
      *
      * @return self
      */
@@ -851,7 +851,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets job_role
      *
-     * @return \OpenAPI\Client\Model\JobRoleObject|null
+     * @return \PeopleHR\Model\JobRoleObject|null
      */
     public function getJobRole()
     {
@@ -861,7 +861,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets job_role
      *
-     * @param \OpenAPI\Client\Model\JobRoleObject|null $job_role JobRole of employee
+     * @param \PeopleHR\Model\JobRoleObject|null $job_role JobRole of employee
      *
      * @return self
      */
@@ -878,7 +878,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets company
      *
-     * @return \OpenAPI\Client\Model\CompanyObject|null
+     * @return \PeopleHR\Model\CompanyObject|null
      */
     public function getCompany()
     {
@@ -888,7 +888,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets company
      *
-     * @param \OpenAPI\Client\Model\CompanyObject|null $company Company name of employee
+     * @param \PeopleHR\Model\CompanyObject|null $company Company name of employee
      *
      * @return self
      */
@@ -905,7 +905,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets company_effective_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerCompanyEffectiveDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerCompanyEffectiveDate|null
      */
     public function getCompanyEffectiveDate()
     {
@@ -915,7 +915,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets company_effective_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerCompanyEffectiveDate|null $company_effective_date company_effective_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerCompanyEffectiveDate|null $company_effective_date company_effective_date
      *
      * @return self
      */
@@ -932,7 +932,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets location
      *
-     * @return \OpenAPI\Client\Model\LocationObject|null
+     * @return \PeopleHR\Model\LocationObject|null
      */
     public function getLocation()
     {
@@ -942,7 +942,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets location
      *
-     * @param \OpenAPI\Client\Model\LocationObject|null $location Location name of employee
+     * @param \PeopleHR\Model\LocationObject|null $location Location name of employee
      *
      * @return self
      */
@@ -959,7 +959,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets location_effective_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerLocationEffectiveDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerLocationEffectiveDate|null
      */
     public function getLocationEffectiveDate()
     {
@@ -969,7 +969,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets location_effective_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerLocationEffectiveDate|null $location_effective_date location_effective_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerLocationEffectiveDate|null $location_effective_date location_effective_date
      *
      * @return self
      */
@@ -986,7 +986,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets department
      *
-     * @return \OpenAPI\Client\Model\DepartmentObject|null
+     * @return \PeopleHR\Model\DepartmentObject|null
      */
     public function getDepartment()
     {
@@ -996,7 +996,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets department
      *
-     * @param \OpenAPI\Client\Model\DepartmentObject|null $department Department name of employee
+     * @param \PeopleHR\Model\DepartmentObject|null $department Department name of employee
      *
      * @return self
      */
@@ -1013,7 +1013,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets department_effective_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate|null
      */
     public function getDepartmentEffectiveDate()
     {
@@ -1023,7 +1023,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets department_effective_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate|null $department_effective_date department_effective_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerDepartmentEffectiveDate|null $department_effective_date department_effective_date
      *
      * @return self
      */
@@ -1040,7 +1040,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets job_role_change_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerJobRoleChangeDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerJobRoleChangeDate|null
      */
     public function getJobRoleChangeDate()
     {
@@ -1050,7 +1050,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets job_role_change_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerJobRoleChangeDate|null $job_role_change_date job_role_change_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerJobRoleChangeDate|null $job_role_change_date job_role_change_date
      *
      * @return self
      */
@@ -1067,7 +1067,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets reports_to
      *
-     * @return \OpenAPI\Client\Model\ReportsToObject|null
+     * @return \PeopleHR\Model\ReportsToObject|null
      */
     public function getReportsTo()
     {
@@ -1077,7 +1077,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets reports_to
      *
-     * @param \OpenAPI\Client\Model\ReportsToObject|null $reports_to Reports to value
+     * @param \PeopleHR\Model\ReportsToObject|null $reports_to Reports to value
      *
      * @return self
      */
@@ -1094,7 +1094,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets reports_to_effective_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEffectiveDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEffectiveDate|null
      */
     public function getReportsToEffectiveDate()
     {
@@ -1104,7 +1104,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets reports_to_effective_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEffectiveDate|null $reports_to_effective_date reports_to_effective_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEffectiveDate|null $reports_to_effective_date reports_to_effective_date
      *
      * @return self
      */
@@ -1121,7 +1121,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets reports_to_employee_id
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmployeeId|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmployeeId|null
      */
     public function getReportsToEmployeeId()
     {
@@ -1131,7 +1131,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets reports_to_employee_id
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmployeeId|null $reports_to_employee_id reports_to_employee_id
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmployeeId|null $reports_to_employee_id reports_to_employee_id
      *
      * @return self
      */
@@ -1148,7 +1148,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets reports_to_email_address
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmailAddress|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmailAddress|null
      */
     public function getReportsToEmailAddress()
     {
@@ -1158,7 +1158,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets reports_to_email_address
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerReportsToEmailAddress|null $reports_to_email_address reports_to_email_address
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerReportsToEmailAddress|null $reports_to_email_address reports_to_email_address
      *
      * @return self
      */
@@ -1175,7 +1175,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets nis_number
      *
-     * @return \OpenAPI\Client\Model\NISNumberObject|null
+     * @return \PeopleHR\Model\NISNumberObject|null
      */
     public function getNisNumber()
     {
@@ -1185,7 +1185,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets nis_number
      *
-     * @param \OpenAPI\Client\Model\NISNumberObject|null $nis_number NIS number value
+     * @param \PeopleHR\Model\NISNumberObject|null $nis_number NIS number value
      *
      * @return self
      */
@@ -1202,7 +1202,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets nationality
      *
-     * @return \OpenAPI\Client\Model\NationalityObject|null
+     * @return \PeopleHR\Model\NationalityObject|null
      */
     public function getNationality()
     {
@@ -1212,7 +1212,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets nationality
      *
-     * @param \OpenAPI\Client\Model\NationalityObject|null $nationality Nationality value
+     * @param \PeopleHR\Model\NationalityObject|null $nationality Nationality value
      *
      * @return self
      */
@@ -1229,7 +1229,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets employment_type
      *
-     * @return \OpenAPI\Client\Model\EmploymentTypeObject|null
+     * @return \PeopleHR\Model\EmploymentTypeObject|null
      */
     public function getEmploymentType()
     {
@@ -1239,7 +1239,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets employment_type
      *
-     * @param \OpenAPI\Client\Model\EmploymentTypeObject|null $employment_type Employment type value
+     * @param \PeopleHR\Model\EmploymentTypeObject|null $employment_type Employment type value
      *
      * @return self
      */
@@ -1256,7 +1256,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets employment_type_effective_date
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate|null
      */
     public function getEmploymentTypeEffectiveDate()
     {
@@ -1266,7 +1266,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets employment_type_effective_date
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate|null $employment_type_effective_date employment_type_effective_date
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerEmploymentTypeEffectiveDate|null $employment_type_effective_date employment_type_effective_date
      *
      * @return self
      */
@@ -1283,7 +1283,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets employee_status
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerEmployeeStatus|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerEmployeeStatus|null
      */
     public function getEmployeeStatus()
     {
@@ -1293,7 +1293,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets employee_status
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerEmployeeStatus|null $employee_status employee_status
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerEmployeeStatus|null $employee_status employee_status
      *
      * @return self
      */
@@ -1310,7 +1310,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets holiday_allowance_days
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceDays|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceDays|null
      */
     public function getHolidayAllowanceDays()
     {
@@ -1320,7 +1320,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets holiday_allowance_days
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceDays|null $holiday_allowance_days holiday_allowance_days
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceDays|null $holiday_allowance_days holiday_allowance_days
      *
      * @return self
      */
@@ -1337,7 +1337,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets holiday_allowance_mins
      *
-     * @return \OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceMins|null
+     * @return \PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceMins|null
      */
     public function getHolidayAllowanceMins()
     {
@@ -1347,7 +1347,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets holiday_allowance_mins
      *
-     * @param \OpenAPI\Client\Model\Result1GetList5ArrayInnerHolidayAllowanceMins|null $holiday_allowance_mins holiday_allowance_mins
+     * @param \PeopleHR\Model\Result1GetList5ArrayInnerHolidayAllowanceMins|null $holiday_allowance_mins holiday_allowance_mins
      *
      * @return self
      */
@@ -1364,7 +1364,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets notice_period
      *
-     * @return \OpenAPI\Client\Model\NoticePeriodObject|null
+     * @return \PeopleHR\Model\NoticePeriodObject|null
      */
     public function getNoticePeriod()
     {
@@ -1374,7 +1374,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets notice_period
      *
-     * @param \OpenAPI\Client\Model\NoticePeriodObject|null $notice_period Notice period value
+     * @param \PeopleHR\Model\NoticePeriodObject|null $notice_period Notice period value
      *
      * @return self
      */
@@ -1391,7 +1391,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets probation_end_date
      *
-     * @return \OpenAPI\Client\Model\ProbationEndDateObject|null
+     * @return \PeopleHR\Model\ProbationEndDateObject|null
      */
     public function getProbationEndDate()
     {
@@ -1401,7 +1401,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets probation_end_date
      *
-     * @param \OpenAPI\Client\Model\ProbationEndDateObject|null $probation_end_date Probation end date value
+     * @param \PeopleHR\Model\ProbationEndDateObject|null $probation_end_date Probation end date value
      *
      * @return self
      */
@@ -1418,7 +1418,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets gender
      *
-     * @return \OpenAPI\Client\Model\GenderObject|null
+     * @return \PeopleHR\Model\GenderObject|null
      */
     public function getGender()
     {
@@ -1428,7 +1428,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets gender
      *
-     * @param \OpenAPI\Client\Model\GenderObject|null $gender Gender value
+     * @param \PeopleHR\Model\GenderObject|null $gender Gender value
      *
      * @return self
      */
@@ -1445,7 +1445,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets contact_detail
      *
-     * @return \OpenAPI\Client\Model\ContactDetailObject|null
+     * @return \PeopleHR\Model\ContactDetailObject|null
      */
     public function getContactDetail()
     {
@@ -1455,7 +1455,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets contact_detail
      *
-     * @param \OpenAPI\Client\Model\ContactDetailObject|null $contact_detail Contact detail value
+     * @param \PeopleHR\Model\ContactDetailObject|null $contact_detail Contact detail value
      *
      * @return self
      */
@@ -1472,7 +1472,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets other_contact
      *
-     * @return \OpenAPI\Client\Model\OtherContactObject|null
+     * @return \PeopleHR\Model\OtherContactObject|null
      */
     public function getOtherContact()
     {
@@ -1482,7 +1482,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets other_contact
      *
-     * @param \OpenAPI\Client\Model\OtherContactObject|null $other_contact Other Contact detail value
+     * @param \PeopleHR\Model\OtherContactObject|null $other_contact Other Contact detail value
      *
      * @return self
      */
@@ -1499,7 +1499,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets right_to_work
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObject|null
+     * @return \PeopleHR\Model\RightToWorkObject|null
      */
     public function getRightToWork()
     {
@@ -1509,7 +1509,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets right_to_work
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObject|null $right_to_work Right to work value
+     * @param \PeopleHR\Model\RightToWorkObject|null $right_to_work Right to work value
      *
      * @return self
      */
@@ -1526,7 +1526,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets background_detail
      *
-     * @return \OpenAPI\Client\Model\BackgroundDetailObject|null
+     * @return \PeopleHR\Model\BackgroundDetailObject|null
      */
     public function getBackgroundDetail()
     {
@@ -1536,7 +1536,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets background_detail
      *
-     * @param \OpenAPI\Client\Model\BackgroundDetailObject|null $background_detail Background detail value
+     * @param \PeopleHR\Model\BackgroundDetailObject|null $background_detail Background detail value
      *
      * @return self
      */
@@ -1553,7 +1553,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets bank_detail
      *
-     * @return \OpenAPI\Client\Model\BankDetailObject|null
+     * @return \PeopleHR\Model\BankDetailObject|null
      */
     public function getBankDetail()
     {
@@ -1563,7 +1563,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets bank_detail
      *
-     * @param \OpenAPI\Client\Model\BankDetailObject|null $bank_detail Bank detail value
+     * @param \PeopleHR\Model\BankDetailObject|null $bank_detail Bank detail value
      *
      * @return self
      */
@@ -1580,7 +1580,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets employment_detail
      *
-     * @return \OpenAPI\Client\Model\EmploymentDetailObject|null
+     * @return \PeopleHR\Model\EmploymentDetailObject|null
      */
     public function getEmploymentDetail()
     {
@@ -1590,7 +1590,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets employment_detail
      *
-     * @param \OpenAPI\Client\Model\EmploymentDetailObject|null $employment_detail Employment detail value
+     * @param \PeopleHR\Model\EmploymentDetailObject|null $employment_detail Employment detail value
      *
      * @return self
      */
@@ -1823,7 +1823,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets lst_field_history_jobrole
      *
-     * @return \OpenAPI\Client\Model\LstFieldHistoryJobrole|null
+     * @return \PeopleHR\Model\LstFieldHistoryJobrole|null
      */
     public function getLstFieldHistoryJobrole()
     {
@@ -1833,7 +1833,7 @@ class Result1GetList5ArrayInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets lst_field_history_jobrole
      *
-     * @param \OpenAPI\Client\Model\LstFieldHistoryJobrole|null $lst_field_history_jobrole list of Field history job role
+     * @param \PeopleHR\Model\LstFieldHistoryJobrole|null $lst_field_history_jobrole list of Field history job role
      *
      * @return self
      */

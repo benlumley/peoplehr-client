@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultForGetCPDByEmployeeIdInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,8 +67,8 @@ class ResultForGetCPDByEmployeeIdInner implements ModelInterface, ArrayAccess, \
         'hours_required' => 'int',
         'hours_accredited' => 'int',
         'notes' => 'string',
-        'customfields' => '\OpenAPI\Client\Model\CustomFieldsArrayForGetDetailInner[]',
-        'files' => '\OpenAPI\Client\Model\FilesArrayForGetDetailInner[]'
+        'customfields' => '\PeopleHR\Model\CustomFieldsArrayForGetDetailInner[]',
+        'files' => '\PeopleHR\Model\FilesArrayForGetDetailInner[]'
     ];
 
     /**
@@ -606,7 +606,7 @@ class ResultForGetCPDByEmployeeIdInner implements ModelInterface, ArrayAccess, \
     /**
      * Gets customfields
      *
-     * @return \OpenAPI\Client\Model\CustomFieldsArrayForGetDetailInner[]|null
+     * @return \PeopleHR\Model\CustomFieldsArrayForGetDetailInner[]|null
      */
     public function getCustomfields()
     {
@@ -616,7 +616,7 @@ class ResultForGetCPDByEmployeeIdInner implements ModelInterface, ArrayAccess, \
     /**
      * Sets customfields
      *
-     * @param \OpenAPI\Client\Model\CustomFieldsArrayForGetDetailInner[]|null $customfields Customfields for get details
+     * @param \PeopleHR\Model\CustomFieldsArrayForGetDetailInner[]|null $customfields Customfields for get details
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class ResultForGetCPDByEmployeeIdInner implements ModelInterface, ArrayAccess, \
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\FilesArrayForGetDetailInner[]|null
+     * @return \PeopleHR\Model\FilesArrayForGetDetailInner[]|null
      */
     public function getFiles()
     {
@@ -643,7 +643,7 @@ class ResultForGetCPDByEmployeeIdInner implements ModelInterface, ArrayAccess, \
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\FilesArrayForGetDetailInner[]|null $files Files for get details
+     * @param \PeopleHR\Model\FilesArrayForGetDetailInner[]|null $files Files for get details
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\HistoryApi
+# PeopleHR\HistoryApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `historyGetHistoryByEmployeeIdAndFieldNamePost()`
 
 ```php
-historyGetHistoryByEmployeeIdAndFieldNamePost($body): \OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName
+historyGetHistoryByEmployeeIdAndFieldNamePost($body): \PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName
 ```
 
 Get History By EmployeeId And FieldName
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HistoryApi(
+$apiInstance = new PeopleHR\Api\HistoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter(); // \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter
+$body = new \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter(); // \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter
 
 try {
     $result = $apiInstance->historyGetHistoryByEmployeeIdAndFieldNamePost($body);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter**](../Model/GetHistoryByEmployeeIdAndFieldNameParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter**](../Model/GetHistoryByEmployeeIdAndFieldNameParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName**](../Model/ErrorForGetHistoryByEmployeeIdAndFieldName.md)
+[**\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName**](../Model/ErrorForGetHistoryByEmployeeIdAndFieldName.md)
 
 ### Authorization
 

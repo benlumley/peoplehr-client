@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeApi
+# PeopleHR\EmployeeApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -17,7 +17,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeAddEmployeeImagePost()`
 
 ```php
-employeeAddEmployeeImagePost($body): \OpenAPI\Client\Model\ErrorForAddEmployeeImageById
+employeeAddEmployeeImagePost($body): \PeopleHR\Model\ErrorForAddEmployeeImageById
 ```
 
 Add Employee Image By Id
@@ -32,12 +32,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddEmployeeImageById2(); // \OpenAPI\Client\Model\AddEmployeeImageById2
+$body = new \PeopleHR\Model\AddEmployeeImageById2(); // \PeopleHR\Model\AddEmployeeImageById2
 
 try {
     $result = $apiInstance->employeeAddEmployeeImagePost($body);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddEmployeeImageById2**](../Model/AddEmployeeImageById2.md)|  | |
+| **body** | [**\PeopleHR\Model\AddEmployeeImageById2**](../Model/AddEmployeeImageById2.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddEmployeeImageById**](../Model/ErrorForAddEmployeeImageById.md)
+[**\PeopleHR\Model\ErrorForAddEmployeeImageById**](../Model/ErrorForAddEmployeeImageById.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `employeeCheckAuthenticationPost()`
 
 ```php
-employeeCheckAuthenticationPost($body): \OpenAPI\Client\Model\CheckAuthenticationResult
+employeeCheckAuthenticationPost($body): \PeopleHR\Model\CheckAuthenticationResult
 ```
 
 Check Authentication
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CheckAuthentication2(); // \OpenAPI\Client\Model\CheckAuthentication2
+$body = new \PeopleHR\Model\CheckAuthentication2(); // \PeopleHR\Model\CheckAuthentication2
 
 try {
     $result = $apiInstance->employeeCheckAuthenticationPost($body);
@@ -107,11 +107,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CheckAuthentication2**](../Model/CheckAuthentication2.md)|  | |
+| **body** | [**\PeopleHR\Model\CheckAuthentication2**](../Model/CheckAuthentication2.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckAuthenticationResult**](../Model/CheckAuthenticationResult.md)
+[**\PeopleHR\Model\CheckAuthenticationResult**](../Model/CheckAuthenticationResult.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 ## `employeeCreateNewEmployeePost()`
 
 ```php
-employeeCreateNewEmployeePost($body): \OpenAPI\Client\Model\ErrorForCreateNewEmployeeDetail
+employeeCreateNewEmployeePost($body): \PeopleHR\Model\ErrorForCreateNewEmployeeDetail
 ```
 
 Create New Employee
@@ -144,12 +144,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateEmployeeDetailParameter(); // \OpenAPI\Client\Model\CreateEmployeeDetailParameter
+$body = new \PeopleHR\Model\CreateEmployeeDetailParameter(); // \PeopleHR\Model\CreateEmployeeDetailParameter
 
 try {
     $result = $apiInstance->employeeCreateNewEmployeePost($body);
@@ -163,11 +163,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateEmployeeDetailParameter**](../Model/CreateEmployeeDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateEmployeeDetailParameter**](../Model/CreateEmployeeDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateNewEmployeeDetail**](../Model/ErrorForCreateNewEmployeeDetail.md)
+[**\PeopleHR\Model\ErrorForCreateNewEmployeeDetail**](../Model/ErrorForCreateNewEmployeeDetail.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 ## `employeeGetAllEmployeeDetailPost()`
 
 ```php
-employeeGetAllEmployeeDetailPost($body): \OpenAPI\Client\Model\ErrorForGetAllEmployeeDetail
+employeeGetAllEmployeeDetailPost($body): \PeopleHR\Model\ErrorForGetAllEmployeeDetail
 ```
 
 Get All Employee Detail
@@ -200,12 +200,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllEmployeeDetailParameter(); // \OpenAPI\Client\Model\GetAllEmployeeDetailParameter
+$body = new \PeopleHR\Model\GetAllEmployeeDetailParameter(); // \PeopleHR\Model\GetAllEmployeeDetailParameter
 
 try {
     $result = $apiInstance->employeeGetAllEmployeeDetailPost($body);
@@ -219,11 +219,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllEmployeeDetailParameter**](../Model/GetAllEmployeeDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllEmployeeDetailParameter**](../Model/GetAllEmployeeDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllEmployeeDetail**](../Model/ErrorForGetAllEmployeeDetail.md)
+[**\PeopleHR\Model\ErrorForGetAllEmployeeDetail**](../Model/ErrorForGetAllEmployeeDetail.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ No authorization required
 ## `employeeGetEmployeeDetailByIdPost()`
 
 ```php
-employeeGetEmployeeDetailByIdPost($body): \OpenAPI\Client\Model\ErrorForGetEmployeeDetailById
+employeeGetEmployeeDetailByIdPost($body): \PeopleHR\Model\ErrorForGetEmployeeDetailById
 ```
 
 Get Employee Detail By Id
@@ -256,12 +256,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetEmployeeDetailByIdParameter(); // \OpenAPI\Client\Model\GetEmployeeDetailByIdParameter
+$body = new \PeopleHR\Model\GetEmployeeDetailByIdParameter(); // \PeopleHR\Model\GetEmployeeDetailByIdParameter
 
 try {
     $result = $apiInstance->employeeGetEmployeeDetailByIdPost($body);
@@ -275,11 +275,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetEmployeeDetailByIdParameter**](../Model/GetEmployeeDetailByIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetEmployeeDetailByIdParameter**](../Model/GetEmployeeDetailByIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetEmployeeDetailById**](../Model/ErrorForGetEmployeeDetailById.md)
+[**\PeopleHR\Model\ErrorForGetEmployeeDetailById**](../Model/ErrorForGetEmployeeDetailById.md)
 
 ### Authorization
 
@@ -297,7 +297,7 @@ No authorization required
 ## `employeeMarkAsLeaverByIdPost()`
 
 ```php
-employeeMarkAsLeaverByIdPost($body): \OpenAPI\Client\Model\ErrorForMarkAsLeaverById
+employeeMarkAsLeaverByIdPost($body): \PeopleHR\Model\ErrorForMarkAsLeaverById
 ```
 
 Mark As Leaver By Id
@@ -312,12 +312,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\MarkAsLeaverById2(); // \OpenAPI\Client\Model\MarkAsLeaverById2
+$body = new \PeopleHR\Model\MarkAsLeaverById2(); // \PeopleHR\Model\MarkAsLeaverById2
 
 try {
     $result = $apiInstance->employeeMarkAsLeaverByIdPost($body);
@@ -331,11 +331,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\MarkAsLeaverById2**](../Model/MarkAsLeaverById2.md)|  | |
+| **body** | [**\PeopleHR\Model\MarkAsLeaverById2**](../Model/MarkAsLeaverById2.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForMarkAsLeaverById**](../Model/ErrorForMarkAsLeaverById.md)
+[**\PeopleHR\Model\ErrorForMarkAsLeaverById**](../Model/ErrorForMarkAsLeaverById.md)
 
 ### Authorization
 
@@ -353,7 +353,7 @@ No authorization required
 ## `employeeUpdateEmployeeDetailPost()`
 
 ```php
-employeeUpdateEmployeeDetailPost($body): \OpenAPI\Client\Model\ErrorForUpdateEmployeeDetail
+employeeUpdateEmployeeDetailPost($body): \PeopleHR\Model\ErrorForUpdateEmployeeDetail
 ```
 
 Update Employee Details
@@ -368,12 +368,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateEmployeeDetail3(); // \OpenAPI\Client\Model\UpdateEmployeeDetail3
+$body = new \PeopleHR\Model\UpdateEmployeeDetail3(); // \PeopleHR\Model\UpdateEmployeeDetail3
 
 try {
     $result = $apiInstance->employeeUpdateEmployeeDetailPost($body);
@@ -387,11 +387,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateEmployeeDetail3**](../Model/UpdateEmployeeDetail3.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateEmployeeDetail3**](../Model/UpdateEmployeeDetail3.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateEmployeeDetail**](../Model/ErrorForUpdateEmployeeDetail.md)
+[**\PeopleHR\Model\ErrorForUpdateEmployeeDetail**](../Model/ErrorForUpdateEmployeeDetail.md)
 
 ### Authorization
 
@@ -409,7 +409,7 @@ No authorization required
 ## `employeeUpdateEmployeeIdPost()`
 
 ```php
-employeeUpdateEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForUpdateEmployeeId
+employeeUpdateEmployeeIdPost($body): \PeopleHR\Model\ErrorForUpdateEmployeeId
 ```
 
 Update Employee Id
@@ -424,12 +424,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeApi(
+$apiInstance = new PeopleHR\Api\EmployeeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateEmployeeId2(); // \OpenAPI\Client\Model\UpdateEmployeeId2
+$body = new \PeopleHR\Model\UpdateEmployeeId2(); // \PeopleHR\Model\UpdateEmployeeId2
 
 try {
     $result = $apiInstance->employeeUpdateEmployeeIdPost($body);
@@ -443,11 +443,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateEmployeeId2**](../Model/UpdateEmployeeId2.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateEmployeeId2**](../Model/UpdateEmployeeId2.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateEmployeeId**](../Model/ErrorForUpdateEmployeeId.md)
+[**\PeopleHR\Model\ErrorForUpdateEmployeeId**](../Model/ErrorForUpdateEmployeeId.md)
 
 ### Authorization
 

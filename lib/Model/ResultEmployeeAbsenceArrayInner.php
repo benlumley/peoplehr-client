@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultEmployeeAbsenceArrayInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,7 +68,7 @@ class ResultEmployeeAbsenceArrayInner implements ModelInterface, ArrayAccess, \J
         'medical_certificate_type' => 'int',
         'medical_certificate_received_date' => 'string',
         'reason' => 'string',
-        'comments' => '\OpenAPI\Client\Model\CommentsArrayInner[]',
+        'comments' => '\PeopleHR\Model\CommentsArrayInner[]',
         'absence_paid_status' => 'int',
         'emergency_leave' => 'bool'
     ];
@@ -647,7 +647,7 @@ class ResultEmployeeAbsenceArrayInner implements ModelInterface, ArrayAccess, \J
     /**
      * Gets comments
      *
-     * @return \OpenAPI\Client\Model\CommentsArrayInner[]|null
+     * @return \PeopleHR\Model\CommentsArrayInner[]|null
      */
     public function getComments()
     {
@@ -657,7 +657,7 @@ class ResultEmployeeAbsenceArrayInner implements ModelInterface, ArrayAccess, \J
     /**
      * Sets comments
      *
-     * @param \OpenAPI\Client\Model\CommentsArrayInner[]|null $comments Comments Array  list
+     * @param \PeopleHR\Model\CommentsArrayInner[]|null $comments Comments Array  list
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmailTransactionApi
+# PeopleHR\EmailTransactionApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `emailTransactionEmailInboxPost()`
 
 ```php
-emailTransactionEmailInboxPost($body): \OpenAPI\Client\Model\ErrorForEmailInbox
+emailTransactionEmailInboxPost($body): \PeopleHR\Model\ErrorForEmailInbox
 ```
 
 Email Inbox
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmailTransactionApi(
+$apiInstance = new PeopleHR\Api\EmailTransactionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\EmailInboxParameter(); // \OpenAPI\Client\Model\EmailInboxParameter
+$body = new \PeopleHR\Model\EmailInboxParameter(); // \PeopleHR\Model\EmailInboxParameter
 
 try {
     $result = $apiInstance->emailTransactionEmailInboxPost($body);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\EmailInboxParameter**](../Model/EmailInboxParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\EmailInboxParameter**](../Model/EmailInboxParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEmailInbox**](../Model/ErrorForEmailInbox.md)
+[**\PeopleHR\Model\ErrorForEmailInbox**](../Model/ErrorForEmailInbox.md)
 
 ### Authorization
 

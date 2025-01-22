@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * HolidayEntitlementApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class HolidayEntitlementApi
      *
      * Get Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetHolidayEntitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\GetHolidayEntitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetHolidayEntitlement
+     * @return \PeopleHR\Model\ErrorForGetHolidayEntitlement
      */
     public function holidayEntitlementGetHolidayEntitlementPost($body, string $contentType = self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'][0])
     {
@@ -155,12 +155,12 @@ class HolidayEntitlementApi
      *
      * Get Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function holidayEntitlementGetHolidayEntitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'][0])
     {
@@ -191,11 +191,11 @@ class HolidayEntitlementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetHolidayEntitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetHolidayEntitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class HolidayEntitlementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetHolidayEntitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class HolidayEntitlementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement';
+            $returnType = '\PeopleHR\Model\ErrorForGetHolidayEntitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class HolidayEntitlementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement',
+                        '\PeopleHR\Model\ErrorForGetHolidayEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class HolidayEntitlementApi
      *
      * Get Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class HolidayEntitlementApi
      *
      * Get Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class HolidayEntitlementApi
      */
     public function holidayEntitlementGetHolidayEntitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement';
+        $returnType = '\PeopleHR\Model\ErrorForGetHolidayEntitlement';
         $request = $this->holidayEntitlementGetHolidayEntitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class HolidayEntitlementApi
     /**
      * Create request for operation 'holidayEntitlementGetHolidayEntitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\GetHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class HolidayEntitlementApi
      *
      * Get Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\GetNextYearHolidayEntitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement
+     * @return \PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement
      */
     public function holidayEntitlementGetNextYearHolidayEntitlementPost($body, string $contentType = self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'][0])
     {
@@ -462,12 +462,12 @@ class HolidayEntitlementApi
      *
      * Get Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function holidayEntitlementGetNextYearHolidayEntitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'][0])
     {
@@ -498,11 +498,11 @@ class HolidayEntitlementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class HolidayEntitlementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class HolidayEntitlementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement';
+            $returnType = '\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class HolidayEntitlementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement',
+                        '\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class HolidayEntitlementApi
      *
      * Get Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class HolidayEntitlementApi
      *
      * Get Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class HolidayEntitlementApi
      */
     public function holidayEntitlementGetNextYearHolidayEntitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement';
+        $returnType = '\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement';
         $request = $this->holidayEntitlementGetNextYearHolidayEntitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class HolidayEntitlementApi
     /**
      * Create request for operation 'holidayEntitlementGetNextYearHolidayEntitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementGetNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class HolidayEntitlementApi
      *
      * Update Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateHolidayEntitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement
+     * @return \PeopleHR\Model\ErrorForUpdateHolidayEntitlement
      */
     public function holidayEntitlementUpdateHolidayEntitlementPost($body, string $contentType = self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'][0])
     {
@@ -769,12 +769,12 @@ class HolidayEntitlementApi
      *
      * Update Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function holidayEntitlementUpdateHolidayEntitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'][0])
     {
@@ -805,11 +805,11 @@ class HolidayEntitlementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateHolidayEntitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateHolidayEntitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class HolidayEntitlementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateHolidayEntitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class HolidayEntitlementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateHolidayEntitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class HolidayEntitlementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement',
+                        '\PeopleHR\Model\ErrorForUpdateHolidayEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class HolidayEntitlementApi
      *
      * Update Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class HolidayEntitlementApi
      *
      * Update Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class HolidayEntitlementApi
      */
     public function holidayEntitlementUpdateHolidayEntitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateHolidayEntitlement';
         $request = $this->holidayEntitlementUpdateHolidayEntitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class HolidayEntitlementApi
     /**
      * Create request for operation 'holidayEntitlementUpdateHolidayEntitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class HolidayEntitlementApi
      *
      * Update Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement
+     * @return \PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement
      */
     public function holidayEntitlementUpdateNextYearHolidayEntitlementPost($body, string $contentType = self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'][0])
     {
@@ -1076,12 +1076,12 @@ class HolidayEntitlementApi
      *
      * Update Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function holidayEntitlementUpdateNextYearHolidayEntitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'][0])
     {
@@ -1112,11 +1112,11 @@ class HolidayEntitlementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class HolidayEntitlementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class HolidayEntitlementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class HolidayEntitlementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement',
+                        '\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class HolidayEntitlementApi
      *
      * Update Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class HolidayEntitlementApi
      *
      * Update Next Year Holiday Entitlement
      *
-     * @param  \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class HolidayEntitlementApi
      */
     public function holidayEntitlementUpdateNextYearHolidayEntitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement';
         $request = $this->holidayEntitlementUpdateNextYearHolidayEntitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class HolidayEntitlementApi
     /**
      * Create request for operation 'holidayEntitlementUpdateNextYearHolidayEntitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['holidayEntitlementUpdateNextYearHolidayEntitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

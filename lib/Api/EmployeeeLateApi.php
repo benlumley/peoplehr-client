@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeeLateApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class EmployeeeLateApi
      *
      * Add new late
      *
-     * @param  \OpenAPI\Client\Model\AddNewLateParameters $body body (required)
+     * @param  \PeopleHR\Model\AddNewLateParameters $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateAddNewLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewLate
+     * @return \PeopleHR\Model\ErrorForAddNewLate
      */
     public function employeeeLateAddNewLatePost($body, string $contentType = self::contentTypes['employeeeLateAddNewLatePost'][0])
     {
@@ -155,12 +155,12 @@ class EmployeeeLateApi
      *
      * Add new late
      *
-     * @param  \OpenAPI\Client\Model\AddNewLateParameters $body (required)
+     * @param  \PeopleHR\Model\AddNewLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateAddNewLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewLate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewLate, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeeLateAddNewLatePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateAddNewLatePost'][0])
     {
@@ -191,11 +191,11 @@ class EmployeeeLateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewLate' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewLate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewLate' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewLate' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class EmployeeeLateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewLate', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewLate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class EmployeeeLateApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewLate';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewLate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class EmployeeeLateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewLate',
+                        '\PeopleHR\Model\ErrorForAddNewLate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class EmployeeeLateApi
      *
      * Add new late
      *
-     * @param  \OpenAPI\Client\Model\AddNewLateParameters $body (required)
+     * @param  \PeopleHR\Model\AddNewLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateAddNewLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class EmployeeeLateApi
      *
      * Add new late
      *
-     * @param  \OpenAPI\Client\Model\AddNewLateParameters $body (required)
+     * @param  \PeopleHR\Model\AddNewLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateAddNewLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class EmployeeeLateApi
      */
     public function employeeeLateAddNewLatePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateAddNewLatePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewLate';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewLate';
         $request = $this->employeeeLateAddNewLatePostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class EmployeeeLateApi
     /**
      * Create request for operation 'employeeeLateAddNewLatePost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewLateParameters $body (required)
+     * @param  \PeopleHR\Model\AddNewLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateAddNewLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class EmployeeeLateApi
      *
      * Delete Late
      *
-     * @param  \OpenAPI\Client\Model\EmployeedeletelateParameter $body body (required)
+     * @param  \PeopleHR\Model\EmployeedeletelateParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateDeleteLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorFordeletelate
+     * @return \PeopleHR\Model\ErrorFordeletelate
      */
     public function employeeeLateDeleteLatePost($body, string $contentType = self::contentTypes['employeeeLateDeleteLatePost'][0])
     {
@@ -462,12 +462,12 @@ class EmployeeeLateApi
      *
      * Delete Late
      *
-     * @param  \OpenAPI\Client\Model\EmployeedeletelateParameter $body (required)
+     * @param  \PeopleHR\Model\EmployeedeletelateParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateDeleteLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorFordeletelate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorFordeletelate, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeeLateDeleteLatePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateDeleteLatePost'][0])
     {
@@ -498,11 +498,11 @@ class EmployeeeLateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorFordeletelate' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorFordeletelate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorFordeletelate' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorFordeletelate' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class EmployeeeLateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorFordeletelate', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorFordeletelate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class EmployeeeLateApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorFordeletelate';
+            $returnType = '\PeopleHR\Model\ErrorFordeletelate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class EmployeeeLateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorFordeletelate',
+                        '\PeopleHR\Model\ErrorFordeletelate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class EmployeeeLateApi
      *
      * Delete Late
      *
-     * @param  \OpenAPI\Client\Model\EmployeedeletelateParameter $body (required)
+     * @param  \PeopleHR\Model\EmployeedeletelateParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateDeleteLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class EmployeeeLateApi
      *
      * Delete Late
      *
-     * @param  \OpenAPI\Client\Model\EmployeedeletelateParameter $body (required)
+     * @param  \PeopleHR\Model\EmployeedeletelateParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateDeleteLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class EmployeeeLateApi
      */
     public function employeeeLateDeleteLatePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateDeleteLatePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorFordeletelate';
+        $returnType = '\PeopleHR\Model\ErrorFordeletelate';
         $request = $this->employeeeLateDeleteLatePostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class EmployeeeLateApi
     /**
      * Create request for operation 'employeeeLateDeleteLatePost'
      *
-     * @param  \OpenAPI\Client\Model\EmployeedeletelateParameter $body (required)
+     * @param  \PeopleHR\Model\EmployeedeletelateParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateDeleteLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class EmployeeeLateApi
      *
      * Get late by employeeId
      *
-     * @param  \OpenAPI\Client\Model\GetLateByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetLateByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateGetLateByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetLateByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetLateByEmployeeId
      */
     public function employeeeLateGetLateByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeeLateGetLateByEmployeeIdPost'][0])
     {
@@ -769,12 +769,12 @@ class EmployeeeLateApi
      *
      * Get late by employeeId
      *
-     * @param  \OpenAPI\Client\Model\GetLateByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetLateByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateGetLateByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetLateByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetLateByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeeLateGetLateByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateGetLateByEmployeeIdPost'][0])
     {
@@ -805,11 +805,11 @@ class EmployeeeLateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetLateByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetLateByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class EmployeeeLateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetLateByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class EmployeeeLateApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetLateByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class EmployeeeLateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetLateByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class EmployeeeLateApi
      *
      * Get late by employeeId
      *
-     * @param  \OpenAPI\Client\Model\GetLateByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetLateByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateGetLateByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class EmployeeeLateApi
      *
      * Get late by employeeId
      *
-     * @param  \OpenAPI\Client\Model\GetLateByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetLateByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateGetLateByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class EmployeeeLateApi
      */
     public function employeeeLateGetLateByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateGetLateByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetLateByEmployeeId';
         $request = $this->employeeeLateGetLateByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class EmployeeeLateApi
     /**
      * Create request for operation 'employeeeLateGetLateByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetLateByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetLateByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateGetLateByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class EmployeeeLateApi
      *
      * Update Late
      *
-     * @param  \OpenAPI\Client\Model\UpdateLateParameters $body body (required)
+     * @param  \PeopleHR\Model\UpdateLateParameters $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateUpdateLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpadteLate
+     * @return \PeopleHR\Model\ErrorForUpadteLate
      */
     public function employeeeLateUpdateLatePost($body, string $contentType = self::contentTypes['employeeeLateUpdateLatePost'][0])
     {
@@ -1076,12 +1076,12 @@ class EmployeeeLateApi
      *
      * Update Late
      *
-     * @param  \OpenAPI\Client\Model\UpdateLateParameters $body (required)
+     * @param  \PeopleHR\Model\UpdateLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateUpdateLatePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpadteLate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpadteLate, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeeLateUpdateLatePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateUpdateLatePost'][0])
     {
@@ -1112,11 +1112,11 @@ class EmployeeeLateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpadteLate' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpadteLate' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpadteLate' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpadteLate' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class EmployeeeLateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpadteLate', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpadteLate', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class EmployeeeLateApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpadteLate';
+            $returnType = '\PeopleHR\Model\ErrorForUpadteLate';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class EmployeeeLateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpadteLate',
+                        '\PeopleHR\Model\ErrorForUpadteLate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class EmployeeeLateApi
      *
      * Update Late
      *
-     * @param  \OpenAPI\Client\Model\UpdateLateParameters $body (required)
+     * @param  \PeopleHR\Model\UpdateLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateUpdateLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class EmployeeeLateApi
      *
      * Update Late
      *
-     * @param  \OpenAPI\Client\Model\UpdateLateParameters $body (required)
+     * @param  \PeopleHR\Model\UpdateLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateUpdateLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class EmployeeeLateApi
      */
     public function employeeeLateUpdateLatePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeeLateUpdateLatePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpadteLate';
+        $returnType = '\PeopleHR\Model\ErrorForUpadteLate';
         $request = $this->employeeeLateUpdateLatePostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class EmployeeeLateApi
     /**
      * Create request for operation 'employeeeLateUpdateLatePost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateLateParameters $body (required)
+     * @param  \PeopleHR\Model\UpdateLateParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeeLateUpdateLatePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

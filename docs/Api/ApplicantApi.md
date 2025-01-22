@@ -1,4 +1,4 @@
-# OpenAPI\Client\ApplicantApi
+# PeopleHR\ApplicantApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `applicantCheckDuplicateApplicantPost()`
 
 ```php
-applicantCheckDuplicateApplicantPost($body): \OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant
+applicantCheckDuplicateApplicantPost($body): \PeopleHR\Model\ErrorForCheckDuplicateApplicant
 ```
 
 Check duplicate applicant
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicantApi(
+$apiInstance = new PeopleHR\Api\ApplicantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CheckDuplicateApplicantParameter(); // \OpenAPI\Client\Model\CheckDuplicateApplicantParameter
+$body = new \PeopleHR\Model\CheckDuplicateApplicantParameter(); // \PeopleHR\Model\CheckDuplicateApplicantParameter
 
 try {
     $result = $apiInstance->applicantCheckDuplicateApplicantPost($body);
@@ -46,11 +46,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CheckDuplicateApplicantParameter**](../Model/CheckDuplicateApplicantParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CheckDuplicateApplicantParameter**](../Model/CheckDuplicateApplicantParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant**](../Model/ErrorForCheckDuplicateApplicant.md)
+[**\PeopleHR\Model\ErrorForCheckDuplicateApplicant**](../Model/ErrorForCheckDuplicateApplicant.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `applicantCreateNewApplicantPost()`
 
 ```php
-applicantCreateNewApplicantPost($body): \OpenAPI\Client\Model\ErrorForCreateNewApplicant
+applicantCreateNewApplicantPost($body): \PeopleHR\Model\ErrorForCreateNewApplicant
 ```
 
 Create New Applicant
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicantApi(
+$apiInstance = new PeopleHR\Api\ApplicantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateApplicantDetailParameter(); // \OpenAPI\Client\Model\CreateApplicantDetailParameter
+$body = new \PeopleHR\Model\CreateApplicantDetailParameter(); // \PeopleHR\Model\CreateApplicantDetailParameter
 
 try {
     $result = $apiInstance->applicantCreateNewApplicantPost($body);
@@ -102,11 +102,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateApplicantDetailParameter**](../Model/CreateApplicantDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateApplicantDetailParameter**](../Model/CreateApplicantDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateNewApplicant**](../Model/ErrorForCreateNewApplicant.md)
+[**\PeopleHR\Model\ErrorForCreateNewApplicant**](../Model/ErrorForCreateNewApplicant.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `applicantUploadapplicantdocumentPost()`
 
 ```php
-applicantUploadapplicantdocumentPost($body): \OpenAPI\Client\Model\ErrorForuploadapplicantdocument
+applicantUploadapplicantdocumentPost($body): \PeopleHR\Model\ErrorForuploadapplicantdocument
 ```
 
 upload applicant document
@@ -139,12 +139,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ApplicantApi(
+$apiInstance = new PeopleHR\Api\ApplicantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UploadapplicantdocumentParameter(); // \OpenAPI\Client\Model\UploadapplicantdocumentParameter
+$body = new \PeopleHR\Model\UploadapplicantdocumentParameter(); // \PeopleHR\Model\UploadapplicantdocumentParameter
 
 try {
     $result = $apiInstance->applicantUploadapplicantdocumentPost($body);
@@ -158,11 +158,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UploadapplicantdocumentParameter**](../Model/UploadapplicantdocumentParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UploadapplicantdocumentParameter**](../Model/UploadapplicantdocumentParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForuploadapplicantdocument**](../Model/ErrorForuploadapplicantdocument.md)
+[**\PeopleHR\Model\ErrorForuploadapplicantdocument**](../Model/ErrorForuploadapplicantdocument.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * BackgroundDetailObject Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'check_type' => '\OpenAPI\Client\Model\BackgroundDetailObjectCheckType',
-        'completion_date' => '\OpenAPI\Client\Model\BackgroundDetailObjectCompletionDate',
-        'expiry_date' => '\OpenAPI\Client\Model\BackgroundDetailObjectExpiryDate',
-        'background_detail_comments' => '\OpenAPI\Client\Model\BackgroundDetailObjectBackgroundDetailComments'
+        'check_type' => '\PeopleHR\Model\BackgroundDetailObjectCheckType',
+        'completion_date' => '\PeopleHR\Model\BackgroundDetailObjectCompletionDate',
+        'expiry_date' => '\PeopleHR\Model\BackgroundDetailObjectExpiryDate',
+        'background_detail_comments' => '\PeopleHR\Model\BackgroundDetailObjectBackgroundDetailComments'
     ];
 
     /**
@@ -314,7 +314,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets check_type
      *
-     * @return \OpenAPI\Client\Model\BackgroundDetailObjectCheckType|null
+     * @return \PeopleHR\Model\BackgroundDetailObjectCheckType|null
      */
     public function getCheckType()
     {
@@ -324,7 +324,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets check_type
      *
-     * @param \OpenAPI\Client\Model\BackgroundDetailObjectCheckType|null $check_type check_type
+     * @param \PeopleHR\Model\BackgroundDetailObjectCheckType|null $check_type check_type
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets completion_date
      *
-     * @return \OpenAPI\Client\Model\BackgroundDetailObjectCompletionDate|null
+     * @return \PeopleHR\Model\BackgroundDetailObjectCompletionDate|null
      */
     public function getCompletionDate()
     {
@@ -351,7 +351,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets completion_date
      *
-     * @param \OpenAPI\Client\Model\BackgroundDetailObjectCompletionDate|null $completion_date completion_date
+     * @param \PeopleHR\Model\BackgroundDetailObjectCompletionDate|null $completion_date completion_date
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets expiry_date
      *
-     * @return \OpenAPI\Client\Model\BackgroundDetailObjectExpiryDate|null
+     * @return \PeopleHR\Model\BackgroundDetailObjectExpiryDate|null
      */
     public function getExpiryDate()
     {
@@ -378,7 +378,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets expiry_date
      *
-     * @param \OpenAPI\Client\Model\BackgroundDetailObjectExpiryDate|null $expiry_date expiry_date
+     * @param \PeopleHR\Model\BackgroundDetailObjectExpiryDate|null $expiry_date expiry_date
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets background_detail_comments
      *
-     * @return \OpenAPI\Client\Model\BackgroundDetailObjectBackgroundDetailComments|null
+     * @return \PeopleHR\Model\BackgroundDetailObjectBackgroundDetailComments|null
      */
     public function getBackgroundDetailComments()
     {
@@ -405,7 +405,7 @@ class BackgroundDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets background_detail_comments
      *
-     * @param \OpenAPI\Client\Model\BackgroundDetailObjectBackgroundDetailComments|null $background_detail_comments background_detail_comments
+     * @param \PeopleHR\Model\BackgroundDetailObjectBackgroundDetailComments|null $background_detail_comments background_detail_comments
      *
      * @return self
      */

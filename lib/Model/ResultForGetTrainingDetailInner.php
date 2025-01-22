@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultForGetTrainingDetailInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,7 +70,7 @@ class ResultForGetTrainingDetailInner implements ModelInterface, ArrayAccess, \J
         'provider' => 'string',
         'cost' => 'float',
         'note' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForGetTrainingDetailInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForGetTrainingDetailInner[]'
     ];
 
     /**
@@ -701,7 +701,7 @@ class ResultForGetTrainingDetailInner implements ModelInterface, ArrayAccess, \J
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForGetTrainingDetailInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForGetTrainingDetailInner[]|null
      */
     public function getCustomColumns()
     {
@@ -711,7 +711,7 @@ class ResultForGetTrainingDetailInner implements ModelInterface, ArrayAccess, \J
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForGetTrainingDetailInner[]|null $custom_columns CustomColumns Value
+     * @param \PeopleHR\Model\CustomColumnsForGetTrainingDetailInner[]|null $custom_columns CustomColumns Value
      *
      * @return self
      */

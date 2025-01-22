@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultGetByAppraisalIdObject Class Doc Comment
  *
  * @category Class
  * @description Result Array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class ResultGetByAppraisalIdObject implements ModelInterface, ArrayAccess, \Json
         'note' => 'string',
         'action_plan' => 'string',
         'objectives' => 'string',
-        'customfields' => '\OpenAPI\Client\Model\ArrayForGetByAppraisalIdArrayInner[]',
-        'files' => '\OpenAPI\Client\Model\ArrayForGetAppraisalByIdFileInner[]'
+        'customfields' => '\PeopleHR\Model\ArrayForGetByAppraisalIdArrayInner[]',
+        'files' => '\PeopleHR\Model\ArrayForGetAppraisalByIdFileInner[]'
     ];
 
     /**
@@ -505,7 +505,7 @@ class ResultGetByAppraisalIdObject implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets customfields
      *
-     * @return \OpenAPI\Client\Model\ArrayForGetByAppraisalIdArrayInner[]|null
+     * @return \PeopleHR\Model\ArrayForGetByAppraisalIdArrayInner[]|null
      */
     public function getCustomfields()
     {
@@ -515,7 +515,7 @@ class ResultGetByAppraisalIdObject implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets customfields
      *
-     * @param \OpenAPI\Client\Model\ArrayForGetByAppraisalIdArrayInner[]|null $customfields Custom fields value
+     * @param \PeopleHR\Model\ArrayForGetByAppraisalIdArrayInner[]|null $customfields Custom fields value
      *
      * @return self
      */
@@ -532,7 +532,7 @@ class ResultGetByAppraisalIdObject implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\ArrayForGetAppraisalByIdFileInner[]|null
+     * @return \PeopleHR\Model\ArrayForGetAppraisalByIdFileInner[]|null
      */
     public function getFiles()
     {
@@ -542,7 +542,7 @@ class ResultGetByAppraisalIdObject implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\ArrayForGetAppraisalByIdFileInner[]|null $files Files
+     * @param \PeopleHR\Model\ArrayForGetAppraisalByIdFileInner[]|null $files Files
      *
      * @return self
      */

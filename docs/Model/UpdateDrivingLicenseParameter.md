@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **license_type** | **string** | License type for update driving license | [optional]
 **expiry_date** | **\DateTime** | Expiry date for update driving license | [optional]
 **comments** | **string** | Comments for update driving license | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForEmployeeDrivingInner[]**](CustomColumnsForEmployeeDrivingInner.md) | Custom columns for update driving license | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForEmployeeDrivingInner[]**](AddFilesForEmployeeDrivingInner.md) | Add files for update driving license | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForEmployeeDrivingInner[]**](CustomColumnsForEmployeeDrivingInner.md) | Custom columns for update driving license | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForEmployeeDrivingInner[]**](AddFilesForEmployeeDrivingInner.md) | Add files for update driving license | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

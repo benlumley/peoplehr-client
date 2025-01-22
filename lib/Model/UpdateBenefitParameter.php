@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateBenefitParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,9 +66,9 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
         'date_awarded' => '\DateTime',
         'expiry_date' => '\DateTime',
         'value' => 'float',
-        'recover_on_termination' => '\OpenAPI\Client\Model\RecoverOnTermination',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsArrayForAddNewBenefitInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForUpdateBenefitInner[]'
+        'recover_on_termination' => '\PeopleHR\Model\RecoverOnTermination',
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsArrayForAddNewBenefitInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForUpdateBenefitInner[]'
     ];
 
     /**
@@ -616,7 +616,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets recover_on_termination
      *
-     * @return \OpenAPI\Client\Model\RecoverOnTermination
+     * @return \PeopleHR\Model\RecoverOnTermination
      */
     public function getRecoverOnTermination()
     {
@@ -626,7 +626,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets recover_on_termination
      *
-     * @param \OpenAPI\Client\Model\RecoverOnTermination $recover_on_termination RecoverOnTermination for update benefit
+     * @param \PeopleHR\Model\RecoverOnTermination $recover_on_termination RecoverOnTermination for update benefit
      *
      * @return self
      */
@@ -643,7 +643,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsArrayForAddNewBenefitInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsArrayForAddNewBenefitInner[]|null
      */
     public function getCustomColumns()
     {
@@ -653,7 +653,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsArrayForAddNewBenefitInner[]|null $custom_columns CustomColumns contain column name and column value
+     * @param \PeopleHR\Model\CustomColumnsArrayForAddNewBenefitInner[]|null $custom_columns CustomColumns contain column name and column value
      *
      * @return self
      */
@@ -670,7 +670,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForUpdateBenefitInner[]|null
+     * @return \PeopleHR\Model\AddFilesArrayForUpdateBenefitInner[]|null
      */
     public function getAddFiles()
     {
@@ -680,7 +680,7 @@ class UpdateBenefitParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForUpdateBenefitInner[]|null $add_files AddFiles contain file info.
+     * @param \PeopleHR\Model\AddFilesArrayForUpdateBenefitInner[]|null $add_files AddFiles contain file info.
      *
      * @return self
      */

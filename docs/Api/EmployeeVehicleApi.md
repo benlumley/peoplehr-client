@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeVehicleApi
+# PeopleHR\EmployeeVehicleApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeVehicleAddNewVehicleDetailPost()`
 
 ```php
-employeeVehicleAddNewVehicleDetailPost($body): \OpenAPI\Client\Model\ErrorForAddNewVehicleDetail
+employeeVehicleAddNewVehicleDetailPost($body): \PeopleHR\Model\ErrorForAddNewVehicleDetail
 ```
 
 Add New Vehicle Detail
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeVehicleApi(
+$apiInstance = new PeopleHR\Api\EmployeeVehicleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewVehicleDetailDefinition(); // \OpenAPI\Client\Model\AddNewVehicleDetailDefinition
+$body = new \PeopleHR\Model\AddNewVehicleDetailDefinition(); // \PeopleHR\Model\AddNewVehicleDetailDefinition
 
 try {
     $result = $apiInstance->employeeVehicleAddNewVehicleDetailPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewVehicleDetailDefinition**](../Model/AddNewVehicleDetailDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewVehicleDetailDefinition**](../Model/AddNewVehicleDetailDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail**](../Model/ErrorForAddNewVehicleDetail.md)
+[**\PeopleHR\Model\ErrorForAddNewVehicleDetail**](../Model/ErrorForAddNewVehicleDetail.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeVehicleDeleteVehicleDetailPost()`
 
 ```php
-employeeVehicleDeleteVehicleDetailPost($body): \OpenAPI\Client\Model\ErrorForDeleteVehicleDetail
+employeeVehicleDeleteVehicleDetailPost($body): \PeopleHR\Model\ErrorForDeleteVehicleDetail
 ```
 
 Delete Vehicle Detail
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeVehicleApi(
+$apiInstance = new PeopleHR\Api\EmployeeVehicleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteVehicleDetailDefinition(); // \OpenAPI\Client\Model\DeleteVehicleDetailDefinition
+$body = new \PeopleHR\Model\DeleteVehicleDetailDefinition(); // \PeopleHR\Model\DeleteVehicleDetailDefinition
 
 try {
     $result = $apiInstance->employeeVehicleDeleteVehicleDetailPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteVehicleDetailDefinition**](../Model/DeleteVehicleDetailDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteVehicleDetailDefinition**](../Model/DeleteVehicleDetailDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail**](../Model/ErrorForDeleteVehicleDetail.md)
+[**\PeopleHR\Model\ErrorForDeleteVehicleDetail**](../Model/ErrorForDeleteVehicleDetail.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeVehicleGetByVehicleDetailIdPost()`
 
 ```php
-employeeVehicleGetByVehicleDetailIdPost($body): \OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId
+employeeVehicleGetByVehicleDetailIdPost($body): \PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId
 ```
 
 Get By Vehicle Detail Id
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeVehicleApi(
+$apiInstance = new PeopleHR\Api\EmployeeVehicleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition(); // \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition
+$body = new \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition(); // \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition
 
 try {
     $result = $apiInstance->employeeVehicleGetByVehicleDetailIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition**](../Model/GetVehicleDetailByVehicleIdDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition**](../Model/GetVehicleDetailByVehicleIdDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId**](../Model/ErrorForGetVehicleDetailByVehicleId.md)
+[**\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId**](../Model/ErrorForGetVehicleDetailByVehicleId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeVehicleGetVehicleByEmployeeIdPost()`
 
 ```php
-employeeVehicleGetVehicleByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId
+employeeVehicleGetVehicleByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId
 ```
 
 Get Vehicle By Employee Id
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeVehicleApi(
+$apiInstance = new PeopleHR\Api\EmployeeVehicleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition(); // \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition
+$body = new \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition(); // \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition
 
 try {
     $result = $apiInstance->employeeVehicleGetVehicleByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition**](../Model/GetVehicleDetailByEmployeeIdDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition**](../Model/GetVehicleDetailByEmployeeIdDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId**](../Model/ErrorForGetVehicleDetailByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId**](../Model/ErrorForGetVehicleDetailByEmployeeId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeVehicleUpdateVehicleDetailPost()`
 
 ```php
-employeeVehicleUpdateVehicleDetailPost($body): \OpenAPI\Client\Model\ErrorForUpdateVehicleDetail
+employeeVehicleUpdateVehicleDetailPost($body): \PeopleHR\Model\ErrorForUpdateVehicleDetail
 ```
 
 Update Vehicle Detail
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeVehicleApi(
+$apiInstance = new PeopleHR\Api\EmployeeVehicleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateVehicleDetailDefinition(); // \OpenAPI\Client\Model\UpdateVehicleDetailDefinition
+$body = new \PeopleHR\Model\UpdateVehicleDetailDefinition(); // \PeopleHR\Model\UpdateVehicleDetailDefinition
 
 try {
     $result = $apiInstance->employeeVehicleUpdateVehicleDetailPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateVehicleDetailDefinition**](../Model/UpdateVehicleDetailDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateVehicleDetailDefinition**](../Model/UpdateVehicleDetailDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail**](../Model/ErrorForUpdateVehicleDetail.md)
+[**\PeopleHR\Model\ErrorForUpdateVehicleDetail**](../Model/ErrorForUpdateVehicleDetail.md)
 
 ### Authorization
 

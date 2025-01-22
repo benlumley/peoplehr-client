@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetQueryResult Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetQueryResult implements ModelInterface, ArrayAccess, \JsonSerial
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\Result1GetQueryResultInner[]'
+        'result' => '\PeopleHR\Model\Result1GetQueryResultInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetQueryResult implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\Result1GetQueryResultInner[]|null
+     * @return \PeopleHR\Model\Result1GetQueryResultInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetQueryResult implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\Result1GetQueryResultInner[]|null $result Result value
+     * @param \PeopleHR\Model\Result1GetQueryResultInner[]|null $result Result value
      *
      * @return self
      */

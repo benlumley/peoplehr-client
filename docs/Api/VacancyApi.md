@@ -1,4 +1,4 @@
-# OpenAPI\Client\VacancyApi
+# PeopleHR\VacancyApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `vacancyCreateNewVacancyPost()`
 
 ```php
-vacancyCreateNewVacancyPost($body): \OpenAPI\Client\Model\ErrorForCreateNewVacancy
+vacancyCreateNewVacancyPost($body): \PeopleHR\Model\ErrorForCreateNewVacancy
 ```
 
 Create New Vacancy
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\VacancyApi(
+$apiInstance = new PeopleHR\Api\VacancyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateVacancyDetailParameter(); // \OpenAPI\Client\Model\CreateVacancyDetailParameter
+$body = new \PeopleHR\Model\CreateVacancyDetailParameter(); // \PeopleHR\Model\CreateVacancyDetailParameter
 
 try {
     $result = $apiInstance->vacancyCreateNewVacancyPost($body);
@@ -46,11 +46,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateVacancyDetailParameter**](../Model/CreateVacancyDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateVacancyDetailParameter**](../Model/CreateVacancyDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateNewVacancy**](../Model/ErrorForCreateNewVacancy.md)
+[**\PeopleHR\Model\ErrorForCreateNewVacancy**](../Model/ErrorForCreateNewVacancy.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `vacancyGetAllVacanciesPost()`
 
 ```php
-vacancyGetAllVacanciesPost($body): \OpenAPI\Client\Model\ErrorForGetAllVacancy
+vacancyGetAllVacanciesPost($body): \PeopleHR\Model\ErrorForGetAllVacancy
 ```
 
 Get all vacancies
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\VacancyApi(
+$apiInstance = new PeopleHR\Api\VacancyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllVacancyParameters(); // \OpenAPI\Client\Model\GetAllVacancyParameters
+$body = new \PeopleHR\Model\GetAllVacancyParameters(); // \PeopleHR\Model\GetAllVacancyParameters
 
 try {
     $result = $apiInstance->vacancyGetAllVacanciesPost($body);
@@ -102,11 +102,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllVacancyParameters**](../Model/GetAllVacancyParameters.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllVacancyParameters**](../Model/GetAllVacancyParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllVacancy**](../Model/ErrorForGetAllVacancy.md)
+[**\PeopleHR\Model\ErrorForGetAllVacancy**](../Model/ErrorForGetAllVacancy.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `vacancyGetVacancyPost()`
 
 ```php
-vacancyGetVacancyPost($body): \OpenAPI\Client\Model\ErrorForGetVacancy
+vacancyGetVacancyPost($body): \PeopleHR\Model\ErrorForGetVacancy
 ```
 
 Get vacancy
@@ -139,12 +139,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\VacancyApi(
+$apiInstance = new PeopleHR\Api\VacancyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetVacancyParameters(); // \OpenAPI\Client\Model\GetVacancyParameters
+$body = new \PeopleHR\Model\GetVacancyParameters(); // \PeopleHR\Model\GetVacancyParameters
 
 try {
     $result = $apiInstance->vacancyGetVacancyPost($body);
@@ -158,11 +158,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetVacancyParameters**](../Model/GetVacancyParameters.md)|  | |
+| **body** | [**\PeopleHR\Model\GetVacancyParameters**](../Model/GetVacancyParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetVacancy**](../Model/ErrorForGetVacancy.md)
+[**\PeopleHR\Model\ErrorForGetVacancy**](../Model/ErrorForGetVacancy.md)
 
 ### Authorization
 

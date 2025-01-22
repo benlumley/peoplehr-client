@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * QueryApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,12 +131,12 @@ class QueryApi
      *
      * Get Query Result By QueryName
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter $body body (required)
+     * @param  \PeopleHR\Model\GetQueryResultByQueryNameParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultByQueryNamePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName
+     * @return \PeopleHR\Model\ErrorForGetQueryResultByQueryName
      */
     public function queryGetQueryResultByQueryNamePost($body, string $contentType = self::contentTypes['queryGetQueryResultByQueryNamePost'][0])
     {
@@ -149,12 +149,12 @@ class QueryApi
      *
      * Get Query Result By QueryName
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultByQueryNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultByQueryNamePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetQueryResultByQueryName, HTTP status code, HTTP response headers (array of strings)
      */
     public function queryGetQueryResultByQueryNamePostWithHttpInfo($body, string $contentType = self::contentTypes['queryGetQueryResultByQueryNamePost'][0])
     {
@@ -185,11 +185,11 @@ class QueryApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetQueryResultByQueryName' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetQueryResultByQueryName' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -207,7 +207,7 @@ class QueryApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetQueryResultByQueryName', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -226,7 +226,7 @@ class QueryApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName';
+            $returnType = '\PeopleHR\Model\ErrorForGetQueryResultByQueryName';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -259,7 +259,7 @@ class QueryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName',
+                        '\PeopleHR\Model\ErrorForGetQueryResultByQueryName',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -274,7 +274,7 @@ class QueryApi
      *
      * Get Query Result By QueryName
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultByQueryNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultByQueryNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -295,7 +295,7 @@ class QueryApi
      *
      * Get Query Result By QueryName
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultByQueryNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultByQueryNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -303,7 +303,7 @@ class QueryApi
      */
     public function queryGetQueryResultByQueryNamePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['queryGetQueryResultByQueryNamePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName';
+        $returnType = '\PeopleHR\Model\ErrorForGetQueryResultByQueryName';
         $request = $this->queryGetQueryResultByQueryNamePostRequest($body, $contentType);
 
         return $this->client
@@ -345,7 +345,7 @@ class QueryApi
     /**
      * Create request for operation 'queryGetQueryResultByQueryNamePost'
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultByQueryNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultByQueryNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -438,12 +438,12 @@ class QueryApi
      *
      * Get Query Result by Query Id
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultParameter $body body (required)
+     * @param  \PeopleHR\Model\GetQueryResultParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetQueryResult
+     * @return \PeopleHR\Model\ErrorForGetQueryResult
      */
     public function queryGetQueryResultPost($body, string $contentType = self::contentTypes['queryGetQueryResultPost'][0])
     {
@@ -456,12 +456,12 @@ class QueryApi
      *
      * Get Query Result by Query Id
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetQueryResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetQueryResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function queryGetQueryResultPostWithHttpInfo($body, string $contentType = self::contentTypes['queryGetQueryResultPost'][0])
     {
@@ -492,11 +492,11 @@ class QueryApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetQueryResult' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetQueryResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetQueryResult' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetQueryResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -514,7 +514,7 @@ class QueryApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetQueryResult', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetQueryResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -533,7 +533,7 @@ class QueryApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetQueryResult';
+            $returnType = '\PeopleHR\Model\ErrorForGetQueryResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -566,7 +566,7 @@ class QueryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetQueryResult',
+                        '\PeopleHR\Model\ErrorForGetQueryResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -581,7 +581,7 @@ class QueryApi
      *
      * Get Query Result by Query Id
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -602,7 +602,7 @@ class QueryApi
      *
      * Get Query Result by Query Id
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -610,7 +610,7 @@ class QueryApi
      */
     public function queryGetQueryResultPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['queryGetQueryResultPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetQueryResult';
+        $returnType = '\PeopleHR\Model\ErrorForGetQueryResult';
         $request = $this->queryGetQueryResultPostRequest($body, $contentType);
 
         return $this->client
@@ -652,7 +652,7 @@ class QueryApi
     /**
      * Create request for operation 'queryGetQueryResultPost'
      *
-     * @param  \OpenAPI\Client\Model\GetQueryResultParameter $body (required)
+     * @param  \PeopleHR\Model\GetQueryResultParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['queryGetQueryResultPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

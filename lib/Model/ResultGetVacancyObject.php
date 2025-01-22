@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultGetVacancyObject Class Doc Comment
  *
  * @category Class
  * @description Result Array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -76,8 +76,8 @@ class ResultGetVacancyObject implements ModelInterface, ArrayAccess, \JsonSerial
         'country' => 'string',
         'experience' => 'string',
         'job_bord_url' => 'string',
-        'additional_questions' => '\OpenAPI\Client\Model\ResultAdditionalQuestionsArrayobjectInner[]',
-        'internal_questions' => '\OpenAPI\Client\Model\ResultInternalQuestionsArrayobjectInner[]'
+        'additional_questions' => '\PeopleHR\Model\ResultAdditionalQuestionsArrayobjectInner[]',
+        'internal_questions' => '\PeopleHR\Model\ResultInternalQuestionsArrayobjectInner[]'
     ];
 
     /**
@@ -915,7 +915,7 @@ class ResultGetVacancyObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets additional_questions
      *
-     * @return \OpenAPI\Client\Model\ResultAdditionalQuestionsArrayobjectInner[]|null
+     * @return \PeopleHR\Model\ResultAdditionalQuestionsArrayobjectInner[]|null
      */
     public function getAdditionalQuestions()
     {
@@ -925,7 +925,7 @@ class ResultGetVacancyObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets additional_questions
      *
-     * @param \OpenAPI\Client\Model\ResultAdditionalQuestionsArrayobjectInner[]|null $additional_questions Additional questions array list
+     * @param \PeopleHR\Model\ResultAdditionalQuestionsArrayobjectInner[]|null $additional_questions Additional questions array list
      *
      * @return self
      */
@@ -942,7 +942,7 @@ class ResultGetVacancyObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets internal_questions
      *
-     * @return \OpenAPI\Client\Model\ResultInternalQuestionsArrayobjectInner[]|null
+     * @return \PeopleHR\Model\ResultInternalQuestionsArrayobjectInner[]|null
      */
     public function getInternalQuestions()
     {
@@ -952,7 +952,7 @@ class ResultGetVacancyObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets internal_questions
      *
-     * @param \OpenAPI\Client\Model\ResultInternalQuestionsArrayobjectInner[]|null $internal_questions Internal questions array list
+     * @param \PeopleHR\Model\ResultInternalQuestionsArrayobjectInner[]|null $internal_questions Internal questions array list
      *
      * @return self
      */

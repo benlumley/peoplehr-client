@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultForGetDrivingLicenseByEmployeeIdInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,8 +63,8 @@ class ResultForGetDrivingLicenseByEmployeeIdInner implements ModelInterface, Arr
         'license_type' => 'string',
         'expiry_date' => '\DateTime',
         'comments' => 'string',
-        'customfields' => '\OpenAPI\Client\Model\CustomColumnsForGetEmployeeDrivingInner[]',
-        'files' => '\OpenAPI\Client\Model\AddFilesForGetEmployeeDrivingInner[]'
+        'customfields' => '\PeopleHR\Model\CustomColumnsForGetEmployeeDrivingInner[]',
+        'files' => '\PeopleHR\Model\AddFilesForGetEmployeeDrivingInner[]'
     ];
 
     /**
@@ -470,7 +470,7 @@ class ResultForGetDrivingLicenseByEmployeeIdInner implements ModelInterface, Arr
     /**
      * Gets customfields
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForGetEmployeeDrivingInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForGetEmployeeDrivingInner[]|null
      */
     public function getCustomfields()
     {
@@ -480,7 +480,7 @@ class ResultForGetDrivingLicenseByEmployeeIdInner implements ModelInterface, Arr
     /**
      * Sets customfields
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForGetEmployeeDrivingInner[]|null $customfields Custom fields array
+     * @param \PeopleHR\Model\CustomColumnsForGetEmployeeDrivingInner[]|null $customfields Custom fields array
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class ResultForGetDrivingLicenseByEmployeeIdInner implements ModelInterface, Arr
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForGetEmployeeDrivingInner[]|null
+     * @return \PeopleHR\Model\AddFilesForGetEmployeeDrivingInner[]|null
      */
     public function getFiles()
     {
@@ -507,7 +507,7 @@ class ResultForGetDrivingLicenseByEmployeeIdInner implements ModelInterface, Arr
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForGetEmployeeDrivingInner[]|null $files Files array
+     * @param \PeopleHR\Model\AddFilesForGetEmployeeDrivingInner[]|null $files Files array
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultWorkPatternApplicantInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class ResultWorkPatternApplicantInner implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         'work_pattern_id' => 'int',
         'work_pattern_name' => 'string',
-        'week' => '\OpenAPI\Client\Model\WeekArrayForWorkPatternInner[]',
-        'assigned_to' => '\OpenAPI\Client\Model\AssignedToArrayForWorkPatternInner[]'
+        'week' => '\PeopleHR\Model\WeekArrayForWorkPatternInner[]',
+        'assigned_to' => '\PeopleHR\Model\AssignedToArrayForWorkPatternInner[]'
     ];
 
     /**
@@ -368,7 +368,7 @@ class ResultWorkPatternApplicantInner implements ModelInterface, ArrayAccess, \J
     /**
      * Gets week
      *
-     * @return \OpenAPI\Client\Model\WeekArrayForWorkPatternInner[]|null
+     * @return \PeopleHR\Model\WeekArrayForWorkPatternInner[]|null
      */
     public function getWeek()
     {
@@ -378,7 +378,7 @@ class ResultWorkPatternApplicantInner implements ModelInterface, ArrayAccess, \J
     /**
      * Sets week
      *
-     * @param \OpenAPI\Client\Model\WeekArrayForWorkPatternInner[]|null $week Array of Week
+     * @param \PeopleHR\Model\WeekArrayForWorkPatternInner[]|null $week Array of Week
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class ResultWorkPatternApplicantInner implements ModelInterface, ArrayAccess, \J
     /**
      * Gets assigned_to
      *
-     * @return \OpenAPI\Client\Model\AssignedToArrayForWorkPatternInner[]|null
+     * @return \PeopleHR\Model\AssignedToArrayForWorkPatternInner[]|null
      */
     public function getAssignedTo()
     {
@@ -405,7 +405,7 @@ class ResultWorkPatternApplicantInner implements ModelInterface, ArrayAccess, \J
     /**
      * Sets assigned_to
      *
-     * @param \OpenAPI\Client\Model\AssignedToArrayForWorkPatternInner[]|null $assigned_to Array of assignee to
+     * @param \PeopleHR\Model\AssignedToArrayForWorkPatternInner[]|null $assigned_to Array of assignee to
      *
      * @return self
      */

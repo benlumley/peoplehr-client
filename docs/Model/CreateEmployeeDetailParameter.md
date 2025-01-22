@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **first_name** | **string** | FirstName for create new employee |
 **last_name** | **string** | LastName for create new employee |
 **email** | **string** | Email for create new employee | [optional]
-**gender** | [**\OpenAPI\Client\Model\Gender**](Gender.md) | Gender value for create new employee | [optional]
+**gender** | [**\PeopleHR\Model\Gender**](Gender.md) | Gender value for create new employee | [optional]
 **start_date** | **\DateTime** | Start date for create new employee |
 **date_of_birth** | **\DateTime** | Date of birth for create new employee | [optional]
 **reports_to** | **string** | Reports To for create new employee | [optional]

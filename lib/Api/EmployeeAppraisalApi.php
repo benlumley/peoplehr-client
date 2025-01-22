@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeAppraisalApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class EmployeeAppraisalApi
      *
      * Add New Appraisal
      *
-     * @param  \OpenAPI\Client\Model\AddNewAppraisalParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewAppraisalParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalAddNewAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewAppraisal
+     * @return \PeopleHR\Model\ErrorForAddNewAppraisal
      */
     public function employeeAppraisalAddNewAppraisalPost($body, string $contentType = self::contentTypes['employeeAppraisalAddNewAppraisalPost'][0])
     {
@@ -158,12 +158,12 @@ class EmployeeAppraisalApi
      *
      * Add New Appraisal
      *
-     * @param  \OpenAPI\Client\Model\AddNewAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalAddNewAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewAppraisal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewAppraisal, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAppraisalAddNewAppraisalPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalAddNewAppraisalPost'][0])
     {
@@ -194,11 +194,11 @@ class EmployeeAppraisalApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewAppraisal' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewAppraisal' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewAppraisal' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewAppraisal' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class EmployeeAppraisalApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewAppraisal', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewAppraisal', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class EmployeeAppraisalApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewAppraisal';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewAppraisal';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class EmployeeAppraisalApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewAppraisal',
+                        '\PeopleHR\Model\ErrorForAddNewAppraisal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class EmployeeAppraisalApi
      *
      * Add New Appraisal
      *
-     * @param  \OpenAPI\Client\Model\AddNewAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalAddNewAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class EmployeeAppraisalApi
      *
      * Add New Appraisal
      *
-     * @param  \OpenAPI\Client\Model\AddNewAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalAddNewAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class EmployeeAppraisalApi
      */
     public function employeeAppraisalAddNewAppraisalPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalAddNewAppraisalPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewAppraisal';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewAppraisal';
         $request = $this->employeeAppraisalAddNewAppraisalPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class EmployeeAppraisalApi
     /**
      * Create request for operation 'employeeAppraisalAddNewAppraisalPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalAddNewAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class EmployeeAppraisalApi
      *
      * Delete Appraisal
      *
-     * @param  \OpenAPI\Client\Model\DeleteAppraisalParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteAppraisalParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalDeleteAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteAppraisal
+     * @return \PeopleHR\Model\ErrorForDeleteAppraisal
      */
     public function employeeAppraisalDeleteAppraisalPost($body, string $contentType = self::contentTypes['employeeAppraisalDeleteAppraisalPost'][0])
     {
@@ -465,12 +465,12 @@ class EmployeeAppraisalApi
      *
      * Delete Appraisal
      *
-     * @param  \OpenAPI\Client\Model\DeleteAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalDeleteAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteAppraisal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteAppraisal, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAppraisalDeleteAppraisalPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalDeleteAppraisalPost'][0])
     {
@@ -501,11 +501,11 @@ class EmployeeAppraisalApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteAppraisal' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteAppraisal' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteAppraisal' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteAppraisal' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class EmployeeAppraisalApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteAppraisal', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteAppraisal', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class EmployeeAppraisalApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteAppraisal';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteAppraisal';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class EmployeeAppraisalApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteAppraisal',
+                        '\PeopleHR\Model\ErrorForDeleteAppraisal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class EmployeeAppraisalApi
      *
      * Delete Appraisal
      *
-     * @param  \OpenAPI\Client\Model\DeleteAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalDeleteAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class EmployeeAppraisalApi
      *
      * Delete Appraisal
      *
-     * @param  \OpenAPI\Client\Model\DeleteAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalDeleteAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class EmployeeAppraisalApi
      */
     public function employeeAppraisalDeleteAppraisalPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalDeleteAppraisalPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteAppraisal';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteAppraisal';
         $request = $this->employeeAppraisalDeleteAppraisalPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class EmployeeAppraisalApi
     /**
      * Create request for operation 'employeeAppraisalDeleteAppraisalPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalDeleteAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class EmployeeAppraisalApi
      *
      * Get By Appraisal Id
      *
-     * @param  \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal $body body (required)
+     * @param  \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByAppraisalIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByAppraisalId
+     * @return \PeopleHR\Model\ErrorForGetByAppraisalId
      */
     public function employeeAppraisalGetByAppraisalIdPost($body, string $contentType = self::contentTypes['employeeAppraisalGetByAppraisalIdPost'][0])
     {
@@ -772,12 +772,12 @@ class EmployeeAppraisalApi
      *
      * Get By Appraisal Id
      *
-     * @param  \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByAppraisalIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByAppraisalId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByAppraisalId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAppraisalGetByAppraisalIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalGetByAppraisalIdPost'][0])
     {
@@ -808,11 +808,11 @@ class EmployeeAppraisalApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByAppraisalId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByAppraisalId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByAppraisalId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByAppraisalId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class EmployeeAppraisalApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByAppraisalId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByAppraisalId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class EmployeeAppraisalApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByAppraisalId';
+            $returnType = '\PeopleHR\Model\ErrorForGetByAppraisalId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class EmployeeAppraisalApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByAppraisalId',
+                        '\PeopleHR\Model\ErrorForGetByAppraisalId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class EmployeeAppraisalApi
      *
      * Get By Appraisal Id
      *
-     * @param  \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByAppraisalIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class EmployeeAppraisalApi
      *
      * Get By Appraisal Id
      *
-     * @param  \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByAppraisalIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class EmployeeAppraisalApi
      */
     public function employeeAppraisalGetByAppraisalIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalGetByAppraisalIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByAppraisalId';
+        $returnType = '\PeopleHR\Model\ErrorForGetByAppraisalId';
         $request = $this->employeeAppraisalGetByAppraisalIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class EmployeeAppraisalApi
     /**
      * Create request for operation 'employeeAppraisalGetByAppraisalIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByAppraisalIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByAppraisalIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class EmployeeAppraisalApi
      *
      * Get By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal $body body (required)
+     * @param  \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById
+     * @return \PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById
      */
     public function employeeAppraisalGetByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeAppraisalGetByEmployeeIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class EmployeeAppraisalApi
      *
      * Get By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAppraisalGetByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalGetByEmployeeIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class EmployeeAppraisalApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class EmployeeAppraisalApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class EmployeeAppraisalApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById';
+            $returnType = '\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class EmployeeAppraisalApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById',
+                        '\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class EmployeeAppraisalApi
      *
      * Get By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class EmployeeAppraisalApi
      *
      * Get By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class EmployeeAppraisalApi
      */
     public function employeeAppraisalGetByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalGetByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForEmployeeAppraisalGetEmployeeById';
+        $returnType = '\PeopleHR\Model\ErrorForEmployeeAppraisalGetEmployeeById';
         $request = $this->employeeAppraisalGetByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class EmployeeAppraisalApi
     /**
      * Create request for operation 'employeeAppraisalGetByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
+     * @param  \PeopleHR\Model\GetByEmployeeIdForEmployeeAppraisal $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalGetByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class EmployeeAppraisalApi
      *
      * Update Appraisal
      *
-     * @param  \OpenAPI\Client\Model\UpdateAppraisalParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateAppraisalParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalUpdateAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateAppraisal
+     * @return \PeopleHR\Model\ErrorForUpdateAppraisal
      */
     public function employeeAppraisalUpdateAppraisalPost($body, string $contentType = self::contentTypes['employeeAppraisalUpdateAppraisalPost'][0])
     {
@@ -1386,12 +1386,12 @@ class EmployeeAppraisalApi
      *
      * Update Appraisal
      *
-     * @param  \OpenAPI\Client\Model\UpdateAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalUpdateAppraisalPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateAppraisal, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateAppraisal, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAppraisalUpdateAppraisalPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalUpdateAppraisalPost'][0])
     {
@@ -1422,11 +1422,11 @@ class EmployeeAppraisalApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateAppraisal' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateAppraisal' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateAppraisal' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateAppraisal' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class EmployeeAppraisalApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateAppraisal', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateAppraisal', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class EmployeeAppraisalApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateAppraisal';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateAppraisal';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class EmployeeAppraisalApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateAppraisal',
+                        '\PeopleHR\Model\ErrorForUpdateAppraisal',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class EmployeeAppraisalApi
      *
      * Update Appraisal
      *
-     * @param  \OpenAPI\Client\Model\UpdateAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalUpdateAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class EmployeeAppraisalApi
      *
      * Update Appraisal
      *
-     * @param  \OpenAPI\Client\Model\UpdateAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalUpdateAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class EmployeeAppraisalApi
      */
     public function employeeAppraisalUpdateAppraisalPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAppraisalUpdateAppraisalPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateAppraisal';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateAppraisal';
         $request = $this->employeeAppraisalUpdateAppraisalPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class EmployeeAppraisalApi
     /**
      * Create request for operation 'employeeAppraisalUpdateAppraisalPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateAppraisalParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAppraisalParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAppraisalUpdateAppraisalPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -11,11 +11,11 @@ Name | Type | Description | Notes
 **reason** | **string** | Reason for add new absence |
 **start_date** | **\DateTime** | Start date for add new absence |
 **end_date** | **\DateTime** | EndDate for add new absence |
-**part_of_day** | [**\OpenAPI\Client\Model\PartOfDay**](PartOfDay.md) | PartOfDay for add new absence |
+**part_of_day** | [**\PeopleHR\Model\PartOfDay**](PartOfDay.md) | PartOfDay for add new absence |
 **duration** | **int** | Duration for add new absence |
 **absence_paid_status** | **string** | AbsencePaidStatus for add new absence |
 **emergency_leave** | **bool** | EmergencyLeave for add new absence |
-**add_comments** | [**\OpenAPI\Client\Model\AddCommentsArrayForAbsenceInner[]**](AddCommentsArrayForAbsenceInner.md) | AddComments array list | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesArrayForAbsenceInner[]**](AddFilesArrayForAbsenceInner.md) | AddFiles array list | [optional]
+**add_comments** | [**\PeopleHR\Model\AddCommentsArrayForAbsenceInner[]**](AddCommentsArrayForAbsenceInner.md) | AddComments array list | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesArrayForAbsenceInner[]**](AddFilesArrayForAbsenceInner.md) | AddFiles array list | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

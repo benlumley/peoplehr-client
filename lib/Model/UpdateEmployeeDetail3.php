@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateEmployeeDetail3 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class UpdateEmployeeDetail3 implements ModelInterface, ArrayAccess, \JsonSeriali
         'first_name' => 'string',
         'last_name' => 'string',
         'email' => 'string',
-        'gender' => '\OpenAPI\Client\Model\Gender',
+        'gender' => '\PeopleHR\Model\Gender',
         'date_of_birth' => '\DateTime',
         'start_date' => '\DateTime',
         'reports_to' => 'string',
@@ -1004,7 +1004,7 @@ class UpdateEmployeeDetail3 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets gender
      *
-     * @return \OpenAPI\Client\Model\Gender
+     * @return \PeopleHR\Model\Gender
      */
     public function getGender()
     {
@@ -1014,7 +1014,7 @@ class UpdateEmployeeDetail3 implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets gender
      *
-     * @param \OpenAPI\Client\Model\Gender $gender Gender value for update employee data
+     * @param \PeopleHR\Model\Gender $gender Gender value for update employee data
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeBenefitApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class EmployeeBenefitApi
      *
      * Add New Benefit
      *
-     * @param  \OpenAPI\Client\Model\AddNewBenefitParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewBenefitParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitAddNewBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewBenefitApi
+     * @return \PeopleHR\Model\ErrorForAddNewBenefitApi
      */
     public function employeeBenefitAddNewBenefitPost($body, string $contentType = self::contentTypes['employeeBenefitAddNewBenefitPost'][0])
     {
@@ -158,12 +158,12 @@ class EmployeeBenefitApi
      *
      * Add New Benefit
      *
-     * @param  \OpenAPI\Client\Model\AddNewBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitAddNewBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewBenefitApi, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewBenefitApi, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeBenefitAddNewBenefitPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitAddNewBenefitPost'][0])
     {
@@ -194,11 +194,11 @@ class EmployeeBenefitApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewBenefitApi' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewBenefitApi' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewBenefitApi' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewBenefitApi' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class EmployeeBenefitApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewBenefitApi', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewBenefitApi', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class EmployeeBenefitApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewBenefitApi';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewBenefitApi';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class EmployeeBenefitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewBenefitApi',
+                        '\PeopleHR\Model\ErrorForAddNewBenefitApi',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class EmployeeBenefitApi
      *
      * Add New Benefit
      *
-     * @param  \OpenAPI\Client\Model\AddNewBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitAddNewBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class EmployeeBenefitApi
      *
      * Add New Benefit
      *
-     * @param  \OpenAPI\Client\Model\AddNewBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitAddNewBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class EmployeeBenefitApi
      */
     public function employeeBenefitAddNewBenefitPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitAddNewBenefitPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewBenefitApi';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewBenefitApi';
         $request = $this->employeeBenefitAddNewBenefitPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class EmployeeBenefitApi
     /**
      * Create request for operation 'employeeBenefitAddNewBenefitPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitAddNewBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class EmployeeBenefitApi
      *
      * Delete Benefit
      *
-     * @param  \OpenAPI\Client\Model\DeleteBenefitParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteBenefitParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitDeleteBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteBenefit
+     * @return \PeopleHR\Model\ErrorForDeleteBenefit
      */
     public function employeeBenefitDeleteBenefitPost($body, string $contentType = self::contentTypes['employeeBenefitDeleteBenefitPost'][0])
     {
@@ -465,12 +465,12 @@ class EmployeeBenefitApi
      *
      * Delete Benefit
      *
-     * @param  \OpenAPI\Client\Model\DeleteBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitDeleteBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteBenefit, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteBenefit, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeBenefitDeleteBenefitPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitDeleteBenefitPost'][0])
     {
@@ -501,11 +501,11 @@ class EmployeeBenefitApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteBenefit' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteBenefit' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteBenefit' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteBenefit' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class EmployeeBenefitApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteBenefit', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteBenefit', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class EmployeeBenefitApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteBenefit';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteBenefit';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class EmployeeBenefitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteBenefit',
+                        '\PeopleHR\Model\ErrorForDeleteBenefit',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class EmployeeBenefitApi
      *
      * Delete Benefit
      *
-     * @param  \OpenAPI\Client\Model\DeleteBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitDeleteBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class EmployeeBenefitApi
      *
      * Delete Benefit
      *
-     * @param  \OpenAPI\Client\Model\DeleteBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitDeleteBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class EmployeeBenefitApi
      */
     public function employeeBenefitDeleteBenefitPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitDeleteBenefitPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteBenefit';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteBenefit';
         $request = $this->employeeBenefitDeleteBenefitPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class EmployeeBenefitApi
     /**
      * Create request for operation 'employeeBenefitDeleteBenefitPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitDeleteBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class EmployeeBenefitApi
      *
      * Get By Benefit Id
      *
-     * @param  \OpenAPI\Client\Model\GetByBenefitIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetByBenefitIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByBenefitIdApi
+     * @return \PeopleHR\Model\ErrorForGetByBenefitIdApi
      */
     public function employeeBenefitGetBenefitByBenefitIdPost($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'][0])
     {
@@ -772,12 +772,12 @@ class EmployeeBenefitApi
      *
      * Get By Benefit Id
      *
-     * @param  \OpenAPI\Client\Model\GetByBenefitIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByBenefitIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByBenefitIdApi, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByBenefitIdApi, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeBenefitGetBenefitByBenefitIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'][0])
     {
@@ -808,11 +808,11 @@ class EmployeeBenefitApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByBenefitIdApi' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByBenefitIdApi' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class EmployeeBenefitApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByBenefitIdApi', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class EmployeeBenefitApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi';
+            $returnType = '\PeopleHR\Model\ErrorForGetByBenefitIdApi';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class EmployeeBenefitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi',
+                        '\PeopleHR\Model\ErrorForGetByBenefitIdApi',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class EmployeeBenefitApi
      *
      * Get By Benefit Id
      *
-     * @param  \OpenAPI\Client\Model\GetByBenefitIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByBenefitIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class EmployeeBenefitApi
      *
      * Get By Benefit Id
      *
-     * @param  \OpenAPI\Client\Model\GetByBenefitIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByBenefitIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class EmployeeBenefitApi
      */
     public function employeeBenefitGetBenefitByBenefitIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi';
+        $returnType = '\PeopleHR\Model\ErrorForGetByBenefitIdApi';
         $request = $this->employeeBenefitGetBenefitByBenefitIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class EmployeeBenefitApi
     /**
      * Create request for operation 'employeeBenefitGetBenefitByBenefitIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByBenefitIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByBenefitIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByBenefitIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class EmployeeBenefitApi
      *
      * Get Benefit By EmployeeId Id
      *
-     * @param  \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetBenefitByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetBenefitByEmployeeId
      */
     public function employeeBenefitGetBenefitByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class EmployeeBenefitApi
      *
      * Get Benefit By EmployeeId Id
      *
-     * @param  \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBenefitByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetBenefitByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeBenefitGetBenefitByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class EmployeeBenefitApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetBenefitByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetBenefitByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class EmployeeBenefitApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetBenefitByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class EmployeeBenefitApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetBenefitByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class EmployeeBenefitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetBenefitByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class EmployeeBenefitApi
      *
      * Get Benefit By EmployeeId Id
      *
-     * @param  \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBenefitByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class EmployeeBenefitApi
      *
      * Get Benefit By EmployeeId Id
      *
-     * @param  \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBenefitByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class EmployeeBenefitApi
      */
     public function employeeBenefitGetBenefitByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetBenefitByEmployeeId';
         $request = $this->employeeBenefitGetBenefitByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class EmployeeBenefitApi
     /**
      * Create request for operation 'employeeBenefitGetBenefitByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBenefitByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitGetBenefitByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class EmployeeBenefitApi
      *
      * Update Benefit
      *
-     * @param  \OpenAPI\Client\Model\UpdateBenefitParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateBenefitParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitUpdateBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateBenefitApi
+     * @return \PeopleHR\Model\ErrorForUpdateBenefitApi
      */
     public function employeeBenefitUpdateBenefitPost($body, string $contentType = self::contentTypes['employeeBenefitUpdateBenefitPost'][0])
     {
@@ -1386,12 +1386,12 @@ class EmployeeBenefitApi
      *
      * Update Benefit
      *
-     * @param  \OpenAPI\Client\Model\UpdateBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitUpdateBenefitPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateBenefitApi, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateBenefitApi, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeBenefitUpdateBenefitPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitUpdateBenefitPost'][0])
     {
@@ -1422,11 +1422,11 @@ class EmployeeBenefitApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateBenefitApi' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateBenefitApi' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateBenefitApi' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateBenefitApi' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class EmployeeBenefitApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateBenefitApi', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateBenefitApi', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class EmployeeBenefitApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateBenefitApi';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateBenefitApi';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class EmployeeBenefitApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateBenefitApi',
+                        '\PeopleHR\Model\ErrorForUpdateBenefitApi',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class EmployeeBenefitApi
      *
      * Update Benefit
      *
-     * @param  \OpenAPI\Client\Model\UpdateBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitUpdateBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class EmployeeBenefitApi
      *
      * Update Benefit
      *
-     * @param  \OpenAPI\Client\Model\UpdateBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitUpdateBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class EmployeeBenefitApi
      */
     public function employeeBenefitUpdateBenefitPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeBenefitUpdateBenefitPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateBenefitApi';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateBenefitApi';
         $request = $this->employeeBenefitUpdateBenefitPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class EmployeeBenefitApi
     /**
      * Create request for operation 'employeeBenefitUpdateBenefitPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateBenefitParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBenefitParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeBenefitUpdateBenefitPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

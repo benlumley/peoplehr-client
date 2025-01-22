@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeDrivingApi
+# PeopleHR\EmployeeDrivingApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeDrivingAddNewDrivingLicensePost()`
 
 ```php
-employeeDrivingAddNewDrivingLicensePost($body): \OpenAPI\Client\Model\ErrorForAddNewDrivingLicense
+employeeDrivingAddNewDrivingLicensePost($body): \PeopleHR\Model\ErrorForAddNewDrivingLicense
 ```
 
 Add New Driving License
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDrivingApi(
+$apiInstance = new PeopleHR\Api\EmployeeDrivingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewDrivingLicenseParameter(); // \OpenAPI\Client\Model\AddNewDrivingLicenseParameter
+$body = new \PeopleHR\Model\AddNewDrivingLicenseParameter(); // \PeopleHR\Model\AddNewDrivingLicenseParameter
 
 try {
     $result = $apiInstance->employeeDrivingAddNewDrivingLicensePost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewDrivingLicenseParameter**](../Model/AddNewDrivingLicenseParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewDrivingLicenseParameter**](../Model/AddNewDrivingLicenseParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewDrivingLicense**](../Model/ErrorForAddNewDrivingLicense.md)
+[**\PeopleHR\Model\ErrorForAddNewDrivingLicense**](../Model/ErrorForAddNewDrivingLicense.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeDrivingDeleteDrivingLicensePost()`
 
 ```php
-employeeDrivingDeleteDrivingLicensePost($body): \OpenAPI\Client\Model\ErrorForDeleteDrivingLicense
+employeeDrivingDeleteDrivingLicensePost($body): \PeopleHR\Model\ErrorForDeleteDrivingLicense
 ```
 
 Delete Driving License
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDrivingApi(
+$apiInstance = new PeopleHR\Api\EmployeeDrivingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteDrivingLicenseParameter(); // \OpenAPI\Client\Model\DeleteDrivingLicenseParameter
+$body = new \PeopleHR\Model\DeleteDrivingLicenseParameter(); // \PeopleHR\Model\DeleteDrivingLicenseParameter
 
 try {
     $result = $apiInstance->employeeDrivingDeleteDrivingLicensePost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteDrivingLicenseParameter**](../Model/DeleteDrivingLicenseParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteDrivingLicenseParameter**](../Model/DeleteDrivingLicenseParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteDrivingLicense**](../Model/ErrorForDeleteDrivingLicense.md)
+[**\PeopleHR\Model\ErrorForDeleteDrivingLicense**](../Model/ErrorForDeleteDrivingLicense.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeDrivingGetDrivingLicenseByDrivingIdPost()`
 
 ```php
-employeeDrivingGetDrivingLicenseByDrivingIdPost($body): \OpenAPI\Client\Model\ErrorForGetDrivingLicenseByDrivingId
+employeeDrivingGetDrivingLicenseByDrivingIdPost($body): \PeopleHR\Model\ErrorForGetDrivingLicenseByDrivingId
 ```
 
 Get Driving License By Driving Id
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDrivingApi(
+$apiInstance = new PeopleHR\Api\EmployeeDrivingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetDrivingLicenseByDrivingIdParameter(); // \OpenAPI\Client\Model\GetDrivingLicenseByDrivingIdParameter
+$body = new \PeopleHR\Model\GetDrivingLicenseByDrivingIdParameter(); // \PeopleHR\Model\GetDrivingLicenseByDrivingIdParameter
 
 try {
     $result = $apiInstance->employeeDrivingGetDrivingLicenseByDrivingIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetDrivingLicenseByDrivingIdParameter**](../Model/GetDrivingLicenseByDrivingIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetDrivingLicenseByDrivingIdParameter**](../Model/GetDrivingLicenseByDrivingIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetDrivingLicenseByDrivingId**](../Model/ErrorForGetDrivingLicenseByDrivingId.md)
+[**\PeopleHR\Model\ErrorForGetDrivingLicenseByDrivingId**](../Model/ErrorForGetDrivingLicenseByDrivingId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeDrivingGetDrivingLicenseByEmployeeIdPost()`
 
 ```php
-employeeDrivingGetDrivingLicenseByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetDrivingLicenseByEmployeeId
+employeeDrivingGetDrivingLicenseByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetDrivingLicenseByEmployeeId
 ```
 
 Get Driving License By Employee Id
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDrivingApi(
+$apiInstance = new PeopleHR\Api\EmployeeDrivingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetDrivingLicenseByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetDrivingLicenseByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetDrivingLicenseByEmployeeIdParameter(); // \PeopleHR\Model\GetDrivingLicenseByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeDrivingGetDrivingLicenseByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetDrivingLicenseByEmployeeIdParameter**](../Model/GetDrivingLicenseByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetDrivingLicenseByEmployeeIdParameter**](../Model/GetDrivingLicenseByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetDrivingLicenseByEmployeeId**](../Model/ErrorForGetDrivingLicenseByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetDrivingLicenseByEmployeeId**](../Model/ErrorForGetDrivingLicenseByEmployeeId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeDrivingUpdateDrivingLicensePost()`
 
 ```php
-employeeDrivingUpdateDrivingLicensePost($body): \OpenAPI\Client\Model\ErrorForUpdateDrivingLicense
+employeeDrivingUpdateDrivingLicensePost($body): \PeopleHR\Model\ErrorForUpdateDrivingLicense
 ```
 
 Update Driving License
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeDrivingApi(
+$apiInstance = new PeopleHR\Api\EmployeeDrivingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateDrivingLicenseParameter(); // \OpenAPI\Client\Model\UpdateDrivingLicenseParameter
+$body = new \PeopleHR\Model\UpdateDrivingLicenseParameter(); // \PeopleHR\Model\UpdateDrivingLicenseParameter
 
 try {
     $result = $apiInstance->employeeDrivingUpdateDrivingLicensePost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateDrivingLicenseParameter**](../Model/UpdateDrivingLicenseParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateDrivingLicenseParameter**](../Model/UpdateDrivingLicenseParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateDrivingLicense**](../Model/ErrorForUpdateDrivingLicense.md)
+[**\PeopleHR\Model\ErrorForUpdateDrivingLicense**](../Model/ErrorForUpdateDrivingLicense.md)
 
 ### Authorization
 

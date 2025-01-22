@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * BackgroundCheckApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class BackgroundCheckApi
      *
      * Add Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\AddBackgroundCheckDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail
+     * @return \PeopleHR\Model\ErrorForAddBackgroundCheckDetail
      */
     public function backgroundCheckAddBackgroundCheckDetailPost($body, string $contentType = self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'][0])
     {
@@ -155,12 +155,12 @@ class BackgroundCheckApi
      *
      * Add Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function backgroundCheckAddBackgroundCheckDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'][0])
     {
@@ -191,11 +191,11 @@ class BackgroundCheckApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddBackgroundCheckDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddBackgroundCheckDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class BackgroundCheckApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddBackgroundCheckDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class BackgroundCheckApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail';
+            $returnType = '\PeopleHR\Model\ErrorForAddBackgroundCheckDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class BackgroundCheckApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail',
+                        '\PeopleHR\Model\ErrorForAddBackgroundCheckDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class BackgroundCheckApi
      *
      * Add Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class BackgroundCheckApi
      *
      * Add Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class BackgroundCheckApi
      */
     public function backgroundCheckAddBackgroundCheckDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail';
+        $returnType = '\PeopleHR\Model\ErrorForAddBackgroundCheckDetail';
         $request = $this->backgroundCheckAddBackgroundCheckDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class BackgroundCheckApi
     /**
      * Create request for operation 'backgroundCheckAddBackgroundCheckDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckAddBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class BackgroundCheckApi
      *
      * Delete Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteBackgroundCheckDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail
+     * @return \PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail
      */
     public function backgroundCheckDeleteBackgroundCheckDetailPost($body, string $contentType = self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'][0])
     {
@@ -462,12 +462,12 @@ class BackgroundCheckApi
      *
      * Delete Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function backgroundCheckDeleteBackgroundCheckDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'][0])
     {
@@ -498,11 +498,11 @@ class BackgroundCheckApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class BackgroundCheckApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class BackgroundCheckApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class BackgroundCheckApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail',
+                        '\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class BackgroundCheckApi
      *
      * Delete Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class BackgroundCheckApi
      *
      * Delete Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class BackgroundCheckApi
      */
     public function backgroundCheckDeleteBackgroundCheckDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail';
         $request = $this->backgroundCheckDeleteBackgroundCheckDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class BackgroundCheckApi
     /**
      * Create request for operation 'backgroundCheckDeleteBackgroundCheckDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckDeleteBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class BackgroundCheckApi
      *
      * Get Background Check Detail By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId
      */
     public function backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost($body, string $contentType = self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'][0])
     {
@@ -769,12 +769,12 @@ class BackgroundCheckApi
      *
      * Get Background Check Detail By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function backgroundCheckGetBackgroundCheckDetailByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'][0])
     {
@@ -805,11 +805,11 @@ class BackgroundCheckApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class BackgroundCheckApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class BackgroundCheckApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class BackgroundCheckApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class BackgroundCheckApi
      *
      * Get Background Check Detail By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class BackgroundCheckApi
      *
      * Get Background Check Detail By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class BackgroundCheckApi
      */
     public function backgroundCheckGetBackgroundCheckDetailByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId';
         $request = $this->backgroundCheckGetBackgroundCheckDetailByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class BackgroundCheckApi
     /**
      * Create request for operation 'backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class BackgroundCheckApi
      *
      * Update Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateBackgroundCheckDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail
+     * @return \PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail
      */
     public function backgroundCheckUpdateBackgroundCheckDetailPost($body, string $contentType = self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'][0])
     {
@@ -1076,12 +1076,12 @@ class BackgroundCheckApi
      *
      * Update Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function backgroundCheckUpdateBackgroundCheckDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'][0])
     {
@@ -1112,11 +1112,11 @@ class BackgroundCheckApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class BackgroundCheckApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class BackgroundCheckApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class BackgroundCheckApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail',
+                        '\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class BackgroundCheckApi
      *
      * Update Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class BackgroundCheckApi
      *
      * Update Background Check Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class BackgroundCheckApi
      */
     public function backgroundCheckUpdateBackgroundCheckDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail';
         $request = $this->backgroundCheckUpdateBackgroundCheckDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class BackgroundCheckApi
     /**
      * Create request for operation 'backgroundCheckUpdateBackgroundCheckDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateBackgroundCheckDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['backgroundCheckUpdateBackgroundCheckDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

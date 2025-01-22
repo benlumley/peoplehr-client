@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **hours_required** | **int** | HoursRequired for add new CPD | [optional]
 **hours_accredited** | **int** | HoursAccredited for add new CPD | [optional]
 **notes** | **string** | Notes for add new CPD | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]**](CustomColumnsArrayForEmployeeCPDInner.md) | CustomColumns for add new cpd |
-**add_files** | [**\OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]**](AddFilesArrayForEmployeeCPDInner.md) | AddFiles for add new cpd |
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]**](CustomColumnsArrayForEmployeeCPDInner.md) | CustomColumns for add new cpd |
+**add_files** | [**\PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]**](AddFilesArrayForEmployeeCPDInner.md) | AddFiles for add new cpd |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

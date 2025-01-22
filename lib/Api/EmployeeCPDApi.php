@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeCPDApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class EmployeeCPDApi
      *
      * Add new CPD
      *
-     * @param  \OpenAPI\Client\Model\AddnewCPDParameter $body body (required)
+     * @param  \PeopleHR\Model\AddnewCPDParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDAddNewCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewCPD
+     * @return \PeopleHR\Model\ErrorForAddNewCPD
      */
     public function employeeCPDAddNewCPDPost($body, string $contentType = self::contentTypes['employeeCPDAddNewCPDPost'][0])
     {
@@ -158,12 +158,12 @@ class EmployeeCPDApi
      *
      * Add new CPD
      *
-     * @param  \OpenAPI\Client\Model\AddnewCPDParameter $body (required)
+     * @param  \PeopleHR\Model\AddnewCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDAddNewCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewCPD, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewCPD, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCPDAddNewCPDPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDAddNewCPDPost'][0])
     {
@@ -194,11 +194,11 @@ class EmployeeCPDApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewCPD' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewCPD' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewCPD' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewCPD' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class EmployeeCPDApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewCPD', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewCPD', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class EmployeeCPDApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewCPD';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewCPD';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class EmployeeCPDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewCPD',
+                        '\PeopleHR\Model\ErrorForAddNewCPD',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class EmployeeCPDApi
      *
      * Add new CPD
      *
-     * @param  \OpenAPI\Client\Model\AddnewCPDParameter $body (required)
+     * @param  \PeopleHR\Model\AddnewCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDAddNewCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class EmployeeCPDApi
      *
      * Add new CPD
      *
-     * @param  \OpenAPI\Client\Model\AddnewCPDParameter $body (required)
+     * @param  \PeopleHR\Model\AddnewCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDAddNewCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class EmployeeCPDApi
      */
     public function employeeCPDAddNewCPDPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDAddNewCPDPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewCPD';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewCPD';
         $request = $this->employeeCPDAddNewCPDPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class EmployeeCPDApi
     /**
      * Create request for operation 'employeeCPDAddNewCPDPost'
      *
-     * @param  \OpenAPI\Client\Model\AddnewCPDParameter $body (required)
+     * @param  \PeopleHR\Model\AddnewCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDAddNewCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class EmployeeCPDApi
      *
      * Delete CPD
      *
-     * @param  \OpenAPI\Client\Model\DeleteCPDParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteCPDParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDDeleteCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteCPD
+     * @return \PeopleHR\Model\ErrorForDeleteCPD
      */
     public function employeeCPDDeleteCPDPost($body, string $contentType = self::contentTypes['employeeCPDDeleteCPDPost'][0])
     {
@@ -465,12 +465,12 @@ class EmployeeCPDApi
      *
      * Delete CPD
      *
-     * @param  \OpenAPI\Client\Model\DeleteCPDParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDDeleteCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteCPD, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteCPD, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCPDDeleteCPDPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDDeleteCPDPost'][0])
     {
@@ -501,11 +501,11 @@ class EmployeeCPDApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteCPD' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteCPD' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteCPD' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteCPD' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class EmployeeCPDApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteCPD', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteCPD', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class EmployeeCPDApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteCPD';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteCPD';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class EmployeeCPDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteCPD',
+                        '\PeopleHR\Model\ErrorForDeleteCPD',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class EmployeeCPDApi
      *
      * Delete CPD
      *
-     * @param  \OpenAPI\Client\Model\DeleteCPDParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDDeleteCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class EmployeeCPDApi
      *
      * Delete CPD
      *
-     * @param  \OpenAPI\Client\Model\DeleteCPDParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDDeleteCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class EmployeeCPDApi
      */
     public function employeeCPDDeleteCPDPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDDeleteCPDPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteCPD';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteCPD';
         $request = $this->employeeCPDDeleteCPDPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class EmployeeCPDApi
     /**
      * Create request for operation 'employeeCPDDeleteCPDPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteCPDParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDDeleteCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class EmployeeCPDApi
      *
      * Get By CPDId
      *
-     * @param  \OpenAPI\Client\Model\GetByCPDIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetByCPDIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetByCPDIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByCPDId
+     * @return \PeopleHR\Model\ErrorForGetByCPDId
      */
     public function employeeCPDGetByCPDIdPost($body, string $contentType = self::contentTypes['employeeCPDGetByCPDIdPost'][0])
     {
@@ -772,12 +772,12 @@ class EmployeeCPDApi
      *
      * Get By CPDId
      *
-     * @param  \OpenAPI\Client\Model\GetByCPDIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCPDIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetByCPDIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByCPDId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByCPDId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCPDGetByCPDIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDGetByCPDIdPost'][0])
     {
@@ -808,11 +808,11 @@ class EmployeeCPDApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByCPDId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByCPDId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByCPDId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByCPDId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class EmployeeCPDApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByCPDId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByCPDId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class EmployeeCPDApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByCPDId';
+            $returnType = '\PeopleHR\Model\ErrorForGetByCPDId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class EmployeeCPDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByCPDId',
+                        '\PeopleHR\Model\ErrorForGetByCPDId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class EmployeeCPDApi
      *
      * Get By CPDId
      *
-     * @param  \OpenAPI\Client\Model\GetByCPDIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCPDIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetByCPDIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class EmployeeCPDApi
      *
      * Get By CPDId
      *
-     * @param  \OpenAPI\Client\Model\GetByCPDIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCPDIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetByCPDIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class EmployeeCPDApi
      */
     public function employeeCPDGetByCPDIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDGetByCPDIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByCPDId';
+        $returnType = '\PeopleHR\Model\ErrorForGetByCPDId';
         $request = $this->employeeCPDGetByCPDIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class EmployeeCPDApi
     /**
      * Create request for operation 'employeeCPDGetByCPDIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByCPDIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCPDIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetByCPDIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class EmployeeCPDApi
      *
      * Get CPD By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetCPDByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetCPDByEmployeeId
      */
     public function employeeCPDGetCPDByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class EmployeeCPDApi
      *
      * Get CPD By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCPDByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetCPDByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCPDGetCPDByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class EmployeeCPDApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetCPDByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetCPDByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class EmployeeCPDApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetCPDByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class EmployeeCPDApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetCPDByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class EmployeeCPDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetCPDByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class EmployeeCPDApi
      *
      * Get CPD By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCPDByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class EmployeeCPDApi
      *
      * Get CPD By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCPDByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class EmployeeCPDApi
      */
     public function employeeCPDGetCPDByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetCPDByEmployeeId';
         $request = $this->employeeCPDGetCPDByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class EmployeeCPDApi
     /**
      * Create request for operation 'employeeCPDGetCPDByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCPDByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDGetCPDByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class EmployeeCPDApi
      *
      * Update CPD
      *
-     * @param  \OpenAPI\Client\Model\UpdateCPDParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateCPDParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDUpdateCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateCPD
+     * @return \PeopleHR\Model\ErrorForUpdateCPD
      */
     public function employeeCPDUpdateCPDPost($body, string $contentType = self::contentTypes['employeeCPDUpdateCPDPost'][0])
     {
@@ -1386,12 +1386,12 @@ class EmployeeCPDApi
      *
      * Update CPD
      *
-     * @param  \OpenAPI\Client\Model\UpdateCPDParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDUpdateCPDPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateCPD, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateCPD, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCPDUpdateCPDPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDUpdateCPDPost'][0])
     {
@@ -1422,11 +1422,11 @@ class EmployeeCPDApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateCPD' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateCPD' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateCPD' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateCPD' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class EmployeeCPDApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateCPD', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateCPD', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class EmployeeCPDApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateCPD';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateCPD';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class EmployeeCPDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateCPD',
+                        '\PeopleHR\Model\ErrorForUpdateCPD',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class EmployeeCPDApi
      *
      * Update CPD
      *
-     * @param  \OpenAPI\Client\Model\UpdateCPDParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDUpdateCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class EmployeeCPDApi
      *
      * Update CPD
      *
-     * @param  \OpenAPI\Client\Model\UpdateCPDParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDUpdateCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class EmployeeCPDApi
      */
     public function employeeCPDUpdateCPDPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCPDUpdateCPDPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateCPD';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateCPD';
         $request = $this->employeeCPDUpdateCPDPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class EmployeeCPDApi
     /**
      * Create request for operation 'employeeCPDUpdateCPDPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateCPDParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCPDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCPDUpdateCPDPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

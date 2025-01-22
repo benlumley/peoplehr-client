@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetVehicleDetailByEmployeeId Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetVehicleDetailByEmployeeId implements ModelInterface, ArrayAcces
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]'
+        'result' => '\PeopleHR\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetVehicleDetailByEmployeeId implements ModelInterface, ArrayAcces
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]|null
+     * @return \PeopleHR\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetVehicleDetailByEmployeeId implements ModelInterface, ArrayAcces
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]|null $result Result value
+     * @param \PeopleHR\Model\ResultGetVehicleDetailByEmployeeIdArrayInner[]|null $result Result value
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeQualificationApi
+# PeopleHR\EmployeeQualificationApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeQualificationAddNewQualificationPost()`
 
 ```php
-employeeQualificationAddNewQualificationPost($body): \OpenAPI\Client\Model\ErrorForAddNewQualification
+employeeQualificationAddNewQualificationPost($body): \PeopleHR\Model\ErrorForAddNewQualification
 ```
 
 Add New Qualification
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeQualificationApi(
+$apiInstance = new PeopleHR\Api\EmployeeQualificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewQualificationParameter(); // \OpenAPI\Client\Model\AddNewQualificationParameter
+$body = new \PeopleHR\Model\AddNewQualificationParameter(); // \PeopleHR\Model\AddNewQualificationParameter
 
 try {
     $result = $apiInstance->employeeQualificationAddNewQualificationPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewQualificationParameter**](../Model/AddNewQualificationParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewQualificationParameter**](../Model/AddNewQualificationParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewQualification**](../Model/ErrorForAddNewQualification.md)
+[**\PeopleHR\Model\ErrorForAddNewQualification**](../Model/ErrorForAddNewQualification.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeQualificationDeleteQualificationPost()`
 
 ```php
-employeeQualificationDeleteQualificationPost($body): \OpenAPI\Client\Model\ErrorForDeleteQualification
+employeeQualificationDeleteQualificationPost($body): \PeopleHR\Model\ErrorForDeleteQualification
 ```
 
 Delete Qualification
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeQualificationApi(
+$apiInstance = new PeopleHR\Api\EmployeeQualificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteQualificationParameter(); // \OpenAPI\Client\Model\DeleteQualificationParameter
+$body = new \PeopleHR\Model\DeleteQualificationParameter(); // \PeopleHR\Model\DeleteQualificationParameter
 
 try {
     $result = $apiInstance->employeeQualificationDeleteQualificationPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteQualificationParameter**](../Model/DeleteQualificationParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteQualificationParameter**](../Model/DeleteQualificationParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteQualification**](../Model/ErrorForDeleteQualification.md)
+[**\PeopleHR\Model\ErrorForDeleteQualification**](../Model/ErrorForDeleteQualification.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeQualificationGetQualificationByEmployeeIdPost()`
 
 ```php
-employeeQualificationGetQualificationByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId
+employeeQualificationGetQualificationByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetQualificationByEmployeeId
 ```
 
 Get Qualification By EmployeeId
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeQualificationApi(
+$apiInstance = new PeopleHR\Api\EmployeeQualificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetQualificationByEmployeeIdParameter(); // \PeopleHR\Model\GetQualificationByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeQualificationGetQualificationByEmployeeIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter**](../Model/GetQualificationByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetQualificationByEmployeeIdParameter**](../Model/GetQualificationByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId**](../Model/ErrorForGetQualificationByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetQualificationByEmployeeId**](../Model/ErrorForGetQualificationByEmployeeId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeQualificationGetQualificationByQualificationIdPost()`
 
 ```php
-employeeQualificationGetQualificationByQualificationIdPost($body): \OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId
+employeeQualificationGetQualificationByQualificationIdPost($body): \PeopleHR\Model\ErrorForGetQualificationByQualificationId
 ```
 
 Get Qualification By QualificationId
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeQualificationApi(
+$apiInstance = new PeopleHR\Api\EmployeeQualificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter(); // \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter
+$body = new \PeopleHR\Model\GetQualificationByQualificationIdParameter(); // \PeopleHR\Model\GetQualificationByQualificationIdParameter
 
 try {
     $result = $apiInstance->employeeQualificationGetQualificationByQualificationIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetQualificationByQualificationIdParameter**](../Model/GetQualificationByQualificationIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetQualificationByQualificationIdParameter**](../Model/GetQualificationByQualificationIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId**](../Model/ErrorForGetQualificationByQualificationId.md)
+[**\PeopleHR\Model\ErrorForGetQualificationByQualificationId**](../Model/ErrorForGetQualificationByQualificationId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeQualificationUpdateQualificationPost()`
 
 ```php
-employeeQualificationUpdateQualificationPost($body): \OpenAPI\Client\Model\ErrorForUpdateQualification
+employeeQualificationUpdateQualificationPost($body): \PeopleHR\Model\ErrorForUpdateQualification
 ```
 
 Update Qualification
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeQualificationApi(
+$apiInstance = new PeopleHR\Api\EmployeeQualificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateQualificationParameter(); // \OpenAPI\Client\Model\UpdateQualificationParameter
+$body = new \PeopleHR\Model\UpdateQualificationParameter(); // \PeopleHR\Model\UpdateQualificationParameter
 
 try {
     $result = $apiInstance->employeeQualificationUpdateQualificationPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateQualificationParameter**](../Model/UpdateQualificationParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateQualificationParameter**](../Model/UpdateQualificationParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateQualification**](../Model/ErrorForUpdateQualification.md)
+[**\PeopleHR\Model\ErrorForUpdateQualification**](../Model/ErrorForUpdateQualification.md)
 
 ### Authorization
 

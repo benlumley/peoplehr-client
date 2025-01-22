@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetCustomScreenByEmployeeId Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetCustomScreenByEmployeeId implements ModelInterface, ArrayAccess
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\Result1GetByCustomScreenByEmployeeIdInner[]'
+        'result' => '\PeopleHR\Model\Result1GetByCustomScreenByEmployeeIdInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetCustomScreenByEmployeeId implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\Result1GetByCustomScreenByEmployeeIdInner[]|null
+     * @return \PeopleHR\Model\Result1GetByCustomScreenByEmployeeIdInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetCustomScreenByEmployeeId implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\Result1GetByCustomScreenByEmployeeIdInner[]|null $result Result value
+     * @param \PeopleHR\Model\Result1GetByCustomScreenByEmployeeIdInner[]|null $result Result value
      *
      * @return self
      */

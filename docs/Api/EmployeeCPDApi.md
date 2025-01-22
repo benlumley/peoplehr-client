@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeCPDApi
+# PeopleHR\EmployeeCPDApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeCPDAddNewCPDPost()`
 
 ```php
-employeeCPDAddNewCPDPost($body): \OpenAPI\Client\Model\ErrorForAddNewCPD
+employeeCPDAddNewCPDPost($body): \PeopleHR\Model\ErrorForAddNewCPD
 ```
 
 Add new CPD
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCPDApi(
+$apiInstance = new PeopleHR\Api\EmployeeCPDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddnewCPDParameter(); // \OpenAPI\Client\Model\AddnewCPDParameter
+$body = new \PeopleHR\Model\AddnewCPDParameter(); // \PeopleHR\Model\AddnewCPDParameter
 
 try {
     $result = $apiInstance->employeeCPDAddNewCPDPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddnewCPDParameter**](../Model/AddnewCPDParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddnewCPDParameter**](../Model/AddnewCPDParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewCPD**](../Model/ErrorForAddNewCPD.md)
+[**\PeopleHR\Model\ErrorForAddNewCPD**](../Model/ErrorForAddNewCPD.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeCPDDeleteCPDPost()`
 
 ```php
-employeeCPDDeleteCPDPost($body): \OpenAPI\Client\Model\ErrorForDeleteCPD
+employeeCPDDeleteCPDPost($body): \PeopleHR\Model\ErrorForDeleteCPD
 ```
 
 Delete CPD
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCPDApi(
+$apiInstance = new PeopleHR\Api\EmployeeCPDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteCPDParameter(); // \OpenAPI\Client\Model\DeleteCPDParameter
+$body = new \PeopleHR\Model\DeleteCPDParameter(); // \PeopleHR\Model\DeleteCPDParameter
 
 try {
     $result = $apiInstance->employeeCPDDeleteCPDPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteCPDParameter**](../Model/DeleteCPDParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteCPDParameter**](../Model/DeleteCPDParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteCPD**](../Model/ErrorForDeleteCPD.md)
+[**\PeopleHR\Model\ErrorForDeleteCPD**](../Model/ErrorForDeleteCPD.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeCPDGetByCPDIdPost()`
 
 ```php
-employeeCPDGetByCPDIdPost($body): \OpenAPI\Client\Model\ErrorForGetByCPDId
+employeeCPDGetByCPDIdPost($body): \PeopleHR\Model\ErrorForGetByCPDId
 ```
 
 Get By CPDId
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCPDApi(
+$apiInstance = new PeopleHR\Api\EmployeeCPDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByCPDIdParameter(); // \OpenAPI\Client\Model\GetByCPDIdParameter
+$body = new \PeopleHR\Model\GetByCPDIdParameter(); // \PeopleHR\Model\GetByCPDIdParameter
 
 try {
     $result = $apiInstance->employeeCPDGetByCPDIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByCPDIdParameter**](../Model/GetByCPDIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByCPDIdParameter**](../Model/GetByCPDIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByCPDId**](../Model/ErrorForGetByCPDId.md)
+[**\PeopleHR\Model\ErrorForGetByCPDId**](../Model/ErrorForGetByCPDId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeCPDGetCPDByEmployeeIdPost()`
 
 ```php
-employeeCPDGetCPDByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId
+employeeCPDGetCPDByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetCPDByEmployeeId
 ```
 
 Get CPD By EmployeeId
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCPDApi(
+$apiInstance = new PeopleHR\Api\EmployeeCPDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetCPDByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetCPDByEmployeeIdParameter(); // \PeopleHR\Model\GetCPDByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeCPDGetCPDByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetCPDByEmployeeIdParameter**](../Model/GetCPDByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetCPDByEmployeeIdParameter**](../Model/GetCPDByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetCPDByEmployeeId**](../Model/ErrorForGetCPDByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetCPDByEmployeeId**](../Model/ErrorForGetCPDByEmployeeId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeCPDUpdateCPDPost()`
 
 ```php
-employeeCPDUpdateCPDPost($body): \OpenAPI\Client\Model\ErrorForUpdateCPD
+employeeCPDUpdateCPDPost($body): \PeopleHR\Model\ErrorForUpdateCPD
 ```
 
 Update CPD
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCPDApi(
+$apiInstance = new PeopleHR\Api\EmployeeCPDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateCPDParameter(); // \OpenAPI\Client\Model\UpdateCPDParameter
+$body = new \PeopleHR\Model\UpdateCPDParameter(); // \PeopleHR\Model\UpdateCPDParameter
 
 try {
     $result = $apiInstance->employeeCPDUpdateCPDPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateCPDParameter**](../Model/UpdateCPDParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateCPDParameter**](../Model/UpdateCPDParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateCPD**](../Model/ErrorForUpdateCPD.md)
+[**\PeopleHR\Model\ErrorForUpdateCPD**](../Model/ErrorForUpdateCPD.md)
 
 ### Authorization
 

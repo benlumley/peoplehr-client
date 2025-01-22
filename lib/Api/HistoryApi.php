@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * HistoryApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,12 +128,12 @@ class HistoryApi
      *
      * Get History By EmployeeId And FieldName
      *
-     * @param  \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body body (required)
+     * @param  \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName
+     * @return \PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName
      */
     public function historyGetHistoryByEmployeeIdAndFieldNamePost($body, string $contentType = self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'][0])
     {
@@ -146,12 +146,12 @@ class HistoryApi
      *
      * Get History By EmployeeId And FieldName
      *
-     * @param  \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName, HTTP status code, HTTP response headers (array of strings)
      */
     public function historyGetHistoryByEmployeeIdAndFieldNamePostWithHttpInfo($body, string $contentType = self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'][0])
     {
@@ -182,11 +182,11 @@ class HistoryApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -204,7 +204,7 @@ class HistoryApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -223,7 +223,7 @@ class HistoryApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName';
+            $returnType = '\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -256,7 +256,7 @@ class HistoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName',
+                        '\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class HistoryApi
      *
      * Get History By EmployeeId And FieldName
      *
-     * @param  \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -292,7 +292,7 @@ class HistoryApi
      *
      * Get History By EmployeeId And FieldName
      *
-     * @param  \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class HistoryApi
      */
     public function historyGetHistoryByEmployeeIdAndFieldNamePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetHistoryByEmployeeIdAndFieldName';
+        $returnType = '\PeopleHR\Model\ErrorForGetHistoryByEmployeeIdAndFieldName';
         $request = $this->historyGetHistoryByEmployeeIdAndFieldNamePostRequest($body, $contentType);
 
         return $this->client
@@ -342,7 +342,7 @@ class HistoryApi
     /**
      * Create request for operation 'historyGetHistoryByEmployeeIdAndFieldNamePost'
      *
-     * @param  \OpenAPI\Client\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
+     * @param  \PeopleHR\Model\GetHistoryByEmployeeIdAndFieldNameParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['historyGetHistoryByEmployeeIdAndFieldNamePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

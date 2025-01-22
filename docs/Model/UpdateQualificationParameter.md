@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **date_passed** | **\DateTime** | Date passed for update qualification | [optional]
 **expiry_date** | **\DateTime** | Expiry date for update qualification | [optional]
 **comments** | **string** | Comments for update qualification | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForEmployeeQualificationInner[]**](CustomColumnsForEmployeeQualificationInner.md) | Custom columns | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForEmployeeQualificationInner[]**](AddFilesForEmployeeQualificationInner.md) | Add files | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForEmployeeQualificationInner[]**](CustomColumnsForEmployeeQualificationInner.md) | Custom columns | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForEmployeeQualificationInner[]**](AddFilesForEmployeeQualificationInner.md) | Add files | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

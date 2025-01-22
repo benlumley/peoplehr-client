@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * Result1Inner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class Result1Inner implements ModelInterface, ArrayAccess, \JsonSerializable
         'currency' => 'string',
         'change_reason' => 'string',
         'comments' => 'string',
-        'deductions' => '\OpenAPI\Client\Model\DeductionsObjectInner[]',
-        'entitlements' => '\OpenAPI\Client\Model\EntitlementsObjectInner[]'
+        'deductions' => '\PeopleHR\Model\DeductionsObjectInner[]',
+        'entitlements' => '\PeopleHR\Model\EntitlementsObjectInner[]'
     ];
 
     /**
@@ -572,7 +572,7 @@ class Result1Inner implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets deductions
      *
-     * @return \OpenAPI\Client\Model\DeductionsObjectInner[]|null
+     * @return \PeopleHR\Model\DeductionsObjectInner[]|null
      */
     public function getDeductions()
     {
@@ -582,7 +582,7 @@ class Result1Inner implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets deductions
      *
-     * @param \OpenAPI\Client\Model\DeductionsObjectInner[]|null $deductions Deductions array list
+     * @param \PeopleHR\Model\DeductionsObjectInner[]|null $deductions Deductions array list
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class Result1Inner implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets entitlements
      *
-     * @return \OpenAPI\Client\Model\EntitlementsObjectInner[]|null
+     * @return \PeopleHR\Model\EntitlementsObjectInner[]|null
      */
     public function getEntitlements()
     {
@@ -609,7 +609,7 @@ class Result1Inner implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets entitlements
      *
-     * @param \OpenAPI\Client\Model\EntitlementsObjectInner[]|null $entitlements Entitlements array list
+     * @param \PeopleHR\Model\EntitlementsObjectInner[]|null $entitlements Entitlements array list
      *
      * @return self
      */

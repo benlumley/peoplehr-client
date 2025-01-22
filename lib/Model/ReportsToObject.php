@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ReportsToObject Class Doc Comment
  *
  * @category Class
  * @description Department object contain displayValue and fieldHistoryForEffectiveDate array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ReportsToObject implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'display_value' => 'string',
-        'field_history_for_effective_date' => '\OpenAPI\Client\Model\FieldHistoryForEffectiveDateObjectInner[]'
+        'field_history_for_effective_date' => '\PeopleHR\Model\FieldHistoryForEffectiveDateObjectInner[]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class ReportsToObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets field_history_for_effective_date
      *
-     * @return \OpenAPI\Client\Model\FieldHistoryForEffectiveDateObjectInner[]|null
+     * @return \PeopleHR\Model\FieldHistoryForEffectiveDateObjectInner[]|null
      */
     public function getFieldHistoryForEffectiveDate()
     {
@@ -338,7 +338,7 @@ class ReportsToObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets field_history_for_effective_date
      *
-     * @param \OpenAPI\Client\Model\FieldHistoryForEffectiveDateObjectInner[]|null $field_history_for_effective_date Field history for effective date array list
+     * @param \PeopleHR\Model\FieldHistoryForEffectiveDateObjectInner[]|null $field_history_for_effective_date Field history for effective date array list
      *
      * @return self
      */

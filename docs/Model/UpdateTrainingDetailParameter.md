@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **cost** | **float** | Cost for update training detail | [optional]
 **provider** | **string** | Provider for update training detail | [optional]
 **notes** | **string** | Notes for update training detail | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForEmployeeTrainingInner[]**](CustomColumnsForEmployeeTrainingInner.md) | Custom columns for update training detail | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForEmployeeTrainingInner[]**](AddFilesForEmployeeTrainingInner.md) | Add files for update training detail | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForEmployeeTrainingInner[]**](CustomColumnsForEmployeeTrainingInner.md) | Custom columns for update training detail | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForEmployeeTrainingInner[]**](AddFilesForEmployeeTrainingInner.md) | Add files for update training detail | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

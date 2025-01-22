@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateDrivingLicenseParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class UpdateDrivingLicenseParameter implements ModelInterface, ArrayAccess, \Jso
         'license_type' => 'string',
         'expiry_date' => '\DateTime',
         'comments' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForEmployeeDrivingInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForEmployeeDrivingInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForEmployeeDrivingInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForEmployeeDrivingInner[]'
     ];
 
     /**
@@ -611,7 +611,7 @@ class UpdateDrivingLicenseParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForEmployeeDrivingInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForEmployeeDrivingInner[]|null
      */
     public function getCustomColumns()
     {
@@ -621,7 +621,7 @@ class UpdateDrivingLicenseParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForEmployeeDrivingInner[]|null $custom_columns Custom columns for update driving license
+     * @param \PeopleHR\Model\CustomColumnsForEmployeeDrivingInner[]|null $custom_columns Custom columns for update driving license
      *
      * @return self
      */
@@ -638,7 +638,7 @@ class UpdateDrivingLicenseParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForEmployeeDrivingInner[]|null
+     * @return \PeopleHR\Model\AddFilesForEmployeeDrivingInner[]|null
      */
     public function getAddFiles()
     {
@@ -648,7 +648,7 @@ class UpdateDrivingLicenseParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForEmployeeDrivingInner[]|null $add_files Add files for update driving license
+     * @param \PeopleHR\Model\AddFilesForEmployeeDrivingInner[]|null $add_files Add files for update driving license
      *
      * @return self
      */

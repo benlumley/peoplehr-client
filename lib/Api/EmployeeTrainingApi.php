@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeTrainingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class EmployeeTrainingApi
      *
      * Add Training Detail
      *
-     * @param  \OpenAPI\Client\Model\AddTrainingDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\AddTrainingDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingAddtrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddTrainingDetail
+     * @return \PeopleHR\Model\ErrorForAddTrainingDetail
      */
     public function employeeTrainingAddtrainingdetailPost($body, string $contentType = self::contentTypes['employeeTrainingAddtrainingdetailPost'][0])
     {
@@ -155,12 +155,12 @@ class EmployeeTrainingApi
      *
      * Add Training Detail
      *
-     * @param  \OpenAPI\Client\Model\AddTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingAddtrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddTrainingDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddTrainingDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTrainingAddtrainingdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingAddtrainingdetailPost'][0])
     {
@@ -191,11 +191,11 @@ class EmployeeTrainingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddTrainingDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddTrainingDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddTrainingDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddTrainingDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class EmployeeTrainingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddTrainingDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddTrainingDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class EmployeeTrainingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddTrainingDetail';
+            $returnType = '\PeopleHR\Model\ErrorForAddTrainingDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class EmployeeTrainingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddTrainingDetail',
+                        '\PeopleHR\Model\ErrorForAddTrainingDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class EmployeeTrainingApi
      *
      * Add Training Detail
      *
-     * @param  \OpenAPI\Client\Model\AddTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingAddtrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class EmployeeTrainingApi
      *
      * Add Training Detail
      *
-     * @param  \OpenAPI\Client\Model\AddTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingAddtrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class EmployeeTrainingApi
      */
     public function employeeTrainingAddtrainingdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingAddtrainingdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddTrainingDetail';
+        $returnType = '\PeopleHR\Model\ErrorForAddTrainingDetail';
         $request = $this->employeeTrainingAddtrainingdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class EmployeeTrainingApi
     /**
      * Create request for operation 'employeeTrainingAddtrainingdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\AddTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingAddtrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class EmployeeTrainingApi
      *
      * Delete Training Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteTrainingDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteTrainingDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingDeletetrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorFordeletetrainingdetail
+     * @return \PeopleHR\Model\ErrorFordeletetrainingdetail
      */
     public function employeeTrainingDeletetrainingdetailPost($body, string $contentType = self::contentTypes['employeeTrainingDeletetrainingdetailPost'][0])
     {
@@ -462,12 +462,12 @@ class EmployeeTrainingApi
      *
      * Delete Training Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingDeletetrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorFordeletetrainingdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorFordeletetrainingdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTrainingDeletetrainingdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingDeletetrainingdetailPost'][0])
     {
@@ -498,11 +498,11 @@ class EmployeeTrainingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorFordeletetrainingdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorFordeletetrainingdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorFordeletetrainingdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorFordeletetrainingdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class EmployeeTrainingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorFordeletetrainingdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorFordeletetrainingdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class EmployeeTrainingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorFordeletetrainingdetail';
+            $returnType = '\PeopleHR\Model\ErrorFordeletetrainingdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class EmployeeTrainingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorFordeletetrainingdetail',
+                        '\PeopleHR\Model\ErrorFordeletetrainingdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class EmployeeTrainingApi
      *
      * Delete Training Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingDeletetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class EmployeeTrainingApi
      *
      * Delete Training Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingDeletetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class EmployeeTrainingApi
      */
     public function employeeTrainingDeletetrainingdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingDeletetrainingdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorFordeletetrainingdetail';
+        $returnType = '\PeopleHR\Model\ErrorFordeletetrainingdetail';
         $request = $this->employeeTrainingDeletetrainingdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class EmployeeTrainingApi
     /**
      * Create request for operation 'employeeTrainingDeletetrainingdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingDeletetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class EmployeeTrainingApi
      *
      * Get Training Detail
      *
-     * @param  \OpenAPI\Client\Model\GetTrainingDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\GetTrainingDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingGetTrainingDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetTrainingDetail
+     * @return \PeopleHR\Model\ErrorForGetTrainingDetail
      */
     public function employeeTrainingGetTrainingDetailPost($body, string $contentType = self::contentTypes['employeeTrainingGetTrainingDetailPost'][0])
     {
@@ -769,12 +769,12 @@ class EmployeeTrainingApi
      *
      * Get Training Detail
      *
-     * @param  \OpenAPI\Client\Model\GetTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingGetTrainingDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetTrainingDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetTrainingDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTrainingGetTrainingDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingGetTrainingDetailPost'][0])
     {
@@ -805,11 +805,11 @@ class EmployeeTrainingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetTrainingDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetTrainingDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetTrainingDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetTrainingDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class EmployeeTrainingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetTrainingDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetTrainingDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class EmployeeTrainingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetTrainingDetail';
+            $returnType = '\PeopleHR\Model\ErrorForGetTrainingDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class EmployeeTrainingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetTrainingDetail',
+                        '\PeopleHR\Model\ErrorForGetTrainingDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class EmployeeTrainingApi
      *
      * Get Training Detail
      *
-     * @param  \OpenAPI\Client\Model\GetTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingGetTrainingDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class EmployeeTrainingApi
      *
      * Get Training Detail
      *
-     * @param  \OpenAPI\Client\Model\GetTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingGetTrainingDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class EmployeeTrainingApi
      */
     public function employeeTrainingGetTrainingDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingGetTrainingDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetTrainingDetail';
+        $returnType = '\PeopleHR\Model\ErrorForGetTrainingDetail';
         $request = $this->employeeTrainingGetTrainingDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class EmployeeTrainingApi
     /**
      * Create request for operation 'employeeTrainingGetTrainingDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingGetTrainingDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class EmployeeTrainingApi
      *
      * Update Training Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateTrainingDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateTrainingDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingUpdatetrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateTrainingDetail
+     * @return \PeopleHR\Model\ErrorForUpdateTrainingDetail
      */
     public function employeeTrainingUpdatetrainingdetailPost($body, string $contentType = self::contentTypes['employeeTrainingUpdatetrainingdetailPost'][0])
     {
@@ -1076,12 +1076,12 @@ class EmployeeTrainingApi
      *
      * Update Training Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingUpdatetrainingdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateTrainingDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateTrainingDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTrainingUpdatetrainingdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingUpdatetrainingdetailPost'][0])
     {
@@ -1112,11 +1112,11 @@ class EmployeeTrainingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateTrainingDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateTrainingDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class EmployeeTrainingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateTrainingDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class EmployeeTrainingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateTrainingDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class EmployeeTrainingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail',
+                        '\PeopleHR\Model\ErrorForUpdateTrainingDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class EmployeeTrainingApi
      *
      * Update Training Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingUpdatetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class EmployeeTrainingApi
      *
      * Update Training Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingUpdatetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class EmployeeTrainingApi
      */
     public function employeeTrainingUpdatetrainingdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTrainingUpdatetrainingdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateTrainingDetail';
         $request = $this->employeeTrainingUpdatetrainingdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class EmployeeTrainingApi
     /**
      * Create request for operation 'employeeTrainingUpdatetrainingdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateTrainingDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateTrainingDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTrainingUpdatetrainingdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

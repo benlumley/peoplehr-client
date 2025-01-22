@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddNewCustomScreenTransactionParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class AddNewCustomScreenTransactionParameter implements ModelInterface, ArrayAcc
         'action' => 'string',
         'employee_id' => 'string',
         'screen_id' => 'int',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForEmployeeCustomScreenObjectInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForEmployeeCustomScreenObjectInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForEmployeeCustomScreenObjectInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForEmployeeCustomScreenObjectInner[]'
     ];
 
     /**
@@ -470,7 +470,7 @@ class AddNewCustomScreenTransactionParameter implements ModelInterface, ArrayAcc
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForEmployeeCustomScreenObjectInner[]
+     * @return \PeopleHR\Model\CustomColumnsForEmployeeCustomScreenObjectInner[]
      */
     public function getCustomColumns()
     {
@@ -480,7 +480,7 @@ class AddNewCustomScreenTransactionParameter implements ModelInterface, ArrayAcc
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForEmployeeCustomScreenObjectInner[] $custom_columns CustomColumns for add new custom screen transaction
+     * @param \PeopleHR\Model\CustomColumnsForEmployeeCustomScreenObjectInner[] $custom_columns CustomColumns for add new custom screen transaction
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class AddNewCustomScreenTransactionParameter implements ModelInterface, ArrayAcc
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForEmployeeCustomScreenObjectInner[]
+     * @return \PeopleHR\Model\AddFilesForEmployeeCustomScreenObjectInner[]
      */
     public function getAddFiles()
     {
@@ -507,7 +507,7 @@ class AddNewCustomScreenTransactionParameter implements ModelInterface, ArrayAcc
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForEmployeeCustomScreenObjectInner[] $add_files AddFiles for add new custom screen transaction
+     * @param \PeopleHR\Model\AddFilesForEmployeeCustomScreenObjectInner[] $add_files AddFiles for add new custom screen transaction
      *
      * @return self
      */

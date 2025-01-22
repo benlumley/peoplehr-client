@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeDocumentApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,12 +134,12 @@ class EmployeeDocumentApi
      *
      * Get All Document
      *
-     * @param  \OpenAPI\Client\Model\GetAllDocumentParameter $body body (required)
+     * @param  \PeopleHR\Model\GetAllDocumentParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetAllDocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetAllDocument
+     * @return \PeopleHR\Model\ErrorForGetAllDocument
      */
     public function employeeDocumentGetAllDocumentPost($body, string $contentType = self::contentTypes['employeeDocumentGetAllDocumentPost'][0])
     {
@@ -152,12 +152,12 @@ class EmployeeDocumentApi
      *
      * Get All Document
      *
-     * @param  \OpenAPI\Client\Model\GetAllDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\GetAllDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetAllDocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetAllDocument, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetAllDocument, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeDocumentGetAllDocumentPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentGetAllDocumentPost'][0])
     {
@@ -188,11 +188,11 @@ class EmployeeDocumentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetAllDocument' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetAllDocument' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetAllDocument' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetAllDocument' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -210,7 +210,7 @@ class EmployeeDocumentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetAllDocument', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetAllDocument', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -229,7 +229,7 @@ class EmployeeDocumentApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetAllDocument';
+            $returnType = '\PeopleHR\Model\ErrorForGetAllDocument';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class EmployeeDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetAllDocument',
+                        '\PeopleHR\Model\ErrorForGetAllDocument',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class EmployeeDocumentApi
      *
      * Get All Document
      *
-     * @param  \OpenAPI\Client\Model\GetAllDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\GetAllDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetAllDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -298,7 +298,7 @@ class EmployeeDocumentApi
      *
      * Get All Document
      *
-     * @param  \OpenAPI\Client\Model\GetAllDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\GetAllDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetAllDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -306,7 +306,7 @@ class EmployeeDocumentApi
      */
     public function employeeDocumentGetAllDocumentPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentGetAllDocumentPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetAllDocument';
+        $returnType = '\PeopleHR\Model\ErrorForGetAllDocument';
         $request = $this->employeeDocumentGetAllDocumentPostRequest($body, $contentType);
 
         return $this->client
@@ -348,7 +348,7 @@ class EmployeeDocumentApi
     /**
      * Create request for operation 'employeeDocumentGetAllDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\GetAllDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\GetAllDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetAllDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -441,12 +441,12 @@ class EmployeeDocumentApi
      *
      * Get Document By Id
      *
-     * @param  \OpenAPI\Client\Model\GetDocumentByIDParameter $body body (required)
+     * @param  \PeopleHR\Model\GetDocumentByIDParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetDocumentByIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetDocumentById
+     * @return \PeopleHR\Model\ErrorForGetDocumentById
      */
     public function employeeDocumentGetDocumentByIdPost($body, string $contentType = self::contentTypes['employeeDocumentGetDocumentByIdPost'][0])
     {
@@ -459,12 +459,12 @@ class EmployeeDocumentApi
      *
      * Get Document By Id
      *
-     * @param  \OpenAPI\Client\Model\GetDocumentByIDParameter $body (required)
+     * @param  \PeopleHR\Model\GetDocumentByIDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetDocumentByIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetDocumentById, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetDocumentById, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeDocumentGetDocumentByIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentGetDocumentByIdPost'][0])
     {
@@ -495,11 +495,11 @@ class EmployeeDocumentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetDocumentById' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetDocumentById' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetDocumentById' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetDocumentById' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -517,7 +517,7 @@ class EmployeeDocumentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetDocumentById', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetDocumentById', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -536,7 +536,7 @@ class EmployeeDocumentApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetDocumentById';
+            $returnType = '\PeopleHR\Model\ErrorForGetDocumentById';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -569,7 +569,7 @@ class EmployeeDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetDocumentById',
+                        '\PeopleHR\Model\ErrorForGetDocumentById',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class EmployeeDocumentApi
      *
      * Get Document By Id
      *
-     * @param  \OpenAPI\Client\Model\GetDocumentByIDParameter $body (required)
+     * @param  \PeopleHR\Model\GetDocumentByIDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetDocumentByIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -605,7 +605,7 @@ class EmployeeDocumentApi
      *
      * Get Document By Id
      *
-     * @param  \OpenAPI\Client\Model\GetDocumentByIDParameter $body (required)
+     * @param  \PeopleHR\Model\GetDocumentByIDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetDocumentByIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -613,7 +613,7 @@ class EmployeeDocumentApi
      */
     public function employeeDocumentGetDocumentByIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentGetDocumentByIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetDocumentById';
+        $returnType = '\PeopleHR\Model\ErrorForGetDocumentById';
         $request = $this->employeeDocumentGetDocumentByIdPostRequest($body, $contentType);
 
         return $this->client
@@ -655,7 +655,7 @@ class EmployeeDocumentApi
     /**
      * Create request for operation 'employeeDocumentGetDocumentByIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetDocumentByIDParameter $body (required)
+     * @param  \PeopleHR\Model\GetDocumentByIDParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentGetDocumentByIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -748,12 +748,12 @@ class EmployeeDocumentApi
      *
      * Upload Employee Document
      *
-     * @param  \OpenAPI\Client\Model\UploadEmployeeDocumentParameter $body body (required)
+     * @param  \PeopleHR\Model\UploadEmployeeDocumentParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUploadEmployeeDocument
+     * @return \PeopleHR\Model\ErrorForUploadEmployeeDocument
      */
     public function employeeDocumentUploadEmployeeDocumentPost($body, string $contentType = self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'][0])
     {
@@ -766,12 +766,12 @@ class EmployeeDocumentApi
      *
      * Upload Employee Document
      *
-     * @param  \OpenAPI\Client\Model\UploadEmployeeDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadEmployeeDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUploadEmployeeDocument, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUploadEmployeeDocument, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeDocumentUploadEmployeeDocumentPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'][0])
     {
@@ -802,11 +802,11 @@ class EmployeeDocumentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUploadEmployeeDocument' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUploadEmployeeDocument' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -824,7 +824,7 @@ class EmployeeDocumentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUploadEmployeeDocument', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -843,7 +843,7 @@ class EmployeeDocumentApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument';
+            $returnType = '\PeopleHR\Model\ErrorForUploadEmployeeDocument';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -876,7 +876,7 @@ class EmployeeDocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument',
+                        '\PeopleHR\Model\ErrorForUploadEmployeeDocument',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -891,7 +891,7 @@ class EmployeeDocumentApi
      *
      * Upload Employee Document
      *
-     * @param  \OpenAPI\Client\Model\UploadEmployeeDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadEmployeeDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -912,7 +912,7 @@ class EmployeeDocumentApi
      *
      * Upload Employee Document
      *
-     * @param  \OpenAPI\Client\Model\UploadEmployeeDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadEmployeeDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -920,7 +920,7 @@ class EmployeeDocumentApi
      */
     public function employeeDocumentUploadEmployeeDocumentPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUploadEmployeeDocument';
+        $returnType = '\PeopleHR\Model\ErrorForUploadEmployeeDocument';
         $request = $this->employeeDocumentUploadEmployeeDocumentPostRequest($body, $contentType);
 
         return $this->client
@@ -962,7 +962,7 @@ class EmployeeDocumentApi
     /**
      * Create request for operation 'employeeDocumentUploadEmployeeDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\UploadEmployeeDocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadEmployeeDocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeDocumentUploadEmployeeDocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

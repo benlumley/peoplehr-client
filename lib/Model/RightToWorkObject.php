@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * RightToWorkObject Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'document_type' => '\OpenAPI\Client\Model\RightToWorkObjectDocumentType',
-        'document_id' => '\OpenAPI\Client\Model\RightToWorkObjectDocumentId',
-        'valid_from' => '\OpenAPI\Client\Model\RightToWorkObjectValidFrom',
-        'valid_to' => '\OpenAPI\Client\Model\RightToWorkObjectValidTo',
-        'duration' => '\OpenAPI\Client\Model\RightToWorkObjectDuration',
-        'right_to_work_comments' => '\OpenAPI\Client\Model\RightToWorkObjectRightToWorkComments'
+        'document_type' => '\PeopleHR\Model\RightToWorkObjectDocumentType',
+        'document_id' => '\PeopleHR\Model\RightToWorkObjectDocumentId',
+        'valid_from' => '\PeopleHR\Model\RightToWorkObjectValidFrom',
+        'valid_to' => '\PeopleHR\Model\RightToWorkObjectValidTo',
+        'duration' => '\PeopleHR\Model\RightToWorkObjectDuration',
+        'right_to_work_comments' => '\PeopleHR\Model\RightToWorkObjectRightToWorkComments'
     ];
 
     /**
@@ -328,7 +328,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets document_type
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectDocumentType|null
+     * @return \PeopleHR\Model\RightToWorkObjectDocumentType|null
      */
     public function getDocumentType()
     {
@@ -338,7 +338,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets document_type
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectDocumentType|null $document_type document_type
+     * @param \PeopleHR\Model\RightToWorkObjectDocumentType|null $document_type document_type
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets document_id
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectDocumentId|null
+     * @return \PeopleHR\Model\RightToWorkObjectDocumentId|null
      */
     public function getDocumentId()
     {
@@ -365,7 +365,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets document_id
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectDocumentId|null $document_id document_id
+     * @param \PeopleHR\Model\RightToWorkObjectDocumentId|null $document_id document_id
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets valid_from
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectValidFrom|null
+     * @return \PeopleHR\Model\RightToWorkObjectValidFrom|null
      */
     public function getValidFrom()
     {
@@ -392,7 +392,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets valid_from
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectValidFrom|null $valid_from valid_from
+     * @param \PeopleHR\Model\RightToWorkObjectValidFrom|null $valid_from valid_from
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets valid_to
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectValidTo|null
+     * @return \PeopleHR\Model\RightToWorkObjectValidTo|null
      */
     public function getValidTo()
     {
@@ -419,7 +419,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets valid_to
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectValidTo|null $valid_to valid_to
+     * @param \PeopleHR\Model\RightToWorkObjectValidTo|null $valid_to valid_to
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets duration
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectDuration|null
+     * @return \PeopleHR\Model\RightToWorkObjectDuration|null
      */
     public function getDuration()
     {
@@ -446,7 +446,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets duration
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectDuration|null $duration duration
+     * @param \PeopleHR\Model\RightToWorkObjectDuration|null $duration duration
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets right_to_work_comments
      *
-     * @return \OpenAPI\Client\Model\RightToWorkObjectRightToWorkComments|null
+     * @return \PeopleHR\Model\RightToWorkObjectRightToWorkComments|null
      */
     public function getRightToWorkComments()
     {
@@ -473,7 +473,7 @@ class RightToWorkObject implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets right_to_work_comments
      *
-     * @param \OpenAPI\Client\Model\RightToWorkObjectRightToWorkComments|null $right_to_work_comments right_to_work_comments
+     * @param \PeopleHR\Model\RightToWorkObjectRightToWorkComments|null $right_to_work_comments right_to_work_comments
      *
      * @return self
      */

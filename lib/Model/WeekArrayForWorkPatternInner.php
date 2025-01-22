@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * WeekArrayForWorkPatternInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class WeekArrayForWorkPatternInner implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'week_number' => 'int',
-        'week_detail' => '\OpenAPI\Client\Model\WeekDetailArrayForWorkPatternInner[]'
+        'week_detail' => '\PeopleHR\Model\WeekDetailArrayForWorkPatternInner[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class WeekArrayForWorkPatternInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets week_detail
      *
-     * @return \OpenAPI\Client\Model\WeekDetailArrayForWorkPatternInner[]|null
+     * @return \PeopleHR\Model\WeekDetailArrayForWorkPatternInner[]|null
      */
     public function getWeekDetail()
     {
@@ -337,7 +337,7 @@ class WeekArrayForWorkPatternInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets week_detail
      *
-     * @param \OpenAPI\Client\Model\WeekDetailArrayForWorkPatternInner[]|null $week_detail Array For Work Detail
+     * @param \PeopleHR\Model\WeekDetailArrayForWorkPatternInner[]|null $week_detail Array For Work Detail
      *
      * @return self
      */

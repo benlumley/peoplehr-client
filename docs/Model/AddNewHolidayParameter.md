@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **end_date** | **\DateTime** | End date for add new holiday |
 **duration_in_days** | **int** | Duration in days for add new holiday |
 **duration_in_minutes** | **int** | Duration in minutes for add new holiday |
-**part_of_day** | [**\OpenAPI\Client\Model\PartOfDay**](PartOfDay.md) | Part of day for add new holiday | [optional]
+**part_of_day** | [**\PeopleHR\Model\PartOfDay**](PartOfDay.md) | Part of day for add new holiday | [optional]
 **comments** | **string** | Comments for add new holiday | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

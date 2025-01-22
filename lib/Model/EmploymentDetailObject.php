@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * EmploymentDetailObject Class Doc Comment
  *
  * @category Class
  * @description Employment detail contain displayValue and FieldHistory array values
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,18 +59,18 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payroll_company' => '\OpenAPI\Client\Model\PayrollCompanyObject',
-        'payroll_id' => '\OpenAPI\Client\Model\PayrollIDObject',
-        'time_and_attendance_id' => '\OpenAPI\Client\Model\TimeAndAttendanceIDObject',
-        'rota_id' => '\OpenAPI\Client\Model\RotaIDObject',
-        'crmid' => '\OpenAPI\Client\Model\CRMIDObject',
-        'atsid' => '\OpenAPI\Client\Model\ATSIDObject',
-        'performance_id' => '\OpenAPI\Client\Model\PerformanceIDObject',
-        'benefits_id' => '\OpenAPI\Client\Model\BenefitsIDObject',
-        'system1_id' => '\OpenAPI\Client\Model\System1IDObject',
-        'system2_id' => '\OpenAPI\Client\Model\System2IDObject',
-        'system3_id' => '\OpenAPI\Client\Model\System3IDObject',
-        'method_of_recruitment' => '\OpenAPI\Client\Model\MethodOfRecruitmentObject'
+        'payroll_company' => '\PeopleHR\Model\PayrollCompanyObject',
+        'payroll_id' => '\PeopleHR\Model\PayrollIDObject',
+        'time_and_attendance_id' => '\PeopleHR\Model\TimeAndAttendanceIDObject',
+        'rota_id' => '\PeopleHR\Model\RotaIDObject',
+        'crmid' => '\PeopleHR\Model\CRMIDObject',
+        'atsid' => '\PeopleHR\Model\ATSIDObject',
+        'performance_id' => '\PeopleHR\Model\PerformanceIDObject',
+        'benefits_id' => '\PeopleHR\Model\BenefitsIDObject',
+        'system1_id' => '\PeopleHR\Model\System1IDObject',
+        'system2_id' => '\PeopleHR\Model\System2IDObject',
+        'system3_id' => '\PeopleHR\Model\System3IDObject',
+        'method_of_recruitment' => '\PeopleHR\Model\MethodOfRecruitmentObject'
     ];
 
     /**
@@ -371,7 +371,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets payroll_company
      *
-     * @return \OpenAPI\Client\Model\PayrollCompanyObject|null
+     * @return \PeopleHR\Model\PayrollCompanyObject|null
      */
     public function getPayrollCompany()
     {
@@ -381,7 +381,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets payroll_company
      *
-     * @param \OpenAPI\Client\Model\PayrollCompanyObject|null $payroll_company PayrollCompany contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\PayrollCompanyObject|null $payroll_company PayrollCompany contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -398,7 +398,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets payroll_id
      *
-     * @return \OpenAPI\Client\Model\PayrollIDObject|null
+     * @return \PeopleHR\Model\PayrollIDObject|null
      */
     public function getPayrollId()
     {
@@ -408,7 +408,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets payroll_id
      *
-     * @param \OpenAPI\Client\Model\PayrollIDObject|null $payroll_id PayrollID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\PayrollIDObject|null $payroll_id PayrollID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -425,7 +425,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets time_and_attendance_id
      *
-     * @return \OpenAPI\Client\Model\TimeAndAttendanceIDObject|null
+     * @return \PeopleHR\Model\TimeAndAttendanceIDObject|null
      */
     public function getTimeAndAttendanceId()
     {
@@ -435,7 +435,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets time_and_attendance_id
      *
-     * @param \OpenAPI\Client\Model\TimeAndAttendanceIDObject|null $time_and_attendance_id TimeAndAttendanceID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\TimeAndAttendanceIDObject|null $time_and_attendance_id TimeAndAttendanceID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -452,7 +452,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets rota_id
      *
-     * @return \OpenAPI\Client\Model\RotaIDObject|null
+     * @return \PeopleHR\Model\RotaIDObject|null
      */
     public function getRotaId()
     {
@@ -462,7 +462,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets rota_id
      *
-     * @param \OpenAPI\Client\Model\RotaIDObject|null $rota_id RotaID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\RotaIDObject|null $rota_id RotaID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets crmid
      *
-     * @return \OpenAPI\Client\Model\CRMIDObject|null
+     * @return \PeopleHR\Model\CRMIDObject|null
      */
     public function getCrmid()
     {
@@ -489,7 +489,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets crmid
      *
-     * @param \OpenAPI\Client\Model\CRMIDObject|null $crmid CRMID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\CRMIDObject|null $crmid CRMID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets atsid
      *
-     * @return \OpenAPI\Client\Model\ATSIDObject|null
+     * @return \PeopleHR\Model\ATSIDObject|null
      */
     public function getAtsid()
     {
@@ -516,7 +516,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets atsid
      *
-     * @param \OpenAPI\Client\Model\ATSIDObject|null $atsid ATSID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\ATSIDObject|null $atsid ATSID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -533,7 +533,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets performance_id
      *
-     * @return \OpenAPI\Client\Model\PerformanceIDObject|null
+     * @return \PeopleHR\Model\PerformanceIDObject|null
      */
     public function getPerformanceId()
     {
@@ -543,7 +543,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets performance_id
      *
-     * @param \OpenAPI\Client\Model\PerformanceIDObject|null $performance_id PerformanceID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\PerformanceIDObject|null $performance_id PerformanceID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -560,7 +560,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets benefits_id
      *
-     * @return \OpenAPI\Client\Model\BenefitsIDObject|null
+     * @return \PeopleHR\Model\BenefitsIDObject|null
      */
     public function getBenefitsId()
     {
@@ -570,7 +570,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets benefits_id
      *
-     * @param \OpenAPI\Client\Model\BenefitsIDObject|null $benefits_id BenefitsID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\BenefitsIDObject|null $benefits_id BenefitsID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -587,7 +587,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets system1_id
      *
-     * @return \OpenAPI\Client\Model\System1IDObject|null
+     * @return \PeopleHR\Model\System1IDObject|null
      */
     public function getSystem1Id()
     {
@@ -597,7 +597,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets system1_id
      *
-     * @param \OpenAPI\Client\Model\System1IDObject|null $system1_id System1ID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\System1IDObject|null $system1_id System1ID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -614,7 +614,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets system2_id
      *
-     * @return \OpenAPI\Client\Model\System2IDObject|null
+     * @return \PeopleHR\Model\System2IDObject|null
      */
     public function getSystem2Id()
     {
@@ -624,7 +624,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets system2_id
      *
-     * @param \OpenAPI\Client\Model\System2IDObject|null $system2_id System2ID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\System2IDObject|null $system2_id System2ID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -641,7 +641,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets system3_id
      *
-     * @return \OpenAPI\Client\Model\System3IDObject|null
+     * @return \PeopleHR\Model\System3IDObject|null
      */
     public function getSystem3Id()
     {
@@ -651,7 +651,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets system3_id
      *
-     * @param \OpenAPI\Client\Model\System3IDObject|null $system3_id System3ID contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\System3IDObject|null $system3_id System3ID contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -668,7 +668,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets method_of_recruitment
      *
-     * @return \OpenAPI\Client\Model\MethodOfRecruitmentObject|null
+     * @return \PeopleHR\Model\MethodOfRecruitmentObject|null
      */
     public function getMethodOfRecruitment()
     {
@@ -678,7 +678,7 @@ class EmploymentDetailObject implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets method_of_recruitment
      *
-     * @param \OpenAPI\Client\Model\MethodOfRecruitmentObject|null $method_of_recruitment MethodOfRecruitment contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\MethodOfRecruitmentObject|null $method_of_recruitment MethodOfRecruitment contain displayValue and FieldHistory array values
      *
      * @return self
      */

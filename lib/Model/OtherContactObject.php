@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * OtherContactObject Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'other_contact_name' => '\OpenAPI\Client\Model\OtherContactObjectOtherContactName',
-        'relationship' => '\OpenAPI\Client\Model\OtherContactObjectRelationship',
-        'othe_contact_address' => '\OpenAPI\Client\Model\OtherContactObjectOtheContactAddress',
-        'telephone' => '\OpenAPI\Client\Model\OtherContactObjectTelephone',
-        'mobile' => '\OpenAPI\Client\Model\OtherContactObjectMobile',
-        'comments' => '\OpenAPI\Client\Model\OtherContactObjectComments'
+        'other_contact_name' => '\PeopleHR\Model\OtherContactObjectOtherContactName',
+        'relationship' => '\PeopleHR\Model\OtherContactObjectRelationship',
+        'othe_contact_address' => '\PeopleHR\Model\OtherContactObjectOtheContactAddress',
+        'telephone' => '\PeopleHR\Model\OtherContactObjectTelephone',
+        'mobile' => '\PeopleHR\Model\OtherContactObjectMobile',
+        'comments' => '\PeopleHR\Model\OtherContactObjectComments'
     ];
 
     /**
@@ -328,7 +328,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets other_contact_name
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectOtherContactName|null
+     * @return \PeopleHR\Model\OtherContactObjectOtherContactName|null
      */
     public function getOtherContactName()
     {
@@ -338,7 +338,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets other_contact_name
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectOtherContactName|null $other_contact_name other_contact_name
+     * @param \PeopleHR\Model\OtherContactObjectOtherContactName|null $other_contact_name other_contact_name
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets relationship
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectRelationship|null
+     * @return \PeopleHR\Model\OtherContactObjectRelationship|null
      */
     public function getRelationship()
     {
@@ -365,7 +365,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets relationship
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectRelationship|null $relationship relationship
+     * @param \PeopleHR\Model\OtherContactObjectRelationship|null $relationship relationship
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets othe_contact_address
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectOtheContactAddress|null
+     * @return \PeopleHR\Model\OtherContactObjectOtheContactAddress|null
      */
     public function getOtheContactAddress()
     {
@@ -392,7 +392,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets othe_contact_address
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectOtheContactAddress|null $othe_contact_address othe_contact_address
+     * @param \PeopleHR\Model\OtherContactObjectOtheContactAddress|null $othe_contact_address othe_contact_address
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets telephone
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectTelephone|null
+     * @return \PeopleHR\Model\OtherContactObjectTelephone|null
      */
     public function getTelephone()
     {
@@ -419,7 +419,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets telephone
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectTelephone|null $telephone telephone
+     * @param \PeopleHR\Model\OtherContactObjectTelephone|null $telephone telephone
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets mobile
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectMobile|null
+     * @return \PeopleHR\Model\OtherContactObjectMobile|null
      */
     public function getMobile()
     {
@@ -446,7 +446,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets mobile
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectMobile|null $mobile mobile
+     * @param \PeopleHR\Model\OtherContactObjectMobile|null $mobile mobile
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets comments
      *
-     * @return \OpenAPI\Client\Model\OtherContactObjectComments|null
+     * @return \PeopleHR\Model\OtherContactObjectComments|null
      */
     public function getComments()
     {
@@ -473,7 +473,7 @@ class OtherContactObject implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets comments
      *
-     * @param \OpenAPI\Client\Model\OtherContactObjectComments|null $comments comments
+     * @param \PeopleHR\Model\OtherContactObjectComments|null $comments comments
      *
      * @return self
      */

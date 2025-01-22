@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeTimesheetApi
+# PeopleHR\EmployeeTimesheetApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeTimesheetCreateNewTimesheetPost()`
 
 ```php
-employeeTimesheetCreateNewTimesheetPost($body): \OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail
+employeeTimesheetCreateNewTimesheetPost($body): \PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail
 ```
 
 Create New Timesheet
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateNewTimesheetDefinition(); // \OpenAPI\Client\Model\CreateNewTimesheetDefinition
+$body = new \PeopleHR\Model\CreateNewTimesheetDefinition(); // \PeopleHR\Model\CreateNewTimesheetDefinition
 
 try {
     $result = $apiInstance->employeeTimesheetCreateNewTimesheetPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateNewTimesheetDefinition**](../Model/CreateNewTimesheetDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateNewTimesheetDefinition**](../Model/CreateNewTimesheetDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail**](../Model/ErrorForCreateNewEmployeeTimesheetDetail.md)
+[**\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail**](../Model/ErrorForCreateNewEmployeeTimesheetDetail.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `employeeTimesheetDeleteTimesheetPost()`
 
 ```php
-employeeTimesheetDeleteTimesheetPost($body): \OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail
+employeeTimesheetDeleteTimesheetPost($body): \PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail
 ```
 
 Delete Timesheet
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteTimesheetdefinition(); // \OpenAPI\Client\Model\DeleteTimesheetdefinition
+$body = new \PeopleHR\Model\DeleteTimesheetdefinition(); // \PeopleHR\Model\DeleteTimesheetdefinition
 
 try {
     $result = $apiInstance->employeeTimesheetDeleteTimesheetPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteTimesheetdefinition**](../Model/DeleteTimesheetdefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteTimesheetdefinition**](../Model/DeleteTimesheetdefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail**](../Model/ErrorForDeleteEmployeeTimesheetDetail.md)
+[**\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail**](../Model/ErrorForDeleteEmployeeTimesheetDetail.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `employeeTimesheetGetTimesheetDetailPost()`
 
 ```php
-employeeTimesheetGetTimesheetDetailPost($body): \OpenAPI\Client\Model\ErrorForGetTimesheetDetail
+employeeTimesheetGetTimesheetDetailPost($body): \PeopleHR\Model\ErrorForGetTimesheetDetail
 ```
 
 Get Employee Timesheet Detail List
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetTimesheetdefinition(); // \OpenAPI\Client\Model\GetTimesheetdefinition
+$body = new \PeopleHR\Model\GetTimesheetdefinition(); // \PeopleHR\Model\GetTimesheetdefinition
 
 try {
     $result = $apiInstance->employeeTimesheetGetTimesheetDetailPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetTimesheetdefinition**](../Model/GetTimesheetdefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\GetTimesheetdefinition**](../Model/GetTimesheetdefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetTimesheetDetail**](../Model/ErrorForGetTimesheetDetail.md)
+[**\PeopleHR\Model\ErrorForGetTimesheetDetail**](../Model/ErrorForGetTimesheetDetail.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `employeeTimesheetUpdateTimesheetPost()`
 
 ```php
-employeeTimesheetUpdateTimesheetPost($body): \OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail
+employeeTimesheetUpdateTimesheetPost($body): \PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail
 ```
 
 Update Employee Timesheet
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateTimesheetDefinition(); // \OpenAPI\Client\Model\UpdateTimesheetDefinition
+$body = new \PeopleHR\Model\UpdateTimesheetDefinition(); // \PeopleHR\Model\UpdateTimesheetDefinition
 
 try {
     $result = $apiInstance->employeeTimesheetUpdateTimesheetPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateTimesheetDefinition**](../Model/UpdateTimesheetDefinition.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateTimesheetDefinition**](../Model/UpdateTimesheetDefinition.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail**](../Model/ErrorForUpdateEmployeeTimesheetDetail.md)
+[**\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail**](../Model/ErrorForUpdateEmployeeTimesheetDetail.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddnewCPDParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -69,8 +69,8 @@ class AddnewCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
         'hours_required' => 'int',
         'hours_accredited' => 'int',
         'notes' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]'
     ];
 
     /**
@@ -711,7 +711,7 @@ class AddnewCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]
+     * @return \PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]
      */
     public function getCustomColumns()
     {
@@ -721,7 +721,7 @@ class AddnewCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[] $custom_columns CustomColumns for add new cpd
+     * @param \PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[] $custom_columns CustomColumns for add new cpd
      *
      * @return self
      */
@@ -738,7 +738,7 @@ class AddnewCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]
+     * @return \PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]
      */
     public function getAddFiles()
     {
@@ -748,7 +748,7 @@ class AddnewCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[] $add_files AddFiles for add new cpd
+     * @param \PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[] $add_files AddFiles for add new cpd
      *
      * @return self
      */

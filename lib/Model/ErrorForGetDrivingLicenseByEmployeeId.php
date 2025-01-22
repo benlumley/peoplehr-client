@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetDrivingLicenseByEmployeeId Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetDrivingLicenseByEmployeeId implements ModelInterface, ArrayAcce
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]'
+        'result' => '\PeopleHR\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetDrivingLicenseByEmployeeId implements ModelInterface, ArrayAcce
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]|null
+     * @return \PeopleHR\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetDrivingLicenseByEmployeeId implements ModelInterface, ArrayAcce
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]|null $result Result value
+     * @param \PeopleHR\Model\ResultForGetDrivingLicenseByEmployeeIdInner[]|null $result Result value
      *
      * @return self
      */

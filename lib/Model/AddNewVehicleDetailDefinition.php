@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddNewVehicleDetailDefinition Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -72,8 +72,8 @@ class AddNewVehicleDetailDefinition implements ModelInterface, ArrayAccess, \Jso
         'mot_expiry_date' => '\DateTime',
         'insurance_expiry_date' => '\DateTime',
         'comments' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForEmployeeVehicleAddArrayInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForEmployeeVehicleAddArrayInner[]'
     ];
 
     /**
@@ -804,7 +804,7 @@ class AddNewVehicleDetailDefinition implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]|null
      */
     public function getCustomColumns()
     {
@@ -814,7 +814,7 @@ class AddNewVehicleDetailDefinition implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]|null $custom_columns CustomColumns to add employee's new vehicle detail
+     * @param \PeopleHR\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]|null $custom_columns CustomColumns to add employee's new vehicle detail
      *
      * @return self
      */
@@ -831,7 +831,7 @@ class AddNewVehicleDetailDefinition implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForEmployeeVehicleAddArrayInner[]|null
+     * @return \PeopleHR\Model\AddFilesForEmployeeVehicleAddArrayInner[]|null
      */
     public function getAddFiles()
     {
@@ -841,7 +841,7 @@ class AddNewVehicleDetailDefinition implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForEmployeeVehicleAddArrayInner[]|null $add_files AddFiles to add employee's new vehicle detail
+     * @param \PeopleHR\Model\AddFilesForEmployeeVehicleAddArrayInner[]|null $add_files AddFiles to add employee's new vehicle detail
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * EmailInboxParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,11 +60,11 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'action' => 'string',
         'email_from' => 'string',
-        'email_to' => '\OpenAPI\Client\Model\EmailToForEmailInbox',
-        'email_cc' => '\OpenAPI\Client\Model\EmailCcForEmailInbox',
-        'email_bcc' => '\OpenAPI\Client\Model\EmailBccForEmailInbox',
+        'email_to' => '\PeopleHR\Model\EmailToForEmailInbox',
+        'email_cc' => '\PeopleHR\Model\EmailCcForEmailInbox',
+        'email_bcc' => '\PeopleHR\Model\EmailBccForEmailInbox',
         'email_subject' => 'string',
-        'attachment' => '\OpenAPI\Client\Model\AttachmentForEmailInbox'
+        'attachment' => '\PeopleHR\Model\AttachmentForEmailInbox'
     ];
 
     /**
@@ -413,7 +413,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets email_to
      *
-     * @return \OpenAPI\Client\Model\EmailToForEmailInbox
+     * @return \PeopleHR\Model\EmailToForEmailInbox
      */
     public function getEmailTo()
     {
@@ -423,7 +423,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets email_to
      *
-     * @param \OpenAPI\Client\Model\EmailToForEmailInbox $email_to Email To for Email Inbox
+     * @param \PeopleHR\Model\EmailToForEmailInbox $email_to Email To for Email Inbox
      *
      * @return self
      */
@@ -440,7 +440,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets email_cc
      *
-     * @return \OpenAPI\Client\Model\EmailCcForEmailInbox|null
+     * @return \PeopleHR\Model\EmailCcForEmailInbox|null
      */
     public function getEmailCc()
     {
@@ -450,7 +450,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets email_cc
      *
-     * @param \OpenAPI\Client\Model\EmailCcForEmailInbox|null $email_cc Email Cc for Email Inbox
+     * @param \PeopleHR\Model\EmailCcForEmailInbox|null $email_cc Email Cc for Email Inbox
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets email_bcc
      *
-     * @return \OpenAPI\Client\Model\EmailBccForEmailInbox|null
+     * @return \PeopleHR\Model\EmailBccForEmailInbox|null
      */
     public function getEmailBcc()
     {
@@ -477,7 +477,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets email_bcc
      *
-     * @param \OpenAPI\Client\Model\EmailBccForEmailInbox|null $email_bcc Email Bcc for Email Inbox
+     * @param \PeopleHR\Model\EmailBccForEmailInbox|null $email_bcc Email Bcc for Email Inbox
      *
      * @return self
      */
@@ -525,7 +525,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets attachment
      *
-     * @return \OpenAPI\Client\Model\AttachmentForEmailInbox|null
+     * @return \PeopleHR\Model\AttachmentForEmailInbox|null
      */
     public function getAttachment()
     {
@@ -535,7 +535,7 @@ class EmailInboxParameter implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets attachment
      *
-     * @param \OpenAPI\Client\Model\AttachmentForEmailInbox|null $attachment Attachment for Email Inbox
+     * @param \PeopleHR\Model\AttachmentForEmailInbox|null $attachment Attachment for Email Inbox
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeCustomScreenApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,12 +143,12 @@ class EmployeeCustomScreenApi
      *
      * Add New Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewCustomScreenTransactionParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction
+     * @return \PeopleHR\Model\ErrorForAddNewCustomScreenTransaction
      */
     public function employeeCustomScreenAddNewCustomScreenTransactionPost($body, string $contentType = self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'][0])
     {
@@ -161,12 +161,12 @@ class EmployeeCustomScreenApi
      *
      * Add New Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenAddNewCustomScreenTransactionPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'][0])
     {
@@ -197,11 +197,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -219,7 +219,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -238,7 +238,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -271,7 +271,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction',
+                        '\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -286,7 +286,7 @@ class EmployeeCustomScreenApi
      *
      * Add New Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -307,7 +307,7 @@ class EmployeeCustomScreenApi
      *
      * Add New Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -315,7 +315,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenAddNewCustomScreenTransactionPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction';
         $request = $this->employeeCustomScreenAddNewCustomScreenTransactionPostRequest($body, $contentType);
 
         return $this->client
@@ -357,7 +357,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenAddNewCustomScreenTransactionPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenAddNewCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -450,12 +450,12 @@ class EmployeeCustomScreenApi
      *
      * Delete Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteCustomScreenTransactionParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction
+     * @return \PeopleHR\Model\ErrorForDeleteCustomScreenTransaction
      */
     public function employeeCustomScreenDeleteCustomScreenTransactionPost($body, string $contentType = self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'][0])
     {
@@ -468,12 +468,12 @@ class EmployeeCustomScreenApi
      *
      * Delete Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenDeleteCustomScreenTransactionPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'][0])
     {
@@ -504,11 +504,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -526,7 +526,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -545,7 +545,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -578,7 +578,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction',
+                        '\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class EmployeeCustomScreenApi
      *
      * Delete Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -614,7 +614,7 @@ class EmployeeCustomScreenApi
      *
      * Delete Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -622,7 +622,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenDeleteCustomScreenTransactionPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction';
         $request = $this->employeeCustomScreenDeleteCustomScreenTransactionPostRequest($body, $contentType);
 
         return $this->client
@@ -664,7 +664,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenDeleteCustomScreenTransactionPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenDeleteCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -757,12 +757,12 @@ class EmployeeCustomScreenApi
      *
      * Get By Custom Screen Transaction Id
      *
-     * @param  \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetByCustomScreenTransactionIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId
+     * @return \PeopleHR\Model\ErrorForGetByCustomScreenTransactionId
      */
     public function employeeCustomScreenGetByCustomScreenTransactionIdPost($body, string $contentType = self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'][0])
     {
@@ -775,12 +775,12 @@ class EmployeeCustomScreenApi
      *
      * Get By Custom Screen Transaction Id
      *
-     * @param  \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCustomScreenTransactionIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByCustomScreenTransactionId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenGetByCustomScreenTransactionIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'][0])
     {
@@ -811,11 +811,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -833,7 +833,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -852,7 +852,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId';
+            $returnType = '\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -885,7 +885,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId',
+                        '\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class EmployeeCustomScreenApi
      *
      * Get By Custom Screen Transaction Id
      *
-     * @param  \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCustomScreenTransactionIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -921,7 +921,7 @@ class EmployeeCustomScreenApi
      *
      * Get By Custom Screen Transaction Id
      *
-     * @param  \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCustomScreenTransactionIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -929,7 +929,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenGetByCustomScreenTransactionIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId';
+        $returnType = '\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId';
         $request = $this->employeeCustomScreenGetByCustomScreenTransactionIdPostRequest($body, $contentType);
 
         return $this->client
@@ -971,7 +971,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenGetByCustomScreenTransactionIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetByCustomScreenTransactionIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetByCustomScreenTransactionIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1064,12 +1064,12 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId
      */
     public function employeeCustomScreenGetCustomScreenByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'][0])
     {
@@ -1082,12 +1082,12 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenGetCustomScreenByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'][0])
     {
@@ -1118,11 +1118,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1140,7 +1140,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1159,7 +1159,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1192,7 +1192,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1207,7 +1207,7 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1228,7 +1228,7 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1236,7 +1236,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenGetCustomScreenByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId';
         $request = $this->employeeCustomScreenGetCustomScreenByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1278,7 +1278,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenGetCustomScreenByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1371,12 +1371,12 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen Detail
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetCustomScreenDetail
+     * @return \PeopleHR\Model\ErrorForGetCustomScreenDetail
      */
     public function employeeCustomScreenGetCustomScreenDetailPost($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'][0])
     {
@@ -1389,12 +1389,12 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen Detail
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetCustomScreenDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetCustomScreenDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenGetCustomScreenDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'][0])
     {
@@ -1425,11 +1425,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetCustomScreenDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetCustomScreenDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1447,7 +1447,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetCustomScreenDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1466,7 +1466,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail';
+            $returnType = '\PeopleHR\Model\ErrorForGetCustomScreenDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1499,7 +1499,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail',
+                        '\PeopleHR\Model\ErrorForGetCustomScreenDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1514,7 +1514,7 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen Detail
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1535,7 +1535,7 @@ class EmployeeCustomScreenApi
      *
      * Get Custom Screen Detail
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1543,7 +1543,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenGetCustomScreenDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail';
+        $returnType = '\PeopleHR\Model\ErrorForGetCustomScreenDetail';
         $request = $this->employeeCustomScreenGetCustomScreenDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1585,7 +1585,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenGetCustomScreenDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetCustomScreenDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetCustomScreenDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenGetCustomScreenDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1678,12 +1678,12 @@ class EmployeeCustomScreenApi
      *
      * Update Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateCustomScreenTransactionParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction
+     * @return \PeopleHR\Model\ErrorForUpdateCustomScreenTransaction
      */
     public function employeeCustomScreenUpdateCustomScreenTransactionPost($body, string $contentType = self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'][0])
     {
@@ -1696,12 +1696,12 @@ class EmployeeCustomScreenApi
      *
      * Update Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateCustomScreenTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeCustomScreenUpdateCustomScreenTransactionPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'][0])
     {
@@ -1732,11 +1732,11 @@ class EmployeeCustomScreenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1754,7 +1754,7 @@ class EmployeeCustomScreenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1773,7 +1773,7 @@ class EmployeeCustomScreenApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1806,7 +1806,7 @@ class EmployeeCustomScreenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction',
+                        '\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1821,7 +1821,7 @@ class EmployeeCustomScreenApi
      *
      * Update Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1842,7 +1842,7 @@ class EmployeeCustomScreenApi
      *
      * Update Custom Screen Transaction
      *
-     * @param  \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1850,7 +1850,7 @@ class EmployeeCustomScreenApi
      */
     public function employeeCustomScreenUpdateCustomScreenTransactionPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction';
         $request = $this->employeeCustomScreenUpdateCustomScreenTransactionPostRequest($body, $contentType);
 
         return $this->client
@@ -1892,7 +1892,7 @@ class EmployeeCustomScreenApi
     /**
      * Create request for operation 'employeeCustomScreenUpdateCustomScreenTransactionPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateCustomScreenTransactionParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeCustomScreenUpdateCustomScreenTransactionPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -1,4 +1,4 @@
-# OpenAPI\Client\RightToWorkApi
+# PeopleHR\RightToWorkApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `rightToWorkAddrighttoworkdetailPost()`
 
 ```php
-rightToWorkAddrighttoworkdetailPost($body): \OpenAPI\Client\Model\ErrorForaddrighttoworkdetail
+rightToWorkAddrighttoworkdetailPost($body): \PeopleHR\Model\ErrorForaddrighttoworkdetail
 ```
 
 Add Right To Work Detail
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\RightToWorkApi(
+$apiInstance = new PeopleHR\Api\RightToWorkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter(); // \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter
+$body = new \PeopleHR\Model\AddNewRightToWorkDetailParameter(); // \PeopleHR\Model\AddNewRightToWorkDetailParameter
 
 try {
     $result = $apiInstance->rightToWorkAddrighttoworkdetailPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewRightToWorkDetailParameter**](../Model/AddNewRightToWorkDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewRightToWorkDetailParameter**](../Model/AddNewRightToWorkDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail**](../Model/ErrorForaddrighttoworkdetail.md)
+[**\PeopleHR\Model\ErrorForaddrighttoworkdetail**](../Model/ErrorForaddrighttoworkdetail.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `rightToWorkDeleterighttoworkdetailPost()`
 
 ```php
-rightToWorkDeleterighttoworkdetailPost($body): \OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail
+rightToWorkDeleterighttoworkdetailPost($body): \PeopleHR\Model\ErrorFordeleterighttoworkdetail
 ```
 
 Delete Right To Work Detail
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\RightToWorkApi(
+$apiInstance = new PeopleHR\Api\RightToWorkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleterighttoworkdetailParameter(); // \OpenAPI\Client\Model\DeleterighttoworkdetailParameter
+$body = new \PeopleHR\Model\DeleterighttoworkdetailParameter(); // \PeopleHR\Model\DeleterighttoworkdetailParameter
 
 try {
     $result = $apiInstance->rightToWorkDeleterighttoworkdetailPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleterighttoworkdetailParameter**](../Model/DeleterighttoworkdetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleterighttoworkdetailParameter**](../Model/DeleterighttoworkdetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail**](../Model/ErrorFordeleterighttoworkdetail.md)
+[**\PeopleHR\Model\ErrorFordeleterighttoworkdetail**](../Model/ErrorFordeleterighttoworkdetail.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `rightToWorkGetrighttoworkdetailPost()`
 
 ```php
-rightToWorkGetrighttoworkdetailPost($body): \OpenAPI\Client\Model\ErrorForgetrighttoworkdetail
+rightToWorkGetrighttoworkdetailPost($body): \PeopleHR\Model\ErrorForgetrighttoworkdetail
 ```
 
 Get Right To Work Detail
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\RightToWorkApi(
+$apiInstance = new PeopleHR\Api\RightToWorkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetRightToWorkDetailParameter(); // \OpenAPI\Client\Model\GetRightToWorkDetailParameter
+$body = new \PeopleHR\Model\GetRightToWorkDetailParameter(); // \PeopleHR\Model\GetRightToWorkDetailParameter
 
 try {
     $result = $apiInstance->rightToWorkGetrighttoworkdetailPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetRightToWorkDetailParameter**](../Model/GetRightToWorkDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetRightToWorkDetailParameter**](../Model/GetRightToWorkDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail**](../Model/ErrorForgetrighttoworkdetail.md)
+[**\PeopleHR\Model\ErrorForgetrighttoworkdetail**](../Model/ErrorForgetrighttoworkdetail.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `rightToWorkUpdaterighttoworkdetailPost()`
 
 ```php
-rightToWorkUpdaterighttoworkdetailPost($body): \OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail
+rightToWorkUpdaterighttoworkdetailPost($body): \PeopleHR\Model\ErrorForupdaterighttoworkdetail
 ```
 
 Update Right To Work Detail
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\RightToWorkApi(
+$apiInstance = new PeopleHR\Api\RightToWorkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter(); // \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter
+$body = new \PeopleHR\Model\UpdaterighttoworkdetailParameter(); // \PeopleHR\Model\UpdaterighttoworkdetailParameter
 
 try {
     $result = $apiInstance->rightToWorkUpdaterighttoworkdetailPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdaterighttoworkdetailParameter**](../Model/UpdaterighttoworkdetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdaterighttoworkdetailParameter**](../Model/UpdaterighttoworkdetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail**](../Model/ErrorForupdaterighttoworkdetail.md)
+[**\PeopleHR\Model\ErrorForupdaterighttoworkdetail**](../Model/ErrorForupdaterighttoworkdetail.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * CreateEmployeeDetailParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class CreateEmployeeDetailParameter implements ModelInterface, ArrayAccess, \Jso
         'first_name' => 'string',
         'last_name' => 'string',
         'email' => 'string',
-        'gender' => '\OpenAPI\Client\Model\Gender',
+        'gender' => '\PeopleHR\Model\Gender',
         'start_date' => '\DateTime',
         'date_of_birth' => '\DateTime',
         'reports_to' => 'string',
@@ -920,7 +920,7 @@ class CreateEmployeeDetailParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets gender
      *
-     * @return \OpenAPI\Client\Model\Gender|null
+     * @return \PeopleHR\Model\Gender|null
      */
     public function getGender()
     {
@@ -930,7 +930,7 @@ class CreateEmployeeDetailParameter implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets gender
      *
-     * @param \OpenAPI\Client\Model\Gender|null $gender Gender value for create new employee
+     * @param \PeopleHR\Model\Gender|null $gender Gender value for create new employee
      *
      * @return self
      */

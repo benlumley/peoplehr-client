@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeeLateApi
+# PeopleHR\EmployeeeLateApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeeLateAddNewLatePost()`
 
 ```php
-employeeeLateAddNewLatePost($body): \OpenAPI\Client\Model\ErrorForAddNewLate
+employeeeLateAddNewLatePost($body): \PeopleHR\Model\ErrorForAddNewLate
 ```
 
 Add new late
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeeLateApi(
+$apiInstance = new PeopleHR\Api\EmployeeeLateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewLateParameters(); // \OpenAPI\Client\Model\AddNewLateParameters
+$body = new \PeopleHR\Model\AddNewLateParameters(); // \PeopleHR\Model\AddNewLateParameters
 
 try {
     $result = $apiInstance->employeeeLateAddNewLatePost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewLateParameters**](../Model/AddNewLateParameters.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewLateParameters**](../Model/AddNewLateParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewLate**](../Model/ErrorForAddNewLate.md)
+[**\PeopleHR\Model\ErrorForAddNewLate**](../Model/ErrorForAddNewLate.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `employeeeLateDeleteLatePost()`
 
 ```php
-employeeeLateDeleteLatePost($body): \OpenAPI\Client\Model\ErrorFordeletelate
+employeeeLateDeleteLatePost($body): \PeopleHR\Model\ErrorFordeletelate
 ```
 
 Delete Late
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeeLateApi(
+$apiInstance = new PeopleHR\Api\EmployeeeLateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\EmployeedeletelateParameter(); // \OpenAPI\Client\Model\EmployeedeletelateParameter
+$body = new \PeopleHR\Model\EmployeedeletelateParameter(); // \PeopleHR\Model\EmployeedeletelateParameter
 
 try {
     $result = $apiInstance->employeeeLateDeleteLatePost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\EmployeedeletelateParameter**](../Model/EmployeedeletelateParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\EmployeedeletelateParameter**](../Model/EmployeedeletelateParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorFordeletelate**](../Model/ErrorFordeletelate.md)
+[**\PeopleHR\Model\ErrorFordeletelate**](../Model/ErrorFordeletelate.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `employeeeLateGetLateByEmployeeIdPost()`
 
 ```php
-employeeeLateGetLateByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetLateByEmployeeId
+employeeeLateGetLateByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetLateByEmployeeId
 ```
 
 Get late by employeeId
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeeLateApi(
+$apiInstance = new PeopleHR\Api\EmployeeeLateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetLateByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetLateByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetLateByEmployeeIdParameter(); // \PeopleHR\Model\GetLateByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeeLateGetLateByEmployeeIdPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetLateByEmployeeIdParameter**](../Model/GetLateByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetLateByEmployeeIdParameter**](../Model/GetLateByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetLateByEmployeeId**](../Model/ErrorForGetLateByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetLateByEmployeeId**](../Model/ErrorForGetLateByEmployeeId.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `employeeeLateUpdateLatePost()`
 
 ```php
-employeeeLateUpdateLatePost($body): \OpenAPI\Client\Model\ErrorForUpadteLate
+employeeeLateUpdateLatePost($body): \PeopleHR\Model\ErrorForUpadteLate
 ```
 
 Update Late
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeeLateApi(
+$apiInstance = new PeopleHR\Api\EmployeeeLateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateLateParameters(); // \OpenAPI\Client\Model\UpdateLateParameters
+$body = new \PeopleHR\Model\UpdateLateParameters(); // \PeopleHR\Model\UpdateLateParameters
 
 try {
     $result = $apiInstance->employeeeLateUpdateLatePost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateLateParameters**](../Model/UpdateLateParameters.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateLateParameters**](../Model/UpdateLateParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpadteLate**](../Model/ErrorForUpadteLate.md)
+[**\PeopleHR\Model\ErrorForUpadteLate**](../Model/ErrorForUpadteLate.md)
 
 ### Authorization
 

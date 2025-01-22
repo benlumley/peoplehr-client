@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * CreateApplicantDetailParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,16 +64,16 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
         'first_name' => 'string',
         'last_name' => 'string',
         'email' => 'string',
-        'gender' => '\OpenAPI\Client\Model\Gender',
+        'gender' => '\PeopleHR\Model\Gender',
         'date_of_birth' => '\DateTime',
         'post_code' => 'string',
         'address' => 'string',
         'phone_number' => 'string',
         'other_contact_details' => 'string',
         'source' => 'string',
-        'additional_questions' => '\OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]',
-        'internal_questions' => '\OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]',
-        'documents' => '\OpenAPI\Client\Model\DocumentsForCreateNewApplicantArrayInner[]',
+        'additional_questions' => '\PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]',
+        'internal_questions' => '\PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]',
+        'documents' => '\PeopleHR\Model\DocumentsForCreateNewApplicantArrayInner[]',
         'skills' => 'string',
         'recruitment_cost' => 'int',
         'date_last_contacted' => '\DateTime'
@@ -635,7 +635,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets gender
      *
-     * @return \OpenAPI\Client\Model\Gender|null
+     * @return \PeopleHR\Model\Gender|null
      */
     public function getGender()
     {
@@ -645,7 +645,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets gender
      *
-     * @param \OpenAPI\Client\Model\Gender|null $gender Gender for create new applicant
+     * @param \PeopleHR\Model\Gender|null $gender Gender for create new applicant
      *
      * @return self
      */
@@ -828,7 +828,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets additional_questions
      *
-     * @return \OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null
+     * @return \PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null
      */
     public function getAdditionalQuestions()
     {
@@ -838,7 +838,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets additional_questions
      *
-     * @param \OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null $additional_questions Source for create new applicant
+     * @param \PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null $additional_questions Source for create new applicant
      *
      * @return self
      */
@@ -855,7 +855,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets internal_questions
      *
-     * @return \OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null
+     * @return \PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null
      */
     public function getInternalQuestions()
     {
@@ -865,7 +865,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets internal_questions
      *
-     * @param \OpenAPI\Client\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null $internal_questions Internal questions for create new applicant
+     * @param \PeopleHR\Model\AdditionalQuestionsForCreatenewApplicantArrayInner[]|null $internal_questions Internal questions for create new applicant
      *
      * @return self
      */
@@ -882,7 +882,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets documents
      *
-     * @return \OpenAPI\Client\Model\DocumentsForCreateNewApplicantArrayInner[]
+     * @return \PeopleHR\Model\DocumentsForCreateNewApplicantArrayInner[]
      */
     public function getDocuments()
     {
@@ -892,7 +892,7 @@ class CreateApplicantDetailParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets documents
      *
-     * @param \OpenAPI\Client\Model\DocumentsForCreateNewApplicantArrayInner[] $documents Documents for create new applicant
+     * @param \PeopleHR\Model\DocumentsForCreateNewApplicantArrayInner[] $documents Documents for create new applicant
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeQualificationApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class EmployeeQualificationApi
      *
      * Add New Qualification
      *
-     * @param  \OpenAPI\Client\Model\AddNewQualificationParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewQualificationParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationAddNewQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewQualification
+     * @return \PeopleHR\Model\ErrorForAddNewQualification
      */
     public function employeeQualificationAddNewQualificationPost($body, string $contentType = self::contentTypes['employeeQualificationAddNewQualificationPost'][0])
     {
@@ -158,12 +158,12 @@ class EmployeeQualificationApi
      *
      * Add New Qualification
      *
-     * @param  \OpenAPI\Client\Model\AddNewQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationAddNewQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewQualification, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewQualification, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeQualificationAddNewQualificationPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationAddNewQualificationPost'][0])
     {
@@ -194,11 +194,11 @@ class EmployeeQualificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewQualification' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewQualification' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewQualification' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewQualification' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class EmployeeQualificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewQualification', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewQualification', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class EmployeeQualificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewQualification';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewQualification';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class EmployeeQualificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewQualification',
+                        '\PeopleHR\Model\ErrorForAddNewQualification',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class EmployeeQualificationApi
      *
      * Add New Qualification
      *
-     * @param  \OpenAPI\Client\Model\AddNewQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationAddNewQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class EmployeeQualificationApi
      *
      * Add New Qualification
      *
-     * @param  \OpenAPI\Client\Model\AddNewQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationAddNewQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class EmployeeQualificationApi
      */
     public function employeeQualificationAddNewQualificationPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationAddNewQualificationPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewQualification';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewQualification';
         $request = $this->employeeQualificationAddNewQualificationPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class EmployeeQualificationApi
     /**
      * Create request for operation 'employeeQualificationAddNewQualificationPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationAddNewQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class EmployeeQualificationApi
      *
      * Delete Qualification
      *
-     * @param  \OpenAPI\Client\Model\DeleteQualificationParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteQualificationParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationDeleteQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteQualification
+     * @return \PeopleHR\Model\ErrorForDeleteQualification
      */
     public function employeeQualificationDeleteQualificationPost($body, string $contentType = self::contentTypes['employeeQualificationDeleteQualificationPost'][0])
     {
@@ -465,12 +465,12 @@ class EmployeeQualificationApi
      *
      * Delete Qualification
      *
-     * @param  \OpenAPI\Client\Model\DeleteQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationDeleteQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteQualification, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteQualification, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeQualificationDeleteQualificationPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationDeleteQualificationPost'][0])
     {
@@ -501,11 +501,11 @@ class EmployeeQualificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteQualification' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteQualification' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteQualification' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteQualification' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class EmployeeQualificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteQualification', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteQualification', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class EmployeeQualificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteQualification';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteQualification';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class EmployeeQualificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteQualification',
+                        '\PeopleHR\Model\ErrorForDeleteQualification',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class EmployeeQualificationApi
      *
      * Delete Qualification
      *
-     * @param  \OpenAPI\Client\Model\DeleteQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationDeleteQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class EmployeeQualificationApi
      *
      * Delete Qualification
      *
-     * @param  \OpenAPI\Client\Model\DeleteQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationDeleteQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class EmployeeQualificationApi
      */
     public function employeeQualificationDeleteQualificationPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationDeleteQualificationPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteQualification';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteQualification';
         $request = $this->employeeQualificationDeleteQualificationPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class EmployeeQualificationApi
     /**
      * Create request for operation 'employeeQualificationDeleteQualificationPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationDeleteQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class EmployeeQualificationApi
      *
      * Get Qualification By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetQualificationByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetQualificationByEmployeeId
      */
     public function employeeQualificationGetQualificationByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'][0])
     {
@@ -772,12 +772,12 @@ class EmployeeQualificationApi
      *
      * Get Qualification By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetQualificationByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeQualificationGetQualificationByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'][0])
     {
@@ -808,11 +808,11 @@ class EmployeeQualificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetQualificationByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetQualificationByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class EmployeeQualificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetQualificationByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class EmployeeQualificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetQualificationByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class EmployeeQualificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetQualificationByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class EmployeeQualificationApi
      *
      * Get Qualification By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class EmployeeQualificationApi
      *
      * Get Qualification By EmployeeId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class EmployeeQualificationApi
      */
     public function employeeQualificationGetQualificationByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetQualificationByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetQualificationByEmployeeId';
         $request = $this->employeeQualificationGetQualificationByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class EmployeeQualificationApi
     /**
      * Create request for operation 'employeeQualificationGetQualificationByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class EmployeeQualificationApi
      *
      * Get Qualification By QualificationId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetQualificationByQualificationIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId
+     * @return \PeopleHR\Model\ErrorForGetQualificationByQualificationId
      */
     public function employeeQualificationGetQualificationByQualificationIdPost($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class EmployeeQualificationApi
      *
      * Get Qualification By QualificationId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByQualificationIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetQualificationByQualificationId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeQualificationGetQualificationByQualificationIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class EmployeeQualificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetQualificationByQualificationId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetQualificationByQualificationId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class EmployeeQualificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetQualificationByQualificationId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class EmployeeQualificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId';
+            $returnType = '\PeopleHR\Model\ErrorForGetQualificationByQualificationId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class EmployeeQualificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId',
+                        '\PeopleHR\Model\ErrorForGetQualificationByQualificationId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class EmployeeQualificationApi
      *
      * Get Qualification By QualificationId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByQualificationIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class EmployeeQualificationApi
      *
      * Get Qualification By QualificationId
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByQualificationIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class EmployeeQualificationApi
      */
     public function employeeQualificationGetQualificationByQualificationIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetQualificationByQualificationId';
+        $returnType = '\PeopleHR\Model\ErrorForGetQualificationByQualificationId';
         $request = $this->employeeQualificationGetQualificationByQualificationIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class EmployeeQualificationApi
     /**
      * Create request for operation 'employeeQualificationGetQualificationByQualificationIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetQualificationByQualificationIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetQualificationByQualificationIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationGetQualificationByQualificationIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class EmployeeQualificationApi
      *
      * Update Qualification
      *
-     * @param  \OpenAPI\Client\Model\UpdateQualificationParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateQualificationParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationUpdateQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateQualification
+     * @return \PeopleHR\Model\ErrorForUpdateQualification
      */
     public function employeeQualificationUpdateQualificationPost($body, string $contentType = self::contentTypes['employeeQualificationUpdateQualificationPost'][0])
     {
@@ -1386,12 +1386,12 @@ class EmployeeQualificationApi
      *
      * Update Qualification
      *
-     * @param  \OpenAPI\Client\Model\UpdateQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationUpdateQualificationPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateQualification, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateQualification, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeQualificationUpdateQualificationPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationUpdateQualificationPost'][0])
     {
@@ -1422,11 +1422,11 @@ class EmployeeQualificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateQualification' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateQualification' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateQualification' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateQualification' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class EmployeeQualificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateQualification', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateQualification', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class EmployeeQualificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateQualification';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateQualification';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class EmployeeQualificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateQualification',
+                        '\PeopleHR\Model\ErrorForUpdateQualification',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class EmployeeQualificationApi
      *
      * Update Qualification
      *
-     * @param  \OpenAPI\Client\Model\UpdateQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationUpdateQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class EmployeeQualificationApi
      *
      * Update Qualification
      *
-     * @param  \OpenAPI\Client\Model\UpdateQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationUpdateQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class EmployeeQualificationApi
      */
     public function employeeQualificationUpdateQualificationPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeQualificationUpdateQualificationPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateQualification';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateQualification';
         $request = $this->employeeQualificationUpdateQualificationPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class EmployeeQualificationApi
     /**
      * Create request for operation 'employeeQualificationUpdateQualificationPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateQualificationParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateQualificationParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeQualificationUpdateQualificationPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

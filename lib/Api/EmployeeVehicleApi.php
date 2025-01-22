@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeVehicleApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class EmployeeVehicleApi
      *
      * Add New Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewVehicleDetailDefinition $body body (required)
+     * @param  \PeopleHR\Model\AddNewVehicleDetailDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleAddNewVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewVehicleDetail
+     * @return \PeopleHR\Model\ErrorForAddNewVehicleDetail
      */
     public function employeeVehicleAddNewVehicleDetailPost($body, string $contentType = self::contentTypes['employeeVehicleAddNewVehicleDetailPost'][0])
     {
@@ -158,12 +158,12 @@ class EmployeeVehicleApi
      *
      * Add New Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\AddNewVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleAddNewVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewVehicleDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewVehicleDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeVehicleAddNewVehicleDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleAddNewVehicleDetailPost'][0])
     {
@@ -194,11 +194,11 @@ class EmployeeVehicleApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewVehicleDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewVehicleDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class EmployeeVehicleApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewVehicleDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class EmployeeVehicleApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewVehicleDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class EmployeeVehicleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail',
+                        '\PeopleHR\Model\ErrorForAddNewVehicleDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class EmployeeVehicleApi
      *
      * Add New Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\AddNewVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleAddNewVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class EmployeeVehicleApi
      *
      * Add New Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\AddNewVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleAddNewVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class EmployeeVehicleApi
      */
     public function employeeVehicleAddNewVehicleDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleAddNewVehicleDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewVehicleDetail';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewVehicleDetail';
         $request = $this->employeeVehicleAddNewVehicleDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class EmployeeVehicleApi
     /**
      * Create request for operation 'employeeVehicleAddNewVehicleDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\AddNewVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleAddNewVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class EmployeeVehicleApi
      *
      * Delete Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteVehicleDetailDefinition $body body (required)
+     * @param  \PeopleHR\Model\DeleteVehicleDetailDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleDeleteVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteVehicleDetail
+     * @return \PeopleHR\Model\ErrorForDeleteVehicleDetail
      */
     public function employeeVehicleDeleteVehicleDetailPost($body, string $contentType = self::contentTypes['employeeVehicleDeleteVehicleDetailPost'][0])
     {
@@ -465,12 +465,12 @@ class EmployeeVehicleApi
      *
      * Delete Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleDeleteVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteVehicleDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteVehicleDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeVehicleDeleteVehicleDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleDeleteVehicleDetailPost'][0])
     {
@@ -501,11 +501,11 @@ class EmployeeVehicleApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteVehicleDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteVehicleDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class EmployeeVehicleApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteVehicleDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class EmployeeVehicleApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteVehicleDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class EmployeeVehicleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail',
+                        '\PeopleHR\Model\ErrorForDeleteVehicleDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class EmployeeVehicleApi
      *
      * Delete Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleDeleteVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class EmployeeVehicleApi
      *
      * Delete Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleteVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleDeleteVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class EmployeeVehicleApi
      */
     public function employeeVehicleDeleteVehicleDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleDeleteVehicleDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteVehicleDetail';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteVehicleDetail';
         $request = $this->employeeVehicleDeleteVehicleDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class EmployeeVehicleApi
     /**
      * Create request for operation 'employeeVehicleDeleteVehicleDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleDeleteVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class EmployeeVehicleApi
      *
      * Get By Vehicle Detail Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition $body body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId
+     * @return \PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId
      */
     public function employeeVehicleGetByVehicleDetailIdPost($body, string $contentType = self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'][0])
     {
@@ -772,12 +772,12 @@ class EmployeeVehicleApi
      *
      * Get By Vehicle Detail Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeVehicleGetByVehicleDetailIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'][0])
     {
@@ -808,11 +808,11 @@ class EmployeeVehicleApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class EmployeeVehicleApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class EmployeeVehicleApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId';
+            $returnType = '\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class EmployeeVehicleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId',
+                        '\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class EmployeeVehicleApi
      *
      * Get By Vehicle Detail Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class EmployeeVehicleApi
      *
      * Get By Vehicle Detail Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class EmployeeVehicleApi
      */
     public function employeeVehicleGetByVehicleDetailIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByVehicleId';
+        $returnType = '\PeopleHR\Model\ErrorForGetVehicleDetailByVehicleId';
         $request = $this->employeeVehicleGetByVehicleDetailIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class EmployeeVehicleApi
     /**
      * Create request for operation 'employeeVehicleGetByVehicleDetailIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByVehicleIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetByVehicleDetailIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class EmployeeVehicleApi
      *
      * Get Vehicle By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition $body body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId
+     * @return \PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId
      */
     public function employeeVehicleGetVehicleByEmployeeIdPost($body, string $contentType = self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class EmployeeVehicleApi
      *
      * Get Vehicle By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeVehicleGetVehicleByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class EmployeeVehicleApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class EmployeeVehicleApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class EmployeeVehicleApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId';
+            $returnType = '\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class EmployeeVehicleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId',
+                        '\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class EmployeeVehicleApi
      *
      * Get Vehicle By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class EmployeeVehicleApi
      *
      * Get Vehicle By Employee Id
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class EmployeeVehicleApi
      */
     public function employeeVehicleGetVehicleByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetVehicleDetailByEmployeeId';
+        $returnType = '\PeopleHR\Model\ErrorForGetVehicleDetailByEmployeeId';
         $request = $this->employeeVehicleGetVehicleByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class EmployeeVehicleApi
     /**
      * Create request for operation 'employeeVehicleGetVehicleByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
+     * @param  \PeopleHR\Model\GetVehicleDetailByEmployeeIdDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleGetVehicleByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class EmployeeVehicleApi
      *
      * Update Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateVehicleDetailDefinition $body body (required)
+     * @param  \PeopleHR\Model\UpdateVehicleDetailDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleUpdateVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateVehicleDetail
+     * @return \PeopleHR\Model\ErrorForUpdateVehicleDetail
      */
     public function employeeVehicleUpdateVehicleDetailPost($body, string $contentType = self::contentTypes['employeeVehicleUpdateVehicleDetailPost'][0])
     {
@@ -1386,12 +1386,12 @@ class EmployeeVehicleApi
      *
      * Update Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleUpdateVehicleDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateVehicleDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateVehicleDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeVehicleUpdateVehicleDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleUpdateVehicleDetailPost'][0])
     {
@@ -1422,11 +1422,11 @@ class EmployeeVehicleApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateVehicleDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateVehicleDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class EmployeeVehicleApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateVehicleDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class EmployeeVehicleApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateVehicleDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class EmployeeVehicleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail',
+                        '\PeopleHR\Model\ErrorForUpdateVehicleDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class EmployeeVehicleApi
      *
      * Update Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleUpdateVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class EmployeeVehicleApi
      *
      * Update Vehicle Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdateVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleUpdateVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class EmployeeVehicleApi
      */
     public function employeeVehicleUpdateVehicleDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeVehicleUpdateVehicleDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateVehicleDetail';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateVehicleDetail';
         $request = $this->employeeVehicleUpdateVehicleDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class EmployeeVehicleApi
     /**
      * Create request for operation 'employeeVehicleUpdateVehicleDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateVehicleDetailDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateVehicleDetailDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeVehicleUpdateVehicleDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -1,4 +1,4 @@
-# OpenAPI\Client\MaternityPaternityApi
+# PeopleHR\MaternityPaternityApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `maternityPaternityAddNewMaternityPaternityPost()`
 
 ```php
-maternityPaternityAddNewMaternityPaternityPost($body): \OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi
+maternityPaternityAddNewMaternityPaternityPost($body): \PeopleHR\Model\ErrorForAddNewMaternityPaternityApi
 ```
 
 Add New Maternity Paternity
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MaternityPaternityApi(
+$apiInstance = new PeopleHR\Api\MaternityPaternityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewMaternityPaternityParameter(); // \OpenAPI\Client\Model\AddNewMaternityPaternityParameter
+$body = new \PeopleHR\Model\AddNewMaternityPaternityParameter(); // \PeopleHR\Model\AddNewMaternityPaternityParameter
 
 try {
     $result = $apiInstance->maternityPaternityAddNewMaternityPaternityPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewMaternityPaternityParameter**](../Model/AddNewMaternityPaternityParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewMaternityPaternityParameter**](../Model/AddNewMaternityPaternityParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi**](../Model/ErrorForAddNewMaternityPaternityApi.md)
+[**\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi**](../Model/ErrorForAddNewMaternityPaternityApi.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `maternityPaternityDeleteMaternityPaternityPost()`
 
 ```php
-maternityPaternityDeleteMaternityPaternityPost($body): \OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity
+maternityPaternityDeleteMaternityPaternityPost($body): \PeopleHR\Model\ErrorForDeleteMaternityPaternity
 ```
 
 Delete Maternity Paternity
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MaternityPaternityApi(
+$apiInstance = new PeopleHR\Api\MaternityPaternityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteMaternityPaternityParameter(); // \OpenAPI\Client\Model\DeleteMaternityPaternityParameter
+$body = new \PeopleHR\Model\DeleteMaternityPaternityParameter(); // \PeopleHR\Model\DeleteMaternityPaternityParameter
 
 try {
     $result = $apiInstance->maternityPaternityDeleteMaternityPaternityPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteMaternityPaternityParameter**](../Model/DeleteMaternityPaternityParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteMaternityPaternityParameter**](../Model/DeleteMaternityPaternityParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity**](../Model/ErrorForDeleteMaternityPaternity.md)
+[**\PeopleHR\Model\ErrorForDeleteMaternityPaternity**](../Model/ErrorForDeleteMaternityPaternity.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `maternityPaternityGetByMaternityPaternityIdPost()`
 
 ```php
-maternityPaternityGetByMaternityPaternityIdPost($body): \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId
+maternityPaternityGetByMaternityPaternityIdPost($body): \PeopleHR\Model\ErrorForGetByMaternityPaternityId
 ```
 
 Get by maternity paternity id
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MaternityPaternityApi(
+$apiInstance = new PeopleHR\Api\MaternityPaternityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByMaternityPaternityParameter(); // \OpenAPI\Client\Model\GetByMaternityPaternityParameter
+$body = new \PeopleHR\Model\GetByMaternityPaternityParameter(); // \PeopleHR\Model\GetByMaternityPaternityParameter
 
 try {
     $result = $apiInstance->maternityPaternityGetByMaternityPaternityIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByMaternityPaternityParameter**](../Model/GetByMaternityPaternityParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByMaternityPaternityParameter**](../Model/GetByMaternityPaternityParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId**](../Model/ErrorForGetByMaternityPaternityId.md)
+[**\PeopleHR\Model\ErrorForGetByMaternityPaternityId**](../Model/ErrorForGetByMaternityPaternityId.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `maternityPaternityGetMaternityPaternityByEmployeeIdPost()`
 
 ```php
-maternityPaternityGetMaternityPaternityByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId
+maternityPaternityGetMaternityPaternityByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId
 ```
 
 Get maternity paternity by employeeid
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MaternityPaternityApi(
+$apiInstance = new PeopleHR\Api\MaternityPaternityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter(); // \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter
 
 try {
     $result = $apiInstance->maternityPaternityGetMaternityPaternityByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter**](../Model/GetMaternityPaternityByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter**](../Model/GetMaternityPaternityByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId**](../Model/ErrorForGetByMaternityPaternityByEmpId.md)
+[**\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId**](../Model/ErrorForGetByMaternityPaternityByEmpId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `maternityPaternityUpdateMaternityPaternityPost()`
 
 ```php
-maternityPaternityUpdateMaternityPaternityPost($body): \OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi
+maternityPaternityUpdateMaternityPaternityPost($body): \PeopleHR\Model\ErrorForUpdateMaternityPaternityApi
 ```
 
 Update Maternity Paternity
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\MaternityPaternityApi(
+$apiInstance = new PeopleHR\Api\MaternityPaternityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateMaternityPaternityParameter(); // \OpenAPI\Client\Model\UpdateMaternityPaternityParameter
+$body = new \PeopleHR\Model\UpdateMaternityPaternityParameter(); // \PeopleHR\Model\UpdateMaternityPaternityParameter
 
 try {
     $result = $apiInstance->maternityPaternityUpdateMaternityPaternityPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateMaternityPaternityParameter**](../Model/UpdateMaternityPaternityParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateMaternityPaternityParameter**](../Model/UpdateMaternityPaternityParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi**](../Model/ErrorForUpdateMaternityPaternityApi.md)
+[**\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi**](../Model/ErrorForUpdateMaternityPaternityApi.md)
 
 ### Authorization
 

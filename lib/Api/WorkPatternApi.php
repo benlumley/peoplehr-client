@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * WorkPatternApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,12 +128,12 @@ class WorkPatternApi
      *
      * Get work pattern detail
      *
-     * @param  \OpenAPI\Client\Model\WorkPatternParameter $body body (required)
+     * @param  \PeopleHR\Model\WorkPatternParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['workPatternGetWorkPatternDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForWorkPattern
+     * @return \PeopleHR\Model\ErrorForWorkPattern
      */
     public function workPatternGetWorkPatternDetailPost($body, string $contentType = self::contentTypes['workPatternGetWorkPatternDetailPost'][0])
     {
@@ -146,12 +146,12 @@ class WorkPatternApi
      *
      * Get work pattern detail
      *
-     * @param  \OpenAPI\Client\Model\WorkPatternParameter $body (required)
+     * @param  \PeopleHR\Model\WorkPatternParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['workPatternGetWorkPatternDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForWorkPattern, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForWorkPattern, HTTP status code, HTTP response headers (array of strings)
      */
     public function workPatternGetWorkPatternDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['workPatternGetWorkPatternDetailPost'][0])
     {
@@ -182,11 +182,11 @@ class WorkPatternApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForWorkPattern' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForWorkPattern' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForWorkPattern' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForWorkPattern' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -204,7 +204,7 @@ class WorkPatternApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForWorkPattern', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForWorkPattern', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -223,7 +223,7 @@ class WorkPatternApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForWorkPattern';
+            $returnType = '\PeopleHR\Model\ErrorForWorkPattern';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -256,7 +256,7 @@ class WorkPatternApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForWorkPattern',
+                        '\PeopleHR\Model\ErrorForWorkPattern',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class WorkPatternApi
      *
      * Get work pattern detail
      *
-     * @param  \OpenAPI\Client\Model\WorkPatternParameter $body (required)
+     * @param  \PeopleHR\Model\WorkPatternParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['workPatternGetWorkPatternDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -292,7 +292,7 @@ class WorkPatternApi
      *
      * Get work pattern detail
      *
-     * @param  \OpenAPI\Client\Model\WorkPatternParameter $body (required)
+     * @param  \PeopleHR\Model\WorkPatternParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['workPatternGetWorkPatternDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class WorkPatternApi
      */
     public function workPatternGetWorkPatternDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['workPatternGetWorkPatternDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForWorkPattern';
+        $returnType = '\PeopleHR\Model\ErrorForWorkPattern';
         $request = $this->workPatternGetWorkPatternDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -342,7 +342,7 @@ class WorkPatternApi
     /**
      * Create request for operation 'workPatternGetWorkPatternDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\WorkPatternParameter $body (required)
+     * @param  \PeopleHR\Model\WorkPatternParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['workPatternGetWorkPatternDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

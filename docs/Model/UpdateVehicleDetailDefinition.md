@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **mot_expiry_date** | **\DateTime** | MOTExpiryDate to update employee&#39;s vehicle detail | [optional]
 **insurance_expiry_date** | **\DateTime** | InsuranceExpiryDate to update employee&#39;s vehicle detail | [optional]
 **comments** | **string** | Comments to update employee&#39;s vehicle detail | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForEmployeeVehicleUpdateArrayInner[]**](CustomColumnsForEmployeeVehicleUpdateArrayInner.md) | CustomColumns to update employee&#39;s vehicle detail | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForEmployeeVehicleUpdateArrayInner[]**](AddFilesForEmployeeVehicleUpdateArrayInner.md) | AddFiles to update employee&#39;s vehicle detail | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForEmployeeVehicleUpdateArrayInner[]**](CustomColumnsForEmployeeVehicleUpdateArrayInner.md) | CustomColumns to update employee&#39;s vehicle detail | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForEmployeeVehicleUpdateArrayInner[]**](AddFilesForEmployeeVehicleUpdateArrayInner.md) | AddFiles to update employee&#39;s vehicle detail | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

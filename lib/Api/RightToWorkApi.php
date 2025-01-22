@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * RightToWorkApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class RightToWorkApi
      *
      * Add Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewRightToWorkDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkAddrighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForaddrighttoworkdetail
+     * @return \PeopleHR\Model\ErrorForaddrighttoworkdetail
      */
     public function rightToWorkAddrighttoworkdetailPost($body, string $contentType = self::contentTypes['rightToWorkAddrighttoworkdetailPost'][0])
     {
@@ -155,12 +155,12 @@ class RightToWorkApi
      *
      * Add Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkAddrighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForaddrighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForaddrighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function rightToWorkAddrighttoworkdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkAddrighttoworkdetailPost'][0])
     {
@@ -191,11 +191,11 @@ class RightToWorkApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForaddrighttoworkdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForaddrighttoworkdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class RightToWorkApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForaddrighttoworkdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class RightToWorkApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail';
+            $returnType = '\PeopleHR\Model\ErrorForaddrighttoworkdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class RightToWorkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail',
+                        '\PeopleHR\Model\ErrorForaddrighttoworkdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class RightToWorkApi
      *
      * Add Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkAddrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class RightToWorkApi
      *
      * Add Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkAddrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class RightToWorkApi
      */
     public function rightToWorkAddrighttoworkdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkAddrighttoworkdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForaddrighttoworkdetail';
+        $returnType = '\PeopleHR\Model\ErrorForaddrighttoworkdetail';
         $request = $this->rightToWorkAddrighttoworkdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class RightToWorkApi
     /**
      * Create request for operation 'rightToWorkAddrighttoworkdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkAddrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class RightToWorkApi
      *
      * Delete Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleterighttoworkdetailParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleterighttoworkdetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkDeleterighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail
+     * @return \PeopleHR\Model\ErrorFordeleterighttoworkdetail
      */
     public function rightToWorkDeleterighttoworkdetailPost($body, string $contentType = self::contentTypes['rightToWorkDeleterighttoworkdetailPost'][0])
     {
@@ -462,12 +462,12 @@ class RightToWorkApi
      *
      * Delete Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkDeleterighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorFordeleterighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function rightToWorkDeleterighttoworkdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkDeleterighttoworkdetailPost'][0])
     {
@@ -498,11 +498,11 @@ class RightToWorkApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorFordeleterighttoworkdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorFordeleterighttoworkdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class RightToWorkApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorFordeleterighttoworkdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class RightToWorkApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail';
+            $returnType = '\PeopleHR\Model\ErrorFordeleterighttoworkdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class RightToWorkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail',
+                        '\PeopleHR\Model\ErrorFordeleterighttoworkdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class RightToWorkApi
      *
      * Delete Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkDeleterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class RightToWorkApi
      *
      * Delete Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\DeleterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkDeleterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class RightToWorkApi
      */
     public function rightToWorkDeleterighttoworkdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkDeleterighttoworkdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorFordeleterighttoworkdetail';
+        $returnType = '\PeopleHR\Model\ErrorFordeleterighttoworkdetail';
         $request = $this->rightToWorkDeleterighttoworkdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class RightToWorkApi
     /**
      * Create request for operation 'rightToWorkDeleterighttoworkdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\DeleterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkDeleterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class RightToWorkApi
      *
      * Get Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\GetRightToWorkDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\GetRightToWorkDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkGetrighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForgetrighttoworkdetail
+     * @return \PeopleHR\Model\ErrorForgetrighttoworkdetail
      */
     public function rightToWorkGetrighttoworkdetailPost($body, string $contentType = self::contentTypes['rightToWorkGetrighttoworkdetailPost'][0])
     {
@@ -769,12 +769,12 @@ class RightToWorkApi
      *
      * Get Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\GetRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkGetrighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForgetrighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForgetrighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function rightToWorkGetrighttoworkdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkGetrighttoworkdetailPost'][0])
     {
@@ -805,11 +805,11 @@ class RightToWorkApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForgetrighttoworkdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForgetrighttoworkdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class RightToWorkApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForgetrighttoworkdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class RightToWorkApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail';
+            $returnType = '\PeopleHR\Model\ErrorForgetrighttoworkdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class RightToWorkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail',
+                        '\PeopleHR\Model\ErrorForgetrighttoworkdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class RightToWorkApi
      *
      * Get Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\GetRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkGetrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class RightToWorkApi
      *
      * Get Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\GetRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkGetrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class RightToWorkApi
      */
     public function rightToWorkGetrighttoworkdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkGetrighttoworkdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForgetrighttoworkdetail';
+        $returnType = '\PeopleHR\Model\ErrorForgetrighttoworkdetail';
         $request = $this->rightToWorkGetrighttoworkdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class RightToWorkApi
     /**
      * Create request for operation 'rightToWorkGetrighttoworkdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetRightToWorkDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetRightToWorkDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkGetrighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class RightToWorkApi
      *
      * Update Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdaterighttoworkdetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail
+     * @return \PeopleHR\Model\ErrorForupdaterighttoworkdetail
      */
     public function rightToWorkUpdaterighttoworkdetailPost($body, string $contentType = self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'][0])
     {
@@ -1076,12 +1076,12 @@ class RightToWorkApi
      *
      * Update Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdaterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForupdaterighttoworkdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function rightToWorkUpdaterighttoworkdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'][0])
     {
@@ -1112,11 +1112,11 @@ class RightToWorkApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForupdaterighttoworkdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForupdaterighttoworkdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class RightToWorkApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForupdaterighttoworkdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class RightToWorkApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail';
+            $returnType = '\PeopleHR\Model\ErrorForupdaterighttoworkdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class RightToWorkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail',
+                        '\PeopleHR\Model\ErrorForupdaterighttoworkdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class RightToWorkApi
      *
      * Update Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdaterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class RightToWorkApi
      *
      * Update Right To Work Detail
      *
-     * @param  \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdaterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class RightToWorkApi
      */
     public function rightToWorkUpdaterighttoworkdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForupdaterighttoworkdetail';
+        $returnType = '\PeopleHR\Model\ErrorForupdaterighttoworkdetail';
         $request = $this->rightToWorkUpdaterighttoworkdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class RightToWorkApi
     /**
      * Create request for operation 'rightToWorkUpdaterighttoworkdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdaterighttoworkdetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdaterighttoworkdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['rightToWorkUpdaterighttoworkdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

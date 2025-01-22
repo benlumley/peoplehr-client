@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddNewMaternityPaternityParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,8 +64,8 @@ class AddNewMaternityPaternityParameter implements ModelInterface, ArrayAccess, 
         'due_date' => '\DateTime',
         'actual_start_date' => '\DateTime',
         'actual_end_date' => '\DateTime',
-        'add_comments' => '\OpenAPI\Client\Model\AddCommentsArrayForMaternityPaternityInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForAddNewMaternityPaternityInner[]'
+        'add_comments' => '\PeopleHR\Model\AddCommentsArrayForMaternityPaternityInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForAddNewMaternityPaternityInner[]'
     ];
 
     /**
@@ -544,7 +544,7 @@ class AddNewMaternityPaternityParameter implements ModelInterface, ArrayAccess, 
     /**
      * Gets add_comments
      *
-     * @return \OpenAPI\Client\Model\AddCommentsArrayForMaternityPaternityInner[]
+     * @return \PeopleHR\Model\AddCommentsArrayForMaternityPaternityInner[]
      */
     public function getAddComments()
     {
@@ -554,7 +554,7 @@ class AddNewMaternityPaternityParameter implements ModelInterface, ArrayAccess, 
     /**
      * Sets add_comments
      *
-     * @param \OpenAPI\Client\Model\AddCommentsArrayForMaternityPaternityInner[] $add_comments AddComments value
+     * @param \PeopleHR\Model\AddCommentsArrayForMaternityPaternityInner[] $add_comments AddComments value
      *
      * @return self
      */
@@ -571,7 +571,7 @@ class AddNewMaternityPaternityParameter implements ModelInterface, ArrayAccess, 
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForAddNewMaternityPaternityInner[]
+     * @return \PeopleHR\Model\AddFilesArrayForAddNewMaternityPaternityInner[]
      */
     public function getAddFiles()
     {
@@ -581,7 +581,7 @@ class AddNewMaternityPaternityParameter implements ModelInterface, ArrayAccess, 
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForAddNewMaternityPaternityInner[] $add_files AddFiles info.
+     * @param \PeopleHR\Model\AddFilesArrayForAddNewMaternityPaternityInner[] $add_files AddFiles info.
      *
      * @return self
      */

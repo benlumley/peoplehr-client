@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddNewQualificationParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class AddNewQualificationParameter implements ModelInterface, ArrayAccess, \Json
         'date_passed' => '\DateTime',
         'expiry_date' => '\DateTime',
         'comments' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForEmployeeQualificationInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForEmployeeQualificationInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForEmployeeQualificationInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForEmployeeQualificationInner[]'
     ];
 
     /**
@@ -600,7 +600,7 @@ class AddNewQualificationParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForEmployeeQualificationInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForEmployeeQualificationInner[]|null
      */
     public function getCustomColumns()
     {
@@ -610,7 +610,7 @@ class AddNewQualificationParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForEmployeeQualificationInner[]|null $custom_columns CustomColumns for add new qualification
+     * @param \PeopleHR\Model\CustomColumnsForEmployeeQualificationInner[]|null $custom_columns CustomColumns for add new qualification
      *
      * @return self
      */
@@ -627,7 +627,7 @@ class AddNewQualificationParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForEmployeeQualificationInner[]|null
+     * @return \PeopleHR\Model\AddFilesForEmployeeQualificationInner[]|null
      */
     public function getAddFiles()
     {
@@ -637,7 +637,7 @@ class AddNewQualificationParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForEmployeeQualificationInner[]|null $add_files AddFiles for add new qualification
+     * @param \PeopleHR\Model\AddFilesForEmployeeQualificationInner[]|null $add_files AddFiles for add new qualification
      *
      * @return self
      */

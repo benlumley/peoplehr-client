@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * GetBenefitByEmployeeIdArrayInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class GetBenefitByEmployeeIdArrayInner implements ModelInterface, ArrayAccess, \
         'value' => 'float',
         'comments' => 'string',
         'recover_on_termination' => 'string',
-        'customfields' => '\OpenAPI\Client\Model\CustomfieldArrayForEmployeeBenefitInner[]',
-        'files' => '\OpenAPI\Client\Model\FileArrayForEmployeeBenefitInner[]'
+        'customfields' => '\PeopleHR\Model\CustomfieldArrayForEmployeeBenefitInner[]',
+        'files' => '\PeopleHR\Model\FileArrayForEmployeeBenefitInner[]'
     ];
 
     /**
@@ -572,7 +572,7 @@ class GetBenefitByEmployeeIdArrayInner implements ModelInterface, ArrayAccess, \
     /**
      * Gets customfields
      *
-     * @return \OpenAPI\Client\Model\CustomfieldArrayForEmployeeBenefitInner[]|null
+     * @return \PeopleHR\Model\CustomfieldArrayForEmployeeBenefitInner[]|null
      */
     public function getCustomfields()
     {
@@ -582,7 +582,7 @@ class GetBenefitByEmployeeIdArrayInner implements ModelInterface, ArrayAccess, \
     /**
      * Sets customfields
      *
-     * @param \OpenAPI\Client\Model\CustomfieldArrayForEmployeeBenefitInner[]|null $customfields Customfields value
+     * @param \PeopleHR\Model\CustomfieldArrayForEmployeeBenefitInner[]|null $customfields Customfields value
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class GetBenefitByEmployeeIdArrayInner implements ModelInterface, ArrayAccess, \
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\FileArrayForEmployeeBenefitInner[]|null
+     * @return \PeopleHR\Model\FileArrayForEmployeeBenefitInner[]|null
      */
     public function getFiles()
     {
@@ -609,7 +609,7 @@ class GetBenefitByEmployeeIdArrayInner implements ModelInterface, ArrayAccess, \
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\FileArrayForEmployeeBenefitInner[]|null $files Files info.
+     * @param \PeopleHR\Model\FileArrayForEmployeeBenefitInner[]|null $files Files info.
      *
      * @return self
      */

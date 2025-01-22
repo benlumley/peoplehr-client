@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ContactDetailObject Class Doc Comment
  *
  * @category Class
  * @description ContactDetail contain displayValue and FieldHistory array values
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'address' => '\OpenAPI\Client\Model\AddressObject',
-        'work_phone_number' => '\OpenAPI\Client\Model\WorkPhoneNumberObject',
-        'personal_phone_number' => '\OpenAPI\Client\Model\PersonalPhoneNumberObject',
-        'personal_email' => '\OpenAPI\Client\Model\PersonalEmailObject',
-        'mobile' => '\OpenAPI\Client\Model\MobileObject'
+        'address' => '\PeopleHR\Model\AddressObject',
+        'work_phone_number' => '\PeopleHR\Model\WorkPhoneNumberObject',
+        'personal_phone_number' => '\PeopleHR\Model\PersonalPhoneNumberObject',
+        'personal_email' => '\PeopleHR\Model\PersonalEmailObject',
+        'mobile' => '\PeopleHR\Model\MobileObject'
     ];
 
     /**
@@ -322,7 +322,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\AddressObject|null
+     * @return \PeopleHR\Model\AddressObject|null
      */
     public function getAddress()
     {
@@ -332,7 +332,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\AddressObject|null $address Address contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\AddressObject|null $address Address contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets work_phone_number
      *
-     * @return \OpenAPI\Client\Model\WorkPhoneNumberObject|null
+     * @return \PeopleHR\Model\WorkPhoneNumberObject|null
      */
     public function getWorkPhoneNumber()
     {
@@ -359,7 +359,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets work_phone_number
      *
-     * @param \OpenAPI\Client\Model\WorkPhoneNumberObject|null $work_phone_number WorkPhoneNumber contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\WorkPhoneNumberObject|null $work_phone_number WorkPhoneNumber contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets personal_phone_number
      *
-     * @return \OpenAPI\Client\Model\PersonalPhoneNumberObject|null
+     * @return \PeopleHR\Model\PersonalPhoneNumberObject|null
      */
     public function getPersonalPhoneNumber()
     {
@@ -386,7 +386,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets personal_phone_number
      *
-     * @param \OpenAPI\Client\Model\PersonalPhoneNumberObject|null $personal_phone_number PersonalPhoneNumber contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\PersonalPhoneNumberObject|null $personal_phone_number PersonalPhoneNumber contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets personal_email
      *
-     * @return \OpenAPI\Client\Model\PersonalEmailObject|null
+     * @return \PeopleHR\Model\PersonalEmailObject|null
      */
     public function getPersonalEmail()
     {
@@ -413,7 +413,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets personal_email
      *
-     * @param \OpenAPI\Client\Model\PersonalEmailObject|null $personal_email PersonalEmail contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\PersonalEmailObject|null $personal_email PersonalEmail contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets mobile
      *
-     * @return \OpenAPI\Client\Model\MobileObject|null
+     * @return \PeopleHR\Model\MobileObject|null
      */
     public function getMobile()
     {
@@ -440,7 +440,7 @@ class ContactDetailObject implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets mobile
      *
-     * @param \OpenAPI\Client\Model\MobileObject|null $mobile Mobile contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\MobileObject|null $mobile Mobile contain displayValue and FieldHistory array values
      *
      * @return self
      */

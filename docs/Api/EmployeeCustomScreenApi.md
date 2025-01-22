@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeCustomScreenApi
+# PeopleHR\EmployeeCustomScreenApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeCustomScreenAddNewCustomScreenTransactionPost()`
 
 ```php
-employeeCustomScreenAddNewCustomScreenTransactionPost($body): \OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction
+employeeCustomScreenAddNewCustomScreenTransactionPost($body): \PeopleHR\Model\ErrorForAddNewCustomScreenTransaction
 ```
 
 Add New Custom Screen Transaction
@@ -30,12 +30,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter(); // \OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter
+$body = new \PeopleHR\Model\AddNewCustomScreenTransactionParameter(); // \PeopleHR\Model\AddNewCustomScreenTransactionParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenAddNewCustomScreenTransactionPost($body);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewCustomScreenTransactionParameter**](../Model/AddNewCustomScreenTransactionParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewCustomScreenTransactionParameter**](../Model/AddNewCustomScreenTransactionParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewCustomScreenTransaction**](../Model/ErrorForAddNewCustomScreenTransaction.md)
+[**\PeopleHR\Model\ErrorForAddNewCustomScreenTransaction**](../Model/ErrorForAddNewCustomScreenTransaction.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `employeeCustomScreenDeleteCustomScreenTransactionPost()`
 
 ```php
-employeeCustomScreenDeleteCustomScreenTransactionPost($body): \OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction
+employeeCustomScreenDeleteCustomScreenTransactionPost($body): \PeopleHR\Model\ErrorForDeleteCustomScreenTransaction
 ```
 
 Delete Custom Screen Transaction
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter(); // \OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter
+$body = new \PeopleHR\Model\DeleteCustomScreenTransactionParameter(); // \PeopleHR\Model\DeleteCustomScreenTransactionParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenDeleteCustomScreenTransactionPost($body);
@@ -105,11 +105,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteCustomScreenTransactionParameter**](../Model/DeleteCustomScreenTransactionParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteCustomScreenTransactionParameter**](../Model/DeleteCustomScreenTransactionParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteCustomScreenTransaction**](../Model/ErrorForDeleteCustomScreenTransaction.md)
+[**\PeopleHR\Model\ErrorForDeleteCustomScreenTransaction**](../Model/ErrorForDeleteCustomScreenTransaction.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 ## `employeeCustomScreenGetByCustomScreenTransactionIdPost()`
 
 ```php
-employeeCustomScreenGetByCustomScreenTransactionIdPost($body): \OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId
+employeeCustomScreenGetByCustomScreenTransactionIdPost($body): \PeopleHR\Model\ErrorForGetByCustomScreenTransactionId
 ```
 
 Get By Custom Screen Transaction Id
@@ -142,12 +142,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter(); // \OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter
+$body = new \PeopleHR\Model\GetByCustomScreenTransactionIdParameter(); // \PeopleHR\Model\GetByCustomScreenTransactionIdParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenGetByCustomScreenTransactionIdPost($body);
@@ -161,11 +161,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByCustomScreenTransactionIdParameter**](../Model/GetByCustomScreenTransactionIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByCustomScreenTransactionIdParameter**](../Model/GetByCustomScreenTransactionIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByCustomScreenTransactionId**](../Model/ErrorForGetByCustomScreenTransactionId.md)
+[**\PeopleHR\Model\ErrorForGetByCustomScreenTransactionId**](../Model/ErrorForGetByCustomScreenTransactionId.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 ## `employeeCustomScreenGetCustomScreenByEmployeeIdPost()`
 
 ```php
-employeeCustomScreenGetCustomScreenByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId
+employeeCustomScreenGetCustomScreenByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId
 ```
 
 Get Custom Screen By Employee Id
@@ -198,12 +198,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter(); // \PeopleHR\Model\GetCustomScreenByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenGetCustomScreenByEmployeeIdPost($body);
@@ -217,11 +217,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetCustomScreenByEmployeeIdParameter**](../Model/GetCustomScreenByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetCustomScreenByEmployeeIdParameter**](../Model/GetCustomScreenByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetCustomScreenByEmployeeId**](../Model/ErrorForGetCustomScreenByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetCustomScreenByEmployeeId**](../Model/ErrorForGetCustomScreenByEmployeeId.md)
 
 ### Authorization
 
@@ -239,7 +239,7 @@ No authorization required
 ## `employeeCustomScreenGetCustomScreenDetailPost()`
 
 ```php
-employeeCustomScreenGetCustomScreenDetailPost($body): \OpenAPI\Client\Model\ErrorForGetCustomScreenDetail
+employeeCustomScreenGetCustomScreenDetailPost($body): \PeopleHR\Model\ErrorForGetCustomScreenDetail
 ```
 
 Get Custom Screen Detail
@@ -254,12 +254,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetCustomScreenDetailParameter(); // \OpenAPI\Client\Model\GetCustomScreenDetailParameter
+$body = new \PeopleHR\Model\GetCustomScreenDetailParameter(); // \PeopleHR\Model\GetCustomScreenDetailParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenGetCustomScreenDetailPost($body);
@@ -273,11 +273,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetCustomScreenDetailParameter**](../Model/GetCustomScreenDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetCustomScreenDetailParameter**](../Model/GetCustomScreenDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetCustomScreenDetail**](../Model/ErrorForGetCustomScreenDetail.md)
+[**\PeopleHR\Model\ErrorForGetCustomScreenDetail**](../Model/ErrorForGetCustomScreenDetail.md)
 
 ### Authorization
 
@@ -295,7 +295,7 @@ No authorization required
 ## `employeeCustomScreenUpdateCustomScreenTransactionPost()`
 
 ```php
-employeeCustomScreenUpdateCustomScreenTransactionPost($body): \OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction
+employeeCustomScreenUpdateCustomScreenTransactionPost($body): \PeopleHR\Model\ErrorForUpdateCustomScreenTransaction
 ```
 
 Update Custom Screen Transaction
@@ -310,12 +310,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeCustomScreenApi(
+$apiInstance = new PeopleHR\Api\EmployeeCustomScreenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter(); // \OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter
+$body = new \PeopleHR\Model\UpdateCustomScreenTransactionParameter(); // \PeopleHR\Model\UpdateCustomScreenTransactionParameter
 
 try {
     $result = $apiInstance->employeeCustomScreenUpdateCustomScreenTransactionPost($body);
@@ -329,11 +329,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateCustomScreenTransactionParameter**](../Model/UpdateCustomScreenTransactionParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateCustomScreenTransactionParameter**](../Model/UpdateCustomScreenTransactionParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateCustomScreenTransaction**](../Model/ErrorForUpdateCustomScreenTransaction.md)
+[**\PeopleHR\Model\ErrorForUpdateCustomScreenTransaction**](../Model/ErrorForUpdateCustomScreenTransaction.md)
 
 ### Authorization
 

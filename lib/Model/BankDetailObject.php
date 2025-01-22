@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * BankDetailObject Class Doc Comment
  *
  * @category Class
  * @description Bank detail contain displayValue and FieldHistory array values
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bank_name' => '\OpenAPI\Client\Model\BankNameObject',
-        'bank_address' => '\OpenAPI\Client\Model\BankAddressObject',
-        'bank_code' => '\OpenAPI\Client\Model\BankCodeObject',
-        'account_number' => '\OpenAPI\Client\Model\AccountNumberObject',
-        'account_name' => '\OpenAPI\Client\Model\AccountNameObject'
+        'bank_name' => '\PeopleHR\Model\BankNameObject',
+        'bank_address' => '\PeopleHR\Model\BankAddressObject',
+        'bank_code' => '\PeopleHR\Model\BankCodeObject',
+        'account_number' => '\PeopleHR\Model\AccountNumberObject',
+        'account_name' => '\PeopleHR\Model\AccountNameObject'
     ];
 
     /**
@@ -322,7 +322,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_name
      *
-     * @return \OpenAPI\Client\Model\BankNameObject|null
+     * @return \PeopleHR\Model\BankNameObject|null
      */
     public function getBankName()
     {
@@ -332,7 +332,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_name
      *
-     * @param \OpenAPI\Client\Model\BankNameObject|null $bank_name BankName contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\BankNameObject|null $bank_name BankName contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_address
      *
-     * @return \OpenAPI\Client\Model\BankAddressObject|null
+     * @return \PeopleHR\Model\BankAddressObject|null
      */
     public function getBankAddress()
     {
@@ -359,7 +359,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_address
      *
-     * @param \OpenAPI\Client\Model\BankAddressObject|null $bank_address BankAddress contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\BankAddressObject|null $bank_address BankAddress contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_code
      *
-     * @return \OpenAPI\Client\Model\BankCodeObject|null
+     * @return \PeopleHR\Model\BankCodeObject|null
      */
     public function getBankCode()
     {
@@ -386,7 +386,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_code
      *
-     * @param \OpenAPI\Client\Model\BankCodeObject|null $bank_code BankCode contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\BankCodeObject|null $bank_code BankCode contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets account_number
      *
-     * @return \OpenAPI\Client\Model\AccountNumberObject|null
+     * @return \PeopleHR\Model\AccountNumberObject|null
      */
     public function getAccountNumber()
     {
@@ -413,7 +413,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets account_number
      *
-     * @param \OpenAPI\Client\Model\AccountNumberObject|null $account_number AccountNumber contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\AccountNumberObject|null $account_number AccountNumber contain displayValue and FieldHistory array values
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets account_name
      *
-     * @return \OpenAPI\Client\Model\AccountNameObject|null
+     * @return \PeopleHR\Model\AccountNameObject|null
      */
     public function getAccountName()
     {
@@ -440,7 +440,7 @@ class BankDetailObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets account_name
      *
-     * @param \OpenAPI\Client\Model\AccountNameObject|null $account_name AccountName contain displayValue and FieldHistory array values
+     * @param \PeopleHR\Model\AccountNameObject|null $account_name AccountName contain displayValue and FieldHistory array values
      *
      * @return self
      */

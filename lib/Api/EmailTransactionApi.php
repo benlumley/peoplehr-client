@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmailTransactionApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,12 +128,12 @@ class EmailTransactionApi
      *
      * Email Inbox
      *
-     * @param  \OpenAPI\Client\Model\EmailInboxParameter $body body (required)
+     * @param  \PeopleHR\Model\EmailInboxParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['emailTransactionEmailInboxPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForEmailInbox
+     * @return \PeopleHR\Model\ErrorForEmailInbox
      */
     public function emailTransactionEmailInboxPost($body, string $contentType = self::contentTypes['emailTransactionEmailInboxPost'][0])
     {
@@ -146,12 +146,12 @@ class EmailTransactionApi
      *
      * Email Inbox
      *
-     * @param  \OpenAPI\Client\Model\EmailInboxParameter $body (required)
+     * @param  \PeopleHR\Model\EmailInboxParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['emailTransactionEmailInboxPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForEmailInbox, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForEmailInbox, HTTP status code, HTTP response headers (array of strings)
      */
     public function emailTransactionEmailInboxPostWithHttpInfo($body, string $contentType = self::contentTypes['emailTransactionEmailInboxPost'][0])
     {
@@ -182,11 +182,11 @@ class EmailTransactionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForEmailInbox' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForEmailInbox' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForEmailInbox' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForEmailInbox' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -204,7 +204,7 @@ class EmailTransactionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForEmailInbox', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForEmailInbox', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -223,7 +223,7 @@ class EmailTransactionApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForEmailInbox';
+            $returnType = '\PeopleHR\Model\ErrorForEmailInbox';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -256,7 +256,7 @@ class EmailTransactionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForEmailInbox',
+                        '\PeopleHR\Model\ErrorForEmailInbox',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class EmailTransactionApi
      *
      * Email Inbox
      *
-     * @param  \OpenAPI\Client\Model\EmailInboxParameter $body (required)
+     * @param  \PeopleHR\Model\EmailInboxParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['emailTransactionEmailInboxPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -292,7 +292,7 @@ class EmailTransactionApi
      *
      * Email Inbox
      *
-     * @param  \OpenAPI\Client\Model\EmailInboxParameter $body (required)
+     * @param  \PeopleHR\Model\EmailInboxParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['emailTransactionEmailInboxPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class EmailTransactionApi
      */
     public function emailTransactionEmailInboxPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['emailTransactionEmailInboxPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForEmailInbox';
+        $returnType = '\PeopleHR\Model\ErrorForEmailInbox';
         $request = $this->emailTransactionEmailInboxPostRequest($body, $contentType);
 
         return $this->client
@@ -342,7 +342,7 @@ class EmailTransactionApi
     /**
      * Create request for operation 'emailTransactionEmailInboxPost'
      *
-     * @param  \OpenAPI\Client\Model\EmailInboxParameter $body (required)
+     * @param  \PeopleHR\Model\EmailInboxParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['emailTransactionEmailInboxPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

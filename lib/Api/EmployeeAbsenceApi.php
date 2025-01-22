@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeAbsenceApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class EmployeeAbsenceApi
      *
      * Add Absence
      *
-     * @param  \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter $body body (required)
+     * @param  \PeopleHR\Model\AddAbsenceOfEmployeeParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceAddAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddEmployeeAbsence
+     * @return \PeopleHR\Model\ErrorForAddEmployeeAbsence
      */
     public function employeeAbsenceAddAbsencePost($body, string $contentType = self::contentTypes['employeeAbsenceAddAbsencePost'][0])
     {
@@ -155,12 +155,12 @@ class EmployeeAbsenceApi
      *
      * Add Absence
      *
-     * @param  \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\AddAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceAddAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddEmployeeAbsence, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddEmployeeAbsence, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAbsenceAddAbsencePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceAddAbsencePost'][0])
     {
@@ -191,11 +191,11 @@ class EmployeeAbsenceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddEmployeeAbsence' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddEmployeeAbsence' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class EmployeeAbsenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddEmployeeAbsence', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class EmployeeAbsenceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence';
+            $returnType = '\PeopleHR\Model\ErrorForAddEmployeeAbsence';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class EmployeeAbsenceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence',
+                        '\PeopleHR\Model\ErrorForAddEmployeeAbsence',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class EmployeeAbsenceApi
      *
      * Add Absence
      *
-     * @param  \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\AddAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceAddAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class EmployeeAbsenceApi
      *
      * Add Absence
      *
-     * @param  \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\AddAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceAddAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class EmployeeAbsenceApi
      */
     public function employeeAbsenceAddAbsencePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceAddAbsencePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence';
+        $returnType = '\PeopleHR\Model\ErrorForAddEmployeeAbsence';
         $request = $this->employeeAbsenceAddAbsencePostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class EmployeeAbsenceApi
     /**
      * Create request for operation 'employeeAbsenceAddAbsencePost'
      *
-     * @param  \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\AddAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceAddAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class EmployeeAbsenceApi
      *
      * Delete Absence
      *
-     * @param  \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceDeleteAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete
+     * @return \PeopleHR\Model\ErrorForEmployeeAbsenceDelete
      */
     public function employeeAbsenceDeleteAbsencePost($body, string $contentType = self::contentTypes['employeeAbsenceDeleteAbsencePost'][0])
     {
@@ -462,12 +462,12 @@ class EmployeeAbsenceApi
      *
      * Delete Absence
      *
-     * @param  \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceDeleteAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForEmployeeAbsenceDelete, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAbsenceDeleteAbsencePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceDeleteAbsencePost'][0])
     {
@@ -498,11 +498,11 @@ class EmployeeAbsenceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForEmployeeAbsenceDelete' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForEmployeeAbsenceDelete' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class EmployeeAbsenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForEmployeeAbsenceDelete', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class EmployeeAbsenceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete';
+            $returnType = '\PeopleHR\Model\ErrorForEmployeeAbsenceDelete';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class EmployeeAbsenceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete',
+                        '\PeopleHR\Model\ErrorForEmployeeAbsenceDelete',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class EmployeeAbsenceApi
      *
      * Delete Absence
      *
-     * @param  \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceDeleteAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class EmployeeAbsenceApi
      *
      * Delete Absence
      *
-     * @param  \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceDeleteAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class EmployeeAbsenceApi
      */
     public function employeeAbsenceDeleteAbsencePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceDeleteAbsencePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete';
+        $returnType = '\PeopleHR\Model\ErrorForEmployeeAbsenceDelete';
         $request = $this->employeeAbsenceDeleteAbsencePostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class EmployeeAbsenceApi
     /**
      * Create request for operation 'employeeAbsenceDeleteAbsencePost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceDeleteAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class EmployeeAbsenceApi
      *
      * Get Absence Detail
      *
-     * @param  \OpenAPI\Client\Model\GetAbsenceDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\GetAbsenceDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceGetAbsenceDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetAbsenceDetail
+     * @return \PeopleHR\Model\ErrorForGetAbsenceDetail
      */
     public function employeeAbsenceGetAbsenceDetailPost($body, string $contentType = self::contentTypes['employeeAbsenceGetAbsenceDetailPost'][0])
     {
@@ -769,12 +769,12 @@ class EmployeeAbsenceApi
      *
      * Get Absence Detail
      *
-     * @param  \OpenAPI\Client\Model\GetAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceGetAbsenceDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetAbsenceDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetAbsenceDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAbsenceGetAbsenceDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceGetAbsenceDetailPost'][0])
     {
@@ -805,11 +805,11 @@ class EmployeeAbsenceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetAbsenceDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetAbsenceDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetAbsenceDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetAbsenceDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class EmployeeAbsenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetAbsenceDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetAbsenceDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class EmployeeAbsenceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetAbsenceDetail';
+            $returnType = '\PeopleHR\Model\ErrorForGetAbsenceDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class EmployeeAbsenceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetAbsenceDetail',
+                        '\PeopleHR\Model\ErrorForGetAbsenceDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class EmployeeAbsenceApi
      *
      * Get Absence Detail
      *
-     * @param  \OpenAPI\Client\Model\GetAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceGetAbsenceDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class EmployeeAbsenceApi
      *
      * Get Absence Detail
      *
-     * @param  \OpenAPI\Client\Model\GetAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceGetAbsenceDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class EmployeeAbsenceApi
      */
     public function employeeAbsenceGetAbsenceDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceGetAbsenceDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetAbsenceDetail';
+        $returnType = '\PeopleHR\Model\ErrorForGetAbsenceDetail';
         $request = $this->employeeAbsenceGetAbsenceDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class EmployeeAbsenceApi
     /**
      * Create request for operation 'employeeAbsenceGetAbsenceDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceGetAbsenceDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class EmployeeAbsenceApi
      *
      * Update Absence
      *
-     * @param  \OpenAPI\Client\Model\UpdateAbsenceDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateAbsenceDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceUpdateAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails
+     * @return \PeopleHR\Model\ErrorForUpdateAbsenceDetails
      */
     public function employeeAbsenceUpdateAbsencePost($body, string $contentType = self::contentTypes['employeeAbsenceUpdateAbsencePost'][0])
     {
@@ -1076,12 +1076,12 @@ class EmployeeAbsenceApi
      *
      * Update Absence
      *
-     * @param  \OpenAPI\Client\Model\UpdateAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceUpdateAbsencePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateAbsenceDetails, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeAbsenceUpdateAbsencePostWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceUpdateAbsencePost'][0])
     {
@@ -1112,11 +1112,11 @@ class EmployeeAbsenceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateAbsenceDetails' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateAbsenceDetails' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class EmployeeAbsenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateAbsenceDetails', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class EmployeeAbsenceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateAbsenceDetails';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class EmployeeAbsenceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails',
+                        '\PeopleHR\Model\ErrorForUpdateAbsenceDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class EmployeeAbsenceApi
      *
      * Update Absence
      *
-     * @param  \OpenAPI\Client\Model\UpdateAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceUpdateAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class EmployeeAbsenceApi
      *
      * Update Absence
      *
-     * @param  \OpenAPI\Client\Model\UpdateAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceUpdateAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class EmployeeAbsenceApi
      */
     public function employeeAbsenceUpdateAbsencePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeAbsenceUpdateAbsencePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateAbsenceDetails';
         $request = $this->employeeAbsenceUpdateAbsencePostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class EmployeeAbsenceApi
     /**
      * Create request for operation 'employeeAbsenceUpdateAbsencePost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateAbsenceDetailParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateAbsenceDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeAbsenceUpdateAbsencePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

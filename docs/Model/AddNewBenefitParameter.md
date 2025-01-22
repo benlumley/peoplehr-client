@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **expiry_date** | **\DateTime** | ExpiryDate for add new benefit |
 **value** | **float** | Value for add new benefit | [optional]
 **comments** | **string** | Comments for add new benefit | [optional]
-**recover_on_termination** | [**\OpenAPI\Client\Model\RecoverOnTermination**](RecoverOnTermination.md) | RecoverOnTermination for add new benefit |
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsArrayForAddNewBenefitInner[]**](CustomColumnsArrayForAddNewBenefitInner.md) | CustomColumns value |
-**add_files** | [**\OpenAPI\Client\Model\AddFilesArrayForAddNewBenefitInner[]**](AddFilesArrayForAddNewBenefitInner.md) | AddFiles contain file info. |
+**recover_on_termination** | [**\PeopleHR\Model\RecoverOnTermination**](RecoverOnTermination.md) | RecoverOnTermination for add new benefit |
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsArrayForAddNewBenefitInner[]**](CustomColumnsArrayForAddNewBenefitInner.md) | CustomColumns value |
+**add_files** | [**\PeopleHR\Model\AddFilesArrayForAddNewBenefitInner[]**](AddFilesArrayForAddNewBenefitInner.md) | AddFiles contain file info. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

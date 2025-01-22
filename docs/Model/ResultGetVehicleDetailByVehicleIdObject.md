@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **mot_expiry_date** | **\DateTime** | MOTExpiryDate Value | [optional]
 **insurance_expiry_date** | **\DateTime** | InsuranceExpiryDate Value | [optional]
 **comments** | **string** | Comments Value | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]**](CustomColumnsForGetVehicleByIdArrayInner.md) | CustomColumns to get vehicle detail | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]**](AddFilesForGetVehicleByIdArrayInner.md) | AddFiles to get vehicle detail | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]**](CustomColumnsForGetVehicleByIdArrayInner.md) | CustomColumns to get vehicle detail | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]**](AddFilesForGetVehicleByIdArrayInner.md) | AddFiles to get vehicle detail | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

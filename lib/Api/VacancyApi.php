@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * VacancyApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,12 +134,12 @@ class VacancyApi
      *
      * Create New Vacancy
      *
-     * @param  \OpenAPI\Client\Model\CreateVacancyDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\CreateVacancyDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyCreateNewVacancyPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForCreateNewVacancy
+     * @return \PeopleHR\Model\ErrorForCreateNewVacancy
      */
     public function vacancyCreateNewVacancyPost($body, string $contentType = self::contentTypes['vacancyCreateNewVacancyPost'][0])
     {
@@ -152,12 +152,12 @@ class VacancyApi
      *
      * Create New Vacancy
      *
-     * @param  \OpenAPI\Client\Model\CreateVacancyDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateVacancyDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyCreateNewVacancyPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForCreateNewVacancy, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForCreateNewVacancy, HTTP status code, HTTP response headers (array of strings)
      */
     public function vacancyCreateNewVacancyPostWithHttpInfo($body, string $contentType = self::contentTypes['vacancyCreateNewVacancyPost'][0])
     {
@@ -188,11 +188,11 @@ class VacancyApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForCreateNewVacancy' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForCreateNewVacancy' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForCreateNewVacancy' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForCreateNewVacancy' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -210,7 +210,7 @@ class VacancyApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForCreateNewVacancy', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForCreateNewVacancy', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -229,7 +229,7 @@ class VacancyApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewVacancy';
+            $returnType = '\PeopleHR\Model\ErrorForCreateNewVacancy';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class VacancyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForCreateNewVacancy',
+                        '\PeopleHR\Model\ErrorForCreateNewVacancy',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class VacancyApi
      *
      * Create New Vacancy
      *
-     * @param  \OpenAPI\Client\Model\CreateVacancyDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateVacancyDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyCreateNewVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -298,7 +298,7 @@ class VacancyApi
      *
      * Create New Vacancy
      *
-     * @param  \OpenAPI\Client\Model\CreateVacancyDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateVacancyDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyCreateNewVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -306,7 +306,7 @@ class VacancyApi
      */
     public function vacancyCreateNewVacancyPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['vacancyCreateNewVacancyPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewVacancy';
+        $returnType = '\PeopleHR\Model\ErrorForCreateNewVacancy';
         $request = $this->vacancyCreateNewVacancyPostRequest($body, $contentType);
 
         return $this->client
@@ -348,7 +348,7 @@ class VacancyApi
     /**
      * Create request for operation 'vacancyCreateNewVacancyPost'
      *
-     * @param  \OpenAPI\Client\Model\CreateVacancyDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateVacancyDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyCreateNewVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -441,12 +441,12 @@ class VacancyApi
      *
      * Get all vacancies
      *
-     * @param  \OpenAPI\Client\Model\GetAllVacancyParameters $body body (required)
+     * @param  \PeopleHR\Model\GetAllVacancyParameters $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetAllVacanciesPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetAllVacancy
+     * @return \PeopleHR\Model\ErrorForGetAllVacancy
      */
     public function vacancyGetAllVacanciesPost($body, string $contentType = self::contentTypes['vacancyGetAllVacanciesPost'][0])
     {
@@ -459,12 +459,12 @@ class VacancyApi
      *
      * Get all vacancies
      *
-     * @param  \OpenAPI\Client\Model\GetAllVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetAllVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetAllVacanciesPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetAllVacancy, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetAllVacancy, HTTP status code, HTTP response headers (array of strings)
      */
     public function vacancyGetAllVacanciesPostWithHttpInfo($body, string $contentType = self::contentTypes['vacancyGetAllVacanciesPost'][0])
     {
@@ -495,11 +495,11 @@ class VacancyApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetAllVacancy' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetAllVacancy' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetAllVacancy' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetAllVacancy' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -517,7 +517,7 @@ class VacancyApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetAllVacancy', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetAllVacancy', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -536,7 +536,7 @@ class VacancyApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetAllVacancy';
+            $returnType = '\PeopleHR\Model\ErrorForGetAllVacancy';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -569,7 +569,7 @@ class VacancyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetAllVacancy',
+                        '\PeopleHR\Model\ErrorForGetAllVacancy',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class VacancyApi
      *
      * Get all vacancies
      *
-     * @param  \OpenAPI\Client\Model\GetAllVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetAllVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetAllVacanciesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -605,7 +605,7 @@ class VacancyApi
      *
      * Get all vacancies
      *
-     * @param  \OpenAPI\Client\Model\GetAllVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetAllVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetAllVacanciesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -613,7 +613,7 @@ class VacancyApi
      */
     public function vacancyGetAllVacanciesPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['vacancyGetAllVacanciesPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetAllVacancy';
+        $returnType = '\PeopleHR\Model\ErrorForGetAllVacancy';
         $request = $this->vacancyGetAllVacanciesPostRequest($body, $contentType);
 
         return $this->client
@@ -655,7 +655,7 @@ class VacancyApi
     /**
      * Create request for operation 'vacancyGetAllVacanciesPost'
      *
-     * @param  \OpenAPI\Client\Model\GetAllVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetAllVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetAllVacanciesPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -748,12 +748,12 @@ class VacancyApi
      *
      * Get vacancy
      *
-     * @param  \OpenAPI\Client\Model\GetVacancyParameters $body body (required)
+     * @param  \PeopleHR\Model\GetVacancyParameters $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetVacancyPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetVacancy
+     * @return \PeopleHR\Model\ErrorForGetVacancy
      */
     public function vacancyGetVacancyPost($body, string $contentType = self::contentTypes['vacancyGetVacancyPost'][0])
     {
@@ -766,12 +766,12 @@ class VacancyApi
      *
      * Get vacancy
      *
-     * @param  \OpenAPI\Client\Model\GetVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetVacancyPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetVacancy, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetVacancy, HTTP status code, HTTP response headers (array of strings)
      */
     public function vacancyGetVacancyPostWithHttpInfo($body, string $contentType = self::contentTypes['vacancyGetVacancyPost'][0])
     {
@@ -802,11 +802,11 @@ class VacancyApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetVacancy' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetVacancy' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetVacancy' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetVacancy' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -824,7 +824,7 @@ class VacancyApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetVacancy', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetVacancy', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -843,7 +843,7 @@ class VacancyApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetVacancy';
+            $returnType = '\PeopleHR\Model\ErrorForGetVacancy';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -876,7 +876,7 @@ class VacancyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetVacancy',
+                        '\PeopleHR\Model\ErrorForGetVacancy',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -891,7 +891,7 @@ class VacancyApi
      *
      * Get vacancy
      *
-     * @param  \OpenAPI\Client\Model\GetVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -912,7 +912,7 @@ class VacancyApi
      *
      * Get vacancy
      *
-     * @param  \OpenAPI\Client\Model\GetVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -920,7 +920,7 @@ class VacancyApi
      */
     public function vacancyGetVacancyPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['vacancyGetVacancyPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetVacancy';
+        $returnType = '\PeopleHR\Model\ErrorForGetVacancy';
         $request = $this->vacancyGetVacancyPostRequest($body, $contentType);
 
         return $this->client
@@ -962,7 +962,7 @@ class VacancyApi
     /**
      * Create request for operation 'vacancyGetVacancyPost'
      *
-     * @param  \OpenAPI\Client\Model\GetVacancyParameters $body (required)
+     * @param  \PeopleHR\Model\GetVacancyParameters $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['vacancyGetVacancyPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

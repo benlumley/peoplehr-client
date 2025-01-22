@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **end_time** | **string** | End time for add other event leave | [optional]
 **duration_in_days** | **int** | Duration in days for add other event leave |
 **comments** | **string** | Comments for add other event leave | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForaddothereventleave**](AddFilesForaddothereventleave.md) | Add files for add other event leave | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForaddothereventleave**](AddFilesForaddothereventleave.md) | Add files for add other event leave | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

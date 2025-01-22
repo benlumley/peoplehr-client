@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **first_name** | **string** | FirstName for update employee data |
 **last_name** | **string** | LastName for update employee data |
 **email** | **string** | Email for update employee data | [optional]
-**gender** | [**\OpenAPI\Client\Model\Gender**](Gender.md) | Gender value for update employee data |
+**gender** | [**\PeopleHR\Model\Gender**](Gender.md) | Gender value for update employee data |
 **date_of_birth** | **\DateTime** | Date of birth for update employee data | [optional]
 **start_date** | **\DateTime** | Start date for update employee data |
 **reports_to** | **string** | Reports To for update employee data | [optional]

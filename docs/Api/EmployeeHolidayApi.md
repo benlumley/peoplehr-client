@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeHolidayApi
+# PeopleHR\EmployeeHolidayApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeHolidayAddNewHolidayPost()`
 
 ```php
-employeeHolidayAddNewHolidayPost($body): \OpenAPI\Client\Model\ErrorForAddNewHoliday
+employeeHolidayAddNewHolidayPost($body): \PeopleHR\Model\ErrorForAddNewHoliday
 ```
 
 Add New Holiday
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeHolidayApi(
+$apiInstance = new PeopleHR\Api\EmployeeHolidayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewHolidayParameter(); // \OpenAPI\Client\Model\AddNewHolidayParameter
+$body = new \PeopleHR\Model\AddNewHolidayParameter(); // \PeopleHR\Model\AddNewHolidayParameter
 
 try {
     $result = $apiInstance->employeeHolidayAddNewHolidayPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewHolidayParameter**](../Model/AddNewHolidayParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewHolidayParameter**](../Model/AddNewHolidayParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewHoliday**](../Model/ErrorForAddNewHoliday.md)
+[**\PeopleHR\Model\ErrorForAddNewHoliday**](../Model/ErrorForAddNewHoliday.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `employeeHolidayDeleteHolidayPost()`
 
 ```php
-employeeHolidayDeleteHolidayPost($body): \OpenAPI\Client\Model\ErrorForDeleteHolidy
+employeeHolidayDeleteHolidayPost($body): \PeopleHR\Model\ErrorForDeleteHolidy
 ```
 
 Delete holiday
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeHolidayApi(
+$apiInstance = new PeopleHR\Api\EmployeeHolidayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteHolidayParameter(); // \OpenAPI\Client\Model\DeleteHolidayParameter
+$body = new \PeopleHR\Model\DeleteHolidayParameter(); // \PeopleHR\Model\DeleteHolidayParameter
 
 try {
     $result = $apiInstance->employeeHolidayDeleteHolidayPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteHolidayParameter**](../Model/DeleteHolidayParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteHolidayParameter**](../Model/DeleteHolidayParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteHolidy**](../Model/ErrorForDeleteHolidy.md)
+[**\PeopleHR\Model\ErrorForDeleteHolidy**](../Model/ErrorForDeleteHolidy.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `employeeHolidayGetHolidayDetailPost()`
 
 ```php
-employeeHolidayGetHolidayDetailPost($body): \OpenAPI\Client\Model\ErrorForGetHolidayDetail
+employeeHolidayGetHolidayDetailPost($body): \PeopleHR\Model\ErrorForGetHolidayDetail
 ```
 
 Get Holiday Detail
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeHolidayApi(
+$apiInstance = new PeopleHR\Api\EmployeeHolidayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetHolidayDetailParameter(); // \OpenAPI\Client\Model\GetHolidayDetailParameter
+$body = new \PeopleHR\Model\GetHolidayDetailParameter(); // \PeopleHR\Model\GetHolidayDetailParameter
 
 try {
     $result = $apiInstance->employeeHolidayGetHolidayDetailPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetHolidayDetailParameter**](../Model/GetHolidayDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetHolidayDetailParameter**](../Model/GetHolidayDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetHolidayDetail**](../Model/ErrorForGetHolidayDetail.md)
+[**\PeopleHR\Model\ErrorForGetHolidayDetail**](../Model/ErrorForGetHolidayDetail.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `employeeHolidayUpdateHolidayPost()`
 
 ```php
-employeeHolidayUpdateHolidayPost($body): \OpenAPI\Client\Model\ErrorForUpdateHoliday
+employeeHolidayUpdateHolidayPost($body): \PeopleHR\Model\ErrorForUpdateHoliday
 ```
 
 Update Holiday
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeHolidayApi(
+$apiInstance = new PeopleHR\Api\EmployeeHolidayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateHolidayParameter(); // \OpenAPI\Client\Model\UpdateHolidayParameter
+$body = new \PeopleHR\Model\UpdateHolidayParameter(); // \PeopleHR\Model\UpdateHolidayParameter
 
 try {
     $result = $apiInstance->employeeHolidayUpdateHolidayPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateHolidayParameter**](../Model/UpdateHolidayParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateHolidayParameter**](../Model/UpdateHolidayParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateHoliday**](../Model/ErrorForUpdateHoliday.md)
+[**\PeopleHR\Model\ErrorForUpdateHoliday**](../Model/ErrorForUpdateHoliday.md)
 
 ### Authorization
 

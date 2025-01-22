@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **due_date** | **\DateTime** | DueDate for add new maternity paternity |
 **actual_start_date** | **\DateTime** | Actual Start Date for add new maternity paternity |
 **actual_end_date** | **\DateTime** | Actual End Date for add new maternity paternity |
-**add_comments** | [**\OpenAPI\Client\Model\AddCommentsArrayForMaternityPaternityInner[]**](AddCommentsArrayForMaternityPaternityInner.md) | AddComments value |
-**add_files** | [**\OpenAPI\Client\Model\AddFilesArrayForAddNewMaternityPaternityInner[]**](AddFilesArrayForAddNewMaternityPaternityInner.md) | AddFiles info. |
+**add_comments** | [**\PeopleHR\Model\AddCommentsArrayForMaternityPaternityInner[]**](AddCommentsArrayForMaternityPaternityInner.md) | AddComments value |
+**add_files** | [**\PeopleHR\Model\AddFilesArrayForAddNewMaternityPaternityInner[]**](AddFilesArrayForAddNewMaternityPaternityInner.md) | AddFiles info. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

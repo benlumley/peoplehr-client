@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetTrainingDetail Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetTrainingDetail implements ModelInterface, ArrayAccess, \JsonSer
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\ResultForGetTrainingDetailInner[]'
+        'result' => '\PeopleHR\Model\ResultForGetTrainingDetailInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetTrainingDetail implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\ResultForGetTrainingDetailInner[]|null
+     * @return \PeopleHR\Model\ResultForGetTrainingDetailInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetTrainingDetail implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\ResultForGetTrainingDetailInner[]|null $result Result value
+     * @param \PeopleHR\Model\ResultForGetTrainingDetailInner[]|null $result Result value
      *
      * @return self
      */

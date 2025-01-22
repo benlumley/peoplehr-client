@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultGetVehicleDetailByVehicleIdObject Class Doc Comment
  *
  * @category Class
  * @description Result Array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,8 +71,8 @@ class ResultGetVehicleDetailByVehicleIdObject implements ModelInterface, ArrayAc
         'mot_expiry_date' => '\DateTime',
         'insurance_expiry_date' => '\DateTime',
         'comments' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]'
     ];
 
     /**
@@ -709,7 +709,7 @@ class ResultGetVehicleDetailByVehicleIdObject implements ModelInterface, ArrayAc
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null
      */
     public function getCustomColumns()
     {
@@ -719,7 +719,7 @@ class ResultGetVehicleDetailByVehicleIdObject implements ModelInterface, ArrayAc
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null $custom_columns CustomColumns to get vehicle detail
+     * @param \PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null $custom_columns CustomColumns to get vehicle detail
      *
      * @return self
      */
@@ -736,7 +736,7 @@ class ResultGetVehicleDetailByVehicleIdObject implements ModelInterface, ArrayAc
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]|null
+     * @return \PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]|null
      */
     public function getAddFiles()
     {
@@ -746,7 +746,7 @@ class ResultGetVehicleDetailByVehicleIdObject implements ModelInterface, ArrayAc
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]|null $add_files AddFiles to get vehicle detail
+     * @param \PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]|null $add_files AddFiles to get vehicle detail
      *
      * @return self
      */

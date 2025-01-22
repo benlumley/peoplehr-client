@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **medical_certificate_type** | **int** | Comments goes here | [optional]
 **medical_certificate_received_date** | **string** | Comments goes here | [optional]
 **reason** | **string** | Reason for Absence | [optional]
-**comments** | [**\OpenAPI\Client\Model\CommentsArrayInner[]**](CommentsArrayInner.md) | Comments Array  list | [optional]
+**comments** | [**\PeopleHR\Model\CommentsArrayInner[]**](CommentsArrayInner.md) | Comments Array  list | [optional]
 **absence_paid_status** | **int** | Absence Paid Status | [optional]
 **emergency_leave** | **bool** | Emergency Leave | [optional]
 

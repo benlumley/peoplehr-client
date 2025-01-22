@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddNewHolidayParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class AddNewHolidayParameter implements ModelInterface, ArrayAccess, \JsonSerial
         'end_date' => '\DateTime',
         'duration_in_days' => 'int',
         'duration_in_minutes' => 'int',
-        'part_of_day' => '\OpenAPI\Client\Model\PartOfDay',
+        'part_of_day' => '\PeopleHR\Model\PartOfDay',
         'comments' => 'string'
     ];
 
@@ -612,7 +612,7 @@ class AddNewHolidayParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets part_of_day
      *
-     * @return \OpenAPI\Client\Model\PartOfDay|null
+     * @return \PeopleHR\Model\PartOfDay|null
      */
     public function getPartOfDay()
     {
@@ -622,7 +622,7 @@ class AddNewHolidayParameter implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets part_of_day
      *
-     * @param \OpenAPI\Client\Model\PartOfDay|null $part_of_day Part of day for add new holiday
+     * @param \PeopleHR\Model\PartOfDay|null $part_of_day Part of day for add new holiday
      *
      * @return self
      */

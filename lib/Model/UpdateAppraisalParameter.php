@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateAppraisalParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class UpdateAppraisalParameter implements ModelInterface, ArrayAccess, \JsonSeri
         'notes' => 'string',
         'action_plan' => 'string',
         'objectives' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsArrayForUpdateAppraisalInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForUpdateAppraisalInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsArrayForUpdateAppraisalInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForUpdateAppraisalInner[]'
     ];
 
     /**
@@ -618,7 +618,7 @@ class UpdateAppraisalParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsArrayForUpdateAppraisalInner[]
+     * @return \PeopleHR\Model\CustomColumnsArrayForUpdateAppraisalInner[]
      */
     public function getCustomColumns()
     {
@@ -628,7 +628,7 @@ class UpdateAppraisalParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsArrayForUpdateAppraisalInner[] $custom_columns Custom Columns of user
+     * @param \PeopleHR\Model\CustomColumnsArrayForUpdateAppraisalInner[] $custom_columns Custom Columns of user
      *
      * @return self
      */
@@ -645,7 +645,7 @@ class UpdateAppraisalParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForUpdateAppraisalInner[]
+     * @return \PeopleHR\Model\AddFilesArrayForUpdateAppraisalInner[]
      */
     public function getAddFiles()
     {
@@ -655,7 +655,7 @@ class UpdateAppraisalParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForUpdateAppraisalInner[] $add_files Add Files Info.
+     * @param \PeopleHR\Model\AddFilesArrayForUpdateAppraisalInner[] $add_files Add Files Info.
      *
      * @return self
      */

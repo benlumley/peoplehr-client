@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * ApplicantApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,12 +134,12 @@ class ApplicantApi
      *
      * Check duplicate applicant
      *
-     * @param  \OpenAPI\Client\Model\CheckDuplicateApplicantParameter $body body (required)
+     * @param  \PeopleHR\Model\CheckDuplicateApplicantParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCheckDuplicateApplicantPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant
+     * @return \PeopleHR\Model\ErrorForCheckDuplicateApplicant
      */
     public function applicantCheckDuplicateApplicantPost($body, string $contentType = self::contentTypes['applicantCheckDuplicateApplicantPost'][0])
     {
@@ -152,12 +152,12 @@ class ApplicantApi
      *
      * Check duplicate applicant
      *
-     * @param  \OpenAPI\Client\Model\CheckDuplicateApplicantParameter $body (required)
+     * @param  \PeopleHR\Model\CheckDuplicateApplicantParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCheckDuplicateApplicantPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForCheckDuplicateApplicant, HTTP status code, HTTP response headers (array of strings)
      */
     public function applicantCheckDuplicateApplicantPostWithHttpInfo($body, string $contentType = self::contentTypes['applicantCheckDuplicateApplicantPost'][0])
     {
@@ -188,11 +188,11 @@ class ApplicantApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForCheckDuplicateApplicant' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForCheckDuplicateApplicant' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -210,7 +210,7 @@ class ApplicantApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForCheckDuplicateApplicant', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -229,7 +229,7 @@ class ApplicantApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant';
+            $returnType = '\PeopleHR\Model\ErrorForCheckDuplicateApplicant';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class ApplicantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant',
+                        '\PeopleHR\Model\ErrorForCheckDuplicateApplicant',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class ApplicantApi
      *
      * Check duplicate applicant
      *
-     * @param  \OpenAPI\Client\Model\CheckDuplicateApplicantParameter $body (required)
+     * @param  \PeopleHR\Model\CheckDuplicateApplicantParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCheckDuplicateApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -298,7 +298,7 @@ class ApplicantApi
      *
      * Check duplicate applicant
      *
-     * @param  \OpenAPI\Client\Model\CheckDuplicateApplicantParameter $body (required)
+     * @param  \PeopleHR\Model\CheckDuplicateApplicantParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCheckDuplicateApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -306,7 +306,7 @@ class ApplicantApi
      */
     public function applicantCheckDuplicateApplicantPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['applicantCheckDuplicateApplicantPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForCheckDuplicateApplicant';
+        $returnType = '\PeopleHR\Model\ErrorForCheckDuplicateApplicant';
         $request = $this->applicantCheckDuplicateApplicantPostRequest($body, $contentType);
 
         return $this->client
@@ -348,7 +348,7 @@ class ApplicantApi
     /**
      * Create request for operation 'applicantCheckDuplicateApplicantPost'
      *
-     * @param  \OpenAPI\Client\Model\CheckDuplicateApplicantParameter $body (required)
+     * @param  \PeopleHR\Model\CheckDuplicateApplicantParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCheckDuplicateApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -441,12 +441,12 @@ class ApplicantApi
      *
      * Create New Applicant
      *
-     * @param  \OpenAPI\Client\Model\CreateApplicantDetailParameter $body body (required)
+     * @param  \PeopleHR\Model\CreateApplicantDetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCreateNewApplicantPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForCreateNewApplicant
+     * @return \PeopleHR\Model\ErrorForCreateNewApplicant
      */
     public function applicantCreateNewApplicantPost($body, string $contentType = self::contentTypes['applicantCreateNewApplicantPost'][0])
     {
@@ -459,12 +459,12 @@ class ApplicantApi
      *
      * Create New Applicant
      *
-     * @param  \OpenAPI\Client\Model\CreateApplicantDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateApplicantDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCreateNewApplicantPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForCreateNewApplicant, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForCreateNewApplicant, HTTP status code, HTTP response headers (array of strings)
      */
     public function applicantCreateNewApplicantPostWithHttpInfo($body, string $contentType = self::contentTypes['applicantCreateNewApplicantPost'][0])
     {
@@ -495,11 +495,11 @@ class ApplicantApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForCreateNewApplicant' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForCreateNewApplicant' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForCreateNewApplicant' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForCreateNewApplicant' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -517,7 +517,7 @@ class ApplicantApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForCreateNewApplicant', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForCreateNewApplicant', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -536,7 +536,7 @@ class ApplicantApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewApplicant';
+            $returnType = '\PeopleHR\Model\ErrorForCreateNewApplicant';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -569,7 +569,7 @@ class ApplicantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForCreateNewApplicant',
+                        '\PeopleHR\Model\ErrorForCreateNewApplicant',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class ApplicantApi
      *
      * Create New Applicant
      *
-     * @param  \OpenAPI\Client\Model\CreateApplicantDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateApplicantDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCreateNewApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -605,7 +605,7 @@ class ApplicantApi
      *
      * Create New Applicant
      *
-     * @param  \OpenAPI\Client\Model\CreateApplicantDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateApplicantDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCreateNewApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -613,7 +613,7 @@ class ApplicantApi
      */
     public function applicantCreateNewApplicantPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['applicantCreateNewApplicantPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewApplicant';
+        $returnType = '\PeopleHR\Model\ErrorForCreateNewApplicant';
         $request = $this->applicantCreateNewApplicantPostRequest($body, $contentType);
 
         return $this->client
@@ -655,7 +655,7 @@ class ApplicantApi
     /**
      * Create request for operation 'applicantCreateNewApplicantPost'
      *
-     * @param  \OpenAPI\Client\Model\CreateApplicantDetailParameter $body (required)
+     * @param  \PeopleHR\Model\CreateApplicantDetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantCreateNewApplicantPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -748,12 +748,12 @@ class ApplicantApi
      *
      * upload applicant document
      *
-     * @param  \OpenAPI\Client\Model\UploadapplicantdocumentParameter $body body (required)
+     * @param  \PeopleHR\Model\UploadapplicantdocumentParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantUploadapplicantdocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForuploadapplicantdocument
+     * @return \PeopleHR\Model\ErrorForuploadapplicantdocument
      */
     public function applicantUploadapplicantdocumentPost($body, string $contentType = self::contentTypes['applicantUploadapplicantdocumentPost'][0])
     {
@@ -766,12 +766,12 @@ class ApplicantApi
      *
      * upload applicant document
      *
-     * @param  \OpenAPI\Client\Model\UploadapplicantdocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadapplicantdocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantUploadapplicantdocumentPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForuploadapplicantdocument, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForuploadapplicantdocument, HTTP status code, HTTP response headers (array of strings)
      */
     public function applicantUploadapplicantdocumentPostWithHttpInfo($body, string $contentType = self::contentTypes['applicantUploadapplicantdocumentPost'][0])
     {
@@ -802,11 +802,11 @@ class ApplicantApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForuploadapplicantdocument' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForuploadapplicantdocument' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForuploadapplicantdocument' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForuploadapplicantdocument' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -824,7 +824,7 @@ class ApplicantApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForuploadapplicantdocument', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForuploadapplicantdocument', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -843,7 +843,7 @@ class ApplicantApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForuploadapplicantdocument';
+            $returnType = '\PeopleHR\Model\ErrorForuploadapplicantdocument';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -876,7 +876,7 @@ class ApplicantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForuploadapplicantdocument',
+                        '\PeopleHR\Model\ErrorForuploadapplicantdocument',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -891,7 +891,7 @@ class ApplicantApi
      *
      * upload applicant document
      *
-     * @param  \OpenAPI\Client\Model\UploadapplicantdocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadapplicantdocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantUploadapplicantdocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -912,7 +912,7 @@ class ApplicantApi
      *
      * upload applicant document
      *
-     * @param  \OpenAPI\Client\Model\UploadapplicantdocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadapplicantdocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantUploadapplicantdocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -920,7 +920,7 @@ class ApplicantApi
      */
     public function applicantUploadapplicantdocumentPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['applicantUploadapplicantdocumentPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForuploadapplicantdocument';
+        $returnType = '\PeopleHR\Model\ErrorForuploadapplicantdocument';
         $request = $this->applicantUploadapplicantdocumentPostRequest($body, $contentType);
 
         return $this->client
@@ -962,7 +962,7 @@ class ApplicantApi
     /**
      * Create request for operation 'applicantUploadapplicantdocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\UploadapplicantdocumentParameter $body (required)
+     * @param  \PeopleHR\Model\UploadapplicantdocumentParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['applicantUploadapplicantdocumentPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

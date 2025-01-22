@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateothereventleaveParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,7 +70,7 @@ class UpdateothereventleaveParameter implements ModelInterface, ArrayAccess, \Js
         'end_time' => 'string',
         'duration_in_days' => 'int',
         'comments' => 'string',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForupdateothereventleave'
+        'add_files' => '\PeopleHR\Model\AddFilesForupdateothereventleave'
     ];
 
     /**
@@ -744,7 +744,7 @@ class UpdateothereventleaveParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForupdateothereventleave|null
+     * @return \PeopleHR\Model\AddFilesForupdateothereventleave|null
      */
     public function getAddFiles()
     {
@@ -754,7 +754,7 @@ class UpdateothereventleaveParameter implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForupdateothereventleave|null $add_files Add Files for update other event leave
+     * @param \PeopleHR\Model\AddFilesForupdateothereventleave|null $add_files Add Files for update other event leave
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\BackgroundCheckApi
+# PeopleHR\BackgroundCheckApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `backgroundCheckAddBackgroundCheckDetailPost()`
 
 ```php
-backgroundCheckAddBackgroundCheckDetailPost($body): \OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail
+backgroundCheckAddBackgroundCheckDetailPost($body): \PeopleHR\Model\ErrorForAddBackgroundCheckDetail
 ```
 
 Add Background Check Detail
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BackgroundCheckApi(
+$apiInstance = new PeopleHR\Api\BackgroundCheckApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter(); // \OpenAPI\Client\Model\AddBackgroundCheckDetailParameter
+$body = new \PeopleHR\Model\AddBackgroundCheckDetailParameter(); // \PeopleHR\Model\AddBackgroundCheckDetailParameter
 
 try {
     $result = $apiInstance->backgroundCheckAddBackgroundCheckDetailPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddBackgroundCheckDetailParameter**](../Model/AddBackgroundCheckDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddBackgroundCheckDetailParameter**](../Model/AddBackgroundCheckDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddBackgroundCheckDetail**](../Model/ErrorForAddBackgroundCheckDetail.md)
+[**\PeopleHR\Model\ErrorForAddBackgroundCheckDetail**](../Model/ErrorForAddBackgroundCheckDetail.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `backgroundCheckDeleteBackgroundCheckDetailPost()`
 
 ```php
-backgroundCheckDeleteBackgroundCheckDetailPost($body): \OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail
+backgroundCheckDeleteBackgroundCheckDetailPost($body): \PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail
 ```
 
 Delete Background Check Detail
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BackgroundCheckApi(
+$apiInstance = new PeopleHR\Api\BackgroundCheckApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter(); // \OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter
+$body = new \PeopleHR\Model\DeleteBackgroundCheckDetailParameter(); // \PeopleHR\Model\DeleteBackgroundCheckDetailParameter
 
 try {
     $result = $apiInstance->backgroundCheckDeleteBackgroundCheckDetailPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteBackgroundCheckDetailParameter**](../Model/DeleteBackgroundCheckDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteBackgroundCheckDetailParameter**](../Model/DeleteBackgroundCheckDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteBackgroundCheckDetail**](../Model/ErrorForDeleteBackgroundCheckDetail.md)
+[**\PeopleHR\Model\ErrorForDeleteBackgroundCheckDetail**](../Model/ErrorForDeleteBackgroundCheckDetail.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost()`
 
 ```php
-backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId
+backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId
 ```
 
 Get Background Check Detail By EmployeeId
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BackgroundCheckApi(
+$apiInstance = new PeopleHR\Api\BackgroundCheckApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter(); // \PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter
 
 try {
     $result = $apiInstance->backgroundCheckGetBackgroundCheckDetailByEmployeeIdPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetBackgroundCheckDetailByEmployeeIdParameter**](../Model/GetBackgroundCheckDetailByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetBackgroundCheckDetailByEmployeeIdParameter**](../Model/GetBackgroundCheckDetailByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetBackgroundCheckDetailByEmployeeId**](../Model/ErrorForGetBackgroundCheckDetailByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetBackgroundCheckDetailByEmployeeId**](../Model/ErrorForGetBackgroundCheckDetailByEmployeeId.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `backgroundCheckUpdateBackgroundCheckDetailPost()`
 
 ```php
-backgroundCheckUpdateBackgroundCheckDetailPost($body): \OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail
+backgroundCheckUpdateBackgroundCheckDetailPost($body): \PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail
 ```
 
 Update Background Check Detail
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BackgroundCheckApi(
+$apiInstance = new PeopleHR\Api\BackgroundCheckApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter(); // \OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter
+$body = new \PeopleHR\Model\UpdateBackgroundCheckDetailParameter(); // \PeopleHR\Model\UpdateBackgroundCheckDetailParameter
 
 try {
     $result = $apiInstance->backgroundCheckUpdateBackgroundCheckDetailPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateBackgroundCheckDetailParameter**](../Model/UpdateBackgroundCheckDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateBackgroundCheckDetailParameter**](../Model/UpdateBackgroundCheckDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateBackgroundCheckDetail**](../Model/ErrorForUpdateBackgroundCheckDetail.md)
+[**\PeopleHR\Model\ErrorForUpdateBackgroundCheckDetail**](../Model/ErrorForUpdateBackgroundCheckDetail.md)
 
 ### Authorization
 

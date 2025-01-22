@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **provider** | **string** | Provider Value | [optional]
 **cost** | **float** | Cost Value | [optional]
 **note** | **string** | Note Value | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForGetTrainingDetailInner[]**](CustomColumnsForGetTrainingDetailInner.md) | CustomColumns Value | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForGetTrainingDetailInner[]**](CustomColumnsForGetTrainingDetailInner.md) | CustomColumns Value | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

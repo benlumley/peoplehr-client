@@ -1,4 +1,4 @@
-# OpenAPI\Client\OtherEventApi
+# PeopleHR\OtherEventApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `otherEventAddotherevententitlementPost()`
 
 ```php
-otherEventAddotherevententitlementPost($body): \OpenAPI\Client\Model\ErrorForaddotherevententitlement
+otherEventAddotherevententitlementPost($body): \PeopleHR\Model\ErrorForaddotherevententitlement
 ```
 
 Insert Update Other Event Entitlement
@@ -30,12 +30,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddotherevententitlementParameter(); // \OpenAPI\Client\Model\AddotherevententitlementParameter
+$body = new \PeopleHR\Model\AddotherevententitlementParameter(); // \PeopleHR\Model\AddotherevententitlementParameter
 
 try {
     $result = $apiInstance->otherEventAddotherevententitlementPost($body);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddotherevententitlementParameter**](../Model/AddotherevententitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddotherevententitlementParameter**](../Model/AddotherevententitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForaddotherevententitlement**](../Model/ErrorForaddotherevententitlement.md)
+[**\PeopleHR\Model\ErrorForaddotherevententitlement**](../Model/ErrorForaddotherevententitlement.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `otherEventAddothereventleavePost()`
 
 ```php
-otherEventAddothereventleavePost($body): \OpenAPI\Client\Model\ErrorForaddothereventleave
+otherEventAddothereventleavePost($body): \PeopleHR\Model\ErrorForaddothereventleave
 ```
 
 Add Other Event
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddothereventleaveParameter(); // \OpenAPI\Client\Model\AddothereventleaveParameter
+$body = new \PeopleHR\Model\AddothereventleaveParameter(); // \PeopleHR\Model\AddothereventleaveParameter
 
 try {
     $result = $apiInstance->otherEventAddothereventleavePost($body);
@@ -105,11 +105,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddothereventleaveParameter**](../Model/AddothereventleaveParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddothereventleaveParameter**](../Model/AddothereventleaveParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForaddothereventleave**](../Model/ErrorForaddothereventleave.md)
+[**\PeopleHR\Model\ErrorForaddothereventleave**](../Model/ErrorForaddothereventleave.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 ## `otherEventDeleteOtherEventPost()`
 
 ```php
-otherEventDeleteOtherEventPost($body): \OpenAPI\Client\Model\ErrorForDeleteOtherEvent
+otherEventDeleteOtherEventPost($body): \PeopleHR\Model\ErrorForDeleteOtherEvent
 ```
 
 Delete Other Event
@@ -142,12 +142,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteOtherEventParameter(); // \OpenAPI\Client\Model\DeleteOtherEventParameter
+$body = new \PeopleHR\Model\DeleteOtherEventParameter(); // \PeopleHR\Model\DeleteOtherEventParameter
 
 try {
     $result = $apiInstance->otherEventDeleteOtherEventPost($body);
@@ -161,11 +161,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteOtherEventParameter**](../Model/DeleteOtherEventParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteOtherEventParameter**](../Model/DeleteOtherEventParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteOtherEvent**](../Model/ErrorForDeleteOtherEvent.md)
+[**\PeopleHR\Model\ErrorForDeleteOtherEvent**](../Model/ErrorForDeleteOtherEvent.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 ## `otherEventGetothereventdetailPost()`
 
 ```php
-otherEventGetothereventdetailPost($body): \OpenAPI\Client\Model\ErrorForgetothereventdetail
+otherEventGetothereventdetailPost($body): \PeopleHR\Model\ErrorForgetothereventdetail
 ```
 
 Get Other Event Detail
@@ -198,12 +198,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetothereventdetailParameter(); // \OpenAPI\Client\Model\GetothereventdetailParameter
+$body = new \PeopleHR\Model\GetothereventdetailParameter(); // \PeopleHR\Model\GetothereventdetailParameter
 
 try {
     $result = $apiInstance->otherEventGetothereventdetailPost($body);
@@ -217,11 +217,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetothereventdetailParameter**](../Model/GetothereventdetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetothereventdetailParameter**](../Model/GetothereventdetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForgetothereventdetail**](../Model/ErrorForgetothereventdetail.md)
+[**\PeopleHR\Model\ErrorForgetothereventdetail**](../Model/ErrorForgetothereventdetail.md)
 
 ### Authorization
 
@@ -239,7 +239,7 @@ No authorization required
 ## `otherEventGetotherevententitlementPost()`
 
 ```php
-otherEventGetotherevententitlementPost($body): \OpenAPI\Client\Model\ErrorForgetotherevententitlement
+otherEventGetotherevententitlementPost($body): \PeopleHR\Model\ErrorForgetotherevententitlement
 ```
 
 Get Other Event Entitlement
@@ -254,12 +254,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetotherevententitlementParameter(); // \OpenAPI\Client\Model\GetotherevententitlementParameter
+$body = new \PeopleHR\Model\GetotherevententitlementParameter(); // \PeopleHR\Model\GetotherevententitlementParameter
 
 try {
     $result = $apiInstance->otherEventGetotherevententitlementPost($body);
@@ -273,11 +273,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetotherevententitlementParameter**](../Model/GetotherevententitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetotherevententitlementParameter**](../Model/GetotherevententitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForgetotherevententitlement**](../Model/ErrorForgetotherevententitlement.md)
+[**\PeopleHR\Model\ErrorForgetotherevententitlement**](../Model/ErrorForgetotherevententitlement.md)
 
 ### Authorization
 
@@ -295,7 +295,7 @@ No authorization required
 ## `otherEventUpdateothereventleavePost()`
 
 ```php
-otherEventUpdateothereventleavePost($body): \OpenAPI\Client\Model\ErrorForupdateothereventleave
+otherEventUpdateothereventleavePost($body): \PeopleHR\Model\ErrorForupdateothereventleave
 ```
 
 Update Other Event
@@ -310,12 +310,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OtherEventApi(
+$apiInstance = new PeopleHR\Api\OtherEventApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateothereventleaveParameter(); // \OpenAPI\Client\Model\UpdateothereventleaveParameter
+$body = new \PeopleHR\Model\UpdateothereventleaveParameter(); // \PeopleHR\Model\UpdateothereventleaveParameter
 
 try {
     $result = $apiInstance->otherEventUpdateothereventleavePost($body);
@@ -329,11 +329,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateothereventleaveParameter**](../Model/UpdateothereventleaveParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateothereventleaveParameter**](../Model/UpdateothereventleaveParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForupdateothereventleave**](../Model/ErrorForupdateothereventleave.md)
+[**\PeopleHR\Model\ErrorForupdateothereventleave**](../Model/ErrorForupdateothereventleave.md)
 
 ### Authorization
 

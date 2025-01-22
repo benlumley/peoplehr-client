@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeProjectTimesheetApi
+# PeopleHR\EmployeeProjectTimesheetApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -23,7 +23,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeProjectTimesheetAddNewProjectPost()`
 
 ```php
-employeeProjectTimesheetAddNewProjectPost($body): \OpenAPI\Client\Model\ErrorForAddNewProject
+employeeProjectTimesheetAddNewProjectPost($body): \PeopleHR\Model\ErrorForAddNewProject
 ```
 
 Add New Project
@@ -38,12 +38,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewProjectParameter(); // \OpenAPI\Client\Model\AddNewProjectParameter
+$body = new \PeopleHR\Model\AddNewProjectParameter(); // \PeopleHR\Model\AddNewProjectParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetAddNewProjectPost($body);
@@ -57,11 +57,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewProjectParameter**](../Model/AddNewProjectParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewProjectParameter**](../Model/AddNewProjectParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewProject**](../Model/ErrorForAddNewProject.md)
+[**\PeopleHR\Model\ErrorForAddNewProject**](../Model/ErrorForAddNewProject.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ No authorization required
 ## `employeeProjectTimesheetAddNewProjectTaskDetailPost()`
 
 ```php
-employeeProjectTimesheetAddNewProjectTaskDetailPost($body): \OpenAPI\Client\Model\ErrorForAddNewProjectTaskDetail
+employeeProjectTimesheetAddNewProjectTaskDetailPost($body): \PeopleHR\Model\ErrorForAddNewProjectTaskDetail
 ```
 
 Add New Project Task Detail
@@ -94,12 +94,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewProjectTaskDetailParameter(); // \OpenAPI\Client\Model\AddNewProjectTaskDetailParameter
+$body = new \PeopleHR\Model\AddNewProjectTaskDetailParameter(); // \PeopleHR\Model\AddNewProjectTaskDetailParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetAddNewProjectTaskDetailPost($body);
@@ -113,11 +113,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewProjectTaskDetailParameter**](../Model/AddNewProjectTaskDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewProjectTaskDetailParameter**](../Model/AddNewProjectTaskDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewProjectTaskDetail**](../Model/ErrorForAddNewProjectTaskDetail.md)
+[**\PeopleHR\Model\ErrorForAddNewProjectTaskDetail**](../Model/ErrorForAddNewProjectTaskDetail.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ No authorization required
 ## `employeeProjectTimesheetAddNewProjectTaskPost()`
 
 ```php
-employeeProjectTimesheetAddNewProjectTaskPost($body): \OpenAPI\Client\Model\ErrorForAddNewProjectTask
+employeeProjectTimesheetAddNewProjectTaskPost($body): \PeopleHR\Model\ErrorForAddNewProjectTask
 ```
 
 Add New Project Task
@@ -150,12 +150,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewProjectTaskParameter(); // \OpenAPI\Client\Model\AddNewProjectTaskParameter
+$body = new \PeopleHR\Model\AddNewProjectTaskParameter(); // \PeopleHR\Model\AddNewProjectTaskParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetAddNewProjectTaskPost($body);
@@ -169,11 +169,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewProjectTaskParameter**](../Model/AddNewProjectTaskParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewProjectTaskParameter**](../Model/AddNewProjectTaskParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewProjectTask**](../Model/ErrorForAddNewProjectTask.md)
+[**\PeopleHR\Model\ErrorForAddNewProjectTask**](../Model/ErrorForAddNewProjectTask.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 ## `employeeProjectTimesheetCreateProjectTimesheetPost()`
 
 ```php
-employeeProjectTimesheetCreateProjectTimesheetPost($body): \OpenAPI\Client\Model\ErrorForCreateProjectTimesheet
+employeeProjectTimesheetCreateProjectTimesheetPost($body): \PeopleHR\Model\ErrorForCreateProjectTimesheet
 ```
 
 Create project timesheet
@@ -206,12 +206,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateProjectTimesheetParameter(); // \OpenAPI\Client\Model\CreateProjectTimesheetParameter
+$body = new \PeopleHR\Model\CreateProjectTimesheetParameter(); // \PeopleHR\Model\CreateProjectTimesheetParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetCreateProjectTimesheetPost($body);
@@ -225,11 +225,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateProjectTimesheetParameter**](../Model/CreateProjectTimesheetParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateProjectTimesheetParameter**](../Model/CreateProjectTimesheetParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateProjectTimesheet**](../Model/ErrorForCreateProjectTimesheet.md)
+[**\PeopleHR\Model\ErrorForCreateProjectTimesheet**](../Model/ErrorForCreateProjectTimesheet.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ No authorization required
 ## `employeeProjectTimesheetDeleteProjectTimesheetPost()`
 
 ```php
-employeeProjectTimesheetDeleteProjectTimesheetPost($body): \OpenAPI\Client\Model\ErrorForDeleteProjectTimesheet
+employeeProjectTimesheetDeleteProjectTimesheetPost($body): \PeopleHR\Model\ErrorForDeleteProjectTimesheet
 ```
 
 Delete project timesheet
@@ -262,12 +262,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteProjectTimesheetParameter(); // \OpenAPI\Client\Model\DeleteProjectTimesheetParameter
+$body = new \PeopleHR\Model\DeleteProjectTimesheetParameter(); // \PeopleHR\Model\DeleteProjectTimesheetParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetDeleteProjectTimesheetPost($body);
@@ -281,11 +281,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteProjectTimesheetParameter**](../Model/DeleteProjectTimesheetParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteProjectTimesheetParameter**](../Model/DeleteProjectTimesheetParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteProjectTimesheet**](../Model/ErrorForDeleteProjectTimesheet.md)
+[**\PeopleHR\Model\ErrorForDeleteProjectTimesheet**](../Model/ErrorForDeleteProjectTimesheet.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ No authorization required
 ## `employeeProjectTimesheetEditProjectPost()`
 
 ```php
-employeeProjectTimesheetEditProjectPost($body): \OpenAPI\Client\Model\ErrorForEditProject
+employeeProjectTimesheetEditProjectPost($body): \PeopleHR\Model\ErrorForEditProject
 ```
 
 Edit Project
@@ -318,12 +318,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\EditProjectParameter(); // \OpenAPI\Client\Model\EditProjectParameter
+$body = new \PeopleHR\Model\EditProjectParameter(); // \PeopleHR\Model\EditProjectParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetEditProjectPost($body);
@@ -337,11 +337,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\EditProjectParameter**](../Model/EditProjectParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\EditProjectParameter**](../Model/EditProjectParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEditProject**](../Model/ErrorForEditProject.md)
+[**\PeopleHR\Model\ErrorForEditProject**](../Model/ErrorForEditProject.md)
 
 ### Authorization
 
@@ -359,7 +359,7 @@ No authorization required
 ## `employeeProjectTimesheetEditProjectTaskDetailPost()`
 
 ```php
-employeeProjectTimesheetEditProjectTaskDetailPost($body): \OpenAPI\Client\Model\ErrorForEditProjectTaskDetail
+employeeProjectTimesheetEditProjectTaskDetailPost($body): \PeopleHR\Model\ErrorForEditProjectTaskDetail
 ```
 
 Edit Project Task Detail
@@ -374,12 +374,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\EditProjectTaskDetailParameter(); // \OpenAPI\Client\Model\EditProjectTaskDetailParameter
+$body = new \PeopleHR\Model\EditProjectTaskDetailParameter(); // \PeopleHR\Model\EditProjectTaskDetailParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetEditProjectTaskDetailPost($body);
@@ -393,11 +393,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\EditProjectTaskDetailParameter**](../Model/EditProjectTaskDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\EditProjectTaskDetailParameter**](../Model/EditProjectTaskDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEditProjectTaskDetail**](../Model/ErrorForEditProjectTaskDetail.md)
+[**\PeopleHR\Model\ErrorForEditProjectTaskDetail**](../Model/ErrorForEditProjectTaskDetail.md)
 
 ### Authorization
 
@@ -415,7 +415,7 @@ No authorization required
 ## `employeeProjectTimesheetEditProjectTaskPost()`
 
 ```php
-employeeProjectTimesheetEditProjectTaskPost($body): \OpenAPI\Client\Model\ErrorForEditProjectTask
+employeeProjectTimesheetEditProjectTaskPost($body): \PeopleHR\Model\ErrorForEditProjectTask
 ```
 
 Edit Project Task
@@ -430,12 +430,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\EditProjectTaskParameter(); // \OpenAPI\Client\Model\EditProjectTaskParameter
+$body = new \PeopleHR\Model\EditProjectTaskParameter(); // \PeopleHR\Model\EditProjectTaskParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetEditProjectTaskPost($body);
@@ -449,11 +449,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\EditProjectTaskParameter**](../Model/EditProjectTaskParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\EditProjectTaskParameter**](../Model/EditProjectTaskParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEditProjectTask**](../Model/ErrorForEditProjectTask.md)
+[**\PeopleHR\Model\ErrorForEditProjectTask**](../Model/ErrorForEditProjectTask.md)
 
 ### Authorization
 
@@ -471,7 +471,7 @@ No authorization required
 ## `employeeProjectTimesheetGetAllProjectTaskDetailPost()`
 
 ```php
-employeeProjectTimesheetGetAllProjectTaskDetailPost($body): \OpenAPI\Client\Model\ErrorForGetAllProjectTaskDetail
+employeeProjectTimesheetGetAllProjectTaskDetailPost($body): \PeopleHR\Model\ErrorForGetAllProjectTaskDetail
 ```
 
 Get All Project Task Detail
@@ -486,12 +486,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllProjectTaskDetailParameter(); // \OpenAPI\Client\Model\GetAllProjectTaskDetailParameter
+$body = new \PeopleHR\Model\GetAllProjectTaskDetailParameter(); // \PeopleHR\Model\GetAllProjectTaskDetailParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetGetAllProjectTaskDetailPost($body);
@@ -505,11 +505,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllProjectTaskDetailParameter**](../Model/GetAllProjectTaskDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllProjectTaskDetailParameter**](../Model/GetAllProjectTaskDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllProjectTaskDetail**](../Model/ErrorForGetAllProjectTaskDetail.md)
+[**\PeopleHR\Model\ErrorForGetAllProjectTaskDetail**](../Model/ErrorForGetAllProjectTaskDetail.md)
 
 ### Authorization
 
@@ -527,7 +527,7 @@ No authorization required
 ## `employeeProjectTimesheetGetAllProjectTaskPost()`
 
 ```php
-employeeProjectTimesheetGetAllProjectTaskPost($body): \OpenAPI\Client\Model\ErrorForGetAllProjectTask
+employeeProjectTimesheetGetAllProjectTaskPost($body): \PeopleHR\Model\ErrorForGetAllProjectTask
 ```
 
 Get All Project Task
@@ -542,12 +542,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllProjectTaskParameter(); // \OpenAPI\Client\Model\GetAllProjectTaskParameter
+$body = new \PeopleHR\Model\GetAllProjectTaskParameter(); // \PeopleHR\Model\GetAllProjectTaskParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetGetAllProjectTaskPost($body);
@@ -561,11 +561,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllProjectTaskParameter**](../Model/GetAllProjectTaskParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllProjectTaskParameter**](../Model/GetAllProjectTaskParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllProjectTask**](../Model/ErrorForGetAllProjectTask.md)
+[**\PeopleHR\Model\ErrorForGetAllProjectTask**](../Model/ErrorForGetAllProjectTask.md)
 
 ### Authorization
 
@@ -583,7 +583,7 @@ No authorization required
 ## `employeeProjectTimesheetGetAllTimesheetProjectPost()`
 
 ```php
-employeeProjectTimesheetGetAllTimesheetProjectPost($body): \OpenAPI\Client\Model\ErrorForGetAllTimesheetProject
+employeeProjectTimesheetGetAllTimesheetProjectPost($body): \PeopleHR\Model\ErrorForGetAllTimesheetProject
 ```
 
 Get All Timesheet Project
@@ -598,12 +598,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAllTimesheetProjectParameter(); // \OpenAPI\Client\Model\GetAllTimesheetProjectParameter
+$body = new \PeopleHR\Model\GetAllTimesheetProjectParameter(); // \PeopleHR\Model\GetAllTimesheetProjectParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetGetAllTimesheetProjectPost($body);
@@ -617,11 +617,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAllTimesheetProjectParameter**](../Model/GetAllTimesheetProjectParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAllTimesheetProjectParameter**](../Model/GetAllTimesheetProjectParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAllTimesheetProject**](../Model/ErrorForGetAllTimesheetProject.md)
+[**\PeopleHR\Model\ErrorForGetAllTimesheetProject**](../Model/ErrorForGetAllTimesheetProject.md)
 
 ### Authorization
 
@@ -639,7 +639,7 @@ No authorization required
 ## `employeeProjectTimesheetGetProjectTimesheetByTransactionIdPost()`
 
 ```php
-employeeProjectTimesheetGetProjectTimesheetByTransactionIdPost($body): \OpenAPI\Client\Model\ErrorForGetProjectTimesheetByTransactionId
+employeeProjectTimesheetGetProjectTimesheetByTransactionIdPost($body): \PeopleHR\Model\ErrorForGetProjectTimesheetByTransactionId
 ```
 
 Get Project Timesheet By TransactionId
@@ -654,12 +654,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetProjectTimesheetByTransactionId(); // \OpenAPI\Client\Model\GetProjectTimesheetByTransactionId
+$body = new \PeopleHR\Model\GetProjectTimesheetByTransactionId(); // \PeopleHR\Model\GetProjectTimesheetByTransactionId
 
 try {
     $result = $apiInstance->employeeProjectTimesheetGetProjectTimesheetByTransactionIdPost($body);
@@ -673,11 +673,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetProjectTimesheetByTransactionId**](../Model/GetProjectTimesheetByTransactionId.md)|  | |
+| **body** | [**\PeopleHR\Model\GetProjectTimesheetByTransactionId**](../Model/GetProjectTimesheetByTransactionId.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetProjectTimesheetByTransactionId**](../Model/ErrorForGetProjectTimesheetByTransactionId.md)
+[**\PeopleHR\Model\ErrorForGetProjectTimesheetByTransactionId**](../Model/ErrorForGetProjectTimesheetByTransactionId.md)
 
 ### Authorization
 
@@ -695,7 +695,7 @@ No authorization required
 ## `employeeProjectTimesheetGetProjectTimesheetDetailPost()`
 
 ```php
-employeeProjectTimesheetGetProjectTimesheetDetailPost($body): \OpenAPI\Client\Model\ErrorForGetProjectTimesheetDetail
+employeeProjectTimesheetGetProjectTimesheetDetailPost($body): \PeopleHR\Model\ErrorForGetProjectTimesheetDetail
 ```
 
 Get Project Time sheet Detail
@@ -710,12 +710,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetProjectTimesheetDetail(); // \OpenAPI\Client\Model\GetProjectTimesheetDetail
+$body = new \PeopleHR\Model\GetProjectTimesheetDetail(); // \PeopleHR\Model\GetProjectTimesheetDetail
 
 try {
     $result = $apiInstance->employeeProjectTimesheetGetProjectTimesheetDetailPost($body);
@@ -729,11 +729,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetProjectTimesheetDetail**](../Model/GetProjectTimesheetDetail.md)|  | |
+| **body** | [**\PeopleHR\Model\GetProjectTimesheetDetail**](../Model/GetProjectTimesheetDetail.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetProjectTimesheetDetail**](../Model/ErrorForGetProjectTimesheetDetail.md)
+[**\PeopleHR\Model\ErrorForGetProjectTimesheetDetail**](../Model/ErrorForGetProjectTimesheetDetail.md)
 
 ### Authorization
 
@@ -751,7 +751,7 @@ No authorization required
 ## `employeeProjectTimesheetUpdateProjectTimesheetPost()`
 
 ```php
-employeeProjectTimesheetUpdateProjectTimesheetPost($body): \OpenAPI\Client\Model\ErrorForUpdateProjectTimesheet
+employeeProjectTimesheetUpdateProjectTimesheetPost($body): \PeopleHR\Model\ErrorForUpdateProjectTimesheet
 ```
 
 Update project timesheet
@@ -766,12 +766,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeProjectTimesheetApi(
+$apiInstance = new PeopleHR\Api\EmployeeProjectTimesheetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateProjectTimesheetParameter(); // \OpenAPI\Client\Model\UpdateProjectTimesheetParameter
+$body = new \PeopleHR\Model\UpdateProjectTimesheetParameter(); // \PeopleHR\Model\UpdateProjectTimesheetParameter
 
 try {
     $result = $apiInstance->employeeProjectTimesheetUpdateProjectTimesheetPost($body);
@@ -785,11 +785,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateProjectTimesheetParameter**](../Model/UpdateProjectTimesheetParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateProjectTimesheetParameter**](../Model/UpdateProjectTimesheetParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateProjectTimesheet**](../Model/ErrorForUpdateProjectTimesheet.md)
+[**\PeopleHR\Model\ErrorForUpdateProjectTimesheet**](../Model/ErrorForUpdateProjectTimesheet.md)
 
 ### Authorization
 

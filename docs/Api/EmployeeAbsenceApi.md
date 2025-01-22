@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeAbsenceApi
+# PeopleHR\EmployeeAbsenceApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeAbsenceAddAbsencePost()`
 
 ```php
-employeeAbsenceAddAbsencePost($body): \OpenAPI\Client\Model\ErrorForAddEmployeeAbsence
+employeeAbsenceAddAbsencePost($body): \PeopleHR\Model\ErrorForAddEmployeeAbsence
 ```
 
 Add Absence
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAbsenceApi(
+$apiInstance = new PeopleHR\Api\EmployeeAbsenceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter(); // \OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter
+$body = new \PeopleHR\Model\AddAbsenceOfEmployeeParameter(); // \PeopleHR\Model\AddAbsenceOfEmployeeParameter
 
 try {
     $result = $apiInstance->employeeAbsenceAddAbsencePost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddAbsenceOfEmployeeParameter**](../Model/AddAbsenceOfEmployeeParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddAbsenceOfEmployeeParameter**](../Model/AddAbsenceOfEmployeeParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddEmployeeAbsence**](../Model/ErrorForAddEmployeeAbsence.md)
+[**\PeopleHR\Model\ErrorForAddEmployeeAbsence**](../Model/ErrorForAddEmployeeAbsence.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `employeeAbsenceDeleteAbsencePost()`
 
 ```php
-employeeAbsenceDeleteAbsencePost($body): \OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete
+employeeAbsenceDeleteAbsencePost($body): \PeopleHR\Model\ErrorForEmployeeAbsenceDelete
 ```
 
 Delete Absence
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAbsenceApi(
+$apiInstance = new PeopleHR\Api\EmployeeAbsenceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter(); // \OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter
+$body = new \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter(); // \PeopleHR\Model\DeleteAbsenceOfEmployeeParameter
 
 try {
     $result = $apiInstance->employeeAbsenceDeleteAbsencePost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteAbsenceOfEmployeeParameter**](../Model/DeleteAbsenceOfEmployeeParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteAbsenceOfEmployeeParameter**](../Model/DeleteAbsenceOfEmployeeParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForEmployeeAbsenceDelete**](../Model/ErrorForEmployeeAbsenceDelete.md)
+[**\PeopleHR\Model\ErrorForEmployeeAbsenceDelete**](../Model/ErrorForEmployeeAbsenceDelete.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `employeeAbsenceGetAbsenceDetailPost()`
 
 ```php
-employeeAbsenceGetAbsenceDetailPost($body): \OpenAPI\Client\Model\ErrorForGetAbsenceDetail
+employeeAbsenceGetAbsenceDetailPost($body): \PeopleHR\Model\ErrorForGetAbsenceDetail
 ```
 
 Get Absence Detail
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAbsenceApi(
+$apiInstance = new PeopleHR\Api\EmployeeAbsenceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetAbsenceDetailParameter(); // \OpenAPI\Client\Model\GetAbsenceDetailParameter
+$body = new \PeopleHR\Model\GetAbsenceDetailParameter(); // \PeopleHR\Model\GetAbsenceDetailParameter
 
 try {
     $result = $apiInstance->employeeAbsenceGetAbsenceDetailPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetAbsenceDetailParameter**](../Model/GetAbsenceDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetAbsenceDetailParameter**](../Model/GetAbsenceDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetAbsenceDetail**](../Model/ErrorForGetAbsenceDetail.md)
+[**\PeopleHR\Model\ErrorForGetAbsenceDetail**](../Model/ErrorForGetAbsenceDetail.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `employeeAbsenceUpdateAbsencePost()`
 
 ```php
-employeeAbsenceUpdateAbsencePost($body): \OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails
+employeeAbsenceUpdateAbsencePost($body): \PeopleHR\Model\ErrorForUpdateAbsenceDetails
 ```
 
 Update Absence
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeAbsenceApi(
+$apiInstance = new PeopleHR\Api\EmployeeAbsenceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateAbsenceDetailParameter(); // \OpenAPI\Client\Model\UpdateAbsenceDetailParameter
+$body = new \PeopleHR\Model\UpdateAbsenceDetailParameter(); // \PeopleHR\Model\UpdateAbsenceDetailParameter
 
 try {
     $result = $apiInstance->employeeAbsenceUpdateAbsencePost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateAbsenceDetailParameter**](../Model/UpdateAbsenceDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateAbsenceDetailParameter**](../Model/UpdateAbsenceDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateAbsenceDetails**](../Model/ErrorForUpdateAbsenceDetails.md)
+[**\PeopleHR\Model\ErrorForUpdateAbsenceDetails**](../Model/ErrorForUpdateAbsenceDetails.md)
 
 ### Authorization
 

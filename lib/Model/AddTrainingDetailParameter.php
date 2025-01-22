@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * AddTrainingDetailParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -72,8 +72,8 @@ class AddTrainingDetailParameter implements ModelInterface, ArrayAccess, \JsonSe
         'cost' => 'float',
         'provider' => 'string',
         'notes' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForEmployeeTrainingInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForEmployeeTrainingInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForEmployeeTrainingInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForEmployeeTrainingInner[]'
     ];
 
     /**
@@ -813,7 +813,7 @@ class AddTrainingDetailParameter implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForEmployeeTrainingInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForEmployeeTrainingInner[]|null
      */
     public function getCustomColumns()
     {
@@ -823,7 +823,7 @@ class AddTrainingDetailParameter implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForEmployeeTrainingInner[]|null $custom_columns Custom columns for add training detail
+     * @param \PeopleHR\Model\CustomColumnsForEmployeeTrainingInner[]|null $custom_columns Custom columns for add training detail
      *
      * @return self
      */
@@ -840,7 +840,7 @@ class AddTrainingDetailParameter implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForEmployeeTrainingInner[]|null
+     * @return \PeopleHR\Model\AddFilesForEmployeeTrainingInner[]|null
      */
     public function getAddFiles()
     {
@@ -850,7 +850,7 @@ class AddTrainingDetailParameter implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForEmployeeTrainingInner[]|null $add_files Add files for add training detail
+     * @param \PeopleHR\Model\AddFilesForEmployeeTrainingInner[]|null $add_files Add files for add training detail
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * OtherEventApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,12 +143,12 @@ class OtherEventApi
      *
      * Insert Update Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\AddotherevententitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\AddotherevententitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddotherevententitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForaddotherevententitlement
+     * @return \PeopleHR\Model\ErrorForaddotherevententitlement
      */
     public function otherEventAddotherevententitlementPost($body, string $contentType = self::contentTypes['otherEventAddotherevententitlementPost'][0])
     {
@@ -161,12 +161,12 @@ class OtherEventApi
      *
      * Insert Update Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\AddotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\AddotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddotherevententitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForaddotherevententitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForaddotherevententitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventAddotherevententitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventAddotherevententitlementPost'][0])
     {
@@ -197,11 +197,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForaddotherevententitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForaddotherevententitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForaddotherevententitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForaddotherevententitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -219,7 +219,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForaddotherevententitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForaddotherevententitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -238,7 +238,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForaddotherevententitlement';
+            $returnType = '\PeopleHR\Model\ErrorForaddotherevententitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -271,7 +271,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForaddotherevententitlement',
+                        '\PeopleHR\Model\ErrorForaddotherevententitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -286,7 +286,7 @@ class OtherEventApi
      *
      * Insert Update Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\AddotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\AddotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -307,7 +307,7 @@ class OtherEventApi
      *
      * Insert Update Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\AddotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\AddotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -315,7 +315,7 @@ class OtherEventApi
      */
     public function otherEventAddotherevententitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventAddotherevententitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForaddotherevententitlement';
+        $returnType = '\PeopleHR\Model\ErrorForaddotherevententitlement';
         $request = $this->otherEventAddotherevententitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -357,7 +357,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventAddotherevententitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\AddotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\AddotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -450,12 +450,12 @@ class OtherEventApi
      *
      * Add Other Event
      *
-     * @param  \OpenAPI\Client\Model\AddothereventleaveParameter $body body (required)
+     * @param  \PeopleHR\Model\AddothereventleaveParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddothereventleavePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForaddothereventleave
+     * @return \PeopleHR\Model\ErrorForaddothereventleave
      */
     public function otherEventAddothereventleavePost($body, string $contentType = self::contentTypes['otherEventAddothereventleavePost'][0])
     {
@@ -468,12 +468,12 @@ class OtherEventApi
      *
      * Add Other Event
      *
-     * @param  \OpenAPI\Client\Model\AddothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\AddothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddothereventleavePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForaddothereventleave, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForaddothereventleave, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventAddothereventleavePostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventAddothereventleavePost'][0])
     {
@@ -504,11 +504,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForaddothereventleave' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForaddothereventleave' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForaddothereventleave' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForaddothereventleave' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -526,7 +526,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForaddothereventleave', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForaddothereventleave', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -545,7 +545,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForaddothereventleave';
+            $returnType = '\PeopleHR\Model\ErrorForaddothereventleave';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -578,7 +578,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForaddothereventleave',
+                        '\PeopleHR\Model\ErrorForaddothereventleave',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class OtherEventApi
      *
      * Add Other Event
      *
-     * @param  \OpenAPI\Client\Model\AddothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\AddothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -614,7 +614,7 @@ class OtherEventApi
      *
      * Add Other Event
      *
-     * @param  \OpenAPI\Client\Model\AddothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\AddothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -622,7 +622,7 @@ class OtherEventApi
      */
     public function otherEventAddothereventleavePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventAddothereventleavePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForaddothereventleave';
+        $returnType = '\PeopleHR\Model\ErrorForaddothereventleave';
         $request = $this->otherEventAddothereventleavePostRequest($body, $contentType);
 
         return $this->client
@@ -664,7 +664,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventAddothereventleavePost'
      *
-     * @param  \OpenAPI\Client\Model\AddothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\AddothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventAddothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -757,12 +757,12 @@ class OtherEventApi
      *
      * Delete Other Event
      *
-     * @param  \OpenAPI\Client\Model\DeleteOtherEventParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteOtherEventParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventDeleteOtherEventPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteOtherEvent
+     * @return \PeopleHR\Model\ErrorForDeleteOtherEvent
      */
     public function otherEventDeleteOtherEventPost($body, string $contentType = self::contentTypes['otherEventDeleteOtherEventPost'][0])
     {
@@ -775,12 +775,12 @@ class OtherEventApi
      *
      * Delete Other Event
      *
-     * @param  \OpenAPI\Client\Model\DeleteOtherEventParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteOtherEventParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventDeleteOtherEventPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteOtherEvent, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteOtherEvent, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventDeleteOtherEventPostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventDeleteOtherEventPost'][0])
     {
@@ -811,11 +811,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteOtherEvent' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteOtherEvent' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteOtherEvent' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteOtherEvent' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -833,7 +833,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteOtherEvent', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteOtherEvent', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -852,7 +852,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteOtherEvent';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteOtherEvent';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -885,7 +885,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteOtherEvent',
+                        '\PeopleHR\Model\ErrorForDeleteOtherEvent',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class OtherEventApi
      *
      * Delete Other Event
      *
-     * @param  \OpenAPI\Client\Model\DeleteOtherEventParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteOtherEventParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventDeleteOtherEventPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -921,7 +921,7 @@ class OtherEventApi
      *
      * Delete Other Event
      *
-     * @param  \OpenAPI\Client\Model\DeleteOtherEventParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteOtherEventParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventDeleteOtherEventPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -929,7 +929,7 @@ class OtherEventApi
      */
     public function otherEventDeleteOtherEventPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventDeleteOtherEventPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteOtherEvent';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteOtherEvent';
         $request = $this->otherEventDeleteOtherEventPostRequest($body, $contentType);
 
         return $this->client
@@ -971,7 +971,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventDeleteOtherEventPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteOtherEventParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteOtherEventParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventDeleteOtherEventPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1064,12 +1064,12 @@ class OtherEventApi
      *
      * Get Other Event Detail
      *
-     * @param  \OpenAPI\Client\Model\GetothereventdetailParameter $body body (required)
+     * @param  \PeopleHR\Model\GetothereventdetailParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetothereventdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForgetothereventdetail
+     * @return \PeopleHR\Model\ErrorForgetothereventdetail
      */
     public function otherEventGetothereventdetailPost($body, string $contentType = self::contentTypes['otherEventGetothereventdetailPost'][0])
     {
@@ -1082,12 +1082,12 @@ class OtherEventApi
      *
      * Get Other Event Detail
      *
-     * @param  \OpenAPI\Client\Model\GetothereventdetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetothereventdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetothereventdetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForgetothereventdetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForgetothereventdetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventGetothereventdetailPostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventGetothereventdetailPost'][0])
     {
@@ -1118,11 +1118,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForgetothereventdetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForgetothereventdetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForgetothereventdetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForgetothereventdetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1140,7 +1140,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForgetothereventdetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForgetothereventdetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1159,7 +1159,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForgetothereventdetail';
+            $returnType = '\PeopleHR\Model\ErrorForgetothereventdetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1192,7 +1192,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForgetothereventdetail',
+                        '\PeopleHR\Model\ErrorForgetothereventdetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1207,7 +1207,7 @@ class OtherEventApi
      *
      * Get Other Event Detail
      *
-     * @param  \OpenAPI\Client\Model\GetothereventdetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetothereventdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetothereventdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1228,7 +1228,7 @@ class OtherEventApi
      *
      * Get Other Event Detail
      *
-     * @param  \OpenAPI\Client\Model\GetothereventdetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetothereventdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetothereventdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1236,7 +1236,7 @@ class OtherEventApi
      */
     public function otherEventGetothereventdetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventGetothereventdetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForgetothereventdetail';
+        $returnType = '\PeopleHR\Model\ErrorForgetothereventdetail';
         $request = $this->otherEventGetothereventdetailPostRequest($body, $contentType);
 
         return $this->client
@@ -1278,7 +1278,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventGetothereventdetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetothereventdetailParameter $body (required)
+     * @param  \PeopleHR\Model\GetothereventdetailParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetothereventdetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1371,12 +1371,12 @@ class OtherEventApi
      *
      * Get Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetotherevententitlementParameter $body body (required)
+     * @param  \PeopleHR\Model\GetotherevententitlementParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetotherevententitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForgetotherevententitlement
+     * @return \PeopleHR\Model\ErrorForgetotherevententitlement
      */
     public function otherEventGetotherevententitlementPost($body, string $contentType = self::contentTypes['otherEventGetotherevententitlementPost'][0])
     {
@@ -1389,12 +1389,12 @@ class OtherEventApi
      *
      * Get Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetotherevententitlementPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForgetotherevententitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForgetotherevententitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventGetotherevententitlementPostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventGetotherevententitlementPost'][0])
     {
@@ -1425,11 +1425,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForgetotherevententitlement' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForgetotherevententitlement' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForgetotherevententitlement' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForgetotherevententitlement' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1447,7 +1447,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForgetotherevententitlement', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForgetotherevententitlement', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1466,7 +1466,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForgetotherevententitlement';
+            $returnType = '\PeopleHR\Model\ErrorForgetotherevententitlement';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1499,7 +1499,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForgetotherevententitlement',
+                        '\PeopleHR\Model\ErrorForgetotherevententitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1514,7 +1514,7 @@ class OtherEventApi
      *
      * Get Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1535,7 +1535,7 @@ class OtherEventApi
      *
      * Get Other Event Entitlement
      *
-     * @param  \OpenAPI\Client\Model\GetotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1543,7 +1543,7 @@ class OtherEventApi
      */
     public function otherEventGetotherevententitlementPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventGetotherevententitlementPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForgetotherevententitlement';
+        $returnType = '\PeopleHR\Model\ErrorForgetotherevententitlement';
         $request = $this->otherEventGetotherevententitlementPostRequest($body, $contentType);
 
         return $this->client
@@ -1585,7 +1585,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventGetotherevententitlementPost'
      *
-     * @param  \OpenAPI\Client\Model\GetotherevententitlementParameter $body (required)
+     * @param  \PeopleHR\Model\GetotherevententitlementParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventGetotherevententitlementPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1678,12 +1678,12 @@ class OtherEventApi
      *
      * Update Other Event
      *
-     * @param  \OpenAPI\Client\Model\UpdateothereventleaveParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateothereventleaveParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventUpdateothereventleavePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForupdateothereventleave
+     * @return \PeopleHR\Model\ErrorForupdateothereventleave
      */
     public function otherEventUpdateothereventleavePost($body, string $contentType = self::contentTypes['otherEventUpdateothereventleavePost'][0])
     {
@@ -1696,12 +1696,12 @@ class OtherEventApi
      *
      * Update Other Event
      *
-     * @param  \OpenAPI\Client\Model\UpdateothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventUpdateothereventleavePost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForupdateothereventleave, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForupdateothereventleave, HTTP status code, HTTP response headers (array of strings)
      */
     public function otherEventUpdateothereventleavePostWithHttpInfo($body, string $contentType = self::contentTypes['otherEventUpdateothereventleavePost'][0])
     {
@@ -1732,11 +1732,11 @@ class OtherEventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForupdateothereventleave' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForupdateothereventleave' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForupdateothereventleave' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForupdateothereventleave' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1754,7 +1754,7 @@ class OtherEventApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForupdateothereventleave', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForupdateothereventleave', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1773,7 +1773,7 @@ class OtherEventApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForupdateothereventleave';
+            $returnType = '\PeopleHR\Model\ErrorForupdateothereventleave';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1806,7 +1806,7 @@ class OtherEventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForupdateothereventleave',
+                        '\PeopleHR\Model\ErrorForupdateothereventleave',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1821,7 +1821,7 @@ class OtherEventApi
      *
      * Update Other Event
      *
-     * @param  \OpenAPI\Client\Model\UpdateothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventUpdateothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1842,7 +1842,7 @@ class OtherEventApi
      *
      * Update Other Event
      *
-     * @param  \OpenAPI\Client\Model\UpdateothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventUpdateothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1850,7 +1850,7 @@ class OtherEventApi
      */
     public function otherEventUpdateothereventleavePostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['otherEventUpdateothereventleavePost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForupdateothereventleave';
+        $returnType = '\PeopleHR\Model\ErrorForupdateothereventleave';
         $request = $this->otherEventUpdateothereventleavePostRequest($body, $contentType);
 
         return $this->client
@@ -1892,7 +1892,7 @@ class OtherEventApi
     /**
      * Create request for operation 'otherEventUpdateothereventleavePost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateothereventleaveParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateothereventleaveParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['otherEventUpdateothereventleavePost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

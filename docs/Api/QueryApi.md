@@ -1,4 +1,4 @@
-# OpenAPI\Client\QueryApi
+# PeopleHR\QueryApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `queryGetQueryResultByQueryNamePost()`
 
 ```php
-queryGetQueryResultByQueryNamePost($body): \OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName
+queryGetQueryResultByQueryNamePost($body): \PeopleHR\Model\ErrorForGetQueryResultByQueryName
 ```
 
 Get Query Result By QueryName
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\QueryApi(
+$apiInstance = new PeopleHR\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter(); // \OpenAPI\Client\Model\GetQueryResultByQueryNameParameter
+$body = new \PeopleHR\Model\GetQueryResultByQueryNameParameter(); // \PeopleHR\Model\GetQueryResultByQueryNameParameter
 
 try {
     $result = $apiInstance->queryGetQueryResultByQueryNamePost($body);
@@ -45,11 +45,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetQueryResultByQueryNameParameter**](../Model/GetQueryResultByQueryNameParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetQueryResultByQueryNameParameter**](../Model/GetQueryResultByQueryNameParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetQueryResultByQueryName**](../Model/ErrorForGetQueryResultByQueryName.md)
+[**\PeopleHR\Model\ErrorForGetQueryResultByQueryName**](../Model/ErrorForGetQueryResultByQueryName.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `queryGetQueryResultPost()`
 
 ```php
-queryGetQueryResultPost($body): \OpenAPI\Client\Model\ErrorForGetQueryResult
+queryGetQueryResultPost($body): \PeopleHR\Model\ErrorForGetQueryResult
 ```
 
 Get Query Result by Query Id
@@ -82,12 +82,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\QueryApi(
+$apiInstance = new PeopleHR\Api\QueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetQueryResultParameter(); // \OpenAPI\Client\Model\GetQueryResultParameter
+$body = new \PeopleHR\Model\GetQueryResultParameter(); // \PeopleHR\Model\GetQueryResultParameter
 
 try {
     $result = $apiInstance->queryGetQueryResultPost($body);
@@ -101,11 +101,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetQueryResultParameter**](../Model/GetQueryResultParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetQueryResultParameter**](../Model/GetQueryResultParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetQueryResult**](../Model/ErrorForGetQueryResult.md)
+[**\PeopleHR\Model\ErrorForGetQueryResult**](../Model/ErrorForGetQueryResult.md)
 
 ### Authorization
 

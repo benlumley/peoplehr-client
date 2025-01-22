@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetHistoryByEmployeeIdAndFieldName Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result_1' => '\OpenAPI\Client\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]',
-        'result_2' => '\OpenAPI\Client\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]',
-        'result_3' => '\OpenAPI\Client\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]'
+        'result_1' => '\PeopleHR\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]',
+        'result_2' => '\PeopleHR\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]',
+        'result_3' => '\PeopleHR\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]'
     ];
 
     /**
@@ -425,7 +425,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Gets result_1
      *
-     * @return \OpenAPI\Client\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]|null
+     * @return \PeopleHR\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]|null
      */
     public function getResult1()
     {
@@ -435,7 +435,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Sets result_1
      *
-     * @param \OpenAPI\Client\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_1 Result value
+     * @param \PeopleHR\Model\Result1GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_1 Result value
      *
      * @return self
      */
@@ -452,7 +452,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Gets result_2
      *
-     * @return \OpenAPI\Client\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]|null
+     * @return \PeopleHR\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]|null
      */
     public function getResult2()
     {
@@ -462,7 +462,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Sets result_2
      *
-     * @param \OpenAPI\Client\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_2 Result value
+     * @param \PeopleHR\Model\Result2GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_2 Result value
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Gets result_3
      *
-     * @return \OpenAPI\Client\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]|null
+     * @return \PeopleHR\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]|null
      */
     public function getResult3()
     {
@@ -489,7 +489,7 @@ class ErrorForGetHistoryByEmployeeIdAndFieldName implements ModelInterface, Arra
     /**
      * Sets result_3
      *
-     * @param \OpenAPI\Client\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_3 Result value
+     * @param \PeopleHR\Model\Result3GetHistoryByEmployeeIdAndFieldNameInner[]|null $result_3 Result value
      *
      * @return self
      */

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **notes** | **string** | Notes for update appraisal |
 **action_plan** | **string** | Action Plan for update appraisal |
 **objectives** | **string** | Objectives for update appraisal |
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsArrayForUpdateAppraisalInner[]**](CustomColumnsArrayForUpdateAppraisalInner.md) | Custom Columns of user |
-**add_files** | [**\OpenAPI\Client\Model\AddFilesArrayForUpdateAppraisalInner[]**](AddFilesArrayForUpdateAppraisalInner.md) | Add Files Info. |
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsArrayForUpdateAppraisalInner[]**](CustomColumnsArrayForUpdateAppraisalInner.md) | Custom Columns of user |
+**add_files** | [**\PeopleHR\Model\AddFilesArrayForUpdateAppraisalInner[]**](AddFilesArrayForUpdateAppraisalInner.md) | Add Files Info. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

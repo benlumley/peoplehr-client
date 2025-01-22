@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **mot_expiry_date** | **\DateTime** | MOTExpiryDate to add employee&#39;s new vehicle detail | [optional]
 **insurance_expiry_date** | **\DateTime** | InsuranceExpiryDate to add employee&#39;s new vehicle detail | [optional]
 **comments** | **string** | Comments to add employee&#39;s new vehicle detail | [optional]
-**custom_columns** | [**\OpenAPI\Client\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]**](CustomColumnsForEmployeeVehicleAddArrayInner.md) | CustomColumns to add employee&#39;s new vehicle detail | [optional]
-**add_files** | [**\OpenAPI\Client\Model\AddFilesForEmployeeVehicleAddArrayInner[]**](AddFilesForEmployeeVehicleAddArrayInner.md) | AddFiles to add employee&#39;s new vehicle detail | [optional]
+**custom_columns** | [**\PeopleHR\Model\CustomColumnsForEmployeeVehicleAddArrayInner[]**](CustomColumnsForEmployeeVehicleAddArrayInner.md) | CustomColumns to add employee&#39;s new vehicle detail | [optional]
+**add_files** | [**\PeopleHR\Model\AddFilesForEmployeeVehicleAddArrayInner[]**](AddFilesForEmployeeVehicleAddArrayInner.md) | AddFiles to add employee&#39;s new vehicle detail | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

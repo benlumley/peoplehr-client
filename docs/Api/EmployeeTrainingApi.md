@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeTrainingApi
+# PeopleHR\EmployeeTrainingApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeTrainingAddtrainingdetailPost()`
 
 ```php
-employeeTrainingAddtrainingdetailPost($body): \OpenAPI\Client\Model\ErrorForAddTrainingDetail
+employeeTrainingAddtrainingdetailPost($body): \PeopleHR\Model\ErrorForAddTrainingDetail
 ```
 
 Add Training Detail
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTrainingApi(
+$apiInstance = new PeopleHR\Api\EmployeeTrainingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddTrainingDetailParameter(); // \OpenAPI\Client\Model\AddTrainingDetailParameter
+$body = new \PeopleHR\Model\AddTrainingDetailParameter(); // \PeopleHR\Model\AddTrainingDetailParameter
 
 try {
     $result = $apiInstance->employeeTrainingAddtrainingdetailPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddTrainingDetailParameter**](../Model/AddTrainingDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddTrainingDetailParameter**](../Model/AddTrainingDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddTrainingDetail**](../Model/ErrorForAddTrainingDetail.md)
+[**\PeopleHR\Model\ErrorForAddTrainingDetail**](../Model/ErrorForAddTrainingDetail.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `employeeTrainingDeletetrainingdetailPost()`
 
 ```php
-employeeTrainingDeletetrainingdetailPost($body): \OpenAPI\Client\Model\ErrorFordeletetrainingdetail
+employeeTrainingDeletetrainingdetailPost($body): \PeopleHR\Model\ErrorFordeletetrainingdetail
 ```
 
 Delete Training Detail
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTrainingApi(
+$apiInstance = new PeopleHR\Api\EmployeeTrainingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteTrainingDetailParameter(); // \OpenAPI\Client\Model\DeleteTrainingDetailParameter
+$body = new \PeopleHR\Model\DeleteTrainingDetailParameter(); // \PeopleHR\Model\DeleteTrainingDetailParameter
 
 try {
     $result = $apiInstance->employeeTrainingDeletetrainingdetailPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteTrainingDetailParameter**](../Model/DeleteTrainingDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteTrainingDetailParameter**](../Model/DeleteTrainingDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorFordeletetrainingdetail**](../Model/ErrorFordeletetrainingdetail.md)
+[**\PeopleHR\Model\ErrorFordeletetrainingdetail**](../Model/ErrorFordeletetrainingdetail.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `employeeTrainingGetTrainingDetailPost()`
 
 ```php
-employeeTrainingGetTrainingDetailPost($body): \OpenAPI\Client\Model\ErrorForGetTrainingDetail
+employeeTrainingGetTrainingDetailPost($body): \PeopleHR\Model\ErrorForGetTrainingDetail
 ```
 
 Get Training Detail
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTrainingApi(
+$apiInstance = new PeopleHR\Api\EmployeeTrainingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetTrainingDetailParameter(); // \OpenAPI\Client\Model\GetTrainingDetailParameter
+$body = new \PeopleHR\Model\GetTrainingDetailParameter(); // \PeopleHR\Model\GetTrainingDetailParameter
 
 try {
     $result = $apiInstance->employeeTrainingGetTrainingDetailPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetTrainingDetailParameter**](../Model/GetTrainingDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetTrainingDetailParameter**](../Model/GetTrainingDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetTrainingDetail**](../Model/ErrorForGetTrainingDetail.md)
+[**\PeopleHR\Model\ErrorForGetTrainingDetail**](../Model/ErrorForGetTrainingDetail.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `employeeTrainingUpdatetrainingdetailPost()`
 
 ```php
-employeeTrainingUpdatetrainingdetailPost($body): \OpenAPI\Client\Model\ErrorForUpdateTrainingDetail
+employeeTrainingUpdatetrainingdetailPost($body): \PeopleHR\Model\ErrorForUpdateTrainingDetail
 ```
 
 Update Training Detail
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeTrainingApi(
+$apiInstance = new PeopleHR\Api\EmployeeTrainingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateTrainingDetailParameter(); // \OpenAPI\Client\Model\UpdateTrainingDetailParameter
+$body = new \PeopleHR\Model\UpdateTrainingDetailParameter(); // \PeopleHR\Model\UpdateTrainingDetailParameter
 
 try {
     $result = $apiInstance->employeeTrainingUpdatetrainingdetailPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateTrainingDetailParameter**](../Model/UpdateTrainingDetailParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateTrainingDetailParameter**](../Model/UpdateTrainingDetailParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateTrainingDetail**](../Model/ErrorForUpdateTrainingDetail.md)
+[**\PeopleHR\Model\ErrorForUpdateTrainingDetail**](../Model/ErrorForUpdateTrainingDetail.md)
 
 ### Authorization
 

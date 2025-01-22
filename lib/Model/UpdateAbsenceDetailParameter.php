@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateAbsenceDetailParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,12 +67,12 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
         'reason' => 'string',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'part_of_day' => '\OpenAPI\Client\Model\PartOfDayForUpdateAbsence',
+        'part_of_day' => '\PeopleHR\Model\PartOfDayForUpdateAbsence',
         'duration' => 'int',
         'absence_paid_status' => 'string',
         'emergency_leave' => 'bool',
-        'add_comments' => '\OpenAPI\Client\Model\AddCommentsArrayForAbsenceInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForAbsenceInner[]'
+        'add_comments' => '\PeopleHR\Model\AddCommentsArrayForAbsenceInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForAbsenceInner[]'
     ];
 
     /**
@@ -686,7 +686,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets part_of_day
      *
-     * @return \OpenAPI\Client\Model\PartOfDayForUpdateAbsence|null
+     * @return \PeopleHR\Model\PartOfDayForUpdateAbsence|null
      */
     public function getPartOfDay()
     {
@@ -696,7 +696,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets part_of_day
      *
-     * @param \OpenAPI\Client\Model\PartOfDayForUpdateAbsence|null $part_of_day PartOfDay for update absence
+     * @param \PeopleHR\Model\PartOfDayForUpdateAbsence|null $part_of_day PartOfDay for update absence
      *
      * @return self
      */
@@ -794,7 +794,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets add_comments
      *
-     * @return \OpenAPI\Client\Model\AddCommentsArrayForAbsenceInner[]|null
+     * @return \PeopleHR\Model\AddCommentsArrayForAbsenceInner[]|null
      */
     public function getAddComments()
     {
@@ -804,7 +804,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets add_comments
      *
-     * @param \OpenAPI\Client\Model\AddCommentsArrayForAbsenceInner[]|null $add_comments AddComments array list
+     * @param \PeopleHR\Model\AddCommentsArrayForAbsenceInner[]|null $add_comments AddComments array list
      *
      * @return self
      */
@@ -821,7 +821,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForAbsenceInner[]|null
+     * @return \PeopleHR\Model\AddFilesArrayForAbsenceInner[]|null
      */
     public function getAddFiles()
     {
@@ -831,7 +831,7 @@ class UpdateAbsenceDetailParameter implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForAbsenceInner[]|null $add_files AddFiles array list
+     * @param \PeopleHR\Model\AddFilesArrayForAbsenceInner[]|null $add_files AddFiles array list
      *
      * @return self
      */

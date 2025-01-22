@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultForGetByMaternityPaternityIdInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,8 +70,8 @@ class ResultForGetByMaternityPaternityIdInner implements ModelInterface, ArrayAc
         'additional_leave_end_date' => '\DateTime',
         'actual_start_date' => '\DateTime',
         'actual_end_date' => '\DateTime',
-        'comments' => '\OpenAPI\Client\Model\CommentssArrayForGetDetailInner[]',
-        'files' => '\OpenAPI\Client\Model\FilesArrayForMaternityPaternityInner[]',
+        'comments' => '\PeopleHR\Model\CommentssArrayForGetDetailInner[]',
+        'files' => '\PeopleHR\Model\FilesArrayForMaternityPaternityInner[]',
         'reference_id' => 'string'
     ];
 
@@ -715,7 +715,7 @@ class ResultForGetByMaternityPaternityIdInner implements ModelInterface, ArrayAc
     /**
      * Gets comments
      *
-     * @return \OpenAPI\Client\Model\CommentssArrayForGetDetailInner[]|null
+     * @return \PeopleHR\Model\CommentssArrayForGetDetailInner[]|null
      */
     public function getComments()
     {
@@ -725,7 +725,7 @@ class ResultForGetByMaternityPaternityIdInner implements ModelInterface, ArrayAc
     /**
      * Sets comments
      *
-     * @param \OpenAPI\Client\Model\CommentssArrayForGetDetailInner[]|null $comments Comments for get details
+     * @param \PeopleHR\Model\CommentssArrayForGetDetailInner[]|null $comments Comments for get details
      *
      * @return self
      */
@@ -742,7 +742,7 @@ class ResultForGetByMaternityPaternityIdInner implements ModelInterface, ArrayAc
     /**
      * Gets files
      *
-     * @return \OpenAPI\Client\Model\FilesArrayForMaternityPaternityInner[]|null
+     * @return \PeopleHR\Model\FilesArrayForMaternityPaternityInner[]|null
      */
     public function getFiles()
     {
@@ -752,7 +752,7 @@ class ResultForGetByMaternityPaternityIdInner implements ModelInterface, ArrayAc
     /**
      * Sets files
      *
-     * @param \OpenAPI\Client\Model\FilesArrayForMaternityPaternityInner[]|null $files Files for get details
+     * @param \PeopleHR\Model\FilesArrayForMaternityPaternityInner[]|null $files Files for get details
      *
      * @return self
      */

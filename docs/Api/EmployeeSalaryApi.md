@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeSalaryApi
+# PeopleHR\EmployeeSalaryApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeSalaryCreateNewSalaryPost()`
 
 ```php
-employeeSalaryCreateNewSalaryPost($body): \OpenAPI\Client\Model\ErrorForCreateNewSalary1
+employeeSalaryCreateNewSalaryPost($body): \PeopleHR\Model\ErrorForCreateNewSalary1
 ```
 
 Create New Salary
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeSalaryApi(
+$apiInstance = new PeopleHR\Api\EmployeeSalaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateNewSalaryParameter(); // \OpenAPI\Client\Model\CreateNewSalaryParameter
+$body = new \PeopleHR\Model\CreateNewSalaryParameter(); // \PeopleHR\Model\CreateNewSalaryParameter
 
 try {
     $result = $apiInstance->employeeSalaryCreateNewSalaryPost($body);
@@ -46,11 +46,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\CreateNewSalaryParameter**](../Model/CreateNewSalaryParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\CreateNewSalaryParameter**](../Model/CreateNewSalaryParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForCreateNewSalary1**](../Model/ErrorForCreateNewSalary1.md)
+[**\PeopleHR\Model\ErrorForCreateNewSalary1**](../Model/ErrorForCreateNewSalary1.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `employeeSalaryDeleteSalaryPost()`
 
 ```php
-employeeSalaryDeleteSalaryPost($body): \OpenAPI\Client\Model\ErrorForDeleteSalary
+employeeSalaryDeleteSalaryPost($body): \PeopleHR\Model\ErrorForDeleteSalary
 ```
 
 Delete Salary
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeSalaryApi(
+$apiInstance = new PeopleHR\Api\EmployeeSalaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteSalaryParameter(); // \OpenAPI\Client\Model\DeleteSalaryParameter
+$body = new \PeopleHR\Model\DeleteSalaryParameter(); // \PeopleHR\Model\DeleteSalaryParameter
 
 try {
     $result = $apiInstance->employeeSalaryDeleteSalaryPost($body);
@@ -102,11 +102,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteSalaryParameter**](../Model/DeleteSalaryParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteSalaryParameter**](../Model/DeleteSalaryParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteSalary**](../Model/ErrorForDeleteSalary.md)
+[**\PeopleHR\Model\ErrorForDeleteSalary**](../Model/ErrorForDeleteSalary.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `employeeSalaryGetSalaryDetailPost()`
 
 ```php
-employeeSalaryGetSalaryDetailPost($body): \OpenAPI\Client\Model\ErrorForGetSalaryDetail
+employeeSalaryGetSalaryDetailPost($body): \PeopleHR\Model\ErrorForGetSalaryDetail
 ```
 
 Get Salary Detail
@@ -139,12 +139,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeSalaryApi(
+$apiInstance = new PeopleHR\Api\EmployeeSalaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetSalaryDetail2(); // \OpenAPI\Client\Model\GetSalaryDetail2
+$body = new \PeopleHR\Model\GetSalaryDetail2(); // \PeopleHR\Model\GetSalaryDetail2
 
 try {
     $result = $apiInstance->employeeSalaryGetSalaryDetailPost($body);
@@ -158,11 +158,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetSalaryDetail2**](../Model/GetSalaryDetail2.md)|  | |
+| **body** | [**\PeopleHR\Model\GetSalaryDetail2**](../Model/GetSalaryDetail2.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetSalaryDetail**](../Model/ErrorForGetSalaryDetail.md)
+[**\PeopleHR\Model\ErrorForGetSalaryDetail**](../Model/ErrorForGetSalaryDetail.md)
 
 ### Authorization
 

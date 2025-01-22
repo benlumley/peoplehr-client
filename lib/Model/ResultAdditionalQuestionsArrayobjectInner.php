@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultAdditionalQuestionsArrayobjectInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class ResultAdditionalQuestionsArrayobjectInner implements ModelInterface, Array
         'is_mandatory' => 'bool',
         'question' => 'string',
         'additional_or_internal_type' => 'int',
-        'question_options' => '\OpenAPI\Client\Model\ResultlstInternalQuestionsInner[]'
+        'question_options' => '\PeopleHR\Model\ResultlstInternalQuestionsInner[]'
     ];
 
     /**
@@ -463,7 +463,7 @@ class ResultAdditionalQuestionsArrayobjectInner implements ModelInterface, Array
     /**
      * Gets question_options
      *
-     * @return \OpenAPI\Client\Model\ResultlstInternalQuestionsInner[]|null
+     * @return \PeopleHR\Model\ResultlstInternalQuestionsInner[]|null
      */
     public function getQuestionOptions()
     {
@@ -473,7 +473,7 @@ class ResultAdditionalQuestionsArrayobjectInner implements ModelInterface, Array
     /**
      * Sets question_options
      *
-     * @param \OpenAPI\Client\Model\ResultlstInternalQuestionsInner[]|null $question_options Question Options list value
+     * @param \PeopleHR\Model\ResultlstInternalQuestionsInner[]|null $question_options Question Options list value
      *
      * @return self
      */

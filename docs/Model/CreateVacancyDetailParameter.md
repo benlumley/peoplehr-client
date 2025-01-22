@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **is_cover_letter_mandatory** | **bool** | Is cover letter mandatory for create new vacancy |
 **is_resume_mandatory** | **bool** | Is resume mandatory for create new vacancy |
 **is_hide_salary** | **bool** | Is hide salary for create new vacancy |
-**vacancy_type** | [**\OpenAPI\Client\Model\VacancyType**](VacancyType.md) | Vacancy type for create new vacancy |
+**vacancy_type** | [**\PeopleHR\Model\VacancyType**](VacancyType.md) | Vacancy type for create new vacancy |
 **job_title** | **string** | Job title for create new vacancy | [optional]
 **city** | **string** | City for create new vacancy | [optional]
 **country** | **string** | Country value | [optional]

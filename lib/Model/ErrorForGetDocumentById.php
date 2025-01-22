@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForGetDocumentById Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForGetDocumentById implements ModelInterface, ArrayAccess, \JsonSeria
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\GetDocumentByIdArrayInner[]'
+        'result' => '\PeopleHR\Model\GetDocumentByIdArrayInner[]'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForGetDocumentById implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\GetDocumentByIdArrayInner[]|null
+     * @return \PeopleHR\Model\GetDocumentByIdArrayInner[]|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForGetDocumentById implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\GetDocumentByIdArrayInner[]|null $result Result value
+     * @param \PeopleHR\Model\GetDocumentByIdArrayInner[]|null $result Result value
      *
      * @return self
      */

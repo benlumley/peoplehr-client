@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ResultGetVehicleDetailByEmployeeIdArrayInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,8 +70,8 @@ class ResultGetVehicleDetailByEmployeeIdArrayInner implements ModelInterface, Ar
         'mot_expiry_date' => '\DateTime',
         'insurance_expiry_date' => '\DateTime',
         'comments' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]'
     ];
 
     /**
@@ -708,7 +708,7 @@ class ResultGetVehicleDetailByEmployeeIdArrayInner implements ModelInterface, Ar
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null
      */
     public function getCustomColumns()
     {
@@ -718,7 +718,7 @@ class ResultGetVehicleDetailByEmployeeIdArrayInner implements ModelInterface, Ar
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null $custom_columns CustomColumns to get vehicle detail
+     * @param \PeopleHR\Model\CustomColumnsForGetVehicleByIdArrayInner[]|null $custom_columns CustomColumns to get vehicle detail
      *
      * @return self
      */
@@ -735,7 +735,7 @@ class ResultGetVehicleDetailByEmployeeIdArrayInner implements ModelInterface, Ar
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]|null
+     * @return \PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]|null
      */
     public function getAddFiles()
     {
@@ -745,7 +745,7 @@ class ResultGetVehicleDetailByEmployeeIdArrayInner implements ModelInterface, Ar
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesForGetVehicleByIdArrayInner[]|null $add_files AddFiles to get vehicle detail
+     * @param \PeopleHR\Model\AddFilesForGetVehicleByIdArrayInner[]|null $add_files AddFiles to get vehicle detail
      *
      * @return self
      */

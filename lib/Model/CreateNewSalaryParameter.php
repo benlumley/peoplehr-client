@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * CreateNewSalaryParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,14 +62,14 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
         'action' => 'string',
         'employee_id' => 'string',
         'effective_from' => '\DateTime',
-        'salary_type' => '\OpenAPI\Client\Model\SalaryType',
-        'payment_frequency' => '\OpenAPI\Client\Model\PaymentFrequency',
+        'salary_type' => '\PeopleHR\Model\SalaryType',
+        'payment_frequency' => '\PeopleHR\Model\PaymentFrequency',
         'salary_amount' => 'int',
         'currency_code' => 'string',
         'change_reason' => 'string',
         'comments' => 'string',
-        'deductions' => '\OpenAPI\Client\Model\DeductionsArrayInner[]',
-        'entitlements' => '\OpenAPI\Client\Model\EntitlementsArrayInner[]'
+        'deductions' => '\PeopleHR\Model\DeductionsArrayInner[]',
+        'entitlements' => '\PeopleHR\Model\EntitlementsArrayInner[]'
     ];
 
     /**
@@ -527,7 +527,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets salary_type
      *
-     * @return \OpenAPI\Client\Model\SalaryType
+     * @return \PeopleHR\Model\SalaryType
      */
     public function getSalaryType()
     {
@@ -537,7 +537,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets salary_type
      *
-     * @param \OpenAPI\Client\Model\SalaryType $salary_type SalaryType for create new salary
+     * @param \PeopleHR\Model\SalaryType $salary_type SalaryType for create new salary
      *
      * @return self
      */
@@ -554,7 +554,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets payment_frequency
      *
-     * @return \OpenAPI\Client\Model\PaymentFrequency
+     * @return \PeopleHR\Model\PaymentFrequency
      */
     public function getPaymentFrequency()
     {
@@ -564,7 +564,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets payment_frequency
      *
-     * @param \OpenAPI\Client\Model\PaymentFrequency $payment_frequency PaymentFrequency for create new salary
+     * @param \PeopleHR\Model\PaymentFrequency $payment_frequency PaymentFrequency for create new salary
      *
      * @return self
      */
@@ -689,7 +689,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets deductions
      *
-     * @return \OpenAPI\Client\Model\DeductionsArrayInner[]
+     * @return \PeopleHR\Model\DeductionsArrayInner[]
      */
     public function getDeductions()
     {
@@ -699,7 +699,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets deductions
      *
-     * @param \OpenAPI\Client\Model\DeductionsArrayInner[] $deductions Deductions of user Array
+     * @param \PeopleHR\Model\DeductionsArrayInner[] $deductions Deductions of user Array
      *
      * @return self
      */
@@ -716,7 +716,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets entitlements
      *
-     * @return \OpenAPI\Client\Model\EntitlementsArrayInner[]
+     * @return \PeopleHR\Model\EntitlementsArrayInner[]
      */
     public function getEntitlements()
     {
@@ -726,7 +726,7 @@ class CreateNewSalaryParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets entitlements
      *
-     * @param \OpenAPI\Client\Model\EntitlementsArrayInner[] $entitlements Entitlements of user
+     * @param \PeopleHR\Model\EntitlementsArrayInner[] $entitlements Entitlements of user
      *
      * @return self
      */

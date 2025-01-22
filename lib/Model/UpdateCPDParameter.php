@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * UpdateCPDParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,8 +70,8 @@ class UpdateCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
         'hours_required' => 'int',
         'hours_accredited' => 'int',
         'notes' => 'string',
-        'custom_columns' => '\OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]',
-        'add_files' => '\OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]'
+        'custom_columns' => '\PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]',
+        'add_files' => '\PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]'
     ];
 
     /**
@@ -742,7 +742,7 @@ class UpdateCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets custom_columns
      *
-     * @return \OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]|null
+     * @return \PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]|null
      */
     public function getCustomColumns()
     {
@@ -752,7 +752,7 @@ class UpdateCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets custom_columns
      *
-     * @param \OpenAPI\Client\Model\CustomColumnsArrayForEmployeeCPDInner[]|null $custom_columns CustomColumns for update CPD
+     * @param \PeopleHR\Model\CustomColumnsArrayForEmployeeCPDInner[]|null $custom_columns CustomColumns for update CPD
      *
      * @return self
      */
@@ -769,7 +769,7 @@ class UpdateCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets add_files
      *
-     * @return \OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]|null
+     * @return \PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]|null
      */
     public function getAddFiles()
     {
@@ -779,7 +779,7 @@ class UpdateCPDParameter implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets add_files
      *
-     * @param \OpenAPI\Client\Model\AddFilesArrayForEmployeeCPDInner[]|null $add_files AddFiles for update CPD
+     * @param \PeopleHR\Model\AddFilesArrayForEmployeeCPDInner[]|null $add_files AddFiles for update CPD
      *
      * @return self
      */

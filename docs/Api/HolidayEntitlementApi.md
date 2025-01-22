@@ -1,4 +1,4 @@
-# OpenAPI\Client\HolidayEntitlementApi
+# PeopleHR\HolidayEntitlementApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `holidayEntitlementGetHolidayEntitlementPost()`
 
 ```php
-holidayEntitlementGetHolidayEntitlementPost($body): \OpenAPI\Client\Model\ErrorForGetHolidayEntitlement
+holidayEntitlementGetHolidayEntitlementPost($body): \PeopleHR\Model\ErrorForGetHolidayEntitlement
 ```
 
 Get Holiday Entitlement
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HolidayEntitlementApi(
+$apiInstance = new PeopleHR\Api\HolidayEntitlementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetHolidayEntitlementParameter(); // \OpenAPI\Client\Model\GetHolidayEntitlementParameter
+$body = new \PeopleHR\Model\GetHolidayEntitlementParameter(); // \PeopleHR\Model\GetHolidayEntitlementParameter
 
 try {
     $result = $apiInstance->holidayEntitlementGetHolidayEntitlementPost($body);
@@ -47,11 +47,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetHolidayEntitlementParameter**](../Model/GetHolidayEntitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetHolidayEntitlementParameter**](../Model/GetHolidayEntitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetHolidayEntitlement**](../Model/ErrorForGetHolidayEntitlement.md)
+[**\PeopleHR\Model\ErrorForGetHolidayEntitlement**](../Model/ErrorForGetHolidayEntitlement.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `holidayEntitlementGetNextYearHolidayEntitlementPost()`
 
 ```php
-holidayEntitlementGetNextYearHolidayEntitlementPost($body): \OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement
+holidayEntitlementGetNextYearHolidayEntitlementPost($body): \PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement
 ```
 
 Get Next Year Holiday Entitlement
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HolidayEntitlementApi(
+$apiInstance = new PeopleHR\Api\HolidayEntitlementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter(); // \OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter
+$body = new \PeopleHR\Model\GetNextYearHolidayEntitlementParameter(); // \PeopleHR\Model\GetNextYearHolidayEntitlementParameter
 
 try {
     $result = $apiInstance->holidayEntitlementGetNextYearHolidayEntitlementPost($body);
@@ -103,11 +103,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetNextYearHolidayEntitlementParameter**](../Model/GetNextYearHolidayEntitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetNextYearHolidayEntitlementParameter**](../Model/GetNextYearHolidayEntitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetNextYearHolidayEntitlement**](../Model/ErrorForGetNextYearHolidayEntitlement.md)
+[**\PeopleHR\Model\ErrorForGetNextYearHolidayEntitlement**](../Model/ErrorForGetNextYearHolidayEntitlement.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `holidayEntitlementUpdateHolidayEntitlementPost()`
 
 ```php
-holidayEntitlementUpdateHolidayEntitlementPost($body): \OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement
+holidayEntitlementUpdateHolidayEntitlementPost($body): \PeopleHR\Model\ErrorForUpdateHolidayEntitlement
 ```
 
 Update Holiday Entitlement
@@ -140,12 +140,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HolidayEntitlementApi(
+$apiInstance = new PeopleHR\Api\HolidayEntitlementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter(); // \OpenAPI\Client\Model\UpdateHolidayEntitlementParameter
+$body = new \PeopleHR\Model\UpdateHolidayEntitlementParameter(); // \PeopleHR\Model\UpdateHolidayEntitlementParameter
 
 try {
     $result = $apiInstance->holidayEntitlementUpdateHolidayEntitlementPost($body);
@@ -159,11 +159,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateHolidayEntitlementParameter**](../Model/UpdateHolidayEntitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateHolidayEntitlementParameter**](../Model/UpdateHolidayEntitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateHolidayEntitlement**](../Model/ErrorForUpdateHolidayEntitlement.md)
+[**\PeopleHR\Model\ErrorForUpdateHolidayEntitlement**](../Model/ErrorForUpdateHolidayEntitlement.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 ## `holidayEntitlementUpdateNextYearHolidayEntitlementPost()`
 
 ```php
-holidayEntitlementUpdateNextYearHolidayEntitlementPost($body): \OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement
+holidayEntitlementUpdateNextYearHolidayEntitlementPost($body): \PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement
 ```
 
 Update Next Year Holiday Entitlement
@@ -196,12 +196,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HolidayEntitlementApi(
+$apiInstance = new PeopleHR\Api\HolidayEntitlementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter(); // \OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter
+$body = new \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter(); // \PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter
 
 try {
     $result = $apiInstance->holidayEntitlementUpdateNextYearHolidayEntitlementPost($body);
@@ -215,11 +215,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateNextYearHolidayEntitlementParameter**](../Model/UpdateNextYearHolidayEntitlementParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateNextYearHolidayEntitlementParameter**](../Model/UpdateNextYearHolidayEntitlementParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateNextYearHolidayEntitlement**](../Model/ErrorForUpdateNextYearHolidayEntitlement.md)
+[**\PeopleHR\Model\ErrorForUpdateNextYearHolidayEntitlement**](../Model/ErrorForUpdateNextYearHolidayEntitlement.md)
 
 ### Authorization
 

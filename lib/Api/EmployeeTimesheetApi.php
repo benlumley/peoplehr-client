@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * EmployeeTimesheetApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,12 +137,12 @@ class EmployeeTimesheetApi
      *
      * Create New Timesheet
      *
-     * @param  \OpenAPI\Client\Model\CreateNewTimesheetDefinition $body body (required)
+     * @param  \PeopleHR\Model\CreateNewTimesheetDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetCreateNewTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail
+     * @return \PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail
      */
     public function employeeTimesheetCreateNewTimesheetPost($body, string $contentType = self::contentTypes['employeeTimesheetCreateNewTimesheetPost'][0])
     {
@@ -155,12 +155,12 @@ class EmployeeTimesheetApi
      *
      * Create New Timesheet
      *
-     * @param  \OpenAPI\Client\Model\CreateNewTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\CreateNewTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetCreateNewTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTimesheetCreateNewTimesheetPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetCreateNewTimesheetPost'][0])
     {
@@ -191,11 +191,11 @@ class EmployeeTimesheetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -213,7 +213,7 @@ class EmployeeTimesheetApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -232,7 +232,7 @@ class EmployeeTimesheetApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail';
+            $returnType = '\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -265,7 +265,7 @@ class EmployeeTimesheetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail',
+                        '\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class EmployeeTimesheetApi
      *
      * Create New Timesheet
      *
-     * @param  \OpenAPI\Client\Model\CreateNewTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\CreateNewTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetCreateNewTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -301,7 +301,7 @@ class EmployeeTimesheetApi
      *
      * Create New Timesheet
      *
-     * @param  \OpenAPI\Client\Model\CreateNewTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\CreateNewTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetCreateNewTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -309,7 +309,7 @@ class EmployeeTimesheetApi
      */
     public function employeeTimesheetCreateNewTimesheetPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetCreateNewTimesheetPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForCreateNewEmployeeTimesheetDetail';
+        $returnType = '\PeopleHR\Model\ErrorForCreateNewEmployeeTimesheetDetail';
         $request = $this->employeeTimesheetCreateNewTimesheetPostRequest($body, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class EmployeeTimesheetApi
     /**
      * Create request for operation 'employeeTimesheetCreateNewTimesheetPost'
      *
-     * @param  \OpenAPI\Client\Model\CreateNewTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\CreateNewTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetCreateNewTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,12 +444,12 @@ class EmployeeTimesheetApi
      *
      * Delete Timesheet
      *
-     * @param  \OpenAPI\Client\Model\DeleteTimesheetdefinition $body body (required)
+     * @param  \PeopleHR\Model\DeleteTimesheetdefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetDeleteTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail
+     * @return \PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail
      */
     public function employeeTimesheetDeleteTimesheetPost($body, string $contentType = self::contentTypes['employeeTimesheetDeleteTimesheetPost'][0])
     {
@@ -462,12 +462,12 @@ class EmployeeTimesheetApi
      *
      * Delete Timesheet
      *
-     * @param  \OpenAPI\Client\Model\DeleteTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetDeleteTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTimesheetDeleteTimesheetPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetDeleteTimesheetPost'][0])
     {
@@ -498,11 +498,11 @@ class EmployeeTimesheetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -520,7 +520,7 @@ class EmployeeTimesheetApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -539,7 +539,7 @@ class EmployeeTimesheetApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -572,7 +572,7 @@ class EmployeeTimesheetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail',
+                        '\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class EmployeeTimesheetApi
      *
      * Delete Timesheet
      *
-     * @param  \OpenAPI\Client\Model\DeleteTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetDeleteTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -608,7 +608,7 @@ class EmployeeTimesheetApi
      *
      * Delete Timesheet
      *
-     * @param  \OpenAPI\Client\Model\DeleteTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetDeleteTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -616,7 +616,7 @@ class EmployeeTimesheetApi
      */
     public function employeeTimesheetDeleteTimesheetPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetDeleteTimesheetPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteEmployeeTimesheetDetail';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteEmployeeTimesheetDetail';
         $request = $this->employeeTimesheetDeleteTimesheetPostRequest($body, $contentType);
 
         return $this->client
@@ -658,7 +658,7 @@ class EmployeeTimesheetApi
     /**
      * Create request for operation 'employeeTimesheetDeleteTimesheetPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\DeleteTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetDeleteTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -751,12 +751,12 @@ class EmployeeTimesheetApi
      *
      * Get Employee Timesheet Detail List
      *
-     * @param  \OpenAPI\Client\Model\GetTimesheetdefinition $body body (required)
+     * @param  \PeopleHR\Model\GetTimesheetdefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetGetTimesheetDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetTimesheetDetail
+     * @return \PeopleHR\Model\ErrorForGetTimesheetDetail
      */
     public function employeeTimesheetGetTimesheetDetailPost($body, string $contentType = self::contentTypes['employeeTimesheetGetTimesheetDetailPost'][0])
     {
@@ -769,12 +769,12 @@ class EmployeeTimesheetApi
      *
      * Get Employee Timesheet Detail List
      *
-     * @param  \OpenAPI\Client\Model\GetTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\GetTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetGetTimesheetDetailPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTimesheetGetTimesheetDetailPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetGetTimesheetDetailPost'][0])
     {
@@ -805,11 +805,11 @@ class EmployeeTimesheetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetTimesheetDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetTimesheetDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetTimesheetDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetTimesheetDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -827,7 +827,7 @@ class EmployeeTimesheetApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetTimesheetDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetTimesheetDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -846,7 +846,7 @@ class EmployeeTimesheetApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetTimesheetDetail';
+            $returnType = '\PeopleHR\Model\ErrorForGetTimesheetDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -879,7 +879,7 @@ class EmployeeTimesheetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetTimesheetDetail',
+                        '\PeopleHR\Model\ErrorForGetTimesheetDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class EmployeeTimesheetApi
      *
      * Get Employee Timesheet Detail List
      *
-     * @param  \OpenAPI\Client\Model\GetTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\GetTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetGetTimesheetDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -915,7 +915,7 @@ class EmployeeTimesheetApi
      *
      * Get Employee Timesheet Detail List
      *
-     * @param  \OpenAPI\Client\Model\GetTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\GetTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetGetTimesheetDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -923,7 +923,7 @@ class EmployeeTimesheetApi
      */
     public function employeeTimesheetGetTimesheetDetailPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetGetTimesheetDetailPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetTimesheetDetail';
+        $returnType = '\PeopleHR\Model\ErrorForGetTimesheetDetail';
         $request = $this->employeeTimesheetGetTimesheetDetailPostRequest($body, $contentType);
 
         return $this->client
@@ -965,7 +965,7 @@ class EmployeeTimesheetApi
     /**
      * Create request for operation 'employeeTimesheetGetTimesheetDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\GetTimesheetdefinition $body (required)
+     * @param  \PeopleHR\Model\GetTimesheetdefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetGetTimesheetDetailPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1058,12 +1058,12 @@ class EmployeeTimesheetApi
      *
      * Update Employee Timesheet
      *
-     * @param  \OpenAPI\Client\Model\UpdateTimesheetDefinition $body body (required)
+     * @param  \PeopleHR\Model\UpdateTimesheetDefinition $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetUpdateTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail
+     * @return \PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail
      */
     public function employeeTimesheetUpdateTimesheetPost($body, string $contentType = self::contentTypes['employeeTimesheetUpdateTimesheetPost'][0])
     {
@@ -1076,12 +1076,12 @@ class EmployeeTimesheetApi
      *
      * Update Employee Timesheet
      *
-     * @param  \OpenAPI\Client\Model\UpdateTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetUpdateTimesheetPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function employeeTimesheetUpdateTimesheetPostWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetUpdateTimesheetPost'][0])
     {
@@ -1112,11 +1112,11 @@ class EmployeeTimesheetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,7 +1134,7 @@ class EmployeeTimesheetApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1153,7 +1153,7 @@ class EmployeeTimesheetApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1186,7 +1186,7 @@ class EmployeeTimesheetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail',
+                        '\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class EmployeeTimesheetApi
      *
      * Update Employee Timesheet
      *
-     * @param  \OpenAPI\Client\Model\UpdateTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetUpdateTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1222,7 +1222,7 @@ class EmployeeTimesheetApi
      *
      * Update Employee Timesheet
      *
-     * @param  \OpenAPI\Client\Model\UpdateTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetUpdateTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1230,7 +1230,7 @@ class EmployeeTimesheetApi
      */
     public function employeeTimesheetUpdateTimesheetPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['employeeTimesheetUpdateTimesheetPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateEmployeeTimesheetDetail';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateEmployeeTimesheetDetail';
         $request = $this->employeeTimesheetUpdateTimesheetPostRequest($body, $contentType);
 
         return $this->client
@@ -1272,7 +1272,7 @@ class EmployeeTimesheetApi
     /**
      * Create request for operation 'employeeTimesheetUpdateTimesheetPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateTimesheetDefinition $body (required)
+     * @param  \PeopleHR\Model\UpdateTimesheetDefinition $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['employeeTimesheetUpdateTimesheetPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

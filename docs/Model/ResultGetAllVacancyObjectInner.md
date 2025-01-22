@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **country** | **string** | Country value | [optional]
 **experience** | **string** | Experience value | [optional]
 **job_bord_url** | **string** | JobBordUrl value | [optional]
-**additional_questions** | [**\OpenAPI\Client\Model\ResultAdditionalQuestionsArrayobjectInner[]**](ResultAdditionalQuestionsArrayobjectInner.md) | Additional questions array list | [optional]
-**internal_questions** | [**\OpenAPI\Client\Model\ResultInternalQuestionsArrayobjectInner[]**](ResultInternalQuestionsArrayobjectInner.md) | Internal questions array list | [optional]
+**additional_questions** | [**\PeopleHR\Model\ResultAdditionalQuestionsArrayobjectInner[]**](ResultAdditionalQuestionsArrayobjectInner.md) | Additional questions array list | [optional]
+**internal_questions** | [**\PeopleHR\Model\ResultInternalQuestionsArrayobjectInner[]**](ResultInternalQuestionsArrayobjectInner.md) | Internal questions array list | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

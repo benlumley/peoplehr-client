@@ -1,4 +1,4 @@
-# OpenAPI\Client\EmployeeBenefitApi
+# PeopleHR\EmployeeBenefitApi
 
 All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.peoplehr.net/v3.1, except if the operation 
 ## `employeeBenefitAddNewBenefitPost()`
 
 ```php
-employeeBenefitAddNewBenefitPost($body): \OpenAPI\Client\Model\ErrorForAddNewBenefitApi
+employeeBenefitAddNewBenefitPost($body): \PeopleHR\Model\ErrorForAddNewBenefitApi
 ```
 
 Add New Benefit
@@ -29,12 +29,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeBenefitApi(
+$apiInstance = new PeopleHR\Api\EmployeeBenefitApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\AddNewBenefitParameter(); // \OpenAPI\Client\Model\AddNewBenefitParameter
+$body = new \PeopleHR\Model\AddNewBenefitParameter(); // \PeopleHR\Model\AddNewBenefitParameter
 
 try {
     $result = $apiInstance->employeeBenefitAddNewBenefitPost($body);
@@ -48,11 +48,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\AddNewBenefitParameter**](../Model/AddNewBenefitParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\AddNewBenefitParameter**](../Model/AddNewBenefitParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForAddNewBenefitApi**](../Model/ErrorForAddNewBenefitApi.md)
+[**\PeopleHR\Model\ErrorForAddNewBenefitApi**](../Model/ErrorForAddNewBenefitApi.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `employeeBenefitDeleteBenefitPost()`
 
 ```php
-employeeBenefitDeleteBenefitPost($body): \OpenAPI\Client\Model\ErrorForDeleteBenefit
+employeeBenefitDeleteBenefitPost($body): \PeopleHR\Model\ErrorForDeleteBenefit
 ```
 
 Delete Benefit
@@ -85,12 +85,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeBenefitApi(
+$apiInstance = new PeopleHR\Api\EmployeeBenefitApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeleteBenefitParameter(); // \OpenAPI\Client\Model\DeleteBenefitParameter
+$body = new \PeopleHR\Model\DeleteBenefitParameter(); // \PeopleHR\Model\DeleteBenefitParameter
 
 try {
     $result = $apiInstance->employeeBenefitDeleteBenefitPost($body);
@@ -104,11 +104,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\DeleteBenefitParameter**](../Model/DeleteBenefitParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\DeleteBenefitParameter**](../Model/DeleteBenefitParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForDeleteBenefit**](../Model/ErrorForDeleteBenefit.md)
+[**\PeopleHR\Model\ErrorForDeleteBenefit**](../Model/ErrorForDeleteBenefit.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `employeeBenefitGetBenefitByBenefitIdPost()`
 
 ```php
-employeeBenefitGetBenefitByBenefitIdPost($body): \OpenAPI\Client\Model\ErrorForGetByBenefitIdApi
+employeeBenefitGetBenefitByBenefitIdPost($body): \PeopleHR\Model\ErrorForGetByBenefitIdApi
 ```
 
 Get By Benefit Id
@@ -141,12 +141,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeBenefitApi(
+$apiInstance = new PeopleHR\Api\EmployeeBenefitApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetByBenefitIdParameter(); // \OpenAPI\Client\Model\GetByBenefitIdParameter
+$body = new \PeopleHR\Model\GetByBenefitIdParameter(); // \PeopleHR\Model\GetByBenefitIdParameter
 
 try {
     $result = $apiInstance->employeeBenefitGetBenefitByBenefitIdPost($body);
@@ -160,11 +160,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetByBenefitIdParameter**](../Model/GetByBenefitIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetByBenefitIdParameter**](../Model/GetByBenefitIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetByBenefitIdApi**](../Model/ErrorForGetByBenefitIdApi.md)
+[**\PeopleHR\Model\ErrorForGetByBenefitIdApi**](../Model/ErrorForGetByBenefitIdApi.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ No authorization required
 ## `employeeBenefitGetBenefitByEmployeeIdPost()`
 
 ```php
-employeeBenefitGetBenefitByEmployeeIdPost($body): \OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId
+employeeBenefitGetBenefitByEmployeeIdPost($body): \PeopleHR\Model\ErrorForGetBenefitByEmployeeId
 ```
 
 Get Benefit By EmployeeId Id
@@ -197,12 +197,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeBenefitApi(
+$apiInstance = new PeopleHR\Api\EmployeeBenefitApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter(); // \OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter
+$body = new \PeopleHR\Model\GetBenefitByEmployeeIdParameter(); // \PeopleHR\Model\GetBenefitByEmployeeIdParameter
 
 try {
     $result = $apiInstance->employeeBenefitGetBenefitByEmployeeIdPost($body);
@@ -216,11 +216,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\GetBenefitByEmployeeIdParameter**](../Model/GetBenefitByEmployeeIdParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\GetBenefitByEmployeeIdParameter**](../Model/GetBenefitByEmployeeIdParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForGetBenefitByEmployeeId**](../Model/ErrorForGetBenefitByEmployeeId.md)
+[**\PeopleHR\Model\ErrorForGetBenefitByEmployeeId**](../Model/ErrorForGetBenefitByEmployeeId.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 ## `employeeBenefitUpdateBenefitPost()`
 
 ```php
-employeeBenefitUpdateBenefitPost($body): \OpenAPI\Client\Model\ErrorForUpdateBenefitApi
+employeeBenefitUpdateBenefitPost($body): \PeopleHR\Model\ErrorForUpdateBenefitApi
 ```
 
 Update Benefit
@@ -253,12 +253,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\EmployeeBenefitApi(
+$apiInstance = new PeopleHR\Api\EmployeeBenefitApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\UpdateBenefitParameter(); // \OpenAPI\Client\Model\UpdateBenefitParameter
+$body = new \PeopleHR\Model\UpdateBenefitParameter(); // \PeopleHR\Model\UpdateBenefitParameter
 
 try {
     $result = $apiInstance->employeeBenefitUpdateBenefitPost($body);
@@ -272,11 +272,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\OpenAPI\Client\Model\UpdateBenefitParameter**](../Model/UpdateBenefitParameter.md)|  | |
+| **body** | [**\PeopleHR\Model\UpdateBenefitParameter**](../Model/UpdateBenefitParameter.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ErrorForUpdateBenefitApi**](../Model/ErrorForUpdateBenefitApi.md)
+[**\PeopleHR\Model\ErrorForUpdateBenefitApi**](../Model/ErrorForUpdateBenefitApi.md)
 
 ### Authorization
 

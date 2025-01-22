@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * ErrorForAddNewMaternityPaternityApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ErrorForAddNewMaternityPaternityApi implements ModelInterface, ArrayAccess
         'is_error' => 'bool',
         'status' => 'int',
         'message' => 'string',
-        'result' => '\OpenAPI\Client\Model\ResultMaternityPaternityTxnIdObject'
+        'result' => '\PeopleHR\Model\ResultMaternityPaternityTxnIdObject'
     ];
 
     /**
@@ -411,7 +411,7 @@ class ErrorForAddNewMaternityPaternityApi implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\ResultMaternityPaternityTxnIdObject|null
+     * @return \PeopleHR\Model\ResultMaternityPaternityTxnIdObject|null
      */
     public function getResult()
     {
@@ -421,7 +421,7 @@ class ErrorForAddNewMaternityPaternityApi implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\ResultMaternityPaternityTxnIdObject|null $result Result Value
+     * @param \PeopleHR\Model\ResultMaternityPaternityTxnIdObject|null $result Result Value
      *
      * @return self
      */

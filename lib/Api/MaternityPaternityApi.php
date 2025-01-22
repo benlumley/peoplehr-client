@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace PeopleHR\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use PeopleHR\ApiException;
+use PeopleHR\Configuration;
+use PeopleHR\HeaderSelector;
+use PeopleHR\ObjectSerializer;
 
 /**
  * MaternityPaternityApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class MaternityPaternityApi
      *
      * Add New Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\AddNewMaternityPaternityParameter $body body (required)
+     * @param  \PeopleHR\Model\AddNewMaternityPaternityParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi
+     * @return \PeopleHR\Model\ErrorForAddNewMaternityPaternityApi
      */
     public function maternityPaternityAddNewMaternityPaternityPost($body, string $contentType = self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'][0])
     {
@@ -158,12 +158,12 @@ class MaternityPaternityApi
      *
      * Add New Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\AddNewMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForAddNewMaternityPaternityApi, HTTP status code, HTTP response headers (array of strings)
      */
     public function maternityPaternityAddNewMaternityPaternityPostWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'][0])
     {
@@ -194,11 +194,11 @@ class MaternityPaternityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,7 +216,7 @@ class MaternityPaternityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -235,7 +235,7 @@ class MaternityPaternityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi';
+            $returnType = '\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -268,7 +268,7 @@ class MaternityPaternityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi',
+                        '\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -283,7 +283,7 @@ class MaternityPaternityApi
      *
      * Add New Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\AddNewMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class MaternityPaternityApi
      *
      * Add New Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\AddNewMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class MaternityPaternityApi
      */
     public function maternityPaternityAddNewMaternityPaternityPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForAddNewMaternityPaternityApi';
+        $returnType = '\PeopleHR\Model\ErrorForAddNewMaternityPaternityApi';
         $request = $this->maternityPaternityAddNewMaternityPaternityPostRequest($body, $contentType);
 
         return $this->client
@@ -354,7 +354,7 @@ class MaternityPaternityApi
     /**
      * Create request for operation 'maternityPaternityAddNewMaternityPaternityPost'
      *
-     * @param  \OpenAPI\Client\Model\AddNewMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\AddNewMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityAddNewMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,12 +447,12 @@ class MaternityPaternityApi
      *
      * Delete Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\DeleteMaternityPaternityParameter $body body (required)
+     * @param  \PeopleHR\Model\DeleteMaternityPaternityParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity
+     * @return \PeopleHR\Model\ErrorForDeleteMaternityPaternity
      */
     public function maternityPaternityDeleteMaternityPaternityPost($body, string $contentType = self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'][0])
     {
@@ -465,12 +465,12 @@ class MaternityPaternityApi
      *
      * Delete Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\DeleteMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForDeleteMaternityPaternity, HTTP status code, HTTP response headers (array of strings)
      */
     public function maternityPaternityDeleteMaternityPaternityPostWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'][0])
     {
@@ -501,11 +501,11 @@ class MaternityPaternityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForDeleteMaternityPaternity' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForDeleteMaternityPaternity' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class MaternityPaternityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForDeleteMaternityPaternity', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class MaternityPaternityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity';
+            $returnType = '\PeopleHR\Model\ErrorForDeleteMaternityPaternity';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class MaternityPaternityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity',
+                        '\PeopleHR\Model\ErrorForDeleteMaternityPaternity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class MaternityPaternityApi
      *
      * Delete Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\DeleteMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -611,7 +611,7 @@ class MaternityPaternityApi
      *
      * Delete Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\DeleteMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -619,7 +619,7 @@ class MaternityPaternityApi
      */
     public function maternityPaternityDeleteMaternityPaternityPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForDeleteMaternityPaternity';
+        $returnType = '\PeopleHR\Model\ErrorForDeleteMaternityPaternity';
         $request = $this->maternityPaternityDeleteMaternityPaternityPostRequest($body, $contentType);
 
         return $this->client
@@ -661,7 +661,7 @@ class MaternityPaternityApi
     /**
      * Create request for operation 'maternityPaternityDeleteMaternityPaternityPost'
      *
-     * @param  \OpenAPI\Client\Model\DeleteMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\DeleteMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityDeleteMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -754,12 +754,12 @@ class MaternityPaternityApi
      *
      * Get by maternity paternity id
      *
-     * @param  \OpenAPI\Client\Model\GetByMaternityPaternityParameter $body body (required)
+     * @param  \PeopleHR\Model\GetByMaternityPaternityParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId
+     * @return \PeopleHR\Model\ErrorForGetByMaternityPaternityId
      */
     public function maternityPaternityGetByMaternityPaternityIdPost($body, string $contentType = self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'][0])
     {
@@ -772,12 +772,12 @@ class MaternityPaternityApi
      *
      * Get by maternity paternity id
      *
-     * @param  \OpenAPI\Client\Model\GetByMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\GetByMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByMaternityPaternityId, HTTP status code, HTTP response headers (array of strings)
      */
     public function maternityPaternityGetByMaternityPaternityIdPostWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'][0])
     {
@@ -808,11 +808,11 @@ class MaternityPaternityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByMaternityPaternityId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByMaternityPaternityId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -830,7 +830,7 @@ class MaternityPaternityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByMaternityPaternityId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -849,7 +849,7 @@ class MaternityPaternityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId';
+            $returnType = '\PeopleHR\Model\ErrorForGetByMaternityPaternityId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -882,7 +882,7 @@ class MaternityPaternityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId',
+                        '\PeopleHR\Model\ErrorForGetByMaternityPaternityId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class MaternityPaternityApi
      *
      * Get by maternity paternity id
      *
-     * @param  \OpenAPI\Client\Model\GetByMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\GetByMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -918,7 +918,7 @@ class MaternityPaternityApi
      *
      * Get by maternity paternity id
      *
-     * @param  \OpenAPI\Client\Model\GetByMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\GetByMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class MaternityPaternityApi
      */
     public function maternityPaternityGetByMaternityPaternityIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityId';
+        $returnType = '\PeopleHR\Model\ErrorForGetByMaternityPaternityId';
         $request = $this->maternityPaternityGetByMaternityPaternityIdPostRequest($body, $contentType);
 
         return $this->client
@@ -968,7 +968,7 @@ class MaternityPaternityApi
     /**
      * Create request for operation 'maternityPaternityGetByMaternityPaternityIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetByMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\GetByMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetByMaternityPaternityIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class MaternityPaternityApi
      *
      * Get maternity paternity by employeeid
      *
-     * @param  \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter $body body (required)
+     * @param  \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId
+     * @return \PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId
      */
     public function maternityPaternityGetMaternityPaternityByEmployeeIdPost($body, string $contentType = self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'][0])
     {
@@ -1079,12 +1079,12 @@ class MaternityPaternityApi
      *
      * Get maternity paternity by employeeid
      *
-     * @param  \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId, HTTP status code, HTTP response headers (array of strings)
      */
     public function maternityPaternityGetMaternityPaternityByEmployeeIdPostWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'][0])
     {
@@ -1115,11 +1115,11 @@ class MaternityPaternityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1137,7 +1137,7 @@ class MaternityPaternityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1156,7 +1156,7 @@ class MaternityPaternityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId';
+            $returnType = '\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1189,7 +1189,7 @@ class MaternityPaternityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId',
+                        '\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class MaternityPaternityApi
      *
      * Get maternity paternity by employeeid
      *
-     * @param  \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1225,7 +1225,7 @@ class MaternityPaternityApi
      *
      * Get maternity paternity by employeeid
      *
-     * @param  \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1233,7 +1233,7 @@ class MaternityPaternityApi
      */
     public function maternityPaternityGetMaternityPaternityByEmployeeIdPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForGetByMaternityPaternityByEmpId';
+        $returnType = '\PeopleHR\Model\ErrorForGetByMaternityPaternityByEmpId';
         $request = $this->maternityPaternityGetMaternityPaternityByEmployeeIdPostRequest($body, $contentType);
 
         return $this->client
@@ -1275,7 +1275,7 @@ class MaternityPaternityApi
     /**
      * Create request for operation 'maternityPaternityGetMaternityPaternityByEmployeeIdPost'
      *
-     * @param  \OpenAPI\Client\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
+     * @param  \PeopleHR\Model\GetMaternityPaternityByEmployeeIdParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityGetMaternityPaternityByEmployeeIdPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1368,12 +1368,12 @@ class MaternityPaternityApi
      *
      * Update Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\UpdateMaternityPaternityParameter $body body (required)
+     * @param  \PeopleHR\Model\UpdateMaternityPaternityParameter $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi
+     * @return \PeopleHR\Model\ErrorForUpdateMaternityPaternityApi
      */
     public function maternityPaternityUpdateMaternityPaternityPost($body, string $contentType = self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'][0])
     {
@@ -1386,12 +1386,12 @@ class MaternityPaternityApi
      *
      * Update Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\UpdateMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PeopleHR\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PeopleHR\Model\ErrorForUpdateMaternityPaternityApi, HTTP status code, HTTP response headers (array of strings)
      */
     public function maternityPaternityUpdateMaternityPaternityPostWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'][0])
     {
@@ -1422,11 +1422,11 @@ class MaternityPaternityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi' === '\SplFileObject') {
+                    if ('\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi' !== 'string') {
+                        if ('\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,7 +1444,7 @@ class MaternityPaternityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi', []),
+                        ObjectSerializer::deserialize($content, '\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1463,7 +1463,7 @@ class MaternityPaternityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi';
+            $returnType = '\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1496,7 +1496,7 @@ class MaternityPaternityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi',
+                        '\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class MaternityPaternityApi
      *
      * Update Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\UpdateMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class MaternityPaternityApi
      *
      * Update Maternity Paternity
      *
-     * @param  \OpenAPI\Client\Model\UpdateMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class MaternityPaternityApi
      */
     public function maternityPaternityUpdateMaternityPaternityPostAsyncWithHttpInfo($body, string $contentType = self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ErrorForUpdateMaternityPaternityApi';
+        $returnType = '\PeopleHR\Model\ErrorForUpdateMaternityPaternityApi';
         $request = $this->maternityPaternityUpdateMaternityPaternityPostRequest($body, $contentType);
 
         return $this->client
@@ -1582,7 +1582,7 @@ class MaternityPaternityApi
     /**
      * Create request for operation 'maternityPaternityUpdateMaternityPaternityPost'
      *
-     * @param  \OpenAPI\Client\Model\UpdateMaternityPaternityParameter $body (required)
+     * @param  \PeopleHR\Model\UpdateMaternityPaternityParameter $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['maternityPaternityUpdateMaternityPaternityPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

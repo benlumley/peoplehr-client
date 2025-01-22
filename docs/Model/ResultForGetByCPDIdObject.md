@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **hours_required** | **int** | HoursRequired value | [optional]
 **hours_accredited** | **int** | HoursAccredited value | [optional]
 **notes** | **string** | Notes value | [optional]
-**customfields** | [**\OpenAPI\Client\Model\CustomFieldsArrayForGetDetailInner[]**](CustomFieldsArrayForGetDetailInner.md) | Customfields for get details | [optional]
-**files** | [**\OpenAPI\Client\Model\FilesArrayForGetDetailInner[]**](FilesArrayForGetDetailInner.md) | Files for get details | [optional]
+**customfields** | [**\PeopleHR\Model\CustomFieldsArrayForGetDetailInner[]**](CustomFieldsArrayForGetDetailInner.md) | Customfields for get details | [optional]
+**files** | [**\PeopleHR\Model\FilesArrayForGetDetailInner[]**](FilesArrayForGetDetailInner.md) | Files for get details | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

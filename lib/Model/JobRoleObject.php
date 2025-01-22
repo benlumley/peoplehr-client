@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace PeopleHR\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \PeopleHR\ObjectSerializer;
 
 /**
  * JobRoleObject Class Doc Comment
  *
  * @category Class
  * @description Job role object contain displayValue and fieldHistoryForJobRole array
- * @package  OpenAPI\Client
+ * @package  PeopleHR
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class JobRoleObject implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'display_value' => 'string',
-        'field_history_for_job_role' => '\OpenAPI\Client\Model\FieldHistoryForJobRoleObjectInner[]'
+        'field_history_for_job_role' => '\PeopleHR\Model\FieldHistoryForJobRoleObjectInner[]'
     ];
 
     /**
@@ -328,7 +328,7 @@ class JobRoleObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets field_history_for_job_role
      *
-     * @return \OpenAPI\Client\Model\FieldHistoryForJobRoleObjectInner[]|null
+     * @return \PeopleHR\Model\FieldHistoryForJobRoleObjectInner[]|null
      */
     public function getFieldHistoryForJobRole()
     {
@@ -338,7 +338,7 @@ class JobRoleObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets field_history_for_job_role
      *
-     * @param \OpenAPI\Client\Model\FieldHistoryForJobRoleObjectInner[]|null $field_history_for_job_role Field history for job role array list
+     * @param \PeopleHR\Model\FieldHistoryForJobRoleObjectInner[]|null $field_history_for_job_role Field history for job role array list
      *
      * @return self
      */
